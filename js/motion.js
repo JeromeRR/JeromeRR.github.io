@@ -327,6 +327,7 @@ var moss = (function(){
         pointer.cy  = pointer.y = realCanvasHeight / 2;
         pointer.y = realCanvasHeight;
 
+
         // Wrapper Size rest
         $(".motion, #loading").css({
             width :     wWidth,
@@ -340,15 +341,6 @@ var moss = (function(){
             width :     realCanvasWidth,
             height:     realCanvasHeight
         });
-
-        $("#mossland-reality").css({
-            left:       realLeft,
-            top:        realTop
-        }).attr({
-            width :     realCanvasWidth,
-            height:     realCanvasHeight
-        });
-
 
         $("#motionwrap").css({
             "width" : wWidth,
@@ -670,9 +662,7 @@ var moss = (function(){
         if( imgCount == imgLoadCount ){
             titleMotionBinding();
             loading('hide');
-
             firstMotionFire();
-
             run();
         }
     }

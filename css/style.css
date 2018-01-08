@@ -60,6 +60,10 @@ li {
 }
 
 
+.d-hide {
+    display: none;
+}
+
 
 .ico {
     height: 600px;
@@ -590,14 +594,16 @@ ul.features-list > li:last-child{
 
 .partners-title {
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .partners-subtitle {
     margin-bottom: 50px;
     text-align: center;
-    font-weight: 500;
-    color: #666;
+    font-weight: 300;
+    color: #999;
+    padding: 0 20%;
+    line-height: 1.5em;
 }
 
 
