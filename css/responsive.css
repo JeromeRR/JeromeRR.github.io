@@ -1,0 +1,475 @@
+
+@media only screen and (max-width: 1440px) {
+
+    .con {
+        width: 1000px;
+    }
+
+    .features-item-odd .features-con {
+        padding-right: 6%;
+    }
+
+    .features-con {
+        padding-left: 6%;
+    }
+
+    .team-history {
+        font-size: 0.95em;
+    }
+
+    .team-sub {
+        font-size: 1.1em;
+    }
+}
+
+@media only screen and (max-width: 1060px) {
+
+    body {
+        font-size: 14px;
+    }
+
+    .motion-title {
+        font-size: 32px;
+    }
+
+    .main-header h1 {
+        float: none;
+        text-align: center;
+    }
+    .main-header nav {
+        float: none;
+        text-align: center;
+    }
+
+    .main-header nav > a {
+        padding: 20px 10px;
+    }
+
+    .main-header.active {
+        padding-bottom: 0;
+    }
+
+    .con {
+        width: 100%;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .ico {
+        height: 400px;
+        background-size: 100%;
+    }
+
+    .ico-page {
+        padding-top: 80px
+    }
+
+    .whitepaper-title-wrap {
+        float: none;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 2.5em;
+        background: none;
+        padding-left: 0;
+    }
+
+    .whitepaper-subtitle {
+        color: #666;
+        font-weight: 500;
+    }
+
+    .whitepaper-download {
+        float: none;
+        width: 100%;
+    }
+
+    .whitepaper-download-area {
+        float: none;
+        margin: 0 auto;
+        max-width: 100%;
+    }
+
+    .roadmapitem-con {
+        font-size: 0.95em;
+    }
+
+
+    .tokensale-details-list .tokensale-details-item {
+        font-size: 1.4em;
+    }
+
+    .tokensale-part > h2 {
+        margin-bottom: 20px;
+    }
+}
+
+/* mobile */
+
+@media only screen and (max-width: 768px) {
+
+    .m-hide {
+        display: none;
+    }
+
+    body {
+        font-size: 13px;
+    }
+
+
+    .ico-title {
+        font-size: 30px;
+    }
+
+    .btn1 {
+        line-height: 60px;
+        padding: 0 60px;
+        height: 60px;
+        font-size: 18px;
+    }
+
+    .whitepaper-download-area {
+
+    }
+    .whitepaper-part-2 {
+        font-size: 1em;
+    }
+    .whitepaper-part-2 > a {
+        padding: 0 10px;
+        line-height: 40px;
+        font-size: 1em;
+    }
+    .btn-menu {
+        display: block;
+        background: none;
+        font-size: 26px;
+        color: #fff;
+        float: right;
+        margin-top: 2px;
+        padding: 5px;
+    }
+    .main-header {
+        padding: 7px 0;
+        height: 55px;
+    }
+
+    .main-header h1 {
+        float: left;
+        text-align: left;
+        padding-top: 6px;
+    }
+
+    .main-header h1 img {
+        height: 25px;
+    }
+
+    .main-header nav {
+        width: 100%;
+        position: absolute;
+        top: 55px;
+        background: rgba(255,255,255,0.95);
+        left: 0;
+        border-bottom: 2px solid #333;
+        display: none;
+        opacity: 0;
+        transition: opacity 0.2s;
+        box-shadow: 0 3px 3px rgba(0,0,0,0.5);
+    }
+
+    .main-header nav.active {
+        display: block;
+        opacity: 1;
+    }
+
+    .main-header nav > a{
+        display: inline-block;
+        width: 100%;
+        border-bottom: 1px solid #ddd;
+        text-align: center;
+        padding: 12px 10px;
+        font-size: 1em;
+        color: #333;
+
+    }
+    .main-header.active {
+        padding: 0;
+    }
+
+    .con {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .features-item-odd .features-con {
+        padding-right: 3%;
+    }
+
+    .features-con {
+        padding-left: 3%;
+    }
+
+    .features-title {
+        margin-bottom: 15px;
+    }
+
+    ul.features-list > li {
+        margin-bottom: 6em;
+    }
+
+
+    .roadmap-body {
+        height: 400px;
+    }
+
+    .roadmap-list-wrap {
+        margin-top: 140px;
+
+    }
+    .roadmapitem-img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .roadmap-ob-1 {
+        height: 24px;
+        top: 16px;
+        left: 30px;
+    }
+
+    .roadmap {
+        padding: 6em 0;
+    }
+
+    .tokensale-title {
+        margin-bottom: 30px;
+    }
+
+    .tokensale-part {
+        margin-bottom: 5em;
+    }
+
+    .tokensale-distribution-chart {
+        padding: 0 10%;
+    }
+    /*ul.features-list > li {*/
+    /*margin-bottom: 20px;*/
+    /*}*/
+
+    /*.active .features-img {*/
+    /*width: 100%;*/
+    /*float: none;*/
+    /*}*/
+    /*.features-con {*/
+    /*width: 100%;*/
+    /*}*/
+
+}
+
+/* mobile */
+
+@media only screen and (max-width: 576px) {
+
+
+
+    body {
+        font-size: 14px;
+    }
+
+
+    .con {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .features {
+        padding: 60px 0;
+    }
+
+    .features-img {
+        width: 100%;
+        float: none;
+        margin-bottom: 20px;
+    }
+
+    .features-con {
+
+        width: 100%;
+        float: none;
+
+    }
+
+    .features-title {
+        margin-bottom: 10px;
+    }
+
+
+
+    .features-desc {
+        font-size: 1.1em;
+    }
+
+
+    ul.features-list > li {
+        margin-bottom: 60px;
+    }
+
+    .whitepaper-part-1 {
+        padding: 20px 20px;
+    }
+
+    .whitepaper-download-ico {
+        font-size: 30px;
+        width: 40px;
+    }
+    .whitepaper-download-title {
+        font-size: 1.3em;
+    }
+
+
+    .roadmap-body {
+        height: auto;
+    }
+
+    .roadmap-list-wrap {
+        margin: 0;
+    }
+
+    .roadmap-title {
+        margin-bottom: 60px;
+    }
+
+    .roadmap-list > li {
+        width: 100%;
+        float: none;
+        margin: 0 auto 25px;
+        overflow: hidden;
+        text-align: left;
+    }
+
+    .roadmapitem-title {
+        background: none;
+    }
+
+    .roadmapitem-img {
+        float: left;
+        margin-right: 30px;
+    }
+
+    .roadmapitem-title,
+    .roadmapitem-con
+    {
+        width: auto;
+        overflow: hidden;
+        padding: 0;
+    }
+
+    .roadmap-ob-1 {
+        width: 30px;
+        height: 1%;
+        left: 11px;
+        transition: height 0.8s ease-in;
+    }
+    .active .roadmap-ob-1{
+        width: 30px;
+        height: 90%;
+    }
+    .roadmapitem-title {
+        height: auto;
+        margin-bottom: 4px;
+    }
+    .roadmap-list-wrap {
+        width: 55%;
+        margin: 0 auto;
+    }
+
+    .stitle {
+        font-size: 2.2em;
+    }
+
+    .tokensale-part {
+        margin-bottom: 4em;
+    }
+
+    .tokensale-details-list > li {
+        display: block;
+        float: left;
+        width: 50%;
+        margin-bottom: 15px;
+
+    }
+
+    .tokensale-distribution-chart {
+        padding: 0;
+    }
+
+    .team, .investors, .advisors, .partners, .tokensale, .roadmap, .features {
+        padding: 60px 0;
+    }
+
+    ul.team-primary > li {
+        width: 50%;
+        margin-bottom: 25px;
+    }
+
+    .team-history {
+        font-size: 1em;
+    }
+
+    ul.team-secondary > li {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    ul.team-secondary .team-img {
+        float: left;
+        width: 100px;
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
+
+    .team-secondary-con {
+        height: auto;
+        width: auto;
+        overflow: hidden;
+    }
+
+    .team-secondary-con *{
+        text-align: left;
+    }
+
+    .team-secondary-con .team-history > li {
+        text-align: left;
+    }
+
+    .team-tit {
+        font-weight: 300;
+    }
+
+    ul.team-secondary .team-tit {
+        font-size: 1.3em;
+        margin-bottom: 3px;
+    }
+
+    .tokensale-plan > tbody td, .tokensale-plan > tbody th {
+        font-size: 1em;
+    }
+
+    .tokensale-plan .tokensale-plan-title {
+        font-size: 1.2em;
+        margin-bottom: 0;
+
+    }
+
+    .tokensale-plan > tbody td, .tokensale-plan > tbody th {
+        padding: 10px 5px;
+    }
+
+    .tokensale-plan > thead th {
+        padding: 10px 0;
+    }
+
+    .tokensale-plan .tokensale-plan-subtitle {
+        display: none;
+    }
+
+
+}
+

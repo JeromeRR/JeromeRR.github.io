@@ -1,89 +1,27 @@
 ! function () {
 
-    "use strict";
 
     //Init
 
+    function loading(_state){
 
-    // Canvas init
-    var arctx    = document.getElementById("mossland-ar").getContext("2d");
-    var realctx    = document.getElementById("mossland-reality").getContext("2d");
-    var bgImages = [];
+        if(_state =="show"){
+            $("#loading").addClass("active");
+        } else if(_state =="hide"){
+            $("#loading").removeClass("active");
+        }
 
-    var objectImages = {
-        'gorilla' : [],
-        'fly' : []
-    };
+    }
 
-    var bgImagesSrc = [
-        "img/main/device.png",
-        "img/main/r00.png",
-        "img/main/r01.png",
-        "img/main/r02.png",
-        "img/main/r03.jpg"
-        "img/main/r00.png",
-        "img/main/r01.png",
-        "img/main/r02.png",
-        "img/main/r03.jpg"
-    ];
+    loading('show');
 
-    var gorillaSpriteSrc  = "img/main/object/gorilla_sprite_800_compressed.png";
-    var flyBigSpriteSrc  = "img/main/object/dragon_big_sprite_1024_compressed.png";
-
-  
-
-    var gorillaImg = new Image() ;
-    var dragonBigImg = new Image() ;
-
-    gorillaImg.src = gorillaSpriteSrc;
-    dragonBigImg.src = flyBigSpriteSrc;
-
-
-    for(var i = 0; i<bgImagesSrc.length; i++){
-        bgImages[i] =new Image();
-        bgImages[i].src=bgImagesSrc[i];
-    };
-
-
-
-    // for(var k = 0; k<flySrc.length; k++){
-    //     var f = new Image();
-    //     f.src=flySrc[k];
-    //     objectImages.fly.push( f)
-    // };
-
-    //Object의 Frame rate 조절
-    var fps = 24;
-    var now;
-    var then = Date.now();
-    var interval = 1000/fps;
-    var delta;
-    var objectSrc={
-        'gorilla' : objectImages.gorilla[0],
-        'fly' :     objectImages.fly[0]
-    };
-
-
-    var objDragonOption = {
-        p0 : {x:1900, y:120},
-        p1 : {x:1200, y:150},
-        p2 : {x:800, y:300},
-        p3 : {x:300, y:400},
-        player : {x:0, y:0, speed:.002, t:0}
-    };
-
-    var objDragonBigOption = {
-        p0 : {x:300, y:400},
-        p1 : {x:500, y:700},
-        p2 : {x:1200, y:600},
-        p3 : {x:1900, y:500},
-        player : {x:0, y:0, speed:.009, t:0},
-    };
-
-
+    var imgLoadCount = 0
+    var imgCount = 0
 
     // AR 이미지의 에니메이션을 위한 스크롤 단계 값
     var frameStep = [3000,4000,4600];
+
+    var bgImages = [];
 
     // AR 이미지가 이동한 마지막 값
     var last = {
@@ -108,21 +46,7 @@
     var dragonBigFrame = 30;
     var dragonBigFrameCount = 0;
 
-
-    var flyFrame = 0;
-
-    var req;
-
-    //Parallex를 위한 마진비율
-    var arParallexMargin = 1.05;
-
-    var wWidth,wHeight,centerX,centerY,mouseX,mouseY,shiftX,shiftY,parallex,arCanvasWidth,arCanvasHeight,arTop,arLeft,realCanvasWidth,realCanvasHeight,realTop,realLeft;
-
-
-    var df = false;
-
     function displayInit(){
-
 
         //브라우져 크기
         wWidth = $(window).width();
@@ -154,7 +78,7 @@
         // var arCanvasWidth = 1920;
         // var arCanvasHeight = 965;
         arCanvasWidth = 2304;
-        arCanvasHeight = 1158;
+        arCanvasHeight = 1134;
         arTop = 0;
         arLeft = 0;
 
@@ -173,7 +97,7 @@
         realLeft = 0;
 
         // Wrapper Size rest
-        $(".motion").css({
+        $(".motion, #loading").css({
             width :     wWidth,
             height :    wHeight
         });
@@ -202,6 +126,8 @@
             height:     realCanvasHeight
         });
 
+
+
         $("#motionwrap").css({
             "width" : wWidth,
             "height" : frameStep[2] + wHeight
@@ -210,12 +136,99 @@
 
     displayInit();
 
+
+
+
+    var bgImagesSrc = [
+        "img/main/device_b.png",  //device frame
+        "img/main/r00.png",     //Reality bg
+        "img/main/r01.png",     //Reality bg
+        "img/main/r02.png",     //Reality bg
+        "img/main/r03.jpg",     //Reality bg
+        "img/main/m00.png",     //AR bg
+        "img/main/m01.png",     //AR bg
+        "img/main/m02.png",     //AR bg
+        "img/main/m03.jpg"      //AR bg
+    ];
+
+    var gorillaSpriteSrc  = "img/main/object/gorilla_sprite_800_compressed.png";
+    var flyBigSpriteSrc  = "img/main/object/dragon_big_sprite_1024_compressed.png";
+
+    var gorillaImg = new Image() ;
+    imgCount ++;
+
+    var dragonBigImg = new Image() ;
+    imgCount ++;
+
+    gorillaImg.onload = function(){
+        checkload();
+    };
+
+    dragonBigImg.onload = function(){
+        checkload();
+    };
+
+    gorillaImg.src = gorillaSpriteSrc;
+    dragonBigImg.src = flyBigSpriteSrc;
+
+    imgCount += bgImagesSrc.length;
+
+    for(var i = 0; i<bgImagesSrc.length; i++){
+        bgImages[i] =new Image();
+        bgImages[i].onload = function(){
+            checkload();
+        };
+        bgImages[i].src=bgImagesSrc[i];
+    };
+
+    function checkload(){
+        imgLoadCount ++;
+        if( imgCount == imgLoadCount ){
+            loading('hide');
+            run();
+        }
+    }
+
+
+
+
+
+
+
+    // Canvas init
+    var arctx    = document.getElementById("mossland-ar").getContext("2d");
+    var realctx    = document.getElementById("mossland-reality").getContext("2d");
+
+
+    //Object의 Frame rate 조절
+    var fps = 24;
+    var now;
+    var then = Date.now();
+    var interval = 1000/fps;
+    var delta;
+
+
+    var objDragonBigOption = {
+        p0 : {x:300, y:200},
+        p1 : {x:500, y:100},
+        p2 : {x:1200, y:300},
+        p3 : {x:1900, y:100},
+        player : {x:0, y:0, speed:.001, t:0},
+    };
+
+    var req;
+    //Parallex를 위한 마진비율
+    var arParallexMargin = 1.05;
+    var wWidth,wHeight,centerX,centerY,mouseX,mouseY,shiftX,shiftY,parallex,arCanvasWidth,arCanvasHeight,arTop,arLeft,realCanvasWidth,realCanvasHeight,realTop,realLeft;
+    var df = false;
+
+
     $(window).scroll(function(){
 
         var scrollTop = $(window).scrollTop();
         if( scrollTop > frameStep[2] ) {
             $(".motion").css({
-               "position" : "absolute",
+                "position" : "absolute",
                 "bottom" : "0"
             });
         } else {
@@ -301,7 +314,7 @@
             last.arImgY = arImgY;
             last.temp = arImgY;
 
-        //크기를 고정하고 이동
+            //크기를 고정하고 이동
         } else if(scrollTop < frameStep[2]){
 
             //크기를 고정한다
@@ -350,7 +363,6 @@
             // So we have to get rid of that extra 12ms
             // by subtracting delta (112) % interval (100).
             // Hope that makes sense.
-
             then = now - (delta % interval);
 
             gorillaFrameCount ++
@@ -363,16 +375,6 @@
             if( dragonBigFrameCount > dragonBigFrame-1 ){
                 dragonBigFrameCount = 0;
             }
-
-            // if((objectImages.fly[flyFrame])){
-            //     var flySrc = objectImages.fly[flyFrame];
-            //     flyFrame ++
-            // } else {
-            //     var flySrc = objectImages.fly[0];
-            //     flyFrame  = 0
-            // }
-
-            // 
         }
 
     }
@@ -381,10 +383,10 @@
 
         // arctx.drawImage(objectSrc['gorilla'],795+parallex.x2,210+parallex.y2,500,500);
 
-        var gorillaX =          880+parallex.x2;
-        var gorillaY =          190+parallex.y2;
-        var gorillaWidth =      600;
-        var gorillaHeight =     600;
+        var gorillaX =          960+parallex.x2;
+        var gorillaY =          400+parallex.y2;
+        var gorillaWidth =      385;
+        var gorillaHeight =     385;
         var gorillaDx =         gorillaFrameCount*800;
         var gorillaDY =         0;
         var gorillaDw =         800;
@@ -404,42 +406,9 @@
         }
     }
 
-    function animateDragon(){
 
-        var flyX,flyY,flyWidth,flyHeight;
-
-        flyWidth = 300;
-        flyHeight = 300;
-
-        var t = objDragonOption.player.t;
-
-        var cx = 3 * (objDragonOption.p1.x - objDragonOption.p0.x)
-        var bx = 3 * (objDragonOption.p2.x - objDragonOption.p1.x) - cx;
-        var ax = objDragonOption.p3.x - objDragonOption.p0.x - cx - bx;
-
-        var cy = 3 * (objDragonOption.p1.y - objDragonOption.p0.y);
-        var by = 3 * (objDragonOption.p2.y - objDragonOption.p1.y) - cy;
-        var ay = objDragonOption.p3.y - objDragonOption.p0.y - cy - by;
-
-        var xt = ax*(t*t*t) + bx*(t*t) + cx*t + objDragonOption.p0.x;
-        var yt = ay*(t*t*t) + by*(t*t) + cy*t + objDragonOption.p0.y;
-
-        objDragonOption.player.t += objDragonOption.player.speed;
-
-        if (objDragonOption.player.t > 1) {
-            objDragonOption.player.t = 0;
-        }      //draw the points
-
-        objDragonOption.player.x = xt-flyWidth/2;
-        objDragonOption.player.y = yt-flyHeight/2;
-
-        arctx.drawImage(objectSrc['fly'],objDragonOption.player.x,objDragonOption.player.y,flyWidth,flyHeight);
-
-    }
 
     function animateDragonBig(){
-
-
 
         var imgWidth =      1024;
         var imgHeight =     1024;
@@ -522,14 +491,11 @@
 
 
 
-
-
-
     $(window).resize(function(){
         displayInit();
     });
 
-    run();
+
 
 
 
