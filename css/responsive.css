@@ -261,6 +261,16 @@
     /*width: 100%;*/
     /*}*/
 
+    .footer-whitepaper {
+        float: none;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .social {
+        float: none;
+        text-align: center;
+    }
+
 }
 
 /* mobile */

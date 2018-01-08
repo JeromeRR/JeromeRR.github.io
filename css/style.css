@@ -740,6 +740,14 @@ footer.main-footer {
     font-size: 0.95em;
 }
 
+footer.main-footer a{
+    color: #dbdbdb;
+}
+
+footer.main-footer a:hover{
+    text-decoration: underline;
+}
+
 .main-header {
     position: fixed;
     width: 100%;
@@ -830,7 +838,8 @@ address {
 }
 
 .social {
-    margin-bottom: 25px;
+    /*margin-bottom: 25px;*/
+    float: right;
 }
 
 .social > a{
@@ -933,3 +942,23 @@ address {
 .scrolldown > i{
     font-size: 30px;
 }
+
+.rr-logo {
+    margin-bottom: 20px;
+}
+
+.footer-whitepaper {
+    float: left;
+}
+
+.footer-whitepaper > span{
+    color: #666;
+    margin-right: 5px;
+    line-height: 30px;
+    font-weight: 100;
+}
+
+.footer-whitepaper > select{
+    height: 30px;
+}
+

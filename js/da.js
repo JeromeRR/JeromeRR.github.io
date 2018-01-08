@@ -32,5 +32,11 @@ $(function(){
         $(".nav").toggleClass('active');
     });
 
+    $("#footer-whitepaper-download").change(function(){
+
+        if($(this).val() != ''){
+            window.open( $(this).val() );
+        }
+    })
 
 });
