@@ -3,6 +3,7 @@
 #motionwrap {
     position: relative;
     background: #333;
+    height: 2000px;
 }
 
 .motion {
