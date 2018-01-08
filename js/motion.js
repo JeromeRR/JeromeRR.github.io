@@ -422,7 +422,6 @@ var moss = (function(){
         parallex.x3 = - rx/ (parallex_sen * 3);
         parallex.x4 = - rx/ (parallex_sen * 1);
 
-        console.log(parallex.x1);
 
         parallex.y1 = ry/ (parallex_sen * 10);
         parallex.y2 = ry/ (parallex_sen * 6);
