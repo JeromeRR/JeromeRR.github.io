@@ -28,6 +28,13 @@
         font-size: 14px;
     }
 
+    .motion-logo {
+        top: 40%;
+        height: 300px;
+        margin-top: -150px;
+
+    }
+
     .motion-title {
         font-size: 32px;
     }
@@ -106,6 +113,14 @@
 /* mobile */
 
 @media only screen and (max-width: 768px) {
+
+
+    .motion-logo {
+        top: 50%;
+        height: 200px;
+        margin-top: -100px;
+    }
+
 
     .m-hide {
         display: none;
