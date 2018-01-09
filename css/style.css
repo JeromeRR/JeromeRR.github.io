@@ -76,15 +76,21 @@ li {
     padding-top: 190px;
 }
 
-.ico-title {
+#upcomming .ico-title {
     font-size: 36px;
     font-weight: 100;
-    margin-bottom: 60px;
+    margin-bottom: 10px;
 }
 
-.ico-title > strong{
+#upcomming .ico-title > strong{
     color: #b72c2c;
     font-weight: 900;
+}
+
+#upcomming .ico-subtitle {
+    font-size: 1.2em;
+    margin-bottom: 60px;
+    font-weight: 300;
 }
 
 #upcomming.ico-page {
@@ -105,11 +111,20 @@ li {
     box-shadow: 4px 4px 0 rgba(0,0,0,0.17);
 }
 
-.upcomming-subtitle {
-    color: #728294;
-    padding: 20px 0;
-
+.btn1:hover {
+    background: #981b1b;
 }
+
+.upcomming-subtitle {
+
+    padding: 20px 0;
+}
+
+.upcomming-subtitle > a{
+    color: #728294;
+    text-decoration: underline;
+}
+
 
 
 .features {
@@ -374,7 +389,7 @@ ul.features-list > li:last-child{
 
 .roadmap-list > li{
     float: left;
-    width: 14.2%;
+    width: 16.66%;
     text-align: center;
 }
 
@@ -409,9 +424,9 @@ ul.features-list > li:last-child{
 .active .roadmap-item-06 .roadmapitem-img {
     transition-delay: 0.25s;
 }
-.active .roadmap-item-07 .roadmapitem-img {
-    transition-delay: 0.3s;
-}
+/*.active .roadmap-item-07 .roadmapitem-img {*/
+    /*transition-delay: 0.3s;*/
+/*}*/
 
 .active .roadmap-ob-1 {
     width: 85%;
@@ -534,7 +549,7 @@ ul.features-list > li:last-child{
 .tokensale-plan .tokensale-plan-title {
     font-size: 1.5em;
     color: #fff;
-    margin-bottom: 10px;
+    /*margin-bottom: 10px;*/
     font-weight: 100;
 }
 
@@ -542,6 +557,7 @@ ul.features-list > li:last-child{
     font-size: 1em;
     color: #bdbec1;
     font-weight: 500;
+    margin-top: 10px;
 }
 
 .tokensale-plan > tbody td,
@@ -555,6 +571,11 @@ ul.features-list > li:last-child{
 
 .tokensale-plan > tbody th {
     font-weight: 700;
+}
+
+.tokensale-plan > tbody th.thborder{
+    border-right: 1px solid #8c8f94;
+    border-left: 1px solid #8c8f94;
 }
 
 .tokensale-distribution-chart {
@@ -965,4 +986,5 @@ address {
 .footer-whitepaper > select{
     height: 30px;
 }
+
 
