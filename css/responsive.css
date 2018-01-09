@@ -19,6 +19,7 @@
 
     .team-sub {
         font-size: 1.1em;
+        margin-bottom: 10px;
     }
 }
 
@@ -26,6 +27,12 @@
 
     body {
         font-size: 14px;
+    }
+
+    .team-history > li {
+        text-align: left;
+        line-height: 1.2em;
+        margin-bottom: 7px;
     }
 
     .motion-logo {
@@ -115,6 +122,14 @@
 @media only screen and (max-width: 768px) {
 
 
+    .team-primary-con {
+        height: 200px;
+    }
+    .team-history > li {
+        text-align: left;
+        line-height: 1.2em;
+        margin-bottom: 7px;
+    }
     .d-hide {
         display:block;
     }
@@ -441,9 +456,6 @@
         margin-bottom: 25px;
     }
 
-    .team-history {
-        font-size: 1em;
-    }
 
     ul.team-secondary > li {
         width: 100%;

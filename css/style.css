@@ -720,6 +720,11 @@ ul.team-primary .team-img {
     overflow: hidden;
 }
 
+.advisors .team-primary-con {
+    height: 230px;
+    overflow: hidden;
+}
+
 
 
 ul.team-secondary {
