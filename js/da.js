@@ -37,6 +37,14 @@ $(function(){
         if($(this).val() != ''){
             window.open( $(this).val() );
         }
-    })
+    });
+
+
+    $("#btn-whitelist").click(function(){
+
+        alert('whitelist 등록은 1월 15일부터 시작합니다.');
+        window.open('https://eepurl.com/dgCDUT');
+        return false;
+    });
 
 });
