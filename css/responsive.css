@@ -125,6 +125,9 @@
         margin-top: -100px;
     }
 
+    #upcomming .ico-subtitle {
+        margin-bottom: 30px;
+    }
 
     .m-hide {
         display: none;
