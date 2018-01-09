@@ -581,6 +581,13 @@ ul.features-list > li:last-child{
     border-left: 1px solid #8c8f94;
 }
 
+.tokensale-subtext {
+    font-size: 0.95em;
+    color: #bdbec1;
+    font-weight: 400;
+    margin-top: 8px;
+}
+
 .tokensale-distribution-chart {
     text-align: center;
     padding: 0 20%;

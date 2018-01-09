@@ -42,7 +42,7 @@ $(function(){
 
     $("#btn-whitelist").click(function(){
 
-        alert('whitelist 등록은 1월 15일부터 시작합니다.');
+        alert('Official KYC process will start on Jan 15, 2018. Please leave your email address to initiate the process.');
         window.open('https://eepurl.com/dgCDUT');
         return false;
     });
