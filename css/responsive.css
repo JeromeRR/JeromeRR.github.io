@@ -30,7 +30,6 @@
     }
 
     .team-history > li {
-        text-align: left;
         line-height: 1.2em;
         margin-bottom: 7px;
     }
@@ -126,7 +125,6 @@
         height: 200px;
     }
     .team-history > li {
-        text-align: left;
         line-height: 1.2em;
         margin-bottom: 7px;
     }
@@ -153,7 +151,7 @@
     }
 
 
-    .ico-title {
+    #upcomming .ico-title {
         font-size: 30px;
     }
 
