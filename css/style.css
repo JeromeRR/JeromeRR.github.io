@@ -849,43 +849,41 @@ address {
 }
 
 .social > a{
+
     display: inline-block;
-    overflow: hidden;
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
-    background-image:url('../img/social.png');
-    background-repeat: no-repeat;
-    text-indent: -100000px;
+    padding-top: 3px;
+    line-height: 30px;
+    font-size: 26px;
     margin: 0 11px;
     position: relative;
     top: 0;
     transition: top 0.2s;
+    color: #888;
 }
 
 .social > a:hover{
     top: -4px;
 }
 
-.social > a.social-facebook{
-    background-position: -30px 0;
-}
+/*.social > a.social-facebook{*/
+    /*background-position: -30px 0;*/
+/*}*/
 
-.social > a.social-telegram{
-    background-position: -90px 0;
-}
+/*.social > a.social-telegram{*/
+    /*background-position: -90px 0;*/
+/*}*/
 
-.social > a.social-twitter{
-    background-position: -120px 0;
-}
+/*.social > a.social-twitter{*/
+    /*background-position: -120px 0;*/
+/*}*/
 
-.social > a.social-kakaotalk{
-    background-position: -60px 0;
-}
+/*.social > a.social-kakaotalk{*/
+    /*background-position: -60px 0;*/
+/*}*/
 
-.social > a.social-email{
-    background-position: 0 0;
-}
+/*.social > a.social-email{*/
+    /*background-position: 0 0;*/
+/*}*/
 
 
 .maintop {
