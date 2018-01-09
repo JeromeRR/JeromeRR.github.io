@@ -216,7 +216,7 @@ ul.features-list > li:last-child{
 
 .whitepaper {
     background: #f2f2f2;
-    padding: 4.68em 0;
+    padding: 5em 0;
 }
 
 .whitepaper-title {
@@ -224,11 +224,13 @@ ul.features-list > li:last-child{
 }
 
 .whitepaper-title-wrap {
-    float: left;
-    width: 50%;
-    padding-left: 50px;
-    background: url('../img/paper.png') left top no-repeat;
-    background-size: 70px 79px;
+    /*float: left;*/
+    /*width: 50%;*/
+    /*padding-left: 50px;*/
+    /*background: url('../img/paper.png') left top no-repeat;*/
+    /*background-size: 70px 79px;*/
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 .whitepaper-subtitle {
@@ -240,23 +242,24 @@ ul.features-list > li:last-child{
 
 
 .whitepaper-download {
-    float: right;
-    width: 50%;
+    margin: 0 auto;
 }
 
 .whitepaper-download-area {
     background: #3c8ee3;
     color: #fff;
-    float: right;
+    /*float: right;*/
     transition: width 0.2s;
     height: 80px;
     overflow: hidden;
-    width: 400px;
+    width: 450px;
     position: relative;
+    margin: 0 auto;
+
 }
 
 .whitepaper-download-area.active {
-    width: 530px;
+    width: 650px;
 }
 
 .whitepaper-download-title {
