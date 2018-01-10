@@ -392,7 +392,7 @@ ul.features-list > li:last-child{
 
 .roadmap-list > li{
     float: left;
-    width: 16.66%;
+    width: 14.2%;
     text-align: center;
 }
 
@@ -427,9 +427,9 @@ ul.features-list > li:last-child{
 .active .roadmap-item-06 .roadmapitem-img {
     transition-delay: 0.25s;
 }
-/*.active .roadmap-item-07 .roadmapitem-img {*/
-    /*transition-delay: 0.3s;*/
-/*}*/
+.active .roadmap-item-07 .roadmapitem-img {
+    transition-delay: 0.3s;
+}
 
 .active .roadmap-ob-1 {
     width: 85%;
