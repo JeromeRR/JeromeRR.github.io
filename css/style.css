@@ -888,7 +888,6 @@ address {
 }
 
 .social > a{
-
     display: inline-block;
     padding-top: 3px;
     line-height: 30px;
@@ -899,6 +898,8 @@ address {
     transition: top 0.2s;
     color: #888;
 }
+
+
 
 .social > a:hover{
     top: -4px;
