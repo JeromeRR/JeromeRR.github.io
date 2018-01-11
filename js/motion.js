@@ -25,13 +25,13 @@ var moss = (function(){
     // AR 이미지의 에니메이션을 위한 스크롤 단계 값
     var SCROLL_MOTION = {
         STEP1 : {
-            SCROLL : 3000
+            SCROLL : 2500
         },
         STEP2 : {
-            SCROLL: 5000
+            SCROLL: 2900
         },
         STEP3 : {
-            SCROLL : 5200
+            SCROLL : 2900
         },
         LAST : {
             W : 0,
@@ -441,7 +441,7 @@ var moss = (function(){
     function motionAR(scrollTop){
 
 
-        var t = scrollTop / 4600;
+        var t = scrollTop / 2000;
         if(t > 1){
             t = 1;
         }
