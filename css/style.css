@@ -337,9 +337,7 @@ ul.features-list > li:last-child{
     color: #fff;
 }
 
-.roadmap {
-    padding: 8.75em 0;
-}
+
 
 .roadmap-title {
     text-align: center;
@@ -601,14 +599,19 @@ ul.features-list > li:last-child{
     display: none;
 }
 .team,
-.investors,
-.advisors{
+.roadmap{
    padding: 7em 0;
+}
+
+.investors,
+.advisors {
+    padding-bottom: 7em;
 }
 
 .team-title,
 .investors-title,
-.advisors-title {
+.advisors-title,
+.roadmap-title {
     text-align: center;
     margin-bottom: 50px;
 }
