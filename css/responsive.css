@@ -33,6 +33,10 @@
         margin-bottom: 7px;
     }
 
+    .timer {
+        width: 70%;
+    }
+
     .motion-logo {
         top: 40%;
         height: 300px;
@@ -132,6 +136,16 @@
     }
     .d-hide {
         display:block;
+    }
+
+    .timer {
+        width: 90%;
+    }
+    .timer li {
+        padding: 12px;
+    }
+    .timer-str {
+        font-size: 48px;
     }
 
     .motion-logo {
@@ -574,6 +588,18 @@
 
     .pressitem-media > img {
         height: 35px;
+    }
+
+    .timer {
+        width: 100%;
+    }
+
+    .timer-str {
+        font-size: 42px;
+    }
+
+    .ico {
+        background-size: 180%;
     }
 
 }
