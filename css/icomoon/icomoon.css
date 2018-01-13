@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?o1eao9');
-  src:  url('fonts/icomoon.eot?o1eao9#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?o1eao9') format('truetype'),
-    url('fonts/icomoon.woff?o1eao9') format('woff'),
-    url('fonts/icomoon.svg?o1eao9#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?2hrkn2');
+  src:  url('fonts/icomoon.eot?2hrkn2#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?2hrkn2') format('truetype'),
+    url('fonts/icomoon.woff?2hrkn2') format('woff'),
+    url('fonts/icomoon.svg?2hrkn2#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,14 +24,56 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-telegram:before {
-  content: "\e901";
+.icon-arrow-left:before {
+  content: "\e909";
 }
-.icon-email:before {
-  content: "\e902";
+.icon-chevron-left:before {
+  content: "\e90a";
+}
+.icon-chevron-thin-left:before {
+  content: "\e908";
+}
+.icon-linkedin3:before {
+  content: "\e907";
 }
 .icon-kakaotalk:before {
+  content: "\e906";
+}
+.icon-menu-button:before {
   content: "\e900";
+}
+.icon-menu:before {
+  content: "\e901";
+}
+.icon-down2:before {
+  content: "\e902";
+}
+.icon-down:before {
+  content: "\e903";
+}
+.icon-telegram:before {
+  content: "\e905";
+}
+.icon-envelope:before {
+  content: "\e904";
+}
+.icon-download:before {
+  content: "\e960";
+}
+.icon-download3:before {
+  content: "\e9c7";
+}
+.icon-arrow-left2:before {
+  content: "\ea40";
+}
+.icon-amazon:before {
+  content: "\ea87";
+}
+.icon-google-plus:before {
+  content: "\ea8b";
+}
+.icon-google-drive:before {
+  content: "\ea8f";
 }
 .icon-facebook:before {
   content: "\ea90";
@@ -39,6 +81,30 @@
 .icon-twitter:before {
   content: "\ea96";
 }
+.icon-youtube:before {
+  content: "\ea9d";
+}
+.icon-github:before {
+  content: "\eab0";
+}
+.icon-appleinc:before {
+  content: "\eabe";
+}
+.icon-android:before {
+  content: "\eac0";
+}
+.icon-skype:before {
+  content: "\eac5";
+}
 .icon-linkedin:before {
   content: "\eac9";
+}
+.icon-linkedin2:before {
+  content: "\eaca";
+}
+.icon-chrome:before {
+  content: "\ead9";
+}
+.icon-file-pdf:before {
+  content: "\eadf";
 }

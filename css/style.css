@@ -277,7 +277,7 @@ ul.features-list > li:last-child{
 .whitepaper-download-ico {
     float: left;
     width: 50px;
-    font-size: 40px;
+    font-size: 30px;
     color: #fff;
 }
 
@@ -675,19 +675,19 @@ ul.team-primary .team-img {
 
 .team-img > a {
     position: absolute;
-    bottom: 0px;
-    right: 12px;
+    bottom: 6px;
+    right: 6px;
     transition: bottom 0.2s;
 }
 
 .team-img > a:hover {
-    bottom: 4px;
+    bottom: 10px;
 }
 
 
 .team-img > a > i{
-    color: #fff;
-    font-size: 40px;
+    color: #eee;
+    font-size: 30px;
 }
 
 .advisors .team-tit {
@@ -807,7 +807,7 @@ footer.main-footer a:hover{
 
 .main-header.active {
     padding: 20px 0;
-    background: rgba(0,82,152,0.8);
+    background: rgba(0,177,206,0.9);
 }
 
 .main-header h1{
@@ -940,7 +940,7 @@ address {
 
 .main-header.mobile {
     position: fixed;
-    background: #2067a3;
+    background: #00b1ce;
 }
 
 #main.mobile {

@@ -855,8 +855,7 @@ var moss_lite = function(){
 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
     moss_lite();
 } else {
-    //moss();
-    moss_lite();
+    moss();
 }
 
 
