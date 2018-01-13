@@ -599,7 +599,8 @@ ul.features-list > li:last-child{
     display: none;
 }
 .team,
-.roadmap{
+.roadmap,
+.press{
    padding: 7em 0;
 }
 
@@ -617,7 +618,7 @@ ul.features-list > li:last-child{
 }
 
 .partners {
-    border-top: 1px solid #ccc;
+    /*border-top: 1px solid #ccc;*/
     padding: 7.5em 0;
 }
 
@@ -720,7 +721,7 @@ ul.team-primary .team-img {
 }
 
 .team-primary-con {
-    height: 180px;
+    height: 195px;
     overflow: hidden;
 }
 
@@ -1010,3 +1011,98 @@ address {
 }
 
 
+
+.press {
+    background: #f3f3f3;
+}
+
+
+.press-header {
+    float: left;
+    width: 20%;
+    text-align: left;
+}
+
+.press-con {
+    float: right;
+    width: 75%;
+}
+
+ul.press-primary {
+    margin-left: -12px;
+    margin-right: -12px;
+    margin-bottom: 24px;
+}
+
+ul.press-primary > li {
+    width: 33.3%;
+    float: left;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.pressitem-img {
+    height: 175px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pressitem-thumb01 {
+    background-image: url('../img/media/thumb_01.jpg');
+}
+.pressitem-thumb02 {
+    background-image: url('../img/media/thumb_02.jpg');
+}
+.pressitem-thumb03 {
+    background-image: url('../img/media/thumb_03.jpg');
+}
+
+.pressitem-con {
+    height: 145px;
+    overflow: hidden;
+    padding: 10px 20px 20px;
+    background: #fff;
+}
+
+.pressitem-media > img{
+    height: 45px;
+}
+
+.pressitem-desc {
+    color: #666;
+    line-height: 1.4em;
+    font-weight: 300;
+}
+.press-secondary {
+    background: #fff;
+    overflow: hidden;
+    padding: 25px;
+    width: 100%;
+}
+
+.press-secondary > a {
+    float: left;
+    width: 16.66%;
+    padding: 10px;
+}
+
+.press-secondary > a:hover img {
+    opacity: 1;
+    filter: grayscale(0%);
+}
+
+.press-secondary > a > img{
+    width: 100%;
+    filter: grayscale(100%);
+    opacity: 0.5;
+    transition: opacity 0.5s,filter 0.5s;
+}
+
+.press-subtitle {
+    line-height: 1.5em;
+    color: #999;
+    font-weight: 300;
+    margin-top: 25px;
+}
