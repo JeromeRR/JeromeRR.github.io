@@ -43,6 +43,7 @@
         gtag('config', 'UA-112022406-1');
     </script>
     <script type="text/javascript" src="js/vendor/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/vendor/easytimer.min.js"></script>
     <!--[if lt IE 9]>
     <script type="text/javascript" src="js/vendor/html5shiv.min.js"></script>
     <![endif]-->
@@ -113,6 +114,36 @@
                     <div class="ico-subtitle">
                         Only whitelisted users after KYC process can participate in the Pre ICO of the Mossland.
                     </div>
+                    <ul class="timer">
+                        <li>
+                            <div class="timer-title">
+                                DAYS
+                            </div>
+                            <div class="timer-str" id="timer-days">0</div>
+                        </li>
+                        <li>
+                            <div class="timer-title">
+                                HOURS
+                            </div>
+                            <div class="timer-str" id="timer-hours">0</div>
+                        </li>
+                        <li>
+                            <div class="timer-title">
+                                MINUTES
+                            </div>
+                            <div class="timer-str" id="timer-minutes">0</div>
+                        </li>
+                        <li>
+                            <div class="timer-title">
+                                SECONDS
+                            </div>
+                            <div class="timer-str" id="timer-seconds">0</div>
+                        </li>
+                    </ul>
+
+                    <script type="text/javascript">
+                        mosstimer(2018,1,29);
+                    </script>
                     <div>
                         <a class="btn1" href="#" id="btn-whitelist">Add me to the Whitelist</a>
                         <div class="upcomming-subtitle">
@@ -1028,7 +1059,6 @@
                     <h1 class="press-title stitle">Press</h1>
                     <div class="press-subtitle">
                         News about Mosscoin and Reality Reflection. <br />
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                     </div>
                 </header>
                 <div class="press-con">

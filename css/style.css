@@ -66,14 +66,14 @@ li {
 
 
 .ico {
-    height: 600px;
+    padding: 60px 0;
     background: #ebebeb url('../img/bg_ico.png') center bottom repeat-x;
+    background-size: 100% auto;
 }
 
 .ico-page {
     display: none;
     text-align: center;
-    padding-top: 190px;
 }
 
 #upcomming .ico-title {
@@ -83,13 +83,13 @@ li {
 }
 
 #upcomming .ico-title > strong{
-    color: #b72c2c;
+    color: #00b1ce;
     font-weight: 900;
 }
 
 #upcomming .ico-subtitle {
-    font-size: 1.2em;
-    margin-bottom: 60px;
+    font-size: 1.1em;
+    margin-bottom: 30px;
     font-weight: 300;
 }
 
@@ -104,15 +104,15 @@ li {
     text-align: center;
     line-height: 72px;
     padding: 0 90px;
-    background: #b72c2c;
+    background: #00b1ce;
     color: #fff;
     border-radius: 35px;
     font-weight: 300;
-    box-shadow: 4px 4px 0 rgba(0,0,0,0.17);
+    /*box-shadow: 4px 4px 0 rgba(0,0,0,0.17);*/
 }
 
 .btn1:hover {
-    background: #981b1b;
+    background: #29bbd3;
 }
 
 .upcomming-subtitle {
@@ -203,7 +203,7 @@ ul.features-list > li:last-child{
 
 .features-desc {
     color: #888;
-    font-size: 1.25em;
+    font-size: 1.15em;
     font-weight: 300;
     line-height: 1.5em;
 }
@@ -1110,4 +1110,32 @@ ul.press-primary > li a:hover .pressitem-desc{
     color: #999;
     font-weight: 300;
     margin-top: 25px;
+}
+
+.timer {
+    width: 50%;
+    overflow: hidden;
+    margin: 0 auto 80px;
+}
+
+.timer li{
+    width: 23%;
+    float: left;
+    padding: 20px;
+    margin: 0 1%;
+    background: rgba(255,255,255,0.6);
+
+
+}
+
+.timer-title {
+    font-size: 0.8em;
+    color: #728294;
+    margin-bottom: 4px;
+}
+
+.timer-str {
+    font-size: 60px;
+    font-weight: 100;
+    line-height: 1;
 }

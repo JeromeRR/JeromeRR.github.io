@@ -1,3 +1,19 @@
+function mosstimer(_year,_month,_day){
+
+    var timer = new Timer();
+    var today = new Date();
+    var thedate = new Date(_year,_month-1,_day);
+    var diffdate = thedate-today;
+    var sec  = diffdate / 1000;
+    timer.start({countdown: true, startValues: {seconds: sec}});
+    timer.addEventListener('secondsUpdated', function (e) {
+        var time =  timer.getTimeValues();
+        $("#timer-days").html(time.days);
+        $("#timer-hours").html(time.hours);
+        $("#timer-minutes").html(time.minutes);
+        $("#timer-seconds").html(time.seconds);
+    });
+}
 
 
 $(function(){
@@ -46,5 +62,6 @@ $(function(){
         window.open('https://eepurl.com/dgCDUT');
         return false;
     });
+
 
 });
