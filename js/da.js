@@ -58,9 +58,9 @@ $(function(){
 
     $("#btn-whitelist").click(function(){
 
-        alert('Official KYC process will start on Jan 15, 2018. Please leave your email address to initiate the process.');
-        window.open('https://eepurl.com/dgCDUT');
-        return false;
+        //alert('Official KYC process will start on Jan 15, 2018. Please leave your email address to initiate the process.');
+        //window.open('https://eepurl.com/dgCDUT');
+        //return false;
     });
 
 
