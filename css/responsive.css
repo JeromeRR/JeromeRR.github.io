@@ -598,6 +598,10 @@
         font-size: 42px;
     }
 
+    .team-img > a > i {
+        font-size: 30px;
+    }
+
     .ico {
         background-size: 180%;
     }

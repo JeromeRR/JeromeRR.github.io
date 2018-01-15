@@ -686,8 +686,12 @@ ul.team-primary .team-img {
 
 
 .team-img > a > i{
-    color: #eee;
-    font-size: 30px;
+    color: #fff;
+    font-size: 26px;
+}
+
+.team-img > a > i.dark{
+    color: #999;
 }
 
 .advisors .team-tit {
