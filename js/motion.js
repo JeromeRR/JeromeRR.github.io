@@ -463,11 +463,10 @@ var moss = (function(){
 // Motion AR image
     function motionAR(scrollTop){
 
-
-        var t = scrollTop / 2000;
+        var t = scrollTop / SCROLL_MOTION.STEP3.SCROLL;
         if(t > 1){
             t = 1;
-        }
+        };
 
         var cx = 3 * (SCROLL_MOTION.STEP2.X - SCROLL_MOTION.STEP1.X);
         var ax = SCROLL_MOTION.STEP3.X - SCROLL_MOTION.STEP1.X - cx  ;
@@ -731,6 +730,26 @@ var moss = (function(){
     $(window).resize(function(){
         initDisplay();
     });
+
+    //$(window).on('mousewheel',function(e){
+    //
+    //    e.preventDefault();
+    //
+    //    var deltaY = e.originalEvent.deltaY;
+    //
+    //    if(deltaY < 0){
+    //        deltaY -= 400;
+    //    }else {
+    //        deltaY += 400;
+    //    };
+    //
+    //    setTimeout(function(){
+    //        $('html, body').stop(true,false).animate({
+    //            scrollTop : $(window).scrollTop()+deltaY
+    //        },400,'easeOutQuad')
+    //    },100)
+    //
+    //});
 
 
     $(window).scroll(function(){
