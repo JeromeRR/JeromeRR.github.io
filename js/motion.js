@@ -3,7 +3,7 @@ var moss = (function(){
 
     var imgLoadCount = 0;
     var imgCount = 0;
-    var pointer;
+    var pointer={};
     var parallex_sen = 4;
     var motionOff = false;
 
@@ -320,13 +320,14 @@ var moss = (function(){
 
         // Parallex 효과를 위한 pointer 변수
         // canvas-pointer.js
-        var canvaspara  = ge1doot.canvas("mossland-reality");
+        //var canvaspara  = ge1doot.canvas("mossland-reality");
         // pointer
-        pointer = canvaspara.pointer;
-        pointer.cx  = pointer.x = realCanvasWidth / 2;
-        pointer.cy  = pointer.y = realCanvasHeight / 2;
-        pointer.y = realCanvasHeight;
+        //pointer = canvaspara.pointer;
 
+        pointer.x  =  0;
+        pointer.y  =  0;
+        pointer.cx  =  realCanvasWidth / 2;
+        pointer.cy  =  realCanvasHeight / 2;
 
         // Wrapper Size rest
         $(".motion, #loading").css({
@@ -398,10 +399,32 @@ var moss = (function(){
         } else {
             $("#roadmap").removeClass('active');
         }
-
     };
 
+
+
     function initParallex(){
+
+        // ease pointer
+        pointer.cx += (pointer.x - pointer.cx) / 10;
+        pointer.cy += (pointer.y - pointer.cy) / 10;
+        var rx = -((realCanvasWidth  / 2) - Math.max(15, Math.min(pointer.cx, realCanvasWidth - 15))) / 7;
+        var ry = -((realCanvasHeight / 2) - Math.max(0, Math.min(pointer.cy, realCanvasHeight - 5))) / 4.75;
+
+        parallex.x1 = - rx/ (parallex_sen * 10);
+        parallex.x2 = - rx/ (parallex_sen * 6);
+        parallex.x3 = - rx/ (parallex_sen * 3);
+        parallex.x4 = - rx/ (parallex_sen * 1);
+
+
+        parallex.y1 = ry/ (parallex_sen * 10);
+        parallex.y2 = ry/ (parallex_sen * 6);
+        parallex.y3 = ry/ (parallex_sen * 3);
+        parallex.y4 = ry/ (parallex_sen * 1);
+    }
+
+
+    function initParallex2(){
 
         // ease pointer
         pointer.cx += (pointer.x - pointer.cx) / 10;
@@ -698,6 +721,11 @@ var moss = (function(){
             };
         })
     }
+
+    $('.motion').on('mousemove',function(e){
+        pointer.x = e.clientX;
+        pointer.y = e.clientY;
+    });
 
 
     $(window).resize(function(){
