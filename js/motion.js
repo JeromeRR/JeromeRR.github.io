@@ -773,7 +773,15 @@ var moss = (function(){
             motionOff = true;
             mainMotionfire();
 
-            $(".main-header").addClass('active')
+            $(".main-header").addClass('active');
+
+            if( scrollTop > $('#tail').offset().top-500){
+                $("#event").removeClass('active');
+            } else {
+                $("#event").addClass('active');
+            }
+
+
         } else {
 
             // 메인모션을 활성화한다
@@ -781,7 +789,10 @@ var moss = (function(){
             mainMotionfire();
 
             $(".main-header").removeClass('active')
+            $("#event").removeClass('active')
         }
+
+
 
         if(scrollTop > feature01Point) {
             feature01fire = true;
@@ -870,6 +881,15 @@ var moss_lite = function(){
 
         var scrollTop = $(window).scrollTop();
 
+        if(scrollTop > 200){
+            if( scrollTop > $('#tail').offset().top-800){
+                $("#event-mobile").removeClass('active');
+            } else {
+                $("#event-mobile").addClass('active');
+            }
+        } else {
+            $("#event-mobile").removeClass('active');
+        }
 
         if(scrollTop > feature01Point) {
             feature01fire = true;
@@ -890,6 +910,7 @@ var moss_lite = function(){
         if(scrollTop > roadmapPoint) {
             roadmapFire = true;
         }
+
 
 
         scrollMotionfire();
