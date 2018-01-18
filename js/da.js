@@ -35,7 +35,7 @@ $(function(){
         var idstr = $(this).attr('href');
 
         $('html, body').animate({
-            scrollTop : $(idstr).offset().top - $(".main-header").outerHeight()
+            scrollTop : $(idstr).offset().top - $(".main-header").outerHeight() + 5
         },1000)
 
         $(".nav").removeClass('active');
