@@ -805,7 +805,7 @@ footer.main-footer a:hover{
     position: fixed;
     width: 100%;
     z-index: 2000;
-    padding: 10px 0;
+    padding: 20px 0;
     transition: padding 0.2s ;
 }
 
@@ -822,7 +822,12 @@ footer.main-footer a:hover{
     width: 100%;
     background: #0f94aa;
     overflow: hidden;
+    z-index: 1999;
     display: none;
+}
+
+#notice.active {
+    display: block;
 }
 
 #notice .notice-con{
@@ -831,7 +836,16 @@ footer.main-footer a:hover{
     font-weight: 300;
     font-size: 14px;
     overflow: hidden;
+    position: relative;
+    transition: top 0.4s;
+    top: -100px;
 }
+
+#notice .notice-con.active{
+    top: 0;
+}
+
+
 
 #notice .notice-con strong{
     font-weight: 700;

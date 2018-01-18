@@ -772,27 +772,35 @@ var moss = (function(){
             // 메인모션을 정지한다
             motionOff = true;
             mainMotionfire();
-
             $(".main-header").addClass('active');
-
             if( scrollTop > $('#tail').offset().top-500){
                 $("#event").removeClass('active');
             } else {
                 $("#event").addClass('active');
             }
 
+            if(view_notice){
+                $('#notice').addClass('active');
+
+                setTimeout(function(){
+                    $('#notice .notice-con').addClass('active');
+                },200)
+            }
 
         } else {
 
             // 메인모션을 활성화한다
             motionOff = false;
             mainMotionfire();
+            $(".main-header").removeClass('active');
+            $("#event").removeClass('active');
 
-            $(".main-header").removeClass('active')
-            $("#event").removeClass('active')
+
+            $('#notice').removeClass('active');
+            $('#notice .notice-con').removeClass('active');
+
+
         }
-
-
 
         if(scrollTop > feature01Point) {
             feature01fire = true;
@@ -841,8 +849,6 @@ var moss_lite = function(){
     var feature01fire,feature02fire,feature03fire,feature04fire,roadmapFire;
 
     function scrollMotionfire(){
-
-
 
 
         if(feature01fire){

@@ -37,6 +37,10 @@
         font-size: 14px;
     }
 
+    #notice {
+        top: 99px;
+    }
+
     .team-history > li {
         line-height: 1.2em;
         margin-bottom: 7px;
@@ -136,6 +140,25 @@
 
 @media only screen and (max-width: 768px) {
 
+    #notice,#notice.active {
+        display: none;
+    }
+
+    .mobile + #notice {
+        display: block;
+        top: 55px;
+        height: auto;
+    }
+
+    .mobile + #notice .notice-con{
+        height: auto;
+        line-height: 1.2em;
+        font-size: 13px;
+        position: static;
+        top: 0;
+        padding: 10px 0;
+    }
+
     .header-social {
         display: none;
     }
@@ -220,7 +243,7 @@
         padding: 5px;
     }
     .main-header {
-        padding: 7px 14px;
+        padding: 7px 0px;
         height: 55px;
     }
 
@@ -263,7 +286,7 @@
 
     }
     .main-header.active {
-        padding: 0;
+        padding-top: 10px;
     }
 
     .con {
@@ -399,6 +422,7 @@
 /* mobile */
 
 @media only screen and (max-width: 576px) {
+
 
 
 
