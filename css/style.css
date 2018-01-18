@@ -999,7 +999,25 @@ address {
     margin-bottom: 20px;
 }
 
+.footer-subcon {
+    float: left;
+    line-height: 30px;
+}
+
+.footer-subcon > a{
+    color: #666;
+    font-weight: 300;
+    margin-right: 10px;
+    font-size: 0.9em;
+
+}
+
+.footer-subcon > a:hover{
+    text-decoration: underline;
+}
+
 .footer-whitepaper {
+    display: none;
     float: left;
 }
 
@@ -1007,7 +1025,7 @@ address {
     color: #666;
     margin-right: 5px;
     line-height: 30px;
-    font-weight: 100;
+    font-weight: 200;
 }
 
 .footer-whitepaper > select{
@@ -1183,4 +1201,50 @@ ul.press-primary > li a:hover .pressitem-desc{
     position: absolute;
     bottom: 0;
     left: 20px;
+}
+
+
+.doc-title {
+    font-size: 40px;
+    line-height: 1.05;
+    font-weight: 500;
+    letter-spacing: .008em;
+    padding-top: 75px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ddd;
+    color: #333;
+}
+
+.doc {
+    font-weight: 300;
+    line-height: 1.6em;
+    color: #666;
+
+}
+
+.doc h2 {
+    font-weight: 100;
+    color: #333;
+    padding: 40px 0 0;
+
+}
+
+.doc-header {
+    padding: 10px 0;
+}
+
+.doc-header > a{
+    color: #00b1ce;
+    font-size: 14px;
+}
+
+
+.doc-footer {
+    border-top: 1px solid #ccc;
+    margin-top: 30px;
+    padding: 20px 0;
+    color: #999;
+    font-size: 0.85em;
+    text-align: center;
 }
