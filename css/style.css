@@ -811,11 +811,39 @@ footer.main-footer a:hover{
 
 .main-header.active {
     padding: 20px 0;
-    background: rgba(0,177,206,0.9);
+    background: rgba(0,177,206,1);
+}
+
+#notice {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    height: 40px;
+    width: 100%;
+    background: #0f94aa;
+    overflow: hidden;
+    display: none;
+}
+
+#notice .notice-con{
+    color: #fff;
+    line-height: 40px;
+    font-weight: 300;
+    font-size: 14px;
+    overflow: hidden;
+}
+
+#notice .notice-con strong{
+    font-weight: 700;
+    margin-right: 10px;
+    color: #fff072;
+    letter-spacing: 1px;
 }
 
 .main-header h1{
     float: left;
+    position: relative;
+    top: -5px;
 }
 
 .main-header h1 img {
@@ -823,17 +851,21 @@ footer.main-footer a:hover{
 }
 
 .main-header nav{
-    float: right;
+    float: left;
+    margin-left: 50px;
 
 }
 
 .main-header nav > a{
     color: #fff;
     line-height: 40px;
-    font-size: 1em;
-    font-weight: 300;
+    font-size: 0.95em;
+    font-weight: 100;
     padding: 0 15px;
+    letter-spacing: 1px;
 }
+
+
 
 .motion-logo {
     height: 350px;
@@ -1017,8 +1049,16 @@ address {
 }
 
 .footer-whitepaper {
-    display: none;
     float: left;
+}
+
+.footer-whitepaper > select{
+    height: 30px;
+    color: #666;
+    line-height: 33px;
+    margin: 0;
+    padding: 0;
+    border: none;
 }
 
 .footer-whitepaper > span{
@@ -1220,14 +1260,12 @@ ul.press-primary > li a:hover .pressitem-desc{
     font-weight: 300;
     line-height: 1.6em;
     color: #666;
-
 }
 
 .doc h2 {
     font-weight: 100;
     color: #333;
     padding: 40px 0 0;
-
 }
 
 .doc-header {
@@ -1239,7 +1277,6 @@ ul.press-primary > li a:hover .pressitem-desc{
     font-size: 14px;
 }
 
-
 .doc-footer {
     border-top: 1px solid #ccc;
     margin-top: 30px;
@@ -1247,4 +1284,25 @@ ul.press-primary > li a:hover .pressitem-desc{
     color: #999;
     font-size: 0.85em;
     text-align: center;
+}
+
+.header-social {
+    float: right;
+    margin-left: 20px;
+}
+
+.header-social > a {
+    font-size: 28px;
+    line-height: 40px;
+    color: #fff;
+    margin-left: 25px;
+}
+
+.footer-policy {
+    padding-top: 5px;
+}
+
+footer.main-footer .footer-policy a{
+    color: #777;
+    font-size: 12px;
 }

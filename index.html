@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -25,15 +24,12 @@
     <link rel="stylesheet" type="text/css" href="css/motion.css?v=10" />
     <link rel="stylesheet" type="text/css" href="css/responsive.css?v=10" />
 
-
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
     <link rel="manifest" href="/manifest.json">
     <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="theme-color" content="#ffffff">
-
-
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112022406-1"></script>
@@ -52,20 +48,32 @@
     <![endif]-->
 
     <script type="text/javascript" src="js/da.js?v=8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 
+    <script type="text/javascript">
+        var view_notice = true;
+    </script>
 </head>
 
 <body>
-
-
-
 <section class="wrapper" id="home">
-
     <header class="main-header">
         <div class="con clearfix">
             <h1>
                 <a href="http://moss.land"><img src="img/logo_dark.svg" alt="mossland"></a>
             </h1>
+            <button class="btn-menu">
+                <i class="icon-menu"></i>
+            </button>
+            <div class="header-social">
+                <a class="social-telegram" href="https://t.me/mossland" target="_blank">
+                    <span class="icon-telegram"></span>
+                </a>
+                <a class="social-kakaotalk" href="https://open.kakao.com/o/g1XVRXE" target="_blank">
+                    <span class="icon-kakaotalk"></span>
+                </a>
+            </div>
             <nav class="nav">
                 <a href="#ico">ICO</a>
                 <a href="#features">Features</a>
@@ -75,12 +83,16 @@
                 <a href="#team">Team</a>
                 <a href="#news">News</a>
             </nav>
-            <button class="btn-menu">
-                <i class="icon-menu"></i>
-            </button>
+        </div>
+        <div id="notice">
+            <div class="con">
+                <div class="notice-con">
+                    <strong>Important Notice</strong>
+                    The ICO plan has changed. For more information, check out the changed information below.
+                </div>
+            </div>
         </div>
     </header>
-
     <section id="motionwrap">
         <div id="loading">
             <div>
@@ -1028,10 +1040,6 @@
         <section class="tail" id="tail">
             <div class="con clearfix">
 
-                <div class="footer-subcon">
-                    <a href="#">Notice</a>
-                    <a href="cookies_privacy.html">Cookies Privacy</a>
-                </div>
 
                 <div class="footer-whitepaper">
                     <select id="footer-whitepaper-download">
@@ -1083,6 +1091,9 @@
                 <!--<a target="_blank" href="https://www.realityreflection.com/" title="Go to the Homepage">REALITY REFLECTION</a><br/>-->
             </address>
             © REALITY REFLECTION 2018
+            <div class="footer-policy">
+                <a href="cookies_privacy.html">Cookies Privacy</a>
+            </div>
         </footer>
 
         <div id="event">

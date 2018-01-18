@@ -20,6 +20,15 @@
     .team-sub {
         font-size: 1.1em;
     }
+
+
+    .main-header nav > a {
+        padding: 0 10px;
+    }
+
+    .main-header nav {
+        margin-left: 35px;
+    }
 }
 
 @media only screen and (max-width: 1060px) {
@@ -55,6 +64,7 @@
     .main-header nav {
         float: none;
         text-align: center;
+        margin: 0;
     }
 
     .main-header nav > a {
@@ -125,6 +135,10 @@
 /* mobile */
 
 @media only screen and (max-width: 768px) {
+
+    .header-social {
+        display: none;
+    }
 
     #event {
         display: none;
@@ -206,7 +220,7 @@
         padding: 5px;
     }
     .main-header {
-        padding: 7px 0;
+        padding: 7px 14px;
         height: 55px;
     }
 
