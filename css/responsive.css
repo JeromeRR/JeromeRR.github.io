@@ -144,7 +144,7 @@
         display: none;
     }
 
-    .mobile + #notice {
+    .mobile + #notice.active {
         display: block;
         top: 55px;
         height: auto;

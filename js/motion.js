@@ -834,6 +834,12 @@ var moss_lite = function(){
     $("#motionwrap").remove();
     $(".maintop").show();
 
+    if(view_notice){
+        $('#notice').addClass('active');
+    } else {
+        $('#notice').removeClass('active');
+    }
+
     $(".main-header,#main").addClass("mobile");
 
     $(".main-header nav").addClass("mobile");
