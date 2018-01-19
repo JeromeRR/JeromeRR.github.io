@@ -2,7 +2,7 @@ function mosstimer(_year,_month,_day){
 
     var timer = new Timer();
     var today = new Date();
-    var thedate = new Date(_year,_month-1,_day);
+    var thedate = new Date(_year,_month-1,_day,13);
     var diffdate = thedate-today;
     var sec  = diffdate / 1000;
     timer.start({countdown: true, startValues: {seconds: sec}});
