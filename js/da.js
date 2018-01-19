@@ -55,6 +55,15 @@ $(function(){
         }
     });
 
+    $("#footer-faq-download").change(function(){
+
+        if($(this).val() != ''){
+            window.open( $(this).val() );
+        }
+    });
+
+
+
 
     $("#btn-whitelist").click(function(){
 
