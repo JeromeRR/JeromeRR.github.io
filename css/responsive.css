@@ -5,6 +5,13 @@
         width: 1000px;
     }
 
+    .motion-logo {
+        top: 35%;
+        height: 260px;
+        margin-top: -130px;
+
+    }
+
     .features-item-odd .features-con {
         padding-right: 6%;
     }
@@ -51,9 +58,9 @@
     }
 
     .motion-logo {
-        top: 40%;
-        height: 300px;
-        margin-top: -150px;
+        top: 35%;
+        height: 240px;
+        margin-top: -120px;
 
     }
 
