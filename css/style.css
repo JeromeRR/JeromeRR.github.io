@@ -807,7 +807,7 @@ footer.main-footer a:hover{
     z-index: 2000;
     padding: 20px 0;
     background-color: transparent;
-    transition: padding 0.2s, background-color 0.4s ;
+    transition: padding 0.2s;
 }
 
 .main-header.active {
