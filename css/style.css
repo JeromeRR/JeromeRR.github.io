@@ -66,10 +66,12 @@ li {
 
 
 .ico {
-    padding: 60px 0;
+    padding: 80px 0;
     background: #ebebeb url('../img/bg_ico.png') center bottom repeat-x;
     background-size: 100% auto;
 }
+
+
 
 .ico-page {
     display: none;
@@ -1432,4 +1434,40 @@ ul.press-primary > li a:hover .pressitem-desc{
 footer.main-footer .footer-policy a{
     color: #777;
     font-size: 12px;
+}
+
+
+
+.bt-title {
+    padding: 30px 0 60px;
+    font-size: 60px;
+    font-weight: 100;
+}
+
+.bt-notice {
+    color: #a17c55;
+    background: #f3f1d9;
+    border: 1px solid #dfd7a1;
+    padding: 15px;
+    font-size: 14px;
+}
+
+.bt-notice > p{
+    margin: 0;
+}
+
+.bt-notice > p:last-child {
+    margin-bottom: 0;
+}
+
+.buytoken-wrapper {
+    width: 920px;
+    margin: 0 auto;
+}
+
+.bt-con {
+    margin: 50px 0;
+    padding: 50px 0;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
 }
