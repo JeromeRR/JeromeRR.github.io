@@ -1669,3 +1669,9 @@ footer.main-footer .footer-policy a{
 #copy-result.active {
     opacity: 1;
 }
+
+#send-eth-value {
+    font-size: 24px;
+    font-weight: 900;
+    color: #ff444d;
+}

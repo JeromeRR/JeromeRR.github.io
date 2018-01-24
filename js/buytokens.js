@@ -14,7 +14,9 @@ var SETTING = {
     },
 
     //지갑주소
-    'ADDRESS' : '0x92aE260701854235d6cE6d5165E620E2428063Ef'
+    'ADDRESS' : '0x92aE260701854235d6cE6d5165E620E2428063Ef',
+    //QR Code image
+    'QR' : 'img/dummyqr.jpg'
 
 };
 
@@ -25,6 +27,7 @@ function addComma(x) {
 $(function(){
 
     $("#wallet-address").val(SETTING.ADDRESS);
+    $("#bta-qr-img").attr('src',SETTING.QR);
 
     $('#bta-eth-value').on('keyup',function(){
 
@@ -52,10 +55,14 @@ $(function(){
 
         $("#bonus-price").text(bonusprice);
 
+        //Send값 동기화
+        $("#send-eth-value").text( value );
+
     });
 
-    var clipboard = new Clipboard('#copy-wallet');
 
+    // 지갑주소 복사하기
+    var clipboard = new Clipboard('#copy-wallet');
     clipboard.on('success', function(e) {
         $("#copy-result").addClass('active');
         setTimeout(function(){
