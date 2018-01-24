@@ -548,6 +548,8 @@ ul.features-list > li:last-child{
     width: 100%;
 }
 
+
+
 .tokensale-plan > thead > tr {
     background-color: #5e626a;
 
@@ -572,8 +574,7 @@ ul.features-list > li:last-child{
     margin-top: 10px;
 }
 
-.tokensale-plan > tbody td,
-.tokensale-plan > tbody th{
+.tokensale-plan > tbody td{
     border-bottom: 1px solid #8c8f94;
     padding: 25px 0;
     color: #fff;
@@ -581,13 +582,19 @@ ul.features-list > li:last-child{
     text-align: center;
 }
 
-.tokensale-plan > tbody th {
-    font-weight: 700;
+.tokensale-plan tbody th{
+    color: #fff;
+    font-weight: 100;
+    font-size: 1.3em;
+    border-bottom: 1px solid #8c8f94;
+    padding: 25px 0;
+    text-align: center;
 }
 
-.tokensale-plan > tbody th.thborder{
+
+.tokensale-plan th.thborder{
     border-right: 1px solid #8c8f94;
-    border-left: 1px solid #8c8f94;
+    /*border-left: 1px solid #8c8f94;*/
 }
 
 .tokensale-subtext {
