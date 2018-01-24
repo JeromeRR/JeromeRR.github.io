@@ -43,16 +43,18 @@
     <script type="text/javascript" src="js/vendor/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/vendor/jquery.easing.compatibility.js"></script>
     <script type="text/javascript" src="js/vendor/easytimer.min.js"></script>
+    <script type="text/javascript" src="js/vendor/jquery.animateNumber.min.js"></script>
     <!--[if lt IE 9]>
     <script type="text/javascript" src="js/vendor/html5shiv.min.js"></script>
     <![endif]-->
 
     <script type="text/javascript" src="js/da.js?v=8"></script>
-    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>-->
-    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />-->
 
     <script type="text/javascript">
         var view_notice = false;
+        var ico_live = false;
+        var ico_current = 8242000;
+        var ico_hardcap = 12000000;
     </script>
 </head>
 
@@ -131,6 +133,8 @@
         </section>
         <section class="ico" id="ico">
             <div class="con">
+
+                <!-- Upcomming -->
                 <div id="upcomming" class="ico-page">
                     <h1 class="ico-title">
                         Pre ICO will be launched <strong>Jan 29, 2018</strong> (UTC+0)
@@ -143,30 +147,30 @@
                             <div class="timer-title">
                                 DAYS
                             </div>
-                            <div class="timer-str" id="timer-days">0</div>
+                            <div class="timer-str timer-days">0</div>
                         </li>
                         <li>
                             <div class="timer-title">
                                 HOURS
                             </div>
-                            <div class="timer-str" id="timer-hours">0</div>
+                            <div class="timer-str timer-hours">0</div>
                         </li>
                         <li>
                             <div class="timer-title">
                                 MINUTES
                             </div>
-                            <div class="timer-str" id="timer-minutes">0</div>
+                            <div class="timer-str timer-minutes">0</div>
                         </li>
                         <li>
                             <div class="timer-title">
                                 SECONDS
                             </div>
-                            <div class="timer-str" id="timer-seconds">0</div>
+                            <div class="timer-str timer-seconds">0</div>
                         </li>
                     </ul>
 
                     <script type="text/javascript">
-                        mosstimer(2018,1,29);
+                        mosstimer(2018,1,29,"#upcomming");
                     </script>
                     <div>
                         <a class="btn1" href="https://www.jotform.com/form/80104658072452/" target="_blank" id="btn-whitelist">Add me to the Whitelist</a>
@@ -175,9 +179,68 @@
                         </div>
                     </div>
                 </div>
-                <div id="preico" class="ico-page">
+
+                <!-- Preico -->
+                <div id="preico" class="ico-page active">
+
+                    <h1 class="ico-title">
+                        Pre ICO is <strong>LIVE</strong>, ends in
+                    </h1>
+                    <ul class="timer">
+                        <li>
+                            <div class="timer-title">
+                                DAYS
+                            </div>
+                            <div class="timer-str timer-days">0</div>
+                        </li>
+                        <li>
+                            <div class="timer-title">
+                                HOURS
+                            </div>
+                            <div class="timer-str timer-hours">0</div>
+                        </li>
+                        <li>
+                            <div class="timer-title">
+                                MINUTES
+                            </div>
+                            <div class="timer-str timer-minutes">0</div>
+                        </li>
+                        <li>
+                            <div class="timer-title">
+                                SECONDS
+                            </div>
+                            <div class="timer-str timer-seconds">0</div>
+                        </li>
+                    </ul>
+
+                    <div class="ico-progress clearfix">
+
+                        <div class="progress-current">
+                            <h2 class="progress-title">Current</h2>
+                            <div id="current-value" class="progress-value">0</div>
+                        </div>
+
+                        <div class="progressbar clearfix">
+                            <div id="progressbar" class="progressbar-current"></div>
+                        </div>
+
+                        <div class="progress-hard">
+                            <h2 class="progress-title">Hardcap</h2>
+                            <div id="hardcap-value" class="progress-value">0</div>
+                        </div>
+
+                    </div>
+
+                    <script type="text/javascript">
+                        mosstimer(2018,2,11,"#preico");
+                    </script>
+                    <div>
+                        <a class="btn1 btn1-strong" href="#" id="btn-buytoken">Buy Tokens 20% Off</a>
+                    </div>
 
                 </div>
+                <!-- //preico -->
+
                 <div id="end" class="ico-page">
 
                 </div>

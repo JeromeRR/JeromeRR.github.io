@@ -57,6 +57,10 @@
         width: 70%;
     }
 
+    .ico-progress {
+        width: 68.5%;
+    }
+
     .motion-logo {
         top: 35%;
         height: 240px;
@@ -191,6 +195,9 @@
 
     .timer {
         width: 90%;
+    }
+    .ico-progress {
+        width: 88%;
     }
     .timer li {
         padding: 12px;
@@ -424,6 +431,19 @@
         width: 25%;
     }
 
+    .ico-progress .progress-current {
+        left: 0;
+        top: 45px;
+        text-align: left;
+    }
+
+    .ico-progress .progress-hard {
+        top : 45px;
+        right: 0;
+        bottom: 45px;
+        text-align: right;
+    }
+
 }
 
 /* mobile */
@@ -645,6 +665,14 @@
     .timer {
         width: 100%;
     }
+
+    .ico-progress {
+        width: 98%;
+        margin-bottom: 80px;
+    }
+
+
+
 
     .timer-str {
         font-size: 42px;

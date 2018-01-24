@@ -1,4 +1,38 @@
 
+function icoprogress(){
+    var percent = Math.floor( ( ico_current/ico_hardcap ) * 100 );
+    var comma_separator_number_step = $.animateNumber.numberStepFactories.separator(',');
+    var percent_number_step = $.animateNumber.numberStepFactories.append(' %');
+
+    $("#current-value").animateNumber(
+        {
+            number: ico_current,
+            numberStep: comma_separator_number_step,
+            easing: 'easeInQuad'
+        },2000
+    );
+    $("#hardcap-value").animateNumber(
+        {
+            number: ico_hardcap,
+            numberStep: comma_separator_number_step,
+            easing: 'easeInQuad'
+        },2000
+    );
+
+    $("#progressbar").css({
+        width : percent+'%'
+    });
+
+
+    $(".progressbar-current").animateNumber(
+        {
+            number: percent,
+            numberStep: percent_number_step,
+            easing: 'easeInQuad'
+        },2000
+    );
+};
+
 var moss = (function(){
 
     var imgLoadCount = 0;
@@ -108,7 +142,7 @@ var moss = (function(){
 
     for( var p=0; p <_moving3propname.length; p++){
         var propname = _moving3propname[p];
-        PROP[propname].CX = 3 * (PROP[propname].p1.x - PROP[propname].p0.x)
+        PROP[propname].CX = 3 * (PROP[propname].p1.x - PROP[propname].p0.x);
         PROP[propname].AX = PROP[propname].p2.x - PROP[propname].p0.x - PROP[propname].CX;
 
         PROP[propname].CY = 3 * (PROP[propname].p1.y - PROP[propname].p0.y);
@@ -116,8 +150,8 @@ var moss = (function(){
     }
 
 
-    var feature01Point,feature02Point,feature03Point,feature04Point,roadmapPoint;
-    var feature01fire = feature02fire = feature03fire = feature04fire = roadmapFire = false;
+    var feature01Point,feature02Point,feature03Point,feature04Point,roadmapPoint,icoPoint;
+    var feature01fire,feature02fire,feature03fire,feature04fire,roadmapFire,icofire,icofireDone;
 
     // Canvas init
     var arctx    = document.getElementById("mossland-ar").getContext("2d");
@@ -147,7 +181,7 @@ var moss = (function(){
         y1 : 0,
         y2 : 0,
         y3 : 0,
-        y4 : 0,
+        y4 : 0
     };
 
     // 화면에 보여줄 AR Canvas 이미지 크기
@@ -349,6 +383,7 @@ var moss = (function(){
         });
 
         //Animate effect on scroll
+        icoPoint = ( $("#ico").offset().top ) - (wHeight / 2) -100;
         feature01Point = ( $("#features-01").offset().top ) - (wHeight / 2) -200;
         feature02Point = ( $("#features-02").offset().top ) - (wHeight / 2) -200;
         feature03Point = ( $("#features-03").offset().top ) - (wHeight / 2) -200;
@@ -370,35 +405,32 @@ var moss = (function(){
 
     function scrollMotionfire(){
 
+
+        if(icofire && !icofireDone && ico_live){
+            icoprogress();
+            icofireDone = true;
+        }
+
         if(feature01fire){
             $("#features-01").addClass('active');
-        } else {
-            $("#features-01").removeClass('active');
         }
 
         if(feature02fire){
             $("#features-02").addClass('active');
-        } else {
-            $("#features-02").removeClass('active');
         }
 
         if(feature03fire){
             $("#features-03").addClass('active');
-        } else {
-            $("#features-03").removeClass('active');
         }
 
         if(feature04fire){
             $("#features-04").addClass('active');
-        } else {
-            $("#features-04").removeClass('active');
         }
 
         if(roadmapFire){
             $("#roadmap").addClass('active');
-        } else {
-            $("#roadmap").removeClass('active');
         }
+
     };
 
 
@@ -798,8 +830,10 @@ var moss = (function(){
 
             $('#notice').removeClass('active');
             $('#notice .notice-con').removeClass('active');
+        }
 
-
+        if(scrollTop > icoPoint) {
+            icofire = true;
         }
 
         if(scrollTop > feature01Point) {
@@ -821,7 +855,6 @@ var moss = (function(){
         if(scrollTop > roadmapPoint) {
             roadmapFire = true;
         }
-
 
         scrollMotionfire();
 
@@ -846,16 +879,21 @@ var moss_lite = function(){
     var wHeight = $(window).height();
 
     //Animate effect on scroll
+    var icopoint = ( $("#ico").offset().top ) - (wHeight / 2) -100;
     var feature01Point = ( $("#features-01").offset().top ) - (wHeight / 2) -200;
     var feature02Point = ( $("#features-02").offset().top ) - (wHeight / 2) -200;
     var feature03Point = ( $("#features-03").offset().top ) - (wHeight / 2) -200;
     var feature04Point = ( $("#features-04").offset().top ) - (wHeight / 2) -200;
     var roadmapPoint = ( $("#roadmap").offset().top ) - (wHeight / 2) -100;
 
-    var feature01fire,feature02fire,feature03fire,feature04fire,roadmapFire;
+    var feature01fire,feature02fire,feature03fire,feature04fire,roadmapFire,icofire,icofireDone;
 
-    function scrollMotionfire(){
+    function scrollMotionfireLite(){
 
+        if(icofire && !icofireDone && ico_live){
+            icoprogress();
+            icofireDone = true;
+        }
 
         if(feature01fire){
             $("#features-01").addClass('active');
@@ -903,6 +941,10 @@ var moss_lite = function(){
             $("#event-mobile").removeClass('active');
         }
 
+        if(scrollTop > icopoint) {
+            icofire = true;
+        }
+
         if(scrollTop > feature01Point) {
             feature01fire = true;
         }
@@ -923,9 +965,7 @@ var moss_lite = function(){
             roadmapFire = true;
         }
 
-
-
-        scrollMotionfire();
+        scrollMotionfireLite();
 
     });
 

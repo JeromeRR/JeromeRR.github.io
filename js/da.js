@@ -1,4 +1,4 @@
-function mosstimer(_year,_month,_day){
+function mosstimer(_year,_month,_day,_target){
 
     var timer = new Timer();
     //var today = new Date();
@@ -12,12 +12,14 @@ function mosstimer(_year,_month,_day){
     timer.start({countdown: true, startValues: {seconds: sec}});
     timer.addEventListener('secondsUpdated', function (e) {
         var time =  timer.getTimeValues();
-        $("#timer-days").html(time.days);
-        $("#timer-hours").html(time.hours);
-        $("#timer-minutes").html(time.minutes);
-        $("#timer-seconds").html(time.seconds);
+        $(_target).find(".timer-days").html(time.days);
+        $(_target).find(".timer-hours").html(time.hours);
+        $(_target).find(".timer-minutes").html(time.minutes);
+        $(_target).find(".timer-seconds").html(time.seconds);
     });
 }
+
+
 
 
 $(function(){
