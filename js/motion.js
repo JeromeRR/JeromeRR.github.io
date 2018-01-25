@@ -1,37 +1,5 @@
 
-function icoprogress(){
-    var percent = Math.floor( ( ico_current/ico_hardcap ) * 100 );
-    var comma_separator_number_step = $.animateNumber.numberStepFactories.separator(',');
-    var percent_number_step = $.animateNumber.numberStepFactories.append(' %');
 
-    $("#current-value").animateNumber(
-        {
-            number: ico_current,
-            numberStep: comma_separator_number_step,
-            easing: 'easeInQuad'
-        },2000
-    );
-    $("#hardcap-value").animateNumber(
-        {
-            number: ico_hardcap,
-            numberStep: comma_separator_number_step,
-            easing: 'easeInQuad'
-        },2000
-    );
-
-    $("#progressbar").css({
-        width : percent+'%'
-    });
-
-
-    $(".progressbar-current").animateNumber(
-        {
-            number: percent,
-            numberStep: percent_number_step,
-            easing: 'easeInQuad'
-        },2000
-    );
-};
 
 var moss = (function(){
 

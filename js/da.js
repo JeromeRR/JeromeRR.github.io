@@ -1,14 +1,84 @@
-function mosstimer(_year,_month,_day,_target){
+/*
+Init
+ */
+
+// UTC+0
+var now = new Date();
+var today = new Date(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate(), now.getUTCHours(), now.getUTCMinutes(), now.getUTCSeconds());
+// UTC+9
+//var today = new Date();
+
+//var preicoStartDate = new Date("January 25, 2018 3:53");
+
+var preicoStartDate = new Date("January 29, 2018 13:00");
+var preicoEndDate = new Date("February 11, 2018");
+
+//지갑주소
+var addr = '0x781b6a54840ac2d52cf9ac2ad38e699674bdc6e7';
+var qr = 'img/dummyqr.jpg';
+var ico_hardcap = 10000.00;
+
+
+var view_notice = false;
+var ico_live = true;
+var ico_current = 0;
+
+
+/*
+ Load ETH
+ */
+
+function loadeth(){
+    var Web3 = require('web3');
+    var web3 = new Web3();
+
+    web3.setProvider(new web3.providers.HttpProvider('https://rinkeby.infura.io'));
+
+    var abi = [ {
+        name : 'saled',
+        type : 'function',
+        constant : true,
+        inputs : [],
+        outputs : [ {
+            name : 'saled',
+            type : 'uint256'
+        } ]
+    } ];
+
+    var saled = function(coin, callback) {
+        var contract = web3.eth.contract(abi).at(coin);
+
+        try {
+            contract.saled.call(callback);
+
+            setInterval( function(){
+                contract.saled.call(callback)
+            },10000)
+        }
+        catch(exception){
+            //console.log(exception)
+        }
+    };
+
+    saled(addr, function(err, result)
+    {
+        result.e -= 18;
+        ico_current = result.toNumber();
+        icoprogress();
+    });
+
+
+
+}
+
+
+function mosstimer(_date,_target,_fn){
 
     var timer = new Timer();
-    //var today = new Date();
-	
-	var now = new Date();
-	var today = new Date(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate(), now.getUTCHours(), now.getUTCMinutes(), now.getUTCSeconds());
-	
-    var thedate = new Date(_year,_month-1,_day,13);
+    var thedate = _date;
     var diffdate = thedate-today;
     var sec  = diffdate / 1000;
+
     timer.start({countdown: true, startValues: {seconds: sec}});
     timer.addEventListener('secondsUpdated', function (e) {
         var time =  timer.getTimeValues();
@@ -17,10 +87,76 @@ function mosstimer(_year,_month,_day,_target){
         $(_target).find(".timer-minutes").html(time.minutes);
         $(_target).find(".timer-seconds").html(time.seconds);
     });
+
+    timer.addEventListener('targetAchieved', function (e) {
+
+        if(_fn == "preicostart"){
+            $("#upcomming").removeClass("active");
+            $("#preico").addClass("active");
+            loadeth();
+        };
+
+    });
+
 }
 
 
+function icoprogress(){
 
+    var percent = Math.ceil( ( ico_current/ico_hardcap ) * 100 );
+    if(percent > 100) percent = 100;
+    var comma_separator_number_step = $.animateNumber.numberStepFactories.separator(',');
+    var percent_number_step = $.animateNumber.numberStepFactories.append(' %');
+
+    $("#current-value").animateNumber(
+        {
+            number: ico_current,
+            //numberStep: comma_separator_number_step,
+
+            numberStep: function(now, tween) {
+
+                // see http://stackoverflow.com/a/14428340
+                var formatted = now.toFixed(2).replace(/(\d)(?=(\d{3})+\.)/g, '$1,');
+                $(tween.elem).text(formatted);
+            },
+            easing: 'easeInQuad'
+
+        },2000
+    );
+
+    //console.log($("#current-value").prop('number'));
+
+    // Hardcap animation 없앰
+    //$("#hardcap-value").animateNumber(
+    //    {
+    //        number: ico_hardcap,
+    //        numberStep: function(now, tween) {
+    //            // see http://stackoverflow.com/a/14428340
+    //            var formatted = now.toFixed(2).replace(/(\d)(?=(\d{3})+\.)/g, '$1,');
+    //            $(tween.elem).text(formatted);
+    //        },
+    //        easing: 'easeInQuad'
+    //    },2000
+    //);
+
+    $("#hardcap-value").text(addComma(ico_hardcap)+".00");
+
+    $("#progressbar").css({
+        width : percent+'%'
+    });
+
+    $(".progressbar-current").animateNumber(
+        {
+            number: percent,
+            numberStep: percent_number_step,
+            easing: 'easeInQuad'
+        },2000
+    );
+};
+
+function addComma(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
 
 $(function(){
 
@@ -69,14 +205,23 @@ $(function(){
     });
 
 
+    //Timer
+    mosstimer(preicoStartDate,"#upcomming","preicostart");
+    mosstimer(preicoEndDate,"#preico");
 
+    //Pre ICO start 화면 변경
+    var diffdate = today-preicoStartDate;
+    var remaning = diffdate/1000;
 
-    $("#btn-whitelist").click(function(){
+    if(remaning < 0){
+        $("#upcomming").addClass("active");
+        $("#preico").removeClass("active");
+    } else {
+        $("#upcomming").removeClass("active");
+        $("#preico").addClass("active");
+        loadeth();
 
-        //alert('Official KYC process will start on Jan 15, 2018. Please leave your email address to initiate the process.');
-        //window.open('https://eepurl.com/dgCDUT');
-        //return false;
-    });
-
+    }
 
 });
+

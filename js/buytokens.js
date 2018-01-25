@@ -1,6 +1,5 @@
 
 var SETTING = {
-
     // 1 ETH 환율
     'PRICE' : 10000,
 
@@ -14,15 +13,10 @@ var SETTING = {
     },
 
     //지갑주소
-    'ADDRESS' : '0x92aE260701854235d6cE6d5165E620E2428063Ef',
+    'ADDRESS' : addr,
     //QR Code image
-    'QR' : 'img/dummyqr.jpg'
-
+    'QR' : qr
 };
-
-function addComma(x) {
-    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-}
 
 $(function(){
 
