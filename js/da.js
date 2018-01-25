@@ -10,8 +10,8 @@ var today = new Date(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate(), 
 
 // PRE ICO 시작시간
 // 이 시간이 되면 화면이 ico 시작화면으로 변경됨.
-var preicoStartDate = new Date("January 25, 2018 5:17");
-//var preicoStartDate = new Date("January 29, 2018 13:00");
+//var preicoStartDate = new Date("January 25, 2018 5:17");
+var preicoStartDate = new Date("January 29, 2018 13:00");
 
 // PRE ICO 끝 날짜
 // 이벤트 없음
