@@ -374,10 +374,10 @@ var moss = (function(){
     function scrollMotionfire(){
 
 
-        if(icofire && !icofireDone && ico_live){
-            icoprogress();
-            icofireDone = true;
-        }
+        //if(icofire && !icofireDone && ico_live){
+        //    icoprogress();
+        //    icofireDone = true;
+        //}
 
         if(feature01fire){
             $("#features-01").addClass('active');
@@ -858,10 +858,9 @@ var moss_lite = function(){
 
     function scrollMotionfireLite(){
 
-        if(icofire && !icofireDone && ico_live){
-            icoprogress();
-            icofireDone = true;
-        }
+        //if(icofire && !icofireDone && ico_live){
+        //    icoprogress();
+        //}
 
         if(feature01fire){
             $("#features-01").addClass('active');

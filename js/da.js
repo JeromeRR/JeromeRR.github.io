@@ -8,19 +8,29 @@ var today = new Date(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate(), 
 // UTC+9
 //var today = new Date();
 
-//var preicoStartDate = new Date("January 25, 2018 3:53");
+// PRE ICO 시작시간
+// 이 시간이 되면 화면이 ico 시작화면으로 변경됨.
+var preicoStartDate = new Date("January 25, 2018 5:17");
+//var preicoStartDate = new Date("January 29, 2018 13:00");
 
-var preicoStartDate = new Date("January 29, 2018 13:00");
+// PRE ICO 끝 날짜
+// 이벤트 없음
 var preicoEndDate = new Date("February 11, 2018");
 
-//지갑주소
+
+// 지갑주소
 var addr = '0x781b6a54840ac2d52cf9ac2ad38e699674bdc6e7';
+
+// QR코드 이미지 1:1 비율
 var qr = 'img/dummyqr.jpg';
+
+// Hardcap
 var ico_hardcap = 10000.00;
 
-
+// 공지사항을 나타낼것인지
 var view_notice = false;
-var ico_live = true;
+
+// 지갑데이터 수신 받기 전 초기 값.
 var ico_current = 0;
 
 
@@ -29,6 +39,7 @@ var ico_current = 0;
  */
 
 function loadeth(){
+
     var Web3 = require('web3');
     var web3 = new Web3();
 
@@ -52,6 +63,7 @@ function loadeth(){
             contract.saled.call(callback);
 
             setInterval( function(){
+
                 contract.saled.call(callback)
             },10000)
         }
@@ -66,8 +78,6 @@ function loadeth(){
         ico_current = result.toNumber();
         icoprogress();
     });
-
-
 
 }
 
@@ -121,10 +131,12 @@ function icoprogress(){
             },
             easing: 'easeInQuad'
 
-        },2000
+        },2000,function(){
+            // 현재 값부터 카운트 시작하도록
+            // 이 코드를 삭제 시 0부터 시작
+            $("#current-value").prop('number',ico_current)
+        }
     );
-
-    //console.log($("#current-value").prop('number'));
 
     // Hardcap animation 없앰
     //$("#hardcap-value").animateNumber(
@@ -152,6 +164,8 @@ function icoprogress(){
             easing: 'easeInQuad'
         },2000
     );
+
+    icofireDone = true;
 };
 
 function addComma(x) {
@@ -220,7 +234,6 @@ $(function(){
         $("#upcomming").removeClass("active");
         $("#preico").addClass("active");
         loadeth();
-
     }
 
 });
