@@ -1681,3 +1681,9 @@ footer.main-footer .footer-policy a{
     font-weight: 900;
     color: #ff444d;
 }
+
+#warning-text {
+    font-size: 24px;
+    font-weight: 900;
+    color: #ff444d;
+}
