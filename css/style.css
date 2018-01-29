@@ -1687,3 +1687,19 @@ footer.main-footer .footer-policy a{
     font-weight: 900;
     color: #ff444d;
 }
+
+#buytoken-button {
+    display: none;
+}
+
+#buytoken-button.active {
+    display: block;
+}
+
+#whitelist-button {
+    display: none;
+}
+
+#whitelist-button.active {
+    display: block;
+}

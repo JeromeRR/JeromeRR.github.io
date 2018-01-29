@@ -12,6 +12,7 @@ var today = new Date(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate(), 
 // 이 시간이 되면 화면이 ico 시작화면으로 변경됨.
 //var preicoStartDate = new Date("January 25, 2018 5:17");
 var preicoStartDate = new Date("January 29, 2018 13:00");
+var buyTokenButtonDate = new Date("January 29, 2018 12:00");
 
 // PRE ICO 끝 날짜
 // 이벤트 없음
@@ -43,7 +44,7 @@ function loadeth(){
     var Web3 = require('web3');
     var web3 = new Web3();
 
-    web3.setProvider(new web3.providers.HttpProvider('https://rinkeby.infura.io'));
+    web3.setProvider(new web3.providers.HttpProvider('https://mainnet.infura.io'));
 
     var abi = [ {
         name : 'saled',
@@ -225,11 +226,23 @@ $(function(){
 
     //Pre ICO start 화면 변경
     var diffdate = today-preicoStartDate;
-    var remaning = diffdate/1000;
+    var remaining = diffdate/1000;
 
-    if(remaning < 0){
+    var buttondate = today - buyTokenButtonDate;
+    var buttonremaining = buttondate/1000;
+
+    if(remaining < 0){
         $("#upcomming").addClass("active");
         $("#preico").removeClass("active");
+        console.log(buttonremaining);
+        if(buttonremaining < 0) {
+            $("#buytoken-button").removeClass("active");
+            $("#whitelist-button").addClass("active");
+        }
+        else{
+            $("#buytoken-button").addClass("active");
+            $("#whitelist-button").removeClass("active");
+        }
     } else {
         $("#upcomming").removeClass("active");
         $("#preico").addClass("active");
