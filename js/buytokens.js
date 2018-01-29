@@ -43,8 +43,8 @@ $(function(){
             bonusvalue = parseInt(SETTING.BONUS['max']);
         }
 
-        var bonus = 1 + ( bonusvalue / 100 );
-        var bonusprice = addComma(  (value * SETTING.PRICE * bonus) );
+        var bonus = 100 + bonusvalue;
+        var bonusprice = addComma(  (value * SETTING.PRICE * bonus / 100) );
         
         $("#moc-value").text(bonusprice);
         $("#bonus-price").text(bonusprice);
