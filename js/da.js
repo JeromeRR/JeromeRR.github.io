@@ -20,13 +20,13 @@ var preicoEndDate = new Date("February 11, 2018");
 
 
 // 지갑주소
-var addr = '0x781b6a54840ac2d52cf9ac2ad38e699674bdc6e7';
+var addr = '0x3B3D913C2DE8Aa5be94A40BF73d044233861c38b';
 
 // QR코드 이미지 1:1 비율
 var qr = 'img/dummyqr.jpg';
 
 // Hardcap
-var ico_hardcap = 10000.00;
+var ico_hardcap = 25000000.00;
 
 // 공지사항을 나타낼것인지
 var view_notice = false;
@@ -73,10 +73,11 @@ function loadeth(){
         }
     };
 
-    saled(addr, function(err, result)
+    var token_addr = '0x86789b2DE83B9A93F89F8C2Cb14d622CD73515e9';
+    saled(token_addr, function(err, result)
     {
         result.e -= 18;
-        ico_current = result.toNumber();
+        ico_current = Math.max(0, result.toNumber() - 41949386.94);
         icoprogress();
     });
 
