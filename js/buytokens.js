@@ -27,7 +27,6 @@ $(function(){
 
         // MOC 값 계산
         var value = $(this).val();
-        $("#moc-value").text( addComma(value * SETTING.PRICE) )
 
         //Bonus 계산
         var bonusvalue;
@@ -45,8 +44,9 @@ $(function(){
         }
 
         var bonus = 1 + ( bonusvalue / 100 );
-        var bonusprice = addComma(  (SETTING.PRICE * bonus) );
-
+        var bonusprice = addComma(  (value * SETTING.PRICE * bonus) );
+        
+        $("#moc-value").text(bonusprice);
         $("#bonus-price").text(bonusprice);
 
         //Send값 동기화
