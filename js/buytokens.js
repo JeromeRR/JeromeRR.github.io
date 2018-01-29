@@ -47,7 +47,7 @@ $(function(){
         var bonusprice = addComma(  (value * SETTING.PRICE * bonus / 100) );
         
         $("#moc-value").text(bonusprice);
-        $("#bonus-price").text(bonusprice);
+        $("#bonus-price").text( addComma(SETTING.PRICE * bonus / 100));
 
         //Send값 동기화
         $("#send-eth-value").text( value );
