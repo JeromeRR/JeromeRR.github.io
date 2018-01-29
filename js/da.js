@@ -94,10 +94,10 @@ function mosstimer(_date,_target,_fn){
     timer.start({countdown: true, startValues: {seconds: sec}});
     timer.addEventListener('secondsUpdated', function (e) {
         var time =  timer.getTimeValues();
-        $(_target).find(".timer-days").html(time.days);
-        $(_target).find(".timer-hours").html(time.hours);
-        $(_target).find(".timer-minutes").html(time.minutes);
-        $(_target).find(".timer-seconds").html(time.seconds);
+        $(_target).find(".timer-days").html('--');
+        $(_target).find(".timer-hours").html('--');
+        $(_target).find(".timer-minutes").html('--');
+        $(_target).find(".timer-seconds").html('--');
     });
 
     timer.addEventListener('targetAchieved', function (e) {
@@ -115,8 +115,7 @@ function mosstimer(_date,_target,_fn){
 
 function icoprogress(){
 
-    var percent = Math.ceil( ( ico_current/ico_hardcap ) * 100 );
-    if(percent > 100) percent = 100;
+    var percent = 100;
     var comma_separator_number_step = $.animateNumber.numberStepFactories.separator(',');
     var percent_number_step = $.animateNumber.numberStepFactories.append(' %');
 
@@ -225,30 +224,11 @@ $(function(){
     mosstimer(preicoStartDate,"#upcomming","preicostart");
     mosstimer(preicoEndDate,"#preico");
 
-    //Pre ICO start 화면 변경
-    var diffdate = today-preicoStartDate;
-    var remaining = diffdate/1000;
 
-    var buttondate = today - buyTokenButtonDate;
-    var buttonremaining = buttondate/1000;
-
-    if(remaining < 0){
-        $("#upcomming").addClass("active");
-        $("#preico").removeClass("active");
-        console.log(buttonremaining);
-        if(buttonremaining < 0) {
-            $("#buytoken-button").removeClass("active");
-            $("#whitelist-button").addClass("active");
-        }
-        else{
-            $("#buytoken-button").addClass("active");
-            $("#whitelist-button").removeClass("active");
-        }
-    } else {
-        $("#upcomming").removeClass("active");
-        $("#preico").addClass("active");
-        loadeth();
-    }
+    $("#upcomming").removeClass("active");
+    $("#preico").addClass("active");
+    $("#whitelist-button").addClass("active");
+    loadeth();
 
 });
 
