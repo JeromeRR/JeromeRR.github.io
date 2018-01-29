@@ -23,7 +23,7 @@ var preicoEndDate = new Date("February 11, 2018");
 var addr = '0x3B3D913C2DE8Aa5be94A40BF73d044233861c38b';
 
 // QR코드 이미지 1:1 비율
-var qr = 'img/dummyqr.jpg';
+var qr = 'img/qrcode.png';
 
 // Hardcap
 var ico_hardcap = 25000000.00;
