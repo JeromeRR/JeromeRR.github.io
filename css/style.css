@@ -1430,7 +1430,7 @@ ul.press-primary > li a:hover .pressitem-desc{
     font-size: 28px;
     line-height: 40px;
     color: #fff;
-    margin-left: 25px;
+    margin-left: 15px;
 }
 
 .footer-policy {
@@ -1702,4 +1702,14 @@ footer.main-footer .footer-policy a{
 
 #whitelist-button.active {
     display: block;
+}
+
+.telegram-button {
+    display : inline-block;
+    width : 30px;
+    height : 46px;
+}
+
+.telegram-img {
+    width : 30px;
 }
