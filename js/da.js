@@ -11,12 +11,12 @@ var today = new Date(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate(), 
 // PRE ICO 시작시간
 // 이 시간이 되면 화면이 ico 시작화면으로 변경됨.
 //var preicoStartDate = new Date("January 25, 2018 5:17");
-var preicoStartDate = new Date("January 29, 2018 13:00");
-var buyTokenButtonDate = new Date("January 29, 2018 12:00");
+var preicoStartDate = new Date("February 19, 2018 13:00");
+var buyTokenButtonDate = new Date("February 19, 2018 12:00");
 
 // PRE ICO 끝 날짜
 // 이벤트 없음
-var preicoEndDate = new Date("February 11, 2018");
+var preicoEndDate = new Date("March 18, 2018");
 
 
 // 지갑주소
@@ -94,10 +94,10 @@ function mosstimer(_date,_target,_fn){
     timer.start({countdown: true, startValues: {seconds: sec}});
     timer.addEventListener('secondsUpdated', function (e) {
         var time =  timer.getTimeValues();
-        $(_target).find(".timer-days").html('--');
-        $(_target).find(".timer-hours").html('--');
-        $(_target).find(".timer-minutes").html('--');
-        $(_target).find(".timer-seconds").html('--');
+        $(_target).find(".timer-days").html(time.days);
+        $(_target).find(".timer-hours").html(time.hours);
+        $(_target).find(".timer-minutes").html(time.minutes);
+        $(_target).find(".timer-seconds").html(time.seconds);
     });
 
     timer.addEventListener('targetAchieved', function (e) {
@@ -115,7 +115,8 @@ function mosstimer(_date,_target,_fn){
 
 function icoprogress(){
 
-    var percent = 100;
+    var percent = Math.ceil( ( ico_current/ico_hardcap ) * 100 );
+    if(percent > 100) percent = 100;
     var comma_separator_number_step = $.animateNumber.numberStepFactories.separator(',');
     var percent_number_step = $.animateNumber.numberStepFactories.append(' %');
 
@@ -224,11 +225,29 @@ $(function(){
     mosstimer(preicoStartDate,"#upcomming","preicostart");
     mosstimer(preicoEndDate,"#preico");
 
+    //Pre ICO start 화면 변경
+    var diffdate = today-preicoStartDate;
+    var remaining = diffdate/1000;
 
-    $("#upcomming").removeClass("active");
-    $("#preico").addClass("active");
-    $("#whitelist-button").addClass("active");
-    loadeth();
+    var buttondate = today - buyTokenButtonDate;
+    var buttonremaining = buttondate/1000;
+
+    if(remaining < 0){
+        $("#upcomming").addClass("active");
+        $("#preico").removeClass("active");
+        console.log(buttonremaining);
+        if(buttonremaining < 0) {
+            $("#buytoken-button").removeClass("active");
+            $("#whitelist-button").addClass("active");
+        }
+        else{
+            $("#buytoken-button").addClass("active");
+            $("#whitelist-button").removeClass("active");
+        }
+    } else {
+        $("#upcomming").removeClass("active");
+        $("#preico").addClass("active");
+        loadeth();
+    }
 
 });
-
