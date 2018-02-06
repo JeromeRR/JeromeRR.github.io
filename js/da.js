@@ -176,6 +176,8 @@ function addComma(x) {
 
 $(function(){
 
+    var selected = $(".advisors-select > .selected");
+    var selectedcontents = $("#ico-advisor");
 
     $(".whitepaper-part-1").on("click",function(){
         $('.whitepaper-part-1, .whitepaper-part-2, .whitepaper-download-area').addClass('active');
@@ -218,6 +220,31 @@ $(function(){
         if($(this).val() != ''){
             window.open( $(this).val() );
         }
+    });
+
+    var timer;
+
+    $(".advisors-select > div").hover(function(){
+        var $this = $(this);
+        var ref = this;
+
+        timer = setTimeout(function() {
+            console.log($this);
+            selected.removeClass('selected');
+            selectedcontents.addClass('inactive');
+
+            selected = $this;
+
+            if(ref.innerText == 'ICO')
+                selectedcontents = $('#ico-advisor');
+            else if(ref.innerText == 'Product')
+                selectedcontents = $('#product-advisor');
+            
+            selectedcontents.removeClass('inactive');
+            $this.addClass('selected');
+        }, 300);
+    }, function() {
+        clearTimeout(timer);
     });
 
 

@@ -21,7 +21,7 @@
     <link rel="stylesheet" type="text/css" href="css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="css/icomoon/icomoon.css?v=3" />
     <link rel="stylesheet" type="text/css" href="css/icomoon2/style.css?v=3" />
-    <link rel="stylesheet" type="text/css" href="css/style.css?v=14" />
+    <link rel="stylesheet" type="text/css" href="css/style.css?v=15" />
     <link rel="stylesheet" type="text/css" href="css/motion.css?v=12" />
     <link rel="stylesheet" type="text/css" href="css/responsive.css?v=12" />
 
@@ -54,7 +54,7 @@
     </script>
 
     <script type="text/javascript" src="js/vendor/web3.min.js?v=9"></script>
-    <script type="text/javascript" src="js/da.js?v=14"></script>
+    <script type="text/javascript" src="js/da.js?v=15"></script>
 
 
 </head>
@@ -305,7 +305,7 @@
                             <div class="whitepaper-download-ico"><i class="icon-download"></i></div>
                             <div class="whitepaper-download-con">
                                 <div class="whitepaper-download-title">Download the white paper</div>
-                                <div class="whitepaper-download-subtitle">7 Languages available</div>
+                                <div class="whitepaper-download-subtitle">6 Languages available</div>
                             </div>
                         </div>
                         <div class="whitepaper-part-2">
@@ -315,7 +315,6 @@
                             <a target="_blank" href="https://d2vy65gufabiok.cloudfront.net/whitepaper/Mossland+Whitepaper+-+KOR.pdf">한글</a>
                             <a target="_blank" href="https://d2vy65gufabiok.cloudfront.net/whitepaper/Mossland+Whitepaper+-+JPN.pdf">日本語</a>
                             <a target="_blank" href="https://d2vy65gufabiok.cloudfront.net/whitepaper/Mossland+Whitepaper+-+RUS.pdf">Русский</a>
-                            <a href="javascript:void(0)" class="disable">Français</a>
                             <a target="_blank" href="https://d2vy65gufabiok.cloudfront.net/whitepaper/Mossland+Whitepaper+-+ESP.pdf">Español</a>
                         </div>
                     </div>
@@ -428,6 +427,7 @@
                             </div>
                         </li>
                     </ul>
+                    <p id="tokensale-notice">*The amount of MOC per 1 ETH will be changed by the market price of ETH. You can find more details on the white paper.</p>
                 </div>
 
                 <div class="tokensale-part">
@@ -727,19 +727,40 @@
         <section class="advisors">
             <div class="con">
                 <h1 class="advisors-title stitle">Advisors</h1>
-                <ul class="team-list team-primary clearfix">
+                <div class="advisors-select">
+                    <div class="selected"><span>ICO</span></div>
+                    <div><span>Product</span></div>
+                </div>
+                <ul class="team-list team-primary clearfix" id="ico-advisor">
                     <li>
                         <div class="team-img">
-                            <img src="img/face/jeffrey.jpg" alt="Jeffrey Lim face">
-                            <a href="https://www.linkedin.com/in/jeffreylim" title="Go to Linkedin" target="_blank"><i class="icon-linkedin3"></i></a>
+                            <img src="img/face/jason.jpg" alt="Jason Han face">
+                            <a href="https://www.linkedin.com/in/jaesunhan/ " title="Go to Linkedin" target="_blank"><i class="icon-linkedin3"></i></a>
                         </div>
                         <div class="team-primary-con">
-                            <h2 class="team-tit">Jeffrey Lim</h2>
-                            <div class="team-sub">Startup Advisor</div>
+                            <h2 class="team-tit">Jason Han</h2>
+                            <div class="team-sub">Blockchain Advisor</div>
                             <ul class="team-history">
-                                <li>18+ years of experience in startup ecosystem</li>
-                                <li>Years of experience in Venture Capital</li>
-                                <li>Head of Campus Seoul, Google</li>
+                                <li>Co-Founder & Partner/CTO, FuturePlay</li>
+                                <li>Founder & CEO, NexR (acquired by KT)</li>
+                                <li>Adjunct Professor, KAIST MBA</li>
+                                <li>KAIST PhD in P2P and Distributed System</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="team-img">
+                            <img src="img/face/jinhwa.jpg" alt="Louis Jinhwa Kim">
+                            <a href="https://www.linkedin.com/in/louiskim76/" title="Go to Linkedin" target="_blank"><i class="icon-linkedin3"></i></a>
+                        </div>
+                        <div class="team-primary-con">
+                            <h2 class="team-tit">Louis Jinhwa Kim</h2>
+                            <div class="team-sub">Blockchain Advisor</div>
+                            <ul class="team-history">
+                                <li>Co-founder, Director, Korea Blockchain Association</li>
+                                <li>Co-founder, Korbit</li>
+                                <li>Director, Tide Institute</li>
+                                <li>Author of World 1st Bitcoin Book, 'Next Money Bitcoin(2013)'</li>
                             </ul>
                         </div>
                     </li>
@@ -757,6 +778,23 @@
                                 <li>Venture Partner, DFJ Athena VC</li>
                                 <li>Head of M&A, Google APAC </li>
                                 <li>CSO, Yahoo Korea & SE Asia </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="team-list team-primary clearfix inactive" id="product-advisor">
+                    <li>
+                        <div class="team-img">
+                            <img src="img/face/jeffrey.jpg" alt="Jeffrey Lim face">
+                            <a href="https://www.linkedin.com/in/jeffreylim" title="Go to Linkedin" target="_blank"><i class="icon-linkedin3"></i></a>
+                        </div>
+                        <div class="team-primary-con">
+                            <h2 class="team-tit">Jeffrey Lim</h2>
+                            <div class="team-sub">Startup Advisor</div>
+                            <ul class="team-history">
+                                <li>18+ years of experience in startup ecosystem</li>
+                                <li>Years of experience in Venture Capital</li>
+                                <li>Head of Campus Seoul, Google</li>
                             </ul>
                         </div>
                     </li>
@@ -937,26 +975,8 @@
                             </ul>
                         </div>
                     </li>
-
-                    <li>
-                        <div class="team-img">
-                            <img src="img/face/jason.jpg" alt="Jason Han face">
-                            <a href="https://www.linkedin.com/in/jaesunhan/ " title="Go to Linkedin" target="_blank"><i class="icon-linkedin3"></i></a>
-                        </div>
-                        <div class="team-primary-con">
-                            <h2 class="team-tit">Jason Han</h2>
-                            <div class="team-sub">Blockchain Advisor</div>
-                            <ul class="team-history">
-                                <li>Co-Founder & Partner/CTO, FuturePlay</li>
-                                <li>Founder & CEO, NexR (acquired by KT)</li>
-                                <li>Adjunct Professor, KAIST MBA</li>
-                                <li>KAIST PhD in P2P and Distributed System</li>
-                            </ul>
-                        </div>
-                    </li>
                 </ul>
             </div>
-
         </section>
 
 
@@ -1070,7 +1090,6 @@
                         <option value="https://d2vy65gufabiok.cloudfront.net/whitepaper/Mossland+Whitepaper+-+KOR.pdf">한글</option>
                         <option value="https://d2vy65gufabiok.cloudfront.net/whitepaper/Mossland+Whitepaper+-+JPN.pdf">日本語</option>
                         <option value="https://d2vy65gufabiok.cloudfront.net/whitepaper/Mossland+Whitepaper+-+RUS.pdf">Русский</option>
-                        <option value="" disabled>Français</option>
                         <option value="https://d2vy65gufabiok.cloudfront.net/whitepaper/Mossland+Whitepaper+-+ESP.pdf">Español</option>
 
                     </select>
@@ -1078,13 +1097,7 @@
 		    <select id="footer-faq-download">
                         <option value="">FAQ Download</option>
                         <option value="https://goo.gl/CjzGkx">English</option>
-                        <option value="" disabled>中文</option>
                         <option value="https://drive.google.com/file/d/116wxjkEZNeFnLqCtJ8qCThwM7gmQZWgV/view">한글</option>
-                        <option value="" disabled>日本語</option>
-                        <option value="" disabled>Русский</option>
-                        <option value="" disabled>Français</option>
-                        <option value="" disabled>Español</option>
-
                     </select>
                 </div>
 

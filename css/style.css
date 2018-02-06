@@ -628,10 +628,13 @@ ul.features-list > li:last-child{
 
 .team-title,
 .investors-title,
-.advisors-title,
 .roadmap-title {
     text-align: center;
     margin-bottom: 50px;
+}
+
+.advisors-title {
+    text-align: center;
 }
 
 .partners {
@@ -1712,4 +1715,52 @@ footer.main-footer .footer-policy a{
 
 .telegram-img {
     width : 30px;
+}
+
+.advisors-select {
+    text-align : center;
+    margin-top : 10px;
+    margin-bottom : 50px;
+}
+
+.advisors-select > div {
+    display : inline-block;
+    margin-top : 0px;
+    font-weight : 100;
+    font-size : 1.6em;
+    color : #999;
+    width : 6.4em;
+    line-height : 2.6em;
+    height : 2.6em;
+}
+
+.advisors-select > div span {
+    border-bottom : 1px solid white;
+    transition-duration : 0.3s;
+}
+
+.advisors-select > div span:hover {
+    cursor: pointer;
+    color : #000;
+    border-bottom : 1px solid black;
+    transition-duration : 0.3s;
+}
+
+.advisors-select > .selected span {
+    color : #000;
+    border-bottom : 1px solid black;
+}
+
+.advisors-select > .selected span:hover {
+    cursor : default;
+}
+
+.inactive {
+    display : none;
+}
+
+#tokensale-notice{
+    color : #ccc;
+    text-align: center;
+    margin-top : 40px;
 }
