@@ -13,11 +13,11 @@
     }
 
     .features-item-odd .features-con {
-        padding-right: 6%;
+        padding-right: 3%;
     }
 
     .features-con {
-        padding-left: 6%;
+        padding-left: 3%;
     }
 
     .team-history {
@@ -30,7 +30,7 @@
 
 
     .main-header nav > a {
-        padding: 0 10px;
+        padding: 0 4px;
     }
 
     .main-header nav {
@@ -92,8 +92,8 @@
 
     .con {
         width: 100%;
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
     .ico {
