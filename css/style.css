@@ -635,6 +635,8 @@ ul.features-list > li:last-child{
 
 .advisors-title {
     text-align: center;
+
+    padding-bottom: 50px;
 }
 
 .partners {
@@ -1764,3 +1766,4 @@ footer.main-footer .footer-policy a{
     text-align: center;
     margin-top : 40px;
 }
+
