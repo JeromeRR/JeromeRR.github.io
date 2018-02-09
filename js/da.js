@@ -18,7 +18,7 @@ var buyTokenButtonDate = new Date("March 12, 2018 12:00");
 // 이벤트 없음
 var preicoEndDate = new Date("March 18, 2018");
 
-var newNotice = true;
+var newNotice = false;
 
 // 지갑주소
 var addr = '0x3B3D913C2DE8Aa5be94A40BF73d044233861c38b';
@@ -30,7 +30,7 @@ var qr = 'img/qrcode.png';
 var ico_hardcap = 25000000.00;
 
 // 공지사항을 나타낼것인지
-var view_notice = false;
+var view_notice = true;
 
 // 지갑데이터 수신 받기 전 초기 값.
 var ico_current = 0;
