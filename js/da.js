@@ -18,7 +18,7 @@ var buyTokenButtonDate = new Date("March 12, 2018 12:00");
 // 이벤트 없음
 var preicoEndDate = new Date("March 18, 2018");
 
-var newNotice = false;
+var newNotice = true;
 
 // 지갑주소
 var addr = '0x3B3D913C2DE8Aa5be94A40BF73d044233861c38b';
