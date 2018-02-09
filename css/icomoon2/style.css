@@ -40,3 +40,13 @@
   content: "\f001";
   color: #fff;
 }
+
+.social .icon-telegram-kor:before {
+  color: #888 !important;
+}
+.social .icon-telegram-eng:before {
+  color: #888 !important;
+}
+.social .icon-steemit-logo:before {
+  color: #888 !important;
+}
