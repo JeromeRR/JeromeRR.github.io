@@ -255,6 +255,12 @@ $(function(){
     }, function() {
         clearTimeout(timer);
     });
+    
+    $("#viewmore").on("click", function(){
+        $(".expand").addClass("inactive");
+        $(".readmore").addClass("inactive");
+        $("#product-advisor").removeClass("product");
+    });
 
 
     //Timer

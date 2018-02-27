@@ -1767,3 +1767,41 @@ footer.main-footer .footer-policy a{
     margin-top : 40px;
 }
 
+.product-view {
+    overflow: hidden;
+    max-height: 4100px;
+    transition: max-height 1s;
+}
+
+.product{
+    max-height: 400px;
+}
+
+.readmore{
+    position: absolute;
+    margin: 0;
+    height: 400px;
+    width: 100%;
+    text-align: center;
+    background-image: linear-gradient(to bottom, transparent, white);
+}
+
+.expand{
+    text-align: center;
+    width: 30%;
+    height : 50px;
+    margin: auto;
+}
+
+.expand > button {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.25em;
+    font-weight: 100;
+}
+
+.expand > button:hover {
+    cursor: pointer;
+}
