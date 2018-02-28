@@ -1779,12 +1779,12 @@ footer.main-footer .footer-policy a{
 
 .readmore{
     position: absolute;
-    margin-top: 1180px;
+    margin-top: 980px;
     margin-bottom: 0px;
-    height: 50px;
+    height: 150px;
     width: 100%;
     text-align: center;
-    background-image: linear-gradient(to bottom, transparent, white);
+    /* background-image: linear-gradient(to bottom, transparent, white); */
 }
 
 .expand{
@@ -1795,13 +1795,16 @@ footer.main-footer .footer-policy a{
 }
 
 .expand > button {
-    padding-top : 50px;
+    margin-top : 50px;
     width: 100%;
     height: 100%;
     background-color: transparent;
+    background: none;
+    border-radius : 0;
     border: none;
     font-size: 1.25em;
     font-weight: 100;
+    outline: none;
 }
 
 .expand > button:hover {
@@ -1837,4 +1840,9 @@ footer.main-footer .footer-policy a{
 .down {
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
+}
+
+button:active {
+    border-style: outset;
+    border: none;
 }
