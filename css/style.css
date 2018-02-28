@@ -1774,12 +1774,12 @@ footer.main-footer .footer-policy a{
 }
 
 .product{
-    max-height: 800px;
+    max-height: 1180px;
 }
 
 .readmore{
     position: absolute;
-    margin-top: 750px;
+    margin-top: 1180px;
     margin-bottom: 0px;
     height: 50px;
     width: 100%;
