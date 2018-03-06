@@ -855,10 +855,10 @@ var moss_lite = function(){
 
     //Animate effect on scroll
     var icopoint = ( $("#ico").offset().top ) - (wHeight / 2) -100;
-    // var feature01Point = ( $("#features-01").offset().top ) - (wHeight / 2) -200;
-    // var feature02Point = ( $("#features-02").offset().top ) - (wHeight / 2) -200;
-    // var feature03Point = ( $("#features-03").offset().top ) - (wHeight / 2) -200;
-    // var feature04Point = ( $("#features-04").offset().top ) - (wHeight / 2) -200;
+    //var feature01Point = ( $("#features-01").offset().top ) - (wHeight / 2) -200;
+    //var feature02Point = ( $("#features-02").offset().top ) - (wHeight / 2) -200;
+    //var feature03Point = ( $("#features-03").offset().top ) - (wHeight / 2) -200;
+    //var feature04Point = ( $("#features-04").offset().top ) - (wHeight / 2) -200;
     var roadmapPoint = ( $("#roadmap").offset().top ) - (wHeight / 2) -100;
 
     var feature01fire,feature02fire,feature03fire,feature04fire,roadmapFire,icofire,icofireDone;
@@ -919,21 +919,21 @@ var moss_lite = function(){
             icofire = true;
         }
 
-        if(scrollTop > feature01Point) {
-            feature01fire = true;
-        }
+        // if(scrollTop > feature01Point) {
+        //     feature01fire = true;
+        // }
 
-        if(scrollTop > feature02Point) {
-            feature02fire = true;
-        }
+        // if(scrollTop > feature02Point) {
+        //     feature02fire = true;
+        // }
 
-        if(scrollTop > feature03Point) {
-            feature03fire = true;
-        }
+        // if(scrollTop > feature03Point) {
+        //     feature03fire = true;
+        // }
 
-        if(scrollTop > feature04Point) {
-            feature04fire = true;
-        }
+        // if(scrollTop > feature04Point) {
+        //     feature04fire = true;
+        // }
 
         if(scrollTop > roadmapPoint) {
             roadmapFire = true;
