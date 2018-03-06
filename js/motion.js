@@ -27,13 +27,13 @@ var moss = (function(){
     // AR 이미지의 에니메이션을 위한 스크롤 단계 값
     var SCROLL_MOTION = {
         STEP1 : {
-            SCROLL : 2500
+            SCROLL : 700
         },
         STEP2 : {
-            SCROLL: 2900
+            SCROLL: 700
         },
         STEP3 : {
-            SCROLL : 2900
+            SCROLL : 700
         },
         LAST : {
             W : 0,
@@ -352,10 +352,10 @@ var moss = (function(){
 
         //Animate effect on scroll
         icoPoint = ( $("#ico").offset().top ) - (wHeight / 2) -100;
-        feature01Point = ( $("#features-01").offset().top ) - (wHeight / 2) -200;
-        feature02Point = ( $("#features-02").offset().top ) - (wHeight / 2) -200;
-        feature03Point = ( $("#features-03").offset().top ) - (wHeight / 2) -200;
-        feature04Point = ( $("#features-04").offset().top ) - (wHeight / 2) -200;
+        // feature01Point = ( $("#features-01").offset().top ) - (wHeight / 2) -200;
+        // feature02Point = ( $("#features-02").offset().top ) - (wHeight / 2) -200;
+        // feature03Point = ( $("#features-03").offset().top ) - (wHeight / 2) -200;
+        // feature04Point = ( $("#features-04").offset().top ) - (wHeight / 2) -200;
         roadmapPoint = ( $("#roadmap").offset().top ) - (wHeight / 2) -100;
     }
 
@@ -379,21 +379,21 @@ var moss = (function(){
         //    icofireDone = true;
         //}
 
-        if(feature01fire){
-            $("#features-01").addClass('active');
-        }
-
-        if(feature02fire){
-            $("#features-02").addClass('active');
-        }
-
-        if(feature03fire){
-            $("#features-03").addClass('active');
-        }
-
-        if(feature04fire){
-            $("#features-04").addClass('active');
-        }
+        // if(feature01fire){
+        //     $("#features-01").addClass('active');
+        // }
+        //
+        // if(feature02fire){
+        //     $("#features-02").addClass('active');
+        // }
+        //
+        // if(feature03fire){
+        //     $("#features-03").addClass('active');
+        // }
+        //
+        // if(feature04fire){
+        //     $("#features-04").addClass('active');
+        // }
 
         if(roadmapFire){
             $("#roadmap").addClass('active');
@@ -767,12 +767,20 @@ var moss = (function(){
             });
         }
 
+        if( scrollTop > 600) {
+            $(".main-header").addClass('active');
+
+        } else {
+
+            // 메인모션을 활성화한다
+            $(".main-header").removeClass('active');
+        }
+
         // 스크롤이 모션영역을 지났을때
         if( scrollTop > SCROLL_MOTION.STEP3.SCROLL+wHeight-80) {
             // 메인모션을 정지한다
             motionOff = true;
             mainMotionfire();
-            $(".main-header").addClass('active');
             if( scrollTop > $('#tail').offset().top-500){
                 $("#event").removeClass('active');
             } else {
@@ -792,7 +800,6 @@ var moss = (function(){
             // 메인모션을 활성화한다
             motionOff = false;
             mainMotionfire();
-            $(".main-header").removeClass('active');
             $("#event").removeClass('active');
 
 
@@ -848,10 +855,10 @@ var moss_lite = function(){
 
     //Animate effect on scroll
     var icopoint = ( $("#ico").offset().top ) - (wHeight / 2) -100;
-    var feature01Point = ( $("#features-01").offset().top ) - (wHeight / 2) -200;
-    var feature02Point = ( $("#features-02").offset().top ) - (wHeight / 2) -200;
-    var feature03Point = ( $("#features-03").offset().top ) - (wHeight / 2) -200;
-    var feature04Point = ( $("#features-04").offset().top ) - (wHeight / 2) -200;
+    // var feature01Point = ( $("#features-01").offset().top ) - (wHeight / 2) -200;
+    // var feature02Point = ( $("#features-02").offset().top ) - (wHeight / 2) -200;
+    // var feature03Point = ( $("#features-03").offset().top ) - (wHeight / 2) -200;
+    // var feature04Point = ( $("#features-04").offset().top ) - (wHeight / 2) -200;
     var roadmapPoint = ( $("#roadmap").offset().top ) - (wHeight / 2) -100;
 
     var feature01fire,feature02fire,feature03fire,feature04fire,roadmapFire,icofire,icofireDone;
@@ -862,29 +869,29 @@ var moss_lite = function(){
         //    icoprogress();
         //}
 
-        if(feature01fire){
-            $("#features-01").addClass('active');
-        } else {
-            $("#features-01").removeClass('active');
-        }
-
-        if(feature02fire){
-            $("#features-02").addClass('active');
-        } else {
-            $("#features-02").removeClass('active');
-        }
-
-        if(feature03fire){
-            $("#features-03").addClass('active');
-        } else {
-            $("#features-03").removeClass('active');
-        }
-
-        if(feature04fire){
-            $("#features-04").addClass('active');
-        } else {
-            $("#features-04").removeClass('active');
-        }
+        // if(feature01fire){
+        //     $("#features-01").addClass('active');
+        // } else {
+        //     $("#features-01").removeClass('active');
+        // }
+        //
+        // if(feature02fire){
+        //     $("#features-02").addClass('active');
+        // } else {
+        //     $("#features-02").removeClass('active');
+        // }
+        //
+        // if(feature03fire){
+        //     $("#features-03").addClass('active');
+        // } else {
+        //     $("#features-03").removeClass('active');
+        // }
+        //
+        // if(feature04fire){
+        //     $("#features-04").addClass('active');
+        // } else {
+        //     $("#features-04").removeClass('active');
+        // }
 
         if(roadmapFire){
             $("#roadmap").addClass('active');
@@ -944,5 +951,3 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
 } else {
     moss();
 }
-
-

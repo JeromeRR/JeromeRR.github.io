@@ -293,3 +293,16 @@ $(function(){
     }
 
 });
+
+$(document).ready(function() {
+    $('.js-to-whitepapper').click(function (event) {
+        event.preventDefault();
+        console.log('123');
+    
+        $('html, body').animate({
+            scrollTop: $('#whitepaper').offset().top - 100
+        }, 500);
+
+        $(".whitepaper-part-1").click();
+    });
+});
