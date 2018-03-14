@@ -1,27 +1,20 @@
 <!DOCTYPE html>
-<html>
-
- <!-- Google Tag Manager -->
+<html lang="en">
+<head>
+    
+    <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-NHDGFKZ');</script>
     <!-- End Google Tag Manager -->
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-  <head>
-    <meta charset="utf-8">
     <title>Mossland ICO</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <meta name="viewport" content="width=320, initial-scale=1, user-scalable=no">
-    <meta name="format-detection" content="telephone=no">
-    <link rel="stylesheet" media="all" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" media="all" href="css/app.css">
-	
-	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
-
     <meta name="description" content="Location based AR Property Game" />
     <meta name="keywords" content="ICO,ar,mossland,game" />
     <meta name="author" content="REALITY REFLECTION">
@@ -34,6 +27,13 @@
     <meta property="og:image:alt" content="MOSSLAND - Location Based AR Property Game." />
 
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/icomoon/icomoon.css?v=3" />
+    <link rel="stylesheet" type="text/css" href="css/icomoon2/style.css?v=6" />
+    <link rel="stylesheet" type="text/css" href="css/style.css?v=15" />
+    <link rel="stylesheet" type="text/css" href="css/motion.css?v=12" />
+    <link rel="stylesheet" type="text/css" href="css/responsive.css?v=12" />
+
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
@@ -42,781 +42,1356 @@
     <meta name="theme-color" content="#ffffff">
 	
 	<link rel="canonical" href="https://moss.land/"/>
-  </head>
 
-  <body>
-  
-  <!-- Google Tag Manager (noscript) -->
+    <!-- Global site tag (gtag.js) - Google Analytics
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112022406-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-112022406-1');
+    </script>
+    -->
+
+    <script type="text/javascript" src="js/vendor/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/vendor/jquery.easing.compatibility.js"></script>
+    <script type="text/javascript" src="js/vendor/easytimer.min.js"></script>
+    <script type="text/javascript" src="js/vendor/jquery.animateNumber.min.js"></script>
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="js/vendor/html5shiv.min.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript">
+
+    </script>
+
+    <script type="text/javascript" src="js/vendor/web3.min.js?v=9"></script>
+    <script type="text/javascript" src="js/da.js?v=17"></script>
+
+
+</head>
+
+<body>
+
+<!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NHDGFKZ"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
-    <!--content-->
-    <main>
-      <header class="header" id="header">
-        <div class="header__main"><button class="header__menu-btn js-menu-btn"><span></span><span></span><span></span><span></span></button>
-          <div class="header__col header__col_left"><a class="header__logo" href="#"><img src="img/logo_dark.svg"></a></div>
-          <ul class="header__menu js-menu">
-            <li class="header__menu-item"><a href="#potential">Potential</a></li>
-            <li class="header__menu-item"><a href="#about">About</a></li>
-            <li class="header__menu-item"><a href="#whitepapper">White Paper</a></li>
-            <li class="header__menu-item"><a href="#roadmap">Roadmap</a></li>
-            <li class="header__menu-item"><a href="#token">Token sale</a></li>
-            <li class="header__menu-item"><a href="#team">Team</a></li>
-            <li class="header__menu-item"><a href="#news">News</a></li>
-          </ul>
-          <div class="header__col header__col_right">
-            <ul class="socials">
-              <li class="socials__item"><a href="https://t.me/mossland" target="_blank" style="background-image: url(img/tg-kor.png);"></a></li>
-              <li class="socials__item"><a href="https://t.me/mossland_eng" target="_blank" style="background-image: url(img/tg-eng.png);"></a></li>
-              <li class="socials__item"><a href="https://t.me/mossland_rus" target="_blank" style="background-image: url(img/tg-ru.png);"></a></li>
-              <li class="socials__item"><a href="https://open.kakao.com/o/gtzODLH" target="_blank" style="background-image: url(img/kakao.png);"></a></li>
-              <li class="socials__item"><a href="https://steemit.com/@mossland" target="_blank" style="background-image: url(img/steemit.png);"></a></li>
-            </ul><button class="header__add-btn btn btn_transp btn_ph_20"><a href="https://www.jotform.com/form/80104658072452/" target="_blank">Add me to the Whitelist</a></button></div>
-        </div>
-        <a class="notice" href="https://steemit.com/@mossland" target="_blank">
-          <p class="notice__inner"><span>Important Notice! </span>Main-ICO plan has been changed. For more details, <span class="underlined">click here<svg class="icon icon-arrow-right"><use xlink:href="img/sprite.svg#icon-arrow-right"></use></svg></span></p>
-        </a>
-      </header>
-      <section class="section-home" id="home">
-        <div class="container">
-          <div class="hero">
-            <h1 class="hero__title">Location-based Augmented Reality(AR) <br>mobile game based on real estate</h1>
-            <div class="hero__timer">
-              <h2 class="hero__timer-title">Main ICO will be launched</h2>
-              <ul class="timer js-timer">
-                <li class="timer__item">
-                  <h4 class="timer__title">DAYS</h4>
-                  <div class="timer__value timer-str js-timer-days">0</div>
-                </li>
-                <li class="timer__item">
-                  <h4 class="timer__title">HOURS</h4>
-                  <div class="timer__value timer-str js-timer-hours">0</div>
-                </li>
-                <li class="timer__item">
-                  <h4 class="timer__title">MINUTES</h4>
-                  <div class="timer__value timer-str js-timer-minutes">0</div>
-                </li>
-                <li class="timer__item">
-                  <h4 class="timer__title">SECONDS</h4>
-                  <div class="timer__value timer-str js-timer-seconds">0</div>
-                </li>
-              </ul>
-            </div>
-            <div class="hero__button"><a class="btn" href="https://www.jotform.com/form/80104658072452/">Add me to the Whitelist</a></div>
-            <div class="hero__scroll-down">
-              <a class="scroll-down" href="#potential">
-                <p class="scroll-down__title">Scroll Down</p>
-              </a>
-            </div>
-            <div class="hero__phone"><img class="hero__phone-img" src="img/phone.png" alt="" role="presentation" />
-              <div class="hero__video-button"><button class="video-btn js-open-popup" data-open="video"><span class="video-btn__icon"></span><span class="video-btn__title">Play video</span></button></div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="section section_pv_size-l section_bgc_grey section_potential" id="potential">
-        <div class="container">
-          <div class="potential">
-            <div class="potential__col">
-              <div class="potential__title">
-                <h2 class="section__title">Potential</h2>
-              </div>
-              <p class="potential__text">Mossland combines the future of Augmented Reality (AR), Blockchain, and Gaming together. We have gathered the best experts and advisors from Korea in one project which has one goal: to virtualize everything.</p>
-            </div>
-            <div class="potential__col potential__col_tiles">
-              <div class="potential__tile">
-                <div class="potential__tile-icon"><svg class="icon icon-phone"><use xlink:href="img/sprite.svg#icon-phone"></use></svg></div>
-                <h3 class="potential__tile-title">Next step of AR</h3>
-                <p class="potential__text">Real-world property market, which gives you possibility to create your own advertisement campaign</p>
-              </div>
-              <div class="potential__tile">
-                <div class="potential__tile-icon"><svg class="icon icon-file"><use xlink:href="img/sprite.svg#icon-file"></use></svg></div>
-                <h3 class="potential__tile-title">Unique project</h3>
-                <p class="potential__text">Biggest Korean ICO project, which is led by the team of ex-Google and ex-Samsung co-founders </p>
-              </div>
-            </div>
-            <div class="potential__col">
-              <div class="potential__tile">
-                <div class="potential__tile-icon"><svg class="icon icon-coordinates"><use xlink:href="img/sprite.svg#icon-coordinates"></use></svg></div>
-                <h3 class="potential__tile-title">A location-based</h3>
-                <p class="potential__text">All the properties are based on the real items and their value is proportionate to the number of check-ins</p>
-              </div>
-              <div class="potential__tile">
-                <div class="potential__tile-icon"><svg class="icon icon-dollar"><use xlink:href="img/sprite.svg#icon-dollar"></use></svg></div>
-                <h3 class="potential__tile-title">Real money</h3>
-                <p class="potential__text">Accessories not only make game interface more interesting, but also increase the economic potential of buildings</p>
-              </div>
-            </div>
-            <div class="potential__col">
-              <div class="potential__tile">
-                <div class="potential__tile-icon"><svg class="icon icon-umbrella"><use xlink:href="img/sprite.svg#icon-umbrella"></use></svg></div>
-                <h3 class="potential__tile-title">Safety</h3>
-                <p class="potential__text">Ethereum-based cryptocurrency secured by blockchain technology for all the trades, sales and purchases</p>
-              </div>
-              <div class="potential__tile">
-                <div class="potential__tile-icon"><svg class="icon icon-basketball"><use xlink:href="img/sprite.svg#icon-basketball"></use></svg></div>
-                <h3 class="potential__tile-title">Gaming</h3>
-                <p class="potential__text">Have fun in a new AR world</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="section" id="about">
-        <div class="container">
-          <div class="section__heading">
-            <h2 class="section__title">About Mossland Game</h2>
-          </div>
-          <div class="section__content">
-            <div class="about">
-              <div class="about__pic"><img src="img/about-img-1.png" alt="about-img-1"></div>
-              <div class="about__descr">
-                <p>Real-world cities will see their virtual AR counterparts landscape change over time with a large number of diverse accessories, increasing engagement and competition within the virtual property market and creating a unique opportunity to
-                  market the game in a hyperlocal context-sensitive way.</p>
-              </div>
-            </div>
-            <div class="about about_reverse">
-              <div class="about__pic"><img src="img/about-img-2.png" alt="about-img-2"></div>
-              <div class="about__descr">
-                <p>Tradable properties and accessories in Mossland can be bought, sold, and exchanged between players via an in-game auction house. Transactions in the Mossland auction house will be executed using Moss Coin, a blockchain-based cryptocurrency</p>
-              </div>
-            </div>
-            <div class="about">
-              <div class="about__pic"><img src="img/about-img-3.png" alt="about-img-3"></div>
-              <div class="about__descr">
-                <p>Mossland creates a new advertising platform based on the convergence of real location-based games with AR technology. Any users of Mossland can create and run advertisement campaign through a simple interface after setting an ad budget
-                  using Moss. </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="section section_bgc_dark-grey section_whitepapper" id="whitepapper">
-        <div class="container">
-          <div class="section__heading">
-            <h2 class="section__title section__title_white">White Paper</h2>
-            <p class="section__subtitle">Read choosing your language </p>
-          </div>
-          <div class="section__content">
-            <ul class="papper-langs">
-              <li class="papper-langs__item"><a class="papper-langs__link" href="https://d2vy65gufabiok.cloudfront.net/whitepaper/Mossland+Whitepaper+-+ENG.pdf" target="_blank"> <img src="img/flag-1.png" alt="English"><span class="papper-langs__title">English</span></a></li>
-              <li class="papper-langs__item"><a class="papper-langs__link" href="https://d2vy65gufabiok.cloudfront.net/whitepaper/Mossland+Whitepaper+-+CHN.pdf" target="_blank"> <img src="img/flag-2.png" alt="中文"><span class="papper-langs__title">中文</span></a></li>
-              <li class="papper-langs__item"><a class="papper-langs__link" href="https://d2vy65gufabiok.cloudfront.net/whitepaper/Mossland+Whitepaper+-+KOR.pdf" target="_blank"> <img src="img/flag-3.png" alt="한글"><span class="papper-langs__title">한글</span></a></li>
-              <li class="papper-langs__item"><a class="papper-langs__link" href="https://d2vy65gufabiok.cloudfront.net/whitepaper/Mossland+Whitepaper+-+JPN.pdf" target="_blank"> <img src="img/flag-4.png" alt="日本語"><span class="papper-langs__title">日本語</span></a></li>
-              <li class="papper-langs__item"><a class="papper-langs__link" href="https://d2vy65gufabiok.cloudfront.net/whitepaper/Mossland+Whitepaper+-+RUS.pdf" target="_blank"> <img src="img/flag-5.png" alt="Русский"><span class="papper-langs__title">Русский</span></a></li>
-              <li class="papper-langs__item"><a class="papper-langs__link" href="https://d2vy65gufabiok.cloudfront.net/whitepaper/Mossland+Whitepaper+-+ESP.pdf" target="_blank"> <img src="img/flag-6.png" alt="Español"><span class="papper-langs__title">Español</span></a></li>
-            </ul>
-          </div>
-        </div>
-      </section>
-      <section class="section" id="roadmap">
-        <div class="container">
-          <div class="section__heading">
-            <h2 class="section__title">Roadmap</h2>
-          </div>
-          <div class="section__content">
-            <ul class="roadmap">
-              <li class="roadmap__item">
-                <div class="roadmap__info"><span class="roadmap__icon"><svg class="icon icon-power"><use xlink:href="img/sprite.svg#icon-power"></use></svg></span>
-                  <h5 class="roadmap__title">1Q 2018</h5>
-                  <p class="roadmap__descr">Pre ICO, Main ICO</p>
-                </div>
-              </li>
-              <li class="roadmap__item">
-                <div class="roadmap__info"><span class="roadmap__icon"><svg class="icon icon-mosscoin"><use xlink:href="img/sprite.svg#icon-mosscoin"></use></svg></span>
-                  <h5 class="roadmap__title">2Q 2018</h5>
-                  <p class="roadmap__descr">List Moss Coin on Exchange</p>
-                </div>
-              </li>
-              <li class="roadmap__item">
-                <div class="roadmap__info"><span class="roadmap__icon"><svg class="icon icon-setting_wrench"><use xlink:href="img/sprite.svg#icon-setting_wrench"></use></svg></span>
-                  <h5 class="roadmap__title">3Q 2018</h5>
-                  <p class="roadmap__descr">Prototype Building</p>
-                </div>
-              </li>
-              <li class="roadmap__item">
-                <div class="roadmap__info"><span class="roadmap__icon"><svg class="icon icon-alpha"><use xlink:href="img/sprite.svg#icon-alpha"></use></svg></span>
-                  <h5 class="roadmap__title">4Q 2018</h5>
-                  <p class="roadmap__descr">Alpha Build</p>
-                </div>
-              </li>
-              <li class="roadmap__item">
-                <div class="roadmap__info"><span class="roadmap__icon"><svg class="icon icon-beta"><use xlink:href="img/sprite.svg#icon-beta"></use></svg></span>
-                  <h5 class="roadmap__title">1Q 2019</h5>
-                  <p class="roadmap__descr">Closed Beta Test</p>
-                </div>
-              </li>
-              <li class="roadmap__item">
-                <div class="roadmap__info"><span class="roadmap__icon roadmap__icon_red"><svg class="icon icon-rocket"><use xlink:href="img/sprite.svg#icon-rocket"></use></svg></span>
-                  <h5 class="roadmap__title">2Q 2019</h5>
-                  <p class="roadmap__descr">Soft Launch</p>
-                </div>
-              </li>
-              <li class="roadmap__item">
-                <div class="roadmap__info"><span class="roadmap__icon"><svg class="icon icon-earth"><use xlink:href="img/sprite.svg#icon-earth"></use></svg></span>
-                  <h5 class="roadmap__title">3Q 2019</h5>
-                  <p class="roadmap__descr">Global Launch Landmark Presale</p>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-      <section class="section section_bgc_dark-grey" id="token">
-        <div class="container">
-          <div class="section__heading">
-            <h2 class="section__title section__title_white">Token Sale</h2>
-          </div>
-          <div class="section__content">
-            <div class="table">
-              <div class="table__row">
-                <div class="table__cell">
-                  <h5 class="table__cell-title">Name</h5>
-                  <p class="table__cell-text">Moss Coin</p>
-                </div>
-                <div class="table__cell">
-                  <h5 class="table__cell-title">Symbol</h5>
-                  <p class="table__cell-text">MOC</p>
-                </div>
-                <div class="table__cell">
-                  <h5 class="table__cell-title">Platform</h5>
-                  <p class="table__cell-text">Ethereum</p>
-                </div>
-                <div class="table__cell">
-                  <h5 class="table__cell-title">Total issue</h5>
-                  <p class="table__cell-text">500,000,000 MOC</p>
-                </div>
-                <div class="table__cell">
-                  <h5 class="table__cell-title">Price</h5>
-                  <p class="table__cell-text">1 MOC = 0.12 USD</p>
-                </div>
-              </div>
-            </div>
-            <h3 class="token-title">Main ICO benefit</h3>
-            <div class="table">
-              <div class="table__row">
-                <div class="table__cell">
-                  <p class="table__cell-text table__cell-text_white">Schedule</p>
-                </div>
-                <div class="table__cell table__cell_ta_center">
-                  <h5 class="table__cell-title">Week 1</h5>
-                  <p class="table__cell-text table__cell-text_white">3.12 – 3.18</p>
-                </div>
-                <div class="table__cell table__cell_ta_center">
-                  <h5 class="table__cell-title">Week 2</h5>
-                  <p class="table__cell-text table__cell-text_white">3.19 – 3.25</p>
-                </div>
-                <div class="table__cell table__cell_ta_center">
-                  <h5 class="table__cell-title">Week 3</h5>
-                  <p class="table__cell-text table__cell-text_white">53.26 – 4.1</p>
-                </div>
-                <div class="table__cell table__cell_ta_center">
-                  <h5 class="table__cell-title">Week 4</h5>
-                  <p class="table__cell-text table__cell-text_white">4.2 – 4.8</p>
-                </div>
-              </div>
-              <div class="table__row">
-                <div class="table__cell">
-                  <p class="table__cell-text table__cell-text_white">Benefit</p>
-                </div>
-                <div class="table__cell table__cell_ta_center">
-                  <p class="table__cell-text">15%</p>
-                </div>
-                <div class="table__cell table__cell_ta_center">
-                  <p class="table__cell-text">10%</p>
-                </div>
-                <div class="table__cell table__cell_ta_center">
-                  <p class="table__cell-text">5%</p>
-                </div>
-                <div class="table__cell table__cell_ta_center">
-                  <p class="table__cell-text">2.5%</p>
-                </div>
-              </div>
-            </div>
-            <div class="diagram" style="margin-top:0px"><img src="img/diagram.png" style="width: 50%;" alt="diagram"></div>
-          </div>
-        </div>
-      </section>
-      <section class="section" id="founders">
-        <div class="container">
-          <div class="section__heading">
-            <h2 class="section__title">Founders</h2>
-          </div>
-          <div class="section__content">
-            <div class="slider">
-              <div class="slider__content js-founders-slider">
-                <div class="slider__slide">
-                  <div class="person-card">
-                    <div class="person-card__heading"><img src="img/team/wooram-son.png" alt="Wooram Son"><a class="person-card__link" href="https://www.linkedin.com/in/wooramson" title="Go to Linkedin" target="_blank"></a></div>
-                    <div class="person-card__content">
-                      <h5 class="person-card__title">Wooram Son</h5>
-                      <h6 class="person-card__position">CEO, Co-Founder</h6>
-                      <p class="person-card__descr"> <span>3D Computer Graphics Expert </span><span>S/W Engineer, Samsung Electronics</span></p>
-                    </div>
-                  </div>
-                </div>
-                <div class="slider__slide">
-                  <div class="person-card">
-                    <div class="person-card__heading"><img src="img/team/chester-roh.png" alt="Chester Roh"><a class="person-card__link" href="https://www.linkedin.com/in/chesterroh/" title="Go to Linkedin" target="_blank"></a></div>
-                    <div class="person-card__content">
-                      <h5 class="person-card__title">Chester Roh</h5>
-                      <h6 class="person-card__position">CSO, Co-Founder</h6>
-                      <p class="person-card__descr"> <span>Serial Entrepreneur</span><span>Founder, Inzen (IPO in Korea),</span><span>Founder, TNC (acquired by Google)</span><span>Founder, 5Rocks (acquired by Tapjoy)</span></p>
-                    </div>
-                  </div>
-                </div>
-                <div class="slider__slide">
-                  <div class="person-card">
-                    <div class="person-card__heading"><img src="img/team/minuk-kim.png" alt="Minuk Kim"><a class="person-card__link" href="https://www.linkedin.com/in/min-uk-kim-04a18247/" title="Go to Linkedin" target="_blank"></a></div>
-                    <div class="person-card__content">
-                      <h5 class="person-card__title">Minuk Kim</h5>
-                      <h6 class="person-card__position">CTO, Co-Founder</h6>
-                      <p class="person-card__descr"> <span>3D Computer Graphics Expert</span><span>S/W Engineer, Pantech</span></p>
-                    </div>
-                  </div>
-                </div>
-                <div class="slider__slide">
-                  <div class="person-card">
-                    <div class="person-card__heading"><img src="img/team/yongjun-hong.png" alt="Yongjun Hong"><a class="person-card__link" href="https://www.linkedin.com/in/yongjunhong/" title="Go to Linkedin" target="_blank"></a></div>
-                    <div class="person-card__content">
-                      <h5 class="person-card__title">Yongjun Hong</h5>
-                      <h6 class="person-card__position">CFO, Co-Founder</h6>
-                      <p class="person-card__descr"> <span>KICPA</span><span>CFO, 5Rocks</span><span>PwC Korea Accountant</span></p>
-                    </div>
-                  </div>
-                </div>
-                <div class="slider__slide">
-                  <div class="person-card">
-                    <div class="person-card__heading"><img src="img/team/sean-oh.png" alt="Sean Oh"><a class="person-card__link" href="https://www.linkedin.com/in/seanssoh/" title="Go to Linkedin" target="_blank"></a></div>
-                    <div class="person-card__content">
-                      <h5 class="person-card__title">Sean Oh</h5>
-                      <h6 class="person-card__position">COO, Co-Founder</h6>
-                      <p class="person-card__descr"> <span>Digital Human Character Expert</span><span>S/W Engineer, Samsung Electronics</span></p>
-                    </div>
-                  </div>
-                </div>
-                <div class="slider__slide">
-                  <div class="person-card">
-                    <div class="person-card__heading"><img src="img/team/don-lim.png" alt="Don Lim"><a class="person-card__link" href="https://www.linkedin.com/in/donwlim/" title="Go to Linkedin" target="_blank"></a></div>
-                    <div class="person-card__content">
-                      <h5 class="person-card__title">Don Lim</h5>
-                      <h6 class="person-card__position">VP of Business Development</h6>
-                      <p class="person-card__descr"> <span>General Manager, Com2uS USA</span><span>Advisory Sales Rep., IBM Korea</span></p>
-                    </div>
-                  </div>
-                </div>
-              </div><button class="slider__btn slider__btn_prev js-founders-slider-prev">Prev  </button><button class="slider__btn slider__btn_next js-founders-slider-next">Next  </button></div>
-          </div>
-        </div>
-      </section>
-      <section class="section section_pt_0" id="advisors">
-        <div class="container">
-          <div class="section__heading">
-            <h2 class="section__title">Advisors</h2>
-          </div>
-          <div class="section__content">
-            <div class="slider">
-              <div class="slider__content js-advisor-slider">
-                <div class="slider__slide">
-                  <div class="person-card">
-                    <div class="person-card__heading"><img src="img/team/louis-jinhwa-kim.png" alt="Louis Jinhwa Kim"><a class="person-card__link" href="https://www.linkedin.com/in/louiskim76/" title="Go to Linkedin" target="_blank"></a></div>
-                    <div class="person-card__content">
-                      <h5 class="person-card__title">Louis Jinhwa Kim</h5>
-                      <h6 class="person-card__position">Blockchain Advisor</h6>
-                      <p class="person-card__descr"> <span>Co-founder, Director, Korea Blockchain Association</span><span>Co-founder, Korbit</span><span>Director, Tide Institute</span><span>Author of World 1st Bitcoin Book, 'Next Money Bitcoin(2013)'</span></p>
-                    </div>
-                  </div>
-                </div>
-                <div class="slider__slide">
-                  <div class="person-card">
-                    <div class="person-card__heading"><img src="img/team/jason-han.png" alt="Jason Han"><a class="person-card__link" href="https://www.linkedin.com/in/jaesunhan/" title="Go to Linkedin" target="_blank"></a></div>
-                    <div class="person-card__content">
-                      <h5 class="person-card__title">Jason Han</h5>
-                      <h6 class="person-card__position">Blockchain Advisor</h6>
-                      <p class="person-card__descr"> <span>Co-Founder & Partner/CTO, FuturePlay</span><span>Founder & CEO, NexR (acquired by KT)</span><span>Adjunct Professor, KAIST MBA</span><span>KAIST PhD in P2P and Distributed System</span></p>
-                    </div>
-                  </div>
-                </div>
-                <div class="slider__slide">
-                  <div class="person-card">
-                    <div class="person-card__heading"><img src="img/team/jeffrey-lim.png" alt="Jeffrey Lim"><a class="person-card__link" href="https://www.linkedin.com/in/jeffreylim" title="Go to Linkedin" target="_blank"></a></div>
-                    <div class="person-card__content">
-                      <h5 class="person-card__title">Jeffrey Lim</h5>
-                      <h6 class="person-card__position">Startup Advisor</h6>
-                      <p class="person-card__descr"> <span>18+ years of experience in startup ecosystem</span><span>Former Head of Campus Seoul, Google</span><span>Former venture capitalist at Softbank Ventures</span><span>Serial Entrepreneur</span></p>
-                    </div>
-                  </div>
-                </div>
-                <div class="slider__slide">
-                  <div class="person-card">
-                    <div class="person-card__heading"><img src="img/team/vitaly-tkach.jpg" alt="Vitaly Tkach"><a class="person-card__link" href="https://www.linkedin.com/in/vitaly-tkach-73054980/" title="Go to Linkedin" target="_blank"></a></div>
-                    <div class="person-card__content">
-                      <h5 class="person-card__title">Vitaly Tkach</h5>
-                      <h6 class="person-card__position">Creative Advisor</h6>
-                      <p class="person-card__descr"> <span>Creative Director, Wargaming</span><span>Former Creative Director, Leo Burnett Ukraine</span></p>
-                    </div>
-                  </div>
-                </div>
-                <div class="slider__slide">
-                  <div class="person-card">
-                    <div class="person-card__heading"><img src="img/team/ivan-danishevsky.jpg" alt="Ivan Danishevsky"><a class="person-card__link" href="https://www.linkedin.com/in/faeton/" title="Go to Linkedin" target="_blank"></a></div>
-                    <div class="person-card__content">
-                      <h5 class="person-card__title">Ivan Danishevsky</h5>
-                      <h6 class="person-card__position">E-Sports and Gaming Blockchain Advisor</h6>
-                      <p class="person-card__descr"> <span>Head of Shoutcasting, Garena.com</span><span>CCO, Game Show TV</span><span>Founder, ESM.one - Blockchained Esports</span><span>Founder, ESC.watch - Esports Charts</span></p>
-                    </div>
-                  </div>
-                </div>
-                <div class="slider__slide">
-                  <div class="person-card">
-                    <div class="person-card__heading"><img src="img/team/yaroslav-kologryvov.png" alt="Yaroslav Kologryvov"><a class="person-card__link" href="https://www.linkedin.com/in/yaroslav-kologryvov-37221927/" title="Go to Linkedin" target="_blank"></a></div>
-                    <div class="person-card__content">
-                      <h5 class="person-card__title">Yaroslav Kologryvov</h5>
-                      <h6 class="person-card__position">Eastern Europe/CIS Market Advisor</h6>
-                      <p class="person-card__descr"> <span>Founder, Ukraine's Main University Startup Ecosystem Sikhorsky Challenge</span><span>Managing Partner, VANHEALTHING Cryptofund</span><span>Former CEO, Ukraine's Main Science Par</span></p>
-                    </div>
-                  </div>
-                </div>
-                <div class="slider__slide">
-                  <div class="person-card">
-                    <div class="person-card__heading"><img src="img/team/duhee-lee.png" alt="Duhee Lee"></div>
-                    <div class="person-card__content">
-                      <h5 class="person-card__title">Duhee Lee</h5>
-                      <h6 class="person-card__position">Startup Advisor</h6>
-                      <p class="person-card__descr"> <span>Founder LIKELION</span><span>Founder Kongdoo</span><span>Google Impact Challenge, First Place (People's Choice)</span><span>Speaker, 66th UN NGO</span></p>
-                    </div>
-                  </div>
-                </div>
-                <div class="slider__slide">
-                  <div class="person-card">
-                    <div class="person-card__heading"><img src="img/team/ilya-mikov.png" alt="Ilya Mikov"><a class="person-card__link" href="https://www.linkedin.com/in/ilyamikov/" title="Go to Linkedin" target="_blank"></a></div>
-                    <div class="person-card__content">
-                      <h5 class="person-card__title">Ilya Mikov</h5>
-                      <h6 class="person-card__position">Cryptocurrency Gaming Advisor</h6>
-                      <p class="person-card__descr"> <span>Co-Founder, Active Games</span><span>Founder, Mobile Active</span><span>Successfully raised an ICO round for its mobile MMORPG Lordmancer II.</span></p>
-                    </div>
-                  </div>
-                </div>
-                <div class="slider__slide">
-                  <div class="person-card">
-                    <div class="person-card__heading"><img src="img/team/charles-rim.png" alt="Charles Rim"><a class="person-card__link" href="https://www.linkedin.com/in/charles-rim-1258304" title="Go to Linkedin" target="_blank"></a></div>
-                    <div class="person-card__content">
-                      <h5 class="person-card__title">Charles Rim</h5>
-                      <h6 class="person-card__position">M&A Advisor</h6>
-                      <p class="person-card__descr"> <span>General Partner, Access Ventures</span><span>MD, Tapjoy Korea & SE Asia</span><span>Venture Partner, DFJ Athena VC</span><span>Head of M&A, Google APAC</span><span>CSO, Yahoo Korea & SE Asia</span></p>
-                    </div>
-                  </div>
-                </div>
-                <div class="slider__slide">
-                  <div class="person-card">
-                    <div class="person-card__heading"><img src="img/team/john-chang.png" alt="John Chang"><a class="person-card__link" href="https://www.linkedin.com/in/john-chang-93480664" title="Go to Linkedin" target="_blank"></a></div>
-                    <div class="person-card__content">
-                      <h5 class="person-card__title">John Chang</h5>
-                      <h6 class="person-card__position">Investment Advisor</h6>
-                      <p class="person-card__descr"> <span>General Partner, Access Ventures</span><span>APAC Head-Equities, Barclays Asia</span><span>CEO, Deutsche Bank Korea</span><span>Co-Founder, Access Communications</span></p>
-                    </div>
-                  </div>
-                </div>
-                <div class="slider__slide">
-                  <div class="person-card">
-                    <div class="person-card__heading"><img src="img/team/sunkwan-kim.png" alt="Sunkwan Kim"><a class="person-card__link" href="https://www.linkedin.com/in/sunkwan" title="Go to Linkedin" target="_blank"></a></div>
-                    <div class="person-card__content">
-                      <h5 class="person-card__title">Sunkwan Kim</h5>
-                      <h6 class="person-card__position">Art Design Advisor</h6>
-                      <p class="person-card__descr"> <span>Creative Leader at Niantic Labs, Google (Ingress, Pokemon GO)</span><span>Advisor of Weenu, Art up Seoul</span><span>Senior Visual Designer, Yahoo Korea</span></p>
-                    </div>
-                  </div>
-                </div>
-                <div class="slider__slide">
-                  <div class="person-card">
-                    <div class="person-card__heading"><img src="img/team/peter-van-dyke.png" alt="Peter Van Dyke"><a class="person-card__link" href="https://www.linkedin.com/in/pvandyke" title="Go to Linkedin" target="_blank"></a></div>
-                    <div class="person-card__content">
-                      <h5 class="person-card__title">Peter Van Dyke</h5>
-                      <h6 class="person-card__position">AR UX & Design Advisor</h6>
-                      <p class="person-card__descr"> <span>Interactive UX/Production, Apple</span><span>CSO & Product Head, GTR</span><span>Production Head, npnf KR/SK Planet</span><span>Creative Co-Director, Com2uS Korea</span></p>
-                    </div>
-                  </div>
-                </div>
-                <div class="slider__slide">
-                  <div class="person-card">
-                    <div class="person-card__heading"><img src="img/team/baolong-zhang.png" alt="Baolong Zhang"><a class="person-card__link" href="https://www.linkedin.com/in/baolong-zhang-51998b19/" title="Go to Linkedin" target="_blank"></a></div>
-                    <div class="person-card__content">
-                      <h5 class="person-card__title">Baolong Zhang</h5>
-                      <h6 class="person-card__position">CG Advisor</h6>
-                      <p class="person-card__descr"> <span>Director, Digitallotus</span><span>Lead Character Artist, Supermassive Games</span><span>Lead Environment Artist, Climax Action</span><span>Level Artist, Ubisoft</span></p>
-                    </div>
-                  </div>
-                </div>
-                <div class="slider__slide">
-                  <div class="person-card">
-                    <div class="person-card__heading"><img src="img/team/youngwoon-cha.png" alt="Youngwoon Cha"><a class="person-card__link" href="https://www.linkedin.com/in/young-woon-cha-cv" title="Go to Linkedin" target="_blank"></a></div>
-                    <div class="person-card__content">
-                      <h5 class="person-card__title">Youngwoon Cha</h5>
-                      <h6 class="person-card__position">Graphics & VR/AR Advisor</h6>
-                      <p class="person-card__descr"> <span>CS PhD Candidate, UNC Graphics & Virtual Reality</span><span>Researcher, KIST</span><span>Research Engineer, LG Electronics</span></p>
-                    </div>
-                  </div>
-                </div>
-                <div class="slider__slide">
-                  <div class="person-card">
-                    <div class="person-card__heading"><img src="img/team/john-kim.png" alt="John S. Kim"><a class="person-card__link" href="https://www.linkedin.com/in/doshkim/" title="Go to Linkedin" target="_blank"></a></div>
-                    <div class="person-card__content">
-                      <h5 class="person-card__title">John S. Kim</h5>
-                      <h6 class="person-card__position">Growth Advisor</h6>
-                      <p class="person-card__descr"> <span>CEO & Founder, SendBird (Y Combinator)</span><span>Director, GREE</span><span>CEO & Founder, Paprika Lab</span></p>
-                    </div>
-                  </div>
-                </div>
-                <div class="slider__slide">
-                  <div class="person-card">
-                    <div class="person-card__heading"><img src="img/team/tim-chae.png" alt="Tim Chae"><a class="person-card__link" href="https://www.linkedin.com/in/timchae" title="Go to Linkedin" target="_blank"></a></div>
-                    <div class="person-card__content">
-                      <h5 class="person-card__title">Tim Chae</h5>
-                      <h6 class="person-card__position">Venture Capital Advisor</h6>
-                      <p class="person-card__descr"> <span>General Partner, 500 Startups Korea </span><span>Partner, 500 Startups</span><span>Investor in 30+ seed stage tech companies in SF/SV and Korea</span></p>
-                    </div>
-                  </div>
-                </div>
-                <div class="slider__slide">
-                  <div class="person-card">
-                    <div class="person-card__heading"><img src="img/team/changsu-lee.png" alt="Changsu Lee"><a class="person-card__link" href="https://www.linkedin.com/in/changsulee/" title="Go to Linkedin" target="_blank"></a></div>
-                    <div class="person-card__content">
-                      <h5 class="person-card__title">Changsu Lee</h5>
-                      <h6 class="person-card__position">Artificial Intelligence Advisor</h6>
-                      <p class="person-card__descr"> <span>Co-Founder & CEO, Allganize</span><span>SVP, Tapjoy</span><span>Co-Founder & CEO, 5Rocks</span></p>
-                    </div>
-                  </div>
-                </div>
-                <div class="slider__slide">
-                  <div class="person-card">
-                    <div class="person-card__heading"><img src="img/team/minpyo-hong.png" alt="Minpyo Hong"><a class="person-card__link" href="https://www.linkedin.com/in/silverdel/" title="Go to Linkedin" target="_blank"></a></div>
-                    <div class="person-card__content">
-                      <h5 class="person-card__title">Minpyo Hong</h5>
-                      <h6 class="person-card__position">Security Advisor</h6>
-                      <p class="person-card__descr"> <span>Founder, SEWORKS</span><span>Founder, SHIFTWORKS (acquired by Infraware)</span><span>Advised governments on digital security issues for 20+ years</span><span>Five-time consecutive finalist at DEFCON CTF</span></p>
-                    </div>
-                  </div>
-                </div>
-                <div class="slider__slide">
-                  <div class="person-card">
-                    <div class="person-card__heading"><img src="img/team/wonchai-lee.png" alt="Wonchai Lee"></div>
-                    <div class="person-card__content">
-                      <h5 class="person-card__title">Wonchai Lee</h5>
-                      <h6 class="person-card__position">Monetization Advisor</h6>
-                      <p class="person-card__descr"> <span>Sr. Football Trader, The Hong Kong Jockey Club</span><span>Sr. Odds Compiler, Singapore Pools</span><span>Oddsmaker, SportsToto</span></p>
-                    </div>
-                  </div>
-                </div>
-                <div class="slider__slide">
-                  <div class="person-card">
-                    <div class="person-card__heading"><img src="img/team/widjaja-tannady.png" alt="Widjaja Tannady"></div>
-                    <div class="person-card__content">
-                      <h5 class="person-card__title">Widjaja Tannady</h5>
-                      <h6 class="person-card__position">Real Estate Advisor</h6>
-                      <p class="person-card__descr"> <span>Founder, Mahanusa Capital</span><span>Director, PT Pacific Place Jakarta</span></p>
-                    </div>
-                  </div>
-                </div>
-              </div><button class="slider__btn slider__btn_prev js-advisor-slider-prev">Prev  </button><button class="slider__btn slider__btn_next js-advisor-slider-next">Next  </button></div>
-          </div>
-        </div>
-      </section>
-      <section class="section section_pt_0" id="team">
-        <div class="container">
-          <div class="section__heading">
-            <h2 class="section__title">Team Members</h2>
-          </div>
-          <div class="section__content">
-            <div class="slider">
-              <div class="slider__content js-team-slider">
-                <div class="slider__slide">
-                  <div class="person-card">
-                    <div class="person-card__heading person-card__heading_h_180"><img src="img/team/byucryun-choi.png" alt="Byucryun Choi"></div>
-                    <div class="person-card__content">
-                      <h5 class="person-card__title">Byucryun Choi</h5>
-                      <h6 class="person-card__position">Lead Character Artist</h6>
-                      <p class="person-card__descr"> <span>Lead Character Artist, NS Studio</span></p>
-                    </div>
-                  </div>
-                </div>
-                <div class="slider__slide">
-                  <div class="person-card">
-                    <div class="person-card__heading person-card__heading_h_180"><img src="img/team/sangmin-lee.png" alt="Sangmin Lee"></div>
-                    <div class="person-card__content">
-                      <h5 class="person-card__title">Sangmin Lee</h5>
-                      <h6 class="person-card__position">Lead Environment Artist</h6>
-                      <p class="person-card__descr"> <span>Environment Artist, M Game</span></p>
-                    </div>
-                  </div>
-                </div>
-                <div class="slider__slide">
-                  <div class="person-card">
-                    <div class="person-card__heading person-card__heading_h_180"><img src="img/team/youngdae-cho.png" alt="Youngdae Cho"></div>
-                    <div class="person-card__content">
-                      <h5 class="person-card__title">Youngdae Cho</h5>
-                      <h6 class="person-card__position">Client Engineer</h6>
-                      <p class="person-card__descr"> <span>S/W Engineer, NHN Next</span><span>PR/Marketer, 5Rocks</span></p>
-                    </div>
-                  </div>
-                </div>
-                <div class="slider__slide">
-                  <div class="person-card">
-                    <div class="person-card__heading person-card__heading_h_180"><img src="img/team/yunu-kim.png" alt="Yunu Kim"></div>
-                    <div class="person-card__content">
-                      <h5 class="person-card__title">Yunu Kim</h5>
-                      <h6 class="person-card__position">Server Engineer</h6>
-                      <p class="person-card__descr"> <span>S/W Engineer, Line Games</span></p>
-                    </div>
-                  </div>
-                </div>
-                <div class="slider__slide">
-                  <div class="person-card">
-                    <div class="person-card__heading person-card__heading_h_180"><img src="img/team/junchel-park.png" alt="Junchel Park"></div>
-                    <div class="person-card__content">
-                      <h5 class="person-card__title">Junchel Park</h5>
-                      <h6 class="person-card__position">Blockchain Engineer</h6>
-                      <p class="person-card__descr"> <span>S/W Engineer, Kakao</span></p>
-                    </div>
-                  </div>
-                </div>
-                <div class="slider__slide">
-                  <div class="person-card">
-                    <div class="person-card__heading person-card__heading_h_180"><img src="img/team/hyunuk-nam.png" alt="Hyunuk Nam"></div>
-                    <div class="person-card__content">
-                      <h5 class="person-card__title">Hyunuk Nam</h5>
-                      <h6 class="person-card__position">Blockchain Engineer</h6>
-                      <p class="person-card__descr"> <span>S/W Engineer, NHN Next</span></p>
-                    </div>
-                  </div>
-                </div>
-                <div class="slider__slide">
-                  <div class="person-card">
-                    <div class="person-card__heading person-card__heading_h_180"><img src="img/team/seunghyun-kim.png" alt="Seunghyun Kim"></div>
-                    <div class="person-card__content">
-                      <h5 class="person-card__title">Seunghyun Kim</h5>
-                      <h6 class="person-card__position">Software Engineer</h6>
-                      <p class="person-card__descr"> <span>S/W Engineer, NHN Next</span></p>
-                    </div>
-                  </div>
-                </div>
-                <div class="slider__slide">
-                  <div class="person-card">
-                    <div class="person-card__heading person-card__heading_h_180"><img src="img/team/hyunbin-nam.png" alt="Hyunbin Nam"></div>
-                    <div class="person-card__content">
-                      <h5 class="person-card__title">Hyunbin Nam</h5>
-                      <h6 class="person-card__position">Game Designer</h6>
-                      <p class="person-card__descr"> <span>Game Designer, Affinity Game</span></p>
-                    </div>
-                  </div>
-                </div>
-                <div class="slider__slide">
-                  <div class="person-card">
-                    <div class="person-card__heading person-card__heading_h_180"><img src="img/team/jerome-hernandez.png" alt="Jerome Hernandez"></div>
-                    <div class="person-card__content">
-                      <h5 class="person-card__title">Jerome Hernandez</h5>
-                      <h6 class="person-card__position">Creative Engineer</h6>
-                      <p class="person-card__descr">Creative Engineer, CERN<span></span></p>
-                    </div>
-                  </div>
-                </div>
-                <div class="slider__slide">
-                  <div class="person-card">
-                    <div class="person-card__heading person-card__heading_h_180"><img src="img/team/emily-park.png" alt="Emily Park"></div>
-                    <div class="person-card__content">
-                      <h5 class="person-card__title">Emily Park</h5>
-                      <h6 class="person-card__position">PR Manager</h6>
-                      <p class="person-card__descr"> <span>PR Manager, Lineable </span><span>A.E., Cheil Worldwide</span></p>
-                    </div>
-                  </div>
-                </div>
-              </div><button class="slider__btn slider__btn_prev js-team-slider-prev">Prev  </button><button class="slider__btn slider__btn_next js-team-slider-next">Next  </button></div>
-          </div>
-        </div>
-      </section>
-      <section class="section press" id="news">
-        <div class="container clearfix">
-          <header class="press-header">
-            <h1 class="press-title section__title">News & Media</h1>
-            <div class="press-subtitle">Recent news & media coverage on Reality Reflection and Mossland</div>
-          </header>
-          <div class="press-con">
-            <ul class="press-primary clearfix">
-              <li>
-                <a href="https://www.techinasia.com/digital-humans-oben-soul-machines" target="_blank">
-                  <div class="pressitem-img pressitem-thumb01"></div>
-                  <div class="pressitem-con">
-                    <div class="pressitem-media"><img src="img/media/techinasia.png"></div>
-                    <div class="pressitem-desc">The brave new world of digital humans, designed to do our bidding</div>
-                  </div>
+<section class="wrapper" id="home">
+    <header class="main-header">
+        <div class="con clearfix">
+            <h1>
+                <a href="https://moss.land"><img src="img/logo_dark.svg" alt="mossland"></a>
+            </h1>
+            <button class="btn-menu">
+                <i class="icon-menu"></i>
+            </button>
+            <div class="header-social">
+                <a href="https://t.me/mossland" target="_blank">
+                    <span class="icon-telegram-kor"></span>
                 </a>
-              </li>
-              <li>
-                <a href="https://www.vrfocus.com/2017/10/futuristic-esport-snatchers-heading-to-oculus-rift-and-htc-vive/" target="_blank">
-                  <div class="pressitem-img pressitem-thumb02"></div>
-                  <div class="pressitem-con">
-                    <div class="pressitem-media"><img src="img/media/vrfocus.png"></div>
-                    <div class="pressitem-desc">Futuristic ESport Snatchers Heading To Oculus Rift And HTC Vive</div>
-                  </div>
+                <a href="https://t.me/mossland_eng" target="_blank">
+                    <span class="icon-telegram-eng"></span>
                 </a>
-              </li>
-              <li>
-                <a href="https://www.vrnerds.de/snatchers-wird-zu-speedball-arena-fuer-pc-oculus-rift-und-htc-vive/" target="_blank">
-                  <div class="pressitem-img pressitem-thumb03"></div>
-                  <div class="pressitem-con">
-                    <div class="pressitem-media"><img src="img/media/vrnerd.png"></div>
-                    <div class="pressitem-desc">Snatchers wird zu Speedball Arena für PC, Oculus Rift und HTC Vive</div>
-                  </div>
-                </a>
-              </li>
-            </ul>
-            <div class="press-secondary"><a target="_blank" href="http://news.mk.co.kr/newsRead.php?year=2018&amp;no=16336"><img src="img/media/maeil.png" alt="매일경제"></a><a target="_blank" href="http://www.inven.co.kr/webzine/news/?news=188798"><img src="img/media/inven.png" alt="inven"></a>
-              <a
-                target="_blank" href="http://gamefocus.co.kr/detail.php?number=76202"><img src="img/media/gamefocus.png" alt="게임포커스"></a><a target="_blank" href="http://platum.kr/archives/90641"><img src="img/media/platum.png" alt="플래텀"></a><a target="_blank" href="http://www.sedaily.com/NewsView/1OL446N1CQ"><img src="img/media/seoul.png" alt="서울경제"></a>
-                <a
-                  target="_blank" href="http://news.hankyung.com/article/2016082351781?nv=o"><img src="img/media/koreaeconomy.png" alt="한국경제"></a><a target="_blank" href="http://biz.chosun.com/site/data/html_dir/2016/05/12/2016051202491.html"><img src="img/media/chosunbiz.png" alt="조선비즈"></a><a target="_blank" href="http://news.mt.co.kr/mtview.php?no=2016032508565839804&amp;outlink=1&amp;ref=https%3A%2F%2Fsearch.naver.com"><img src="img/media/mt.png" alt="머니투데이"></a>
-                  <a
-                    target="_blank" href="http://news.heraldcorp.com/view.php?ud=20171220000299"><img src="img/media/herald.png" alt="해럴드경제"></a><a target="_blank" href="http://www.hungryapp.co.kr/news/news_view.php?pid=69183"><img src="img/media/hungryapp.png" alt="헝그리앱"></a><a target="_blank" href="https://uploadvr.com/music-inside-review/"><img src="img/media/upload.png" alt="uploadvr"></a>
-                    <a
-                      target="_blank" href="https://techcrunch.com/2016/12/01/oculus-shows-off-the-50-launch-titles-for-its-touch-motion-controllers/"><img src="img/media/techcrunch.png" alt="tech crunch"></a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="footer-controls">
-        <div class="container">
-          <div class="footer-controls__wrap">
-            <div class="footer-controls__buttons"><a class="btn btn_ph_20 footer-controls__button" href="https://eepurl.com/dgCDUT" target="_blank">Update me with more news</a><a class="btn btn_ph_20 footer-controls__button" href="#">Read FAQ</a></div>
-            <div class="footer-controls__social"><a class="footer-controls__social-link" href="https://www.linkedin.com/company/themossland/" target="_blank"><span><svg class="icon icon-linkedin-logo"><use xlink:href="img/sprite.svg#icon-linkedin-logo"></use></svg></span></a><a class="footer-controls__social-link"
-                href="https://medium.com/@moss.land" target="_blank"><span><svg class="icon icon-m"><use xlink:href="img/sprite.svg#icon-m"></use></svg></span></a><a class="footer-controls__social-link" href="https://www.facebook.com/Mossland-1654411001264423/"
-                target="_blank"><span><svg class="icon icon-facebook-logo"><use xlink:href="img/sprite.svg#icon-facebook-logo"></use></svg></span></a><a class="footer-controls__social-link" href="https://twitter.com/TheMossland" target="_blank"><span><svg class="icon icon-twitter-logo-silhouette"><use xlink:href="img/sprite.svg#icon-twitter-logo-silhouette"></use></svg></span></a>
-              <a
-                class="footer-controls__social-link" href="https://github.com/realityreflection/MossCoin" target="_blank"><span><svg class="icon icon-github"><use xlink:href="img/sprite.svg#icon-github"></use></svg></span></a><a class="footer-controls__social-link" href="mailto:contact@moss.land"><span><svg class="icon icon-envelope"><use xlink:href="img/sprite.svg#icon-envelope"></use></svg></span></a>
-                <a
-                  class="footer-controls__social-link" href="https://steemit.com/@mossland" target="_blank"><span><svg class="icon icon-steemit"><use xlink:href="img/sprite.svg#icon-steemit"></use></svg></span></a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <footer class="main-footer">
-        <div class="rr-logo"><a target="_blank" href="https://www.realityreflection.com/" title="Go to the Homepage"><img src="img/rrlogo.png" height="70" width="102" alt="MOSS LAND"></a></div><address></address>© MOSSLAND 2018
-        <div class="footer-policy"><a href="cookies_privacy.html">Cookies Privacy </a></div>
-      </footer>
-	  
-	  <div class="popup popup_video js-popup js-popup-video" data-popup="video">
-        <div class="popup__in js-popup-in"><button class="popup__close js-close-popup" data-close="video"><svg class="icon icon-close"><use xlink:href="img/sprite.svg#icon-close"></use></svg></button>
-          <div class="video">
-            <div class="video__inner"><iframe width="860" height="500" src="https://www.youtube.com/embed/bEcT2Z0ShkU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
-          </div>
-        </div>
-      </div>
-	  
-    </main>
-    <!--LOAD scripts-->
-    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
-    <script type="text/javascript" src="http://scrollmagic.io/scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
-    <script src="js/app.js"></script>
-  </body>
 
+                <a href="https://t.me/mossland_rus" target="_blank">
+                    <span class="icon-telegram-rus"></span>
+                </a>
+                <a class="social-kakaotalk" href="https://open.kakao.com/o/gtzODLH" target="_blank">
+
+                    <span class="icon-kakaotalk"></span>
+                </a>
+                <a href="https://steemit.com/@mossland" target="_blank">
+                    <span id="notice-icon"></span>
+                </a>
+            </div>
+            <nav class="nav">
+                <a href="#ico">ICO</a>
+                <a href="#potential">Potential</a>
+                <!-- <a href="#features">Features</a> -->
+                <a href="#whitepaper">White paper</a>
+                <a href="#roadmap">Roadmap</a>
+                <a href="#tokensale">Token sale</a>
+                <a href="#team">Team</a>
+                <a href="#news">News</a>
+            </nav>
+        </div>
+    </header>
+    <div id="notice">
+        <div class="con">
+            <a href="https://steemit.com/@mossland" target="_blank">
+            <div class="notice-con">
+                <strong>Important Notice</strong>
+                Main-ICO plan has been changed. For more details, <strong>Click here.</strong>
+            </div>
+            </a>
+        </div>
+    </div>
+
+    <section id="motionwrap">
+        <div id="loading">
+            <div>
+                <div class="spinner"></div>
+            </div>
+        </div>
+        <div class="motion">
+
+            <canvas id="mossland-ar"></canvas>
+            <canvas id="mossland-reality"></canvas>
+            <div class="motion-logo">
+                <h1>Location-based Augmented Reality(AR) <br>mobile game based on real estate</h1>
+                <div class="motion-btns">
+                    <a class="btn1 btn1_s js-to-whitepapper" href="#whitepaper">Read Whitepaper</a>
+                    <a class="btn1 btn1_s" href="https://www.jotform.com/form/80104658072452/" target="_blank">Add me to the Whitelist</a>
+                </div>
+            </div>
+            <div class="motion-title">
+                Own Your Landmark<br />
+            </div>
+            <div class="scrolldown">
+                <div>Scroll Down</div>
+                <i class="icon-down2"></i>
+            </div>
+        </div>
+    </section>
+
+    <section id="main">
+        <section class="maintop">
+
+            <div class="first-screen-mob">
+                <h1>Location-based Augmented Reality(AR) <br>mobile game based on real estate</h1>
+                    <div class="motion-btns">
+                        <a class="btn1 btn1_s js-to-whitepapper" href="#whitepaper">Read Whitepaper</a>
+                        <a class="btn1 btn1_s" href="https://www.jotform.com/form/80104658072452/" target="_blank">Add me to the Whitelist</a>
+                    </div>
+            </div>     
+
+            <!-- <img src="img/main_mobile.jpg?v=2" width="100%"> -->
+
+        </section>
+        <section class="ico" id="ico">
+            <div class="con">
+
+                <!-- Upcomming -->
+                <div id="upcomming" class="ico-page">
+                    <h1 class="ico-title">
+                        Main ICO will be launched <strong>Mar 21, 2018 13:00 (UTC+0)</strong>
+                    </h1>
+                    <div class="ico-subtitle">
+                        Only whitelisted users after KYC process can participate in the Main ICO of the Mossland.
+                    </div>
+                    <ul class="timer">
+                        <li>
+                            <div class="timer-title">
+                                DAYS
+                            </div>
+                            <div class="timer-str timer-days">0</div>
+                        </li>
+                        <li>
+                            <div class="timer-title">
+                                HOURS
+                            </div>
+                            <div class="timer-str timer-hours">0</div>
+                        </li>
+                        <li>
+                            <div class="timer-title">
+                                MINUTES
+                            </div>
+                            <div class="timer-str timer-minutes">0</div>
+                        </li>
+                        <li>
+                            <div class="timer-title">
+                                SECONDS
+                            </div>
+                            <div class="timer-str timer-seconds">0</div>
+                        </li>
+                    </ul>
+
+                    <div id="whitelist-button">
+                        <a class="btn1" href="https://www.jotform.com/form/80104658072452/" target="_blank" id="btn-whitelist">Add me to the Whitelist</a>
+                        <div class="upcomming-subtitle">
+                            <a class="btn-justmail" href="https://eepurl.com/dgCDUT" target="_blank">Just update me with more news.</a>
+                        </div>
+                    </div>
+
+                    <div id="buytoken-button">
+                        <a class="btn1 btn1-strong" target="_blank" href="buytokens.html" id="btn-buytoken">Buy Tokens - Pre ICO</a>
+                    </div>
+                </div>
+
+                <!-- Preico -->
+                <div id="preico" class="ico-page ">
+
+                    <h1 class="ico-title">
+                        Pre ICO is <strong> successfully finished!</strong><br>
+						Please look out for Main-ICO in Feb
+                    </h1>
+                    <ul class="timer">
+                        <li>
+                            <div class="timer-title">
+                                DAYS
+                            </div>
+                            <div class="timer-str timer-days">0</div>
+                        </li>
+                        <li>
+                            <div class="timer-title">
+                                HOURS
+                            </div>
+                            <div class="timer-str timer-hours">0</div>
+                        </li>
+                        <li>
+                            <div class="timer-title">
+                                MINUTES
+                            </div>
+                            <div class="timer-str timer-minutes">0</div>
+                        </li>
+                        <li>
+                            <div class="timer-title">
+                                SECONDS
+                            </div>
+                            <div class="timer-str timer-seconds">0</div>
+                        </li>
+                    </ul>
+
+                    <div class="ico-progress clearfix">
+                        <div class="progressbar clearfix">
+                            <div id="progressbar" class="progressbar-current"></div>
+                        </div>
+
+                    </div>
+                    <div id="whitelist-button">
+                        <a class="btn1" href="https://www.jotform.com/form/80104658072452/" target="_blank" id="btn-whitelist">Add me to the Whitelist</a>
+                        <div class="upcomming-subtitle">
+                            <a class="btn-justmail" href="https://eepurl.com/dgCDUT" target="_blank">Just update me with more news.</a>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- //preico -->
+
+                <div id="end" class="ico-page">
+
+                </div>
+            </div>
+        </section>
+        <section class="potential" id="potential">
+                <div class="con">
+                  <div class="potential-wrap">
+                    <div class="potential-item">
+                      <h1 class="potential__title stitle">Potential</h1>
+                      <p class="potential__descr">Mossland involves the best professionals in AR\VR and gaming spheres, and the most famous advisors in Blockchain.</p>
+                      <p class="potential__descr">It is not just a game: you can build a real financial empire while playing! Using the purchasing and selling of property and accessories for it, you can directly influence the recognition of your building (and the level of income). More popularity – more currency.</p>
+                    </div>
+                    <div class="potential-item">
+                      <div class="card">
+                        <div class="card__pic">
+                          <img src="img/potent-1.png" alt="">
+                        </div>
+                        <div class="card__descr">
+                          <h2 class="card__title">Next step of AR</h2>
+                          <p class="card__text">A real-world property market, which gives you the possibility to create your own advertising campaign</p>
+                        </div>
+                        <div class="card__pic">
+                          <img src="img/potent-2.png" alt="">
+                        </div>
+                        <div class="card__descr">
+                          <h2 class="card__title">Location-based</h2>
+                          <p class="card__text">All the properties are based on the real items and their value is proportionate to the number of check-ins</p>
+                        </div>
+    
+                      </div>
+                    </div>
+                    <div class="potential-item">
+                      <div class="card">
+                        <div class="card__pic">
+                          <img src="img/potent-3.png" alt="">
+                        </div>
+                        <div class="card__descr">
+                          <h2 class="card__title">Safety</h2>
+                          <p class="card__text">Ethereum-based cryptocurrency secured by blockchain technology for all the trades, sales and purchases</p>
+                        </div>
+    
+                        <div class="card__pic">
+                          <img src="img/potent-4.png" alt="">
+                        </div>
+                        <div class="card__descr">
+                          <h2 class="card__title">Unique project</h2>
+                          <p class="card__text">Biggest Korean ICO project, which is led by a team of ex-Google and ex-Samsung co-founders</p>
+                        </div>
+    
+                      </div>
+                    </div>
+                    <div class="potential-item">
+                      <div class="card">
+                        <div class="card__pic">
+                          <img src="img/potent-5.png" alt="">
+                        </div>
+                        <div class="card__descr">
+                          <h2 class="card__title">Real money</h2>
+                          <p class="card__text">Accessories not only make the game interface more interesting, but also increase the economic potential of buildings</p>
+                        </div>
+    
+                        <div class="card__pic">
+                          <img src="img/potent-6.png" alt="">
+                        </div>
+                        <div class="card__descr">
+                          <h2 class="card__title">Gaming</h2>
+                          <p class="card__text"> Have fun in a new AR world</p>
+                        </div>
+    
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </section>
+            <!-- <section class="features" id="features">
+                <h1 class="features-title">Features</h1>
+                <div class="con">
+                    <ul class="features-list">
+                        <li class="features-item-odd clearfix" id="features-01">
+                            <div class="features-img">
+                                <img src="img/features_01_v2.jpg" alt="" />
+                            </div>
+                            <div class="features-con">
+                                <h2 class="stitle features-title">Own your landmark</h2>
+                                <div class="features-desc">
+                                    Mossland is a location-based AR (Augmented Reality) mobile game. You can find and check-in to the buildings and properties around you. Enjoy the game and get a chance to own Eiffel Tower, Big Ben, Golden Gate Bridge and more!
+                                </div>
+                            </div>
+                        </li>
+                        <li class="features-item-even clearfix" id="features-02">
+                            <div class="features-img">
+                                <img src="img/features_02_v2.jpg" alt="" />
+                            </div>
+    
+                            <div class="features-con">
+                                <h2 class="stitle features-title">Add accessory to your property</h2>
+                                <div class="features-desc">
+                                    Do you want more visitors to your properties? You can add attractive AR Objects to your properties. They will make your properties unique and fun!
+                                </div>
+                            </div>
+                        </li>
+                        <li class="features-item-odd clearfix" id="features-03">
+                            <div class="features-img">
+                                <img src="img/features_03_v2.jpg" alt="" />
+                            </div>
+    
+                            <div class="features-con">
+                                <h2 class="stitle  features-title">Host advertising on your properties</h2>
+                                <div class="features-desc">
+                                    Mossland provides totally new concept of location-based advertisement. You can make your properties a popular ad spot to earn money. If you are an advertiser, you can attract nearby customers with impressive AR advertisement!
+                                </div>
+                            </div>
+                        </li>
+                        <li class="features-item-even clearfix" id="features-04">
+                            <div class="features-img">
+                                <img src="img/features_04_v2.jpg" alt="" />
+                            </div>
+    
+                            <div class="features-con">
+                                <h2 class="stitle features-title">Trade your properties and earn money</h2>
+                                <div class="features-desc">
+                                    Are you a successful landlord of a famous Landmark? Trade your properties to earn Moss Coin (Ethereum-based cryptocurrency) and to cash out through Cryptocurrency Exchange in the future!
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section> -->
+
+        <section class="whitepaper" id="whitepaper" >
+
+            <div class="con clearfix">
+
+                <div class="whitepaper-title-wrap">
+
+                    <h1 class="whitepaper-title stitle">White Paper</h1>
+                    <div class="whitepaper-subtitle">
+                        Want to learn more about the Mossland?
+                    </div>
+
+                </div>
+                <div class="whitepaper-download">
+                    <div class="whitepaper-download-area">
+                        <div class="whitepaper-part-1">
+                            <div class="whitepaper-download-ico"><i class="icon-download"></i></div>
+                            <div class="whitepaper-download-con">
+                                <div class="whitepaper-download-title">Download the white paper</div>
+                                <div class="whitepaper-download-subtitle">6 Languages available</div>
+                            </div>
+                        </div>
+                        <div class="whitepaper-part-2">
+                            <a href="#" class="back"><i class="icon-arrow-left"></i></a>
+                            <a target="_blank" href="https://d2vy65gufabiok.cloudfront.net/whitepaper/Mossland+Whitepaper+-+ENG.pdf">English</a>
+                            <a target="_blank" href="https://d2vy65gufabiok.cloudfront.net/whitepaper/Mossland+Whitepaper+-+CHN.pdf">中文</a>
+                            <a target="_blank" href="https://d2vy65gufabiok.cloudfront.net/whitepaper/Mossland+Whitepaper+-+KOR.pdf">한글</a>
+                            <a target="_blank" href="https://d2vy65gufabiok.cloudfront.net/whitepaper/Mossland+Whitepaper+-+JPN.pdf">日本語</a>
+                            <a target="_blank" href="https://d2vy65gufabiok.cloudfront.net/whitepaper/Mossland+Whitepaper+-+RUS.pdf">Русский</a>
+                            <a target="_blank" href="https://d2vy65gufabiok.cloudfront.net/whitepaper/Mossland+Whitepaper+-+ESP.pdf">Español</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="roadmap" id="roadmap">
+            <div class="con">
+
+                <h1 class="roadmap-title stitle">Roadmap</h1>
+
+                <div class="roadmap-body">
+
+                    <div class="roadmap-list-wrap">
+                        <div class="roadmap-ob-1"></div>
+
+                        <ul class="roadmap-list clearfix">
+                            <li class="roadmap-item-01">
+                                <img src="img/roadmap_01.png" class="roadmapitem-img" alt="">
+                                <div class="roadmapitem-title"><h2>2018 <strong>1Q</strong></h2></div>
+                                <div class="roadmapitem-con">Pre ICO<br />Main ICO</div>
+                            </li>
+                            <li class="roadmap-item-02">
+                                <img src="img/roadmap_coin.png" class="roadmapitem-img" alt="">
+                                <div class="roadmapitem-title"><h2>2018 <strong>2Q</strong></h2></div>
+                                <div class="roadmapitem-con">List Moss Coin on Exchange</div>
+                            </li>
+                            <li class="roadmap-item-03">
+                                <img src="img/roadmap_prototype.png" class="roadmapitem-img" alt="">
+                                <div class="roadmapitem-title"><h2>2018 <strong>3Q</strong></h2></div>
+                                <div class="roadmapitem-con">Prototype Building</div>
+                            </li>
+                            <li class="roadmap-item-04">
+                                <img src="img/roadmap_04.png" class="roadmapitem-img" alt="">
+                                <div class="roadmapitem-title"><h2>2018 <strong>4Q</strong></h2></div>
+                                <div class="roadmapitem-con">Alpha Build</div>
+                            </li>
+                            <li class="roadmap-item-05">
+                                <img src="img/roadmap_beta.png" class="roadmapitem-img" alt="">
+                                <div class="roadmapitem-title"><h2>2019 <strong>1Q</strong></h2></div>
+                                <div class="roadmapitem-con">Closed Beta Test</div>
+                            </li>
+                            <li class="roadmap-item-06">
+                                <img src="img/roadmap_06.png" class="roadmapitem-img" alt="">
+                                <div class="roadmapitem-title"><h2>2019 <strong>2Q</strong></h2></div>
+                                <div class="roadmapitem-con">
+                                    <span class="roadmap-soft">Soft Launch</span>
+                                </div>
+                            </li>
+                            <li class="roadmap-item-07">
+                                <img src="img/roadmap_07.png" class="roadmapitem-img" alt="">
+                                <div class="roadmapitem-title"><h2>2019 <strong>3Q</strong></h2></div>
+                                <div class="roadmapitem-con">
+                                    <span class="roadmap-global">Global Launch</span><br />
+                                    Landmark Presale
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+
+
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+        <section class="tokensale" id="tokensale">
+            <div class="con">
+
+                <h1 class="tokensale-title stitle">Token sale</h1>
+
+                <div class="tokensale-part">
+                    <h2>Details</h2>
+                    <ul class="tokensale-details-list clearfix">
+                        <li>
+                            <h3 class="tokensale-details-title">Name</h3>
+                            <div class="tokensale-details-item">
+                                Moss Coin
+                            </div>
+                        </li>
+                        <li>
+                            <h3 class="tokensale-details-title">Symbol</h3>
+                            <div class="tokensale-details-item">
+                                MOC
+                            </div>
+                        </li>
+                        <li>
+                            <h3 class="tokensale-details-title">Platform</h3>
+                            <div class="tokensale-details-item">
+                                Ethereum
+                            </div>
+                        </li>
+                        <li>
+                            <h3 class="tokensale-details-title">Total issue</h3>
+                            <div class="tokensale-details-item">
+                                500,000,000 MOC
+                            </div>
+                        </li>
+                        <li>
+                            <h3 class="tokensale-details-title">Price</h3>
+                            <div class="tokensale-details-item">
+                                1 MOC = 0.12 USD
+                            </div>
+                        </li>
+                    </ul>
+                    <!--<p id="tokensale-notice">*The amount of MOC per 1 ETH will be changed by the market price of ETH. You can find more details on the white paper.</p>-->
+                </div>
+
+                <div class="tokensale-part">
+                    <h2>Main ICO benefit</h2>
+                    <table class="tokensale-plan">
+                        <colgroup>
+                            <col width="20%" />
+                            <col width="20%" />
+                            <col width="20%" />
+                            <col width="20%" />
+                            <col width="20%" />
+                        </colgroup>
+
+                        <thead>
+                        <tr>
+                            <th class="thborder">
+                                <div class="tokensale-plan-title">Schedule</div>
+                            </th>
+                            <th>
+                                <div class="tokensale-plan-title">Week 1</div>
+                                <span class="tokensale-subtext">3.21-3.27</span>
+                            </th>
+                            <th>
+                                <div class="tokensale-plan-title">Week 2</div>
+                                <span class="tokensale-subtext">3.28-4.3</span>
+                            </th>
+                            <th>
+                                <div class="tokensale-plan-title">Week 3</div>
+                                <span class="tokensale-subtext">4.4-4.10</span>
+                            </th>
+                            <th>
+                                <div class="tokensale-plan-title">Week 4</div>
+                                <span class="tokensale-subtext">4.11-4.17</span>
+                            </th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th class="thborder">Benefit</th>
+                            <td>15%</td>
+                            <td>10%</td>
+                            <td>5%</td>
+                            <td>2.5%</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="tokensale-part">
+                    <h2>Distribution</h2>
+                    <div class="tokensale-distribution-chart">
+                        <img src="img/distribution_chart.png">
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="team" id="team">
+
+            <div class="con">
+                <h1 class="team-title stitle">Founders</h1>
+
+                <ul class="team-list team-primary clearfix">
+                    <li>
+                        <div class="team-img">
+                            <img src="img/face/wooramson.jpg" alt="Wooram Son face">
+                            <a href="https://www.linkedin.com/in/wooramson" title="Go to Linkedin" target="_blank"><i class="icon-linkedin3"></i></a>
+                        </div>
+                        <div class="team-primary-con">
+                            <h2 class="team-tit">Wooram Son</h2>
+                            <div class="team-sub">CEO, Co-Founder</div>
+                            <ul class="team-history">
+                                <li>3D Computer Graphics Expert</li>
+                                <li>S/W Engineer, Samsung Electronics</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="team-img">
+                            <img src="img/face/chester.jpg" alt="Chester Roh face">
+                            <a href="https://www.linkedin.com/in/chesterroh/" title="Go to Linkedin" target="_blank"><i class="icon-linkedin3"></i></a>
+                        </div>
+                        <div class="team-primary-con">
+                            <h2 class="team-tit">Chester Roh</h2>
+                            <div class="team-sub">CSO, Co-Founder</div>
+                            <ul class="team-history">
+                                <li>Serial Entrepreneur</li>
+                                <li>Founder, Inzen (IPO in Korea),</li>
+                                <li>Founder, TNC (acquired by Google)</li>
+                                <li>Founder, 5Rocks (acquired by Tapjoy)</li>
+
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="team-img">
+                            <img src="img/face/minuk.jpg" alt="Minuk Kim face">
+                            <a href="https://www.linkedin.com/in/min-uk-kim-04a18247/" title="Go to Linkedin" target="_blank"><i class="icon-linkedin3"></i></a>
+                        </div>
+                        <div class="team-primary-con">
+                            <h2 class="team-tit">Minuk Kim</h2>
+                            <div class="team-sub">CTO, Co-Founder</div>
+                            <ul class="team-history">
+                                <li>3D Computer Graphics Expert</li>
+                                <li>S/W Engineer, Pantech</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="team-img">
+                            <img src="img/face/yongjun.jpg" alt="Yongjun Hong face">
+                            <a href="https://www.linkedin.com/in/yongjunhong/" title="Go to Linkedin" target="_blank"><i class="icon-linkedin3"></i></a>
+                        </div>
+                        <div class="team-primary-con">
+                            <h2 class="team-tit">Yongjun Hong</h2>
+                            <div class="team-sub">CFO, Co-Founder</div>
+                            <ul class="team-history">
+								<li>KICPA</li>
+                                <li>CFO, 5Rocks</li>
+                                <li>PwC Korea Accountant</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="team-img">
+                            <img src="img/face/sean.jpg" alt="Sean Oh face">
+                            <a href="https://www.linkedin.com/in/seanssoh/" title="Go to Linkedin" target="_blank"><i class="icon-linkedin3"></i></a>
+                        </div>
+                        <div class="team-primary-con">
+                            <h2 class="team-tit">Sean Oh</h2>
+                            <div class="team-sub">COO, Co-Founder</div>
+                            <ul class="team-history">
+                                <li>Digital Human Character Expert</li>
+                                <li>S/W Engineer, Samsung Electronics</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="team-img">
+                            <img src="img/face/don.jpg" alt="Don Lim">
+                            <a href="https://www.linkedin.com/in/donwlim/" title="Go to Linkedin" target="_blank"><i class="icon-linkedin3"></i></a>
+                        </div>
+                        <div class="team-primary-con">
+                            <h2 class="team-tit">Don Lim</h2>
+                            <div class="team-sub">VP of Business Development</div>
+                            <ul class="team-history">
+                                <li>General Manager, Com2uS USA</li>
+                                <li>Advisory Sales Rep., IBM Korea</li>
+                            </ul>
+                        </div>
+                    </li>
+
+
+                </ul>
+
+
+
+            </div>
+        </section>
+
+        <section class="advisors">
+            <div class="con">
+                <h1 class="advisors-title stitle">Advisors</h1>
+                <ul class="team-list team-primary clearfix product product-view" id="product-advisor">
+                    <li>
+                        <div class="team-img">
+                            <img src="img/face/jinhwa.jpg" alt="Louis Jinhwa Kim">
+                            <a href="https://www.linkedin.com/in/louiskim76/" title="Go to Linkedin" target="_blank"><i class="icon-linkedin3"></i></a>
+                        </div>
+                        <div class="team-primary-con">
+                            <h2 class="team-tit">Louis Jinhwa Kim</h2>
+                            <div class="team-sub">Blockchain Advisor</div>
+                            <ul class="team-history">
+                                <li>Co-founder, Director, Korea Blockchain Association</li>
+                                <li>Co-founder, Korbit</li>
+                                <li>Director, Tide Institute</li>
+                                <li>Author of World 1st Bitcoin Book, 'Next Money Bitcoin(2013)'</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="team-img">
+                            <img src="img/face/tkach.jpg" alt="Vitaly Tkach face">
+                            <a href="https://www.linkedin.com/in/vitaly-tkach-73054980/" title="Go to Linkedin" target="_blank"><i class="icon-linkedin3"></i></a>
+                        </div>
+                        <div class="team-primary-con">
+                            <h2 class="team-tit">Vitaly Tkach</h2>
+                            <div class="team-sub">Creative Advisor</div>
+                            <ul class="team-history">
+                                <li>Creative Director, Wargaming</li>
+                                <li>Former Creative Director, Leo Burnett Ukraine</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="team-img">
+                            <img src="img/face/jason.jpg" alt="Jason Han face">
+                            <a href="https://www.linkedin.com/in/jaesunhan/ " title="Go to Linkedin" target="_blank"><i class="icon-linkedin3"></i></a>
+                        </div>
+                        <div class="team-primary-con">
+                            <h2 class="team-tit">Jason Han</h2>
+                            <div class="team-sub">Blockchain Advisor</div>
+                            <ul class="team-history">
+                                <li>Co-Founder & Partner/CTO, FuturePlay</li>
+                                <li>Founder & CEO, NexR (acquired by KT)</li>
+                                <li>Adjunct Professor, KAIST MBA</li>
+                                <li>KAIST PhD in P2P and Distributed System</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="team-img">
+                            <img src="img/face/danishevsky.jpg" alt="Danishevsky face">
+                            <a href="https://www.linkedin.com/in/faeton/ " title="Go to Linkedin" target="_blank"><i class="icon-linkedin3"></i></a>
+                        </div>
+                        <div class="team-primary-con">
+                            <h2 class="team-tit">Ivan Danishevsky</h2>
+                            <div class="team-sub">E-Sports and Gaming Blockchain Advisor</div>
+                            <ul class="team-history">
+                                <li>Head of Shoutcasting, Garena.com</li>
+                                <li>CCO, Game Show TV</li>
+                                <li>Founder, ESM.one - Blockchained Esports</li>
+                                <li>Founder, ESC.watch - Esports Charts</li>
+                            </ul>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <div class="team-img">
+                            <img src="img/face/ollefri.jpg" alt="Yaroslav Kologryvov">
+                            <a href="https://www.linkedin.com/in/yaroslav-kologryvov-37221927/" title="Go to Linkedin" target="_blank"><i class="icon-linkedin3"></i></a>
+                        </div>
+                        <div class="team-primary-con">
+                            <h2 class="team-tit">Yaroslav Kologryvov</h2>
+                            <div class="team-sub">Eastern Europe/CIS Market Advisor</div>
+                            <ul class="team-history">
+                                <li>Founder, Ukraine's Main University Startup Ecosystem Sikhorsky Challenge</li>
+                                <li>Managing Partner, VANHEALTHING Cryptofund</li>
+                                <li>Former CEO, Ukraine's Main Science Park</li>
+                            </ul>
+                        </div>
+                    </li>
+<!--                </ul>
+
+                <h1 class="advisors-title stitle">Product Advisors</h1>
+                <ul class="team-list team-primary clearfix product product-view" id="product-advisor">-->
+                    <li>
+                        <div class="team-img">
+                            <img src="img/face/jeffrey.jpg" alt="Jeffrey Lim face">
+                            <a href="https://www.linkedin.com/in/jeffreylim" title="Go to Linkedin" target="_blank"><i class="icon-linkedin3"></i></a>
+                        </div>
+                        <div class="team-primary-con">
+                            <h2 class="team-tit">Jeffrey Lim</h2>
+                            <div class="team-sub">Startup Advisor</div>
+                            <ul class="team-history">
+                                <li>18+ years of experience in startup ecosystem</li>
+                                <li>Former Head of Campus Seoul, Google</li>
+                                <li>Former venture capitalist at Softbank Ventures</li>
+                                <li>Serial Entrepreneur</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="team-img">
+                            <img src="img/face/duheelee.jpg" alt="Duhee Lee face">
+<!--                            <a href="https://www.linkedin.com/in/ilyamikov/" title="Go to Linkedin" target="_blank"><i class="icon-linkedin3 dark"></i></a> -->
+                        </div>
+                        <div class="team-primary-con">
+                            <h2 class="team-tit">Duhee Lee</h2>
+                            <div class="team-sub">Startup Advisor</div>
+                            <ul class="team-history">
+                                <li>Founder LIKELION</li>
+                                <li>Founder Kongdoo</li>
+                                <li>Google Impact Challenge, First Place (People's Choice)</li>
+                                <li>Speaker, 66th UN NGO</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="team-img">
+                            <img src="img/face/ilya.jpg" alt="Ilya Mikov face">
+                            <a href="https://www.linkedin.com/in/ilyamikov/" title="Go to Linkedin" target="_blank"><i class="icon-linkedin3 dark"></i></a>
+
+                        </div>
+                        <div class="team-primary-con">
+                            <h2 class="team-tit">Ilya Mikov</h2>
+                            <div class="team-sub">Cryptocurrency Gaming Advisor</div>
+                            <ul class="team-history">
+                                <li>Co-Founder, Active Games</li>
+                                <li>Founder, Mobile Active</li>
+                                <li>Successfully raised an ICO round for its mobile MMORPG Lordmancer II.</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="team-img">
+                            <img src="img/face/charles.jpg" alt="chrales face">
+                            <a href="https://www.linkedin.com/in/charles-rim-1258304" title="Go to Linkedin" target="_blank"><i class="icon-linkedin3"></i></a>
+                        </div>
+                        <div class="team-primary-con">
+                            <h2 class="team-tit">Charles Rim</h2>
+                            <div class="team-sub">M&A Advisor</div>
+                            <ul class="team-history">
+                                <li>General Partner, Access Ventures</li>
+                                <li>MD, Tapjoy Korea & SE Asia</li>
+                                <li>Venture Partner, DFJ Athena VC</li>
+                                <li>Head of M&A, Google APAC </li>
+                                <li>CSO, Yahoo Korea & SE Asia </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="team-img">
+                            <img src="img/face/john.jpg" alt="John Chang face">
+                            <a href="https://www.linkedin.com/in/john-chang-93480664" title="Go to Linkedin" target="_blank"><i class="icon-linkedin3"></i></a>
+                        </div>
+                        <div class="team-primary-con">
+                            <h2 class="team-tit">John Chang</h2>
+                            <div class="team-sub">Investment Advisor</div>
+                            <ul class="team-history">
+                                <li>General Partner, Access Ventures</li>
+                                <li>APAC Head-Equities, Barclays Asia</li>
+                                <li>CEO, Deutsche Bank Korea</li>
+                                <li>Co-Founder, Access Communications</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="team-img">
+                            <img src="img/face/sunkwan.jpg" alt="Sunkwan Kim face">
+                            <a href="https://www.linkedin.com/in/sunkwan" title="Go to Linkedin" target="_blank"><i class="icon-linkedin3"></i></a>
+                        </div>
+                        <div class="team-primary-con">
+                            <h2 class="team-tit">Sunkwan Kim</h2>
+                            <div class="team-sub">Art Design Advisor</div>
+                            <ul class="team-history">
+                                <li>Creative Leader at Niantic Labs, Google (Ingress, Pokemon GO)</li>
+                                <li>Advisor of Weenu, Art up Seoul</li>
+                                <li>Senior Visual Designer, Yahoo Korea</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="team-img">
+                            <img src="img/face/peter.jpg" alt="Peter Van Dyke face">
+                            <a href="https://www.linkedin.com/in/pvandyke" title="Go to Linkedin" target="_blank"><i class="icon-linkedin3"></i></a>
+
+                        </div>
+                        <div class="team-primary-con">
+                            <h2 class="team-tit">Peter Van Dyke</h2>
+                            <div class="team-sub">AR UX & Design Advisor</div>
+                            <ul class="team-history">
+                                <li>Interactive UX/Production, Apple</li>
+                                <li>CSO & Product Head, GTR</li>
+                                <li>Production Head, npnf KR/SK Planet</li>
+                                <li>Creative Co-Director, Com2uS Korea</li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="team-img">
+                            <img src="img/face/baolong.jpg" alt="Baolong Zhang face">
+                            <a href="https://www.linkedin.com/in/baolong-zhang-51998b19/" title="Go to Linkedin" target="_blank"><i class="icon-linkedin3"></i></a>
+
+                        </div>
+                        <div class="team-primary-con">
+                            <h2 class="team-tit">Baolong Zhang</h2>
+                            <div class="team-sub">CG Advisor</div>
+                            <ul class="team-history">
+                                <li>Director, Digitallotus</li>
+                                <li>Lead Character Artist, Supermassive Games</li>
+								<li>Lead Environment Artist, Climax Action</li>
+                                <li>Level Artist, Ubisoft</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="team-img">
+                            <img src="img/face/youngwoon.jpg" alt="Youngwoon Cha face">
+                            <a href="https://www.linkedin.com/in/young-woon-cha-cv" title="Go to Linkedin" target="_blank"><i class="icon-linkedin3"></i></a>
+                        </div>
+                        <div class="team-primary-con">
+                            <h2 class="team-tit">Youngwoon Cha</h2>
+                            <div class="team-sub">Graphics & VR/AR Advisor</div>
+                            <ul class="team-history">
+                                <li>CS PhD Candidate, UNC Graphics & Virtual Reality</li>
+                                <li>Researcher, KIST</li>
+                                <li>Research Engineer, LG Electronics</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="team-img">
+                            <img src="img/face/johnskim.jpg" alt="John S. Kim face">
+                            <a href="https://www.linkedin.com/in/doshkim/" title="Go to Linkedin" target="_blank"><i class="icon-linkedin3"></i></a>
+                        </div>
+                        <div class="team-primary-con">
+                            <h2 class="team-tit">John S. Kim</h2>
+                            <div class="team-sub">Growth Advisor</div>
+                            <ul class="team-history">
+                                <li>CEO & Founder, SendBird (Y Combinator)</li>
+                                <li>Director, GREE</li>
+                                <li>CEO & Founder, Paprika Lab</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="team-img">
+                            <img src="img/face/timchae.jpg" alt="Tim Chae face">
+                            <a href=" https://www.linkedin.com/in/timchae" title="Go to Linkedin" target="_blank"><i class="icon-linkedin3"></i></a>
+                        </div>
+                        <div class="team-primary-con">
+                            <h2 class="team-tit">Tim Chae</h2>
+                            <div class="team-sub">Venture Capital Advisor</div>
+                            <ul class="team-history">
+                                <li>General Partner, 500 Startups Korea</li>
+                                <li>Partner, 500 Startups</li>
+                                <li>Investor in 30+ seed stage tech companies in SF/SV and Korea</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="team-img">
+                            <img src="img/face/changsu.jpg" alt="Changsu Lee face">
+                            <a href="https://www.linkedin.com/in/changsulee/" title="Go to Linkedin" target="_blank"><i class="icon-linkedin3"></i></a>
+
+                        </div>
+                        <div class="team-primary-con">
+                            <h2 class="team-tit">Changsu Lee</h2>
+                            <div class="team-sub">Artificial Intelligence Advisor</div>
+                            <ul class="team-history">
+                                <li>Co-Founder & CEO, Allganize</li>
+                                <li>SVP, Tapjoy</li>
+                                <li>Co-Founder & CEO, 5Rocks</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="team-img">
+                            <img src="img/face/minpyo.jpg" alt="Min Pyo Hong face">
+                            <a href="https://www.linkedin.com/in/silverdel/" title="Go to Linkedin" target="_blank"><i class="icon-linkedin3"></i></a>
+                        </div>
+                        <div class="team-primary-con">
+                            <h2 class="team-tit">Minpyo Hong</h2>
+                            <div class="team-sub">Security Advisor</div>
+                            <ul class="team-history">
+                                <li>Founder, SEWORKS</li>
+                                <li>Founder, SHIFTWORKS (acquired by Infraware)</li>
+                                <li>Advised governments on digital security issues for 20+ years</li>
+                                <li>Five-time consecutive finalist at DEFCON CTF</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="team-img">
+                            <img src="img/face/wonchai.jpg" alt="Wonchai Lee face">
+
+                        </div>
+                        <div class="team-primary-con">
+                            <h2 class="team-tit">Wonchai Lee</h2>
+                            <div class="team-sub">Monetization Advisor</div>
+                            <ul class="team-history">
+                                <li>Sr. Football Trader, The Hong Kong Jockey Club</li>
+                                <li>Sr. Odds Compiler, Singapore Pools</li>
+                                <li>Oddsmaker, SportsToto</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="team-img">
+                            <img src="img/face/widjaja.jpg" alt="Widjaja Tannady face">
+
+                        </div>
+                        <div class="team-primary-con">
+                            <h2 class="team-tit">Widjaja Tannady</h2>
+                            <div class="team-sub">Real Estate Advisor</div>
+                            <ul class="team-history">
+                                <li>Founder, Mahanusa Capital</li>
+                                <li>Director, PT Pacific Place Jakarta</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <p class="readmore"></p>
+                </ul>
+                <div class="expand">
+                    <button type="button" id="viewmore">
+                        View More
+                        <p><i class="arrow down"></i></p>
+                    </button>
+                </div>
+            </div>
+        </section>
+        
+        <section class="advisors">
+            <div class="con">
+                <h1 class="advisors-title stitle">Team Members</h1>
+    
+                        <ul class="team-list team-secondary clearfix">
+                    <li>
+                        <div class="team-img">
+                            <img src="img/face/byukryun.jpg" alt="Byukryun Choi face">
+                        </div>
+                        <div class="team-secondary-con">
+                            <h2 class="team-tit">Byucryun Choi</h2>
+                            <div class="team-sub">Lead Character Artist</div>
+                            <ul class="team-history">
+                                <li>Lead Character Artist, NS Studio</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="team-img">
+                            <img src="img/face/sangmin.jpg" alt="Sangmin Lee face">
+
+                        </div>
+                        <div class="team-secondary-con">
+                            <h2 class="team-tit">Sangmin Lee</h2>
+                            <div class="team-sub">Lead Environment Artist</div>
+                            <ul class="team-history">
+                                <li>Environment Artist, M Game</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="team-img">
+                            <img src="img/face/yongdae.jpg" alt="Youngdae Cho face">
+
+                        </div>
+                        <div class="team-secondary-con">
+                            <h2 class="team-tit">Youngdae Cho</h2>
+                            <div class="team-sub">Client Engineer</div>
+                            <ul class="team-history">
+                                <li>S/W Engineer, NHN Next</li>
+                                <li>PR/Marketer, 5Rocks</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="team-img">
+                            <img src="img/face/yunu.jpg" alt="Yunu Kim face">
+
+                        </div>
+                        <div class="team-secondary-con">
+                            <h2 class="team-tit">Yunu Kim</h2>
+                            <div class="team-sub">Server Engineer</div>
+                            <ul class="team-history">
+                                <li>S/W Engineer, Line Games</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="team-img">
+                            <img src="img/face/junchel.jpg" alt="Junchel Park face">
+
+                        </div>
+                        <div class="team-secondary-con">
+                            <h2 class="team-tit">Junchel Park</h2>
+                            <div class="team-sub">Blockchain Engineer</div>
+                            <ul class="team-history">
+                                <li>S/W Engineer, Kakao</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="team-img">
+                            <img src="img/face/hyunwook.jpg" alt="Hyunwook Nam face">
+
+                        </div>
+                        <div class="team-secondary-con">
+                            <h2 class="team-tit">Hyunuk Nam</h2>
+                            <div class="team-sub">Blockchain Engineer</div>
+                            <ul class="team-history">
+                                <li>S/W Engineer, NHN Next</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="team-img">
+                            <img src="img/face/seunghyun.jpg" alt="Seunghyun Kim face">
+
+                        </div>
+                        <div class="team-secondary-con">
+                            <h2 class="team-tit">Seunghyun Kim</h2>
+                            <div class="team-sub">Software Engineer</div>
+                            <ul class="team-history">
+                                <li>S/W Engineer, NHN Next</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="team-img">
+                            <img src="img/face/hyunbin.jpg" alt="Hyunbin Nam face">
+
+                        </div>
+                        <div class="team-secondary-con">
+                            <h2 class="team-tit">Hyunbin Nam</h2>
+                            <div class="team-sub">Game Designer</div>
+                            <ul class="team-history">
+                                <li>Game Designer, Affinity Game</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="team-img">
+                            <img src="img/face/jerome.jpg" alt="Jerome Hernandez face">
+
+                        </div>
+                        <div class="team-secondary-con">
+                            <h2 class="team-tit">Jerome Hernandez</h2>
+                            <div class="team-sub">Creative Engineer</div>
+                            <ul class="team-history">
+                                <li>Creative Engineer, CERN</li>
+
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="team-img">
+                            <img src="img/face/emily.jpg" alt="Emily Park face">
+
+                        </div>
+                        <div class="team-secondary-con">
+                            <h2 class="team-tit">Emily Park</h2>
+                            <div class="team-sub">PR Manager</div>
+                            <ul class="team-history">
+                                <li>PR Manager, Lineable</li>
+                                <li>A.E., Cheil Worldwide</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+
+        <section class="press" id="news">
+            <div class="con clearfix">
+                <header class="press-header">
+                    <h1 class="press-title stitle">News & Media</h1>
+                    <div class="press-subtitle">
+                        Recent news & media coverage on Reality Reflection and Mossland
+                    </div>
+                </header>
+                <div class="press-con">
+                    <ul class="press-primary clearfix">
+                        <li>
+                            <a href="https://www.techinasia.com/digital-humans-oben-soul-machines" target="_blank">
+                                <div class="pressitem-img pressitem-thumb01">
+                                </div>
+                                <div class="pressitem-con">
+                                    <div class="pressitem-media">
+                                        <img src="img/media/techinasia.png">
+                                    </div>
+                                    <div class="pressitem-desc">
+                                        The brave new world of digital humans, designed to do our bidding
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.vrfocus.com/2017/10/futuristic-esport-snatchers-heading-to-oculus-rift-and-htc-vive/" target="_blank">
+                                <div class="pressitem-img pressitem-thumb02">
+                                </div>
+                                <div class="pressitem-con">
+                                    <div class="pressitem-media">
+                                        <img src="img/media/vrfocus.png">
+                                    </div>
+                                    <div class="pressitem-desc">
+                                        Futuristic ESport Snatchers Heading To Oculus Rift And HTC Vive
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.vrnerds.de/snatchers-wird-zu-speedball-arena-fuer-pc-oculus-rift-und-htc-vive/" target="_blank">
+                                <div class="pressitem-img pressitem-thumb03">
+                                </div>
+                                <div class="pressitem-con">
+                                    <div class="pressitem-media">
+                                        <img src="img/media/vrnerd.png">
+                                    </div>
+                                    <div class="pressitem-desc">
+                                        Snatchers wird zu Speedball Arena für PC, Oculus Rift und HTC Vive
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="press-secondary">
+                        <a target="_blank" href="http://news.mk.co.kr/newsRead.php?year=2018&no=16336">
+                            <img src="img/media/maeil.png" alt="매일경제">
+                        </a>
+                        <a target="_blank" href="http://www.inven.co.kr/webzine/news/?news=188798">
+                            <img src="img/media/inven.png" alt="inven">
+                        </a>
+                        <a target="_blank" href="http://gamefocus.co.kr/detail.php?number=76202">
+                            <img src="img/media/gamefocus.png" alt="게임포커스">
+                        </a>
+                        <a target="_blank" href="http://platum.kr/archives/90641">
+                            <img src="img/media/platum.png" alt="플래텀">
+                        </a>
+                        <a target="_blank" href="http://www.sedaily.com/NewsView/1OL446N1CQ">
+                            <img src="img/media/seoul.png" alt="서울경제">
+                        </a>
+                        <a target="_blank" href="http://news.hankyung.com/article/2016082351781?nv=o">
+                            <img src="img/media/koreaeconomy.png" alt="한국경제">
+                        </a>
+                        <a target="_blank" href="http://biz.chosun.com/site/data/html_dir/2016/05/12/2016051202491.html">
+                            <img src="img/media/chosunbiz.png" alt="조선비즈">
+                        </a>
+                        <a target="_blank" href="http://news.mt.co.kr/mtview.php?no=2016032508565839804&outlink=1&ref=https%3A%2F%2Fsearch.naver.com">
+                            <img src="img/media/mt.png" alt="머니투데이">
+                        </a>
+                        <a target="_blank" href="http://news.heraldcorp.com/view.php?ud=20171220000299">
+                            <img src="img/media/herald.png" alt="해럴드경제">
+                        </a>
+                        <a target="_blank" href="http://www.hungryapp.co.kr/news/news_view.php?pid=69183">
+                            <img src="img/media/hungryapp.png" alt="헝그리앱">
+                        </a>
+                        <a target="_blank" href="https://uploadvr.com/music-inside-review/">
+                            <img src="img/media/upload.png" alt="uploadvr">
+                        </a>
+                        <a target="_blank" href="https://techcrunch.com/2016/12/01/oculus-shows-off-the-50-launch-titles-for-its-touch-motion-controllers/">
+                            <img src="img/media/techcrunch.png" alt="tech crunch">
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <!-- We will enable the below once we organize our partners. so please do not delete it.
+        <section class="partners" id="partners">
+            <div class="con">
+                <h1 class="partners-title stitle">Partners & Institutions</h1>
+                <div class="partners-subtitle">Mossland is supported by influential blockchain partners including global accelerators, cryptocurrency-focused venture capitalists and law firms.</div>
+                <div class="partners-con">
+                    <img class="m-hide" src="img/partners.png" alt="Partners of REALITY REFLECTION">
+                    <img class="d-hide" src="img/partners_mobile.png" alt="Partners of REALITY REFLECTION">
+                </div>
+
+            </div>
+        </section>
+
+        -->
+        <section class="tail" id="tail">
+            <div class="con clearfix">
+
+
+                <div class="footer-whitepaper">
+                    <select id="footer-whitepaper-download">
+                        <option value="">White Paper Download</option>
+                        <option value="https://d2vy65gufabiok.cloudfront.net/whitepaper/Mossland+Whitepaper+-+ENG.pdf">English</option>
+                        <option value="https://d2vy65gufabiok.cloudfront.net/whitepaper/Mossland+Whitepaper+-+CHN.pdf">中文</option>
+                        <option value="https://d2vy65gufabiok.cloudfront.net/whitepaper/Mossland+Whitepaper+-+KOR.pdf">한글</option>
+                        <option value="https://d2vy65gufabiok.cloudfront.net/whitepaper/Mossland+Whitepaper+-+JPN.pdf">日本語</option>
+                        <option value="https://d2vy65gufabiok.cloudfront.net/whitepaper/Mossland+Whitepaper+-+RUS.pdf">Русский</option>
+                        <option value="https://d2vy65gufabiok.cloudfront.net/whitepaper/Mossland+Whitepaper+-+ESP.pdf">Español</option>
+
+                    </select>
+
+		    <select id="footer-faq-download">
+                        <option value="">FAQ Download</option>
+                        <option value="https://goo.gl/CjzGkx">English</option>
+                        <option value="https://drive.google.com/file/d/116wxjkEZNeFnLqCtJ8qCThwM7gmQZWgV/view">한글</option>
+                    </select>
+                </div>
+
+<!--
+		<div class="footer-faq">
+                    <select id="footer-faq-download">
+                        <option value="">FAQ Download</option>
+                        <option value="" disabled>English</option>
+                        <option value="" disabled>中文</option>
+                        <option value="https://drive.google.com/file/d/116wxjkEZNeFnLqCtJ8qCThwM7gmQZWgV/view?usp=sharing">한글</option>
+                        <option value="" disabled>日本語</option>
+                        <option value="" disabled>Русский</option>
+                        <option value="" disabled>Français</option>
+                        <option value="" disabled>Español</option>
+
+                    </select>
+                </div>
+-->
+                <div class="social">
+                    <a class="social-linkedin" href="https://www.linkedin.com/company/themossland/" target="_blank">
+                        <span class="icon-linkedin3"></span>
+                    </a>
+                    <a class="social-medium" href="https://medium.com/@moss.land" target="_blank">
+                        <span class="icon-medium"></span>
+                    </a>
+                    <a class="social-facebook" href="https://www.facebook.com/Mossland-1654411001264423/" target="_blank">
+                        <span class="icon-facebook"></span>
+                    </a>
+                    <a class="social-twitter" href="https://twitter.com/TheMossland" target="_blank">
+                        <span class="icon-twitter"></span>
+                    </a>
+                    <a title="Github" class="" href="https://github.com/realityreflection/MossCoin" target="_blank">
+                        <span class="icon-github"></span>
+                    </a>
+                    <a class="social-email" href="mailto:contact@moss.land">
+                        <span class="icon-envelope"></span>
+                    </a>
+                    <a class="social-steemit" href="https://steemit.com/@mossland" target="_blank">
+                        <span class="icon-steemit-logo"></span>
+                    </a>
+                </div>
+
+            </div>
+
+        </section>
+        <footer class="main-footer">
+
+
+            <div class="rr-logo">
+                <a target="_blank" href="https://www.realityreflection.com/" title="Go to the Homepage"><img src="img/rrlogo.png" height="70" width="102" alt="MOSS LAND"></a>
+            </div>
+
+            <address>
+                <!--<a target="_blank" href="https://www.realityreflection.com/" title="Go to the Homepage">REALITY REFLECTION</a><br/>-->
+            </address>
+            © MOSSLAND 2018
+            <div class="footer-policy">
+                <a href="cookies_privacy.html">Cookies Privacy</a>
+            </div>
+        </footer>
+
+        <div id="event">
+            <a href="http://bit.ly/2E09qFz" target="_blank">
+                <img src="img/event01.png" width="200" alt="Register your landmark Get 10 Moss Coin for free">
+            </a>
+        </div>
+
+        <div id="event-mobile">
+            <a href="http://bit.ly/2E09qFz" target="_blank">
+                Register your landmark<br />
+                Get 10 Moss Coin for free
+                <img src="img/event_re_mobile.png" width="70" alt="">
+            </a>
+        </div>
+
+    </section>
+</section>
+
+
+<script type="text/javascript" src="js/motion.js?v=11"></script>
+
+</body>
 </html>
