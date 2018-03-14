@@ -1,0 +1,769 @@
+
+@media only screen and (max-width: 1440px) {
+
+    .con {
+        width: 1000px;
+    }
+
+    .motion-logo {
+        top: 35%;
+        height: 260px;
+        margin-top: -130px;
+
+    }
+
+    .features-item-odd .features-con {
+        padding-right: 3%;
+    }
+
+    .features-con {
+        padding-left: 3%;
+    }
+
+    .team-history {
+        font-size: 0.95em;
+    }
+
+    .team-sub {
+        font-size: 1.1em;
+    }
+
+
+    .main-header nav > a {
+        padding: 0 4px;
+    }
+
+    .main-header nav {
+        margin-left: 35px;
+    }
+}
+
+@media only screen and (max-width: 1060px) {
+
+    body {
+        font-size: 14px;
+    }
+
+    #notice {
+        top: 99px;
+    }
+
+    .team-history > li {
+        line-height: 1.2em;
+        margin-bottom: 7px;
+    }
+
+    .timer {
+        width: 70%;
+    }
+
+    .ico-progress {
+        width: 68.5%;
+    }
+
+    .motion-logo {
+        top: 35%;
+        height: 240px;
+        margin-top: -120px;
+
+    }
+
+    .motion-title {
+        font-size: 32px;
+    }
+
+    .main-header h1 {
+        float: none;
+        text-align: center;
+    }
+    .main-header nav {
+        float: none;
+        text-align: center;
+        margin: 0;
+    }
+
+    .main-header nav > a {
+        padding: 20px 10px;
+    }
+
+    .main-header.active {
+        padding-bottom: 0;
+    }
+
+    .con {
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .ico {
+        /*height: 400px;*/
+        background-size: 100%;
+    }
+
+    .ico-page {
+        /*padding-top: 80px*/
+    }
+
+    .whitepaper-title-wrap {
+        float: none;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 2.5em;
+        background: none;
+        padding-left: 0;
+    }
+
+    .whitepaper-subtitle {
+        color: #666;
+        font-weight: 500;
+    }
+
+    .whitepaper-download {
+        float: none;
+        width: 100%;
+    }
+
+    .whitepaper-download-area {
+        float: none;
+        margin: 0 auto;
+        max-width: 100%;
+    }
+
+    .roadmapitem-con {
+        font-size: 0.95em;
+    }
+
+
+    .tokensale-details-list .tokensale-details-item {
+        font-size: 1.4em;
+    }
+
+    .tokensale-part > h2 {
+        margin-bottom: 20px;
+    }
+
+    .bta-label {
+        font-size: 13px;
+    }
+
+
+
+}
+
+/* mobile */
+
+@media only screen and (max-width: 768px) {
+
+    #notice,#notice.active {
+        display: none;
+    }
+
+    .mobile + #notice.active {
+        display: block;
+        top: 55px;
+        height: auto;
+    }
+
+    .mobile + #notice .notice-con{
+        height: auto;
+        line-height: 1.2em;
+        font-size: 13px;
+        position: static;
+        top: 0;
+        padding: 10px 0;
+    }
+
+    .header-social {
+        display: none;
+    }
+
+    #event {
+        display: none;
+    }
+
+    #event-mobile {
+        display: block;
+    }
+
+    .team-primary-con {
+        height: 200px;
+    }
+    .team-history > li {
+        line-height: 1.2em;
+        margin-bottom: 7px;
+    }
+    .d-hide {
+        display:block;
+    }
+
+    .timer {
+        width: 90%;
+    }
+    .ico-progress {
+        width: 88%;
+    }
+    .timer li {
+        padding: 12px;
+    }
+    .timer-str {
+        font-size: 48px;
+    }
+
+    .motion-logo {
+        top: 40%;
+        height: 200px;
+        margin-top: -100px;
+    }
+
+    #upcomming .ico-subtitle {
+        margin-bottom: 30px;
+    }
+
+    .m-hide {
+        display: none;
+    }
+
+    body {
+        font-size: 13px;
+    }
+
+
+    #upcomming .ico-title {
+        font-size: 30px;
+    }
+
+    .btn1 {
+        line-height: 60px;
+        padding: 0 60px;
+        height: 60px;
+        font-size: 18px;
+    }
+
+    .whitepaper-download-area {
+
+    }
+    .whitepaper-part-2 {
+        font-size: 1em;
+    }
+    .whitepaper-part-2 > a {
+        padding: 0 10px;
+        line-height: 40px;
+        font-size: 1em;
+    }
+    .btn-menu {
+        display: block;
+        background: none;
+        font-size: 26px;
+        color: #fff;
+        float: right;
+        margin-top: 2px;
+        padding: 5px;
+    }
+    .main-header {
+        padding: 7px 0px;
+        height: 55px;
+    }
+
+    .main-header h1 {
+        float: left;
+        text-align: left;
+        padding-top: 6px;
+    }
+
+    .main-header h1 img {
+        height: 28px;
+    }
+
+    .main-header nav {
+        width: 100%;
+        position: absolute;
+        top: 55px;
+        background: rgba(255,255,255,0.95);
+        left: 0;
+        border-bottom: 2px solid #333;
+        display: none;
+        opacity: 0;
+        transition: opacity 0.2s;
+        box-shadow: 0 3px 3px rgba(0,0,0,0.5);
+    }
+
+    .main-header nav.active {
+        display: block;
+        opacity: 1;
+    }
+
+    .main-header nav > a{
+        display: inline-block;
+        width: 100%;
+        border-bottom: 1px solid #ddd;
+        text-align: center;
+        padding: 12px 10px;
+        font-size: 1em;
+        color: #333;
+
+    }
+    .main-header.active {
+        padding-top: 10px;
+    }
+
+    .con {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .features-item-odd .features-con {
+        padding-right: 3%;
+    }
+
+    .features-con {
+        padding-left: 3%;
+    }
+
+    .features-title {
+        margin-bottom: 15px;
+    }
+
+    ul.features-list > li {
+        margin-bottom: 6em;
+    }
+
+
+    .roadmap-body {
+        height: 400px;
+    }
+
+    .roadmap-list-wrap {
+        margin-top: 140px;
+
+    }
+    .roadmapitem-img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .roadmap-ob-1 {
+        height: 24px;
+        top: 16px;
+        left: 30px;
+    }
+
+    .roadmap {
+        padding: 6em 0;
+    }
+
+    .tokensale-title {
+        margin-bottom: 30px;
+    }
+
+    .tokensale-part {
+        margin-bottom: 5em;
+    }
+
+    .tokensale-distribution-chart {
+        padding: 0 10%;
+    }
+    /*ul.features-list > li {*/
+    /*margin-bottom: 20px;*/
+    /*}*/
+
+    /*.active .features-img {*/
+    /*width: 100%;*/
+    /*float: none;*/
+    /*}*/
+    /*.features-con {*/
+    /*width: 100%;*/
+    /*}*/
+
+    .footer-whitepaper {
+        float: none;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .social {
+        float: none;
+        text-align: center;
+    }
+
+
+    .press-header {
+        float: none;
+        text-align: center;
+        margin-bottom: 35px;
+        width: 100%;
+    }
+
+    .press-subtitle {
+        margin-top: 5px;
+    }
+
+    .press-con {
+        float: none;
+        width: 100%;
+    }
+
+    ul.press-primary {
+        margin-bottom: 15px;
+    }
+    ul.press-primary > li {
+        width: 100%;
+        height: 140px;
+        margin-bottom: 15px;
+    }
+
+    ul.press-primary > li:last-child {
+        margin-bottom: 0;
+    }
+
+    .pressitem-img {
+        float: left;
+        height: 140px;
+        width: 140px;
+    }
+
+    .pressitem-con {
+        height: 140px;
+        width: auto;
+        overflow: hidden;
+        padding-left: 20px;
+    }
+
+    .press-secondary {
+        padding: 12px;
+    }
+
+    .press-secondary > a {
+        width: 25%;
+    }
+
+    .ico-progress .progress-current {
+        left: 0;
+        top: 45px;
+        text-align: left;
+    }
+
+    .ico-progress .progress-hard {
+        top : 45px;
+        right: 0;
+        bottom: 45px;
+        text-align: right;
+    }
+
+    .bt-cal {
+        padding-right: 0;
+        float: none;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .bta-bonus-info {
+        float: none;
+        width: 100%;
+        border: none;
+        margin-top: 30px;
+        text-align: center;
+        padding: 0;
+    }
+
+    .bt-title {
+        font-size: 45px;
+        padding: 20px 0;
+    }
+
+    .bta-input {
+        font-size: 20px;
+        height: 45px;
+        width: 90%;
+    }
+
+    .bta-moc-value {
+        font-size: 30px;
+        line-height: 45px;
+    }
+
+    .bta-label {
+        font-size: 12px;
+        line-height: 1.4em;
+        height: 40px;
+        display: inline-block;
+    }
+
+    .bta-send-input {
+        border: 1px solid #ccc;
+    }
+
+    .bt-send {
+        padding: 20px;
+    }
+
+    .bta-address {
+        padding-top: 25px;
+        width: 100%;
+        text-align: center;
+        margin: 20px auto;
+
+    }
+
+    #wallet-address {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .btn-copy {
+        width: 100%;
+        display: block;
+    }
+    #copy-result {
+        margin-left: 0;
+    }
+
+    .bta-qr {
+        float: none;
+        text-align: center;
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+
+}
+
+/* mobile */
+
+@media only screen and (max-width: 576px) {
+
+
+
+
+    body {
+        font-size: 14px;
+    }
+
+
+    .con {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .features {
+        padding: 60px 0;
+    }
+
+    .features-img {
+        width: 100%;
+        float: none;
+        margin-bottom: 20px;
+    }
+
+    .features-con {
+
+        width: 100%;
+        float: none;
+
+    }
+
+    .features-title {
+        margin-bottom: 10px;
+    }
+
+
+
+    .features-desc {
+        font-size: 1.1em;
+    }
+
+
+    ul.features-list > li {
+        margin-bottom: 60px;
+    }
+
+    .whitepaper-part-1 {
+        padding: 20px 20px;
+    }
+
+    .whitepaper-download-ico {
+        font-size: 30px;
+        width: 40px;
+    }
+    .whitepaper-download-title {
+        font-size: 1.3em;
+    }
+
+
+    .roadmap-body {
+        height: auto;
+    }
+
+    .roadmap-list-wrap {
+        margin: 0;
+    }
+
+    .roadmap-title {
+        margin-bottom: 60px;
+    }
+
+    .roadmap-list > li {
+        width: 100%;
+        float: none;
+        margin: 0 auto 25px;
+        overflow: hidden;
+        text-align: left;
+    }
+
+    .roadmapitem-title {
+        background: none;
+    }
+
+    .roadmapitem-img {
+        float: left;
+        margin-right: 30px;
+    }
+
+    .roadmapitem-title,
+    .roadmapitem-con
+    {
+        width: auto;
+        overflow: hidden;
+        padding: 0;
+    }
+
+    .roadmap-ob-1 {
+        width: 30px;
+        height: 1%;
+        left: 11px;
+        transition: height 0.8s ease-in;
+    }
+    .active .roadmap-ob-1{
+        width: 30px;
+        height: 85%;
+    }
+    .roadmapitem-title {
+        height: auto;
+        margin-bottom: 4px;
+    }
+    .roadmap-list-wrap {
+        width: 55%;
+        margin: 0 auto;
+    }
+
+    .stitle {
+        font-size: 2.2em;
+    }
+
+    .tokensale-part {
+        margin-bottom: 4em;
+    }
+
+    .tokensale-details-list > li {
+        display: block;
+        float: left;
+        width: 50%;
+        margin-bottom: 15px;
+
+    }
+
+    .tokensale-distribution-chart {
+        padding: 0;
+    }
+
+    .team, .investors, .advisors, .partners, .tokensale, .roadmap, .features, .press {
+        padding: 60px 0;
+    }
+
+    ul.team-primary > li {
+        width: 50%;
+        margin-bottom: 25px;
+    }
+
+
+    ul.team-secondary > li {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    ul.team-secondary .team-img {
+        float: left;
+        width: 100px;
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
+
+    .team-secondary-con {
+        height: auto;
+        width: auto;
+        overflow: hidden;
+    }
+
+    .team-secondary-con *{
+        text-align: left;
+    }
+
+    .team-secondary-con .team-history > li {
+        text-align: left;
+    }
+
+    .team-tit {
+        font-weight: 300;
+    }
+
+    ul.team-secondary .team-tit {
+        font-size: 1.3em;
+        margin-bottom: 3px;
+    }
+
+    .tokensale-plan > tbody td, .tokensale-plan > tbody th {
+        font-size: 1em;
+    }
+
+    .tokensale-plan .tokensale-plan-title {
+        font-size: 1.1em;
+        margin-bottom: 0;
+
+    }
+
+    .tokensale-plan > tbody td, .tokensale-plan > tbody th {
+        padding: 10px 5px;
+    }
+
+    .tokensale-plan > thead th {
+        padding: 10px 0;
+        vertical-align: top;
+    }
+
+    .tokensale-plan .tokensale-plan-subtitle {
+        /*display: none;*/
+        font-size: 12px;
+        font-weight: 300;
+    }
+
+    .partners-subtitle {
+        padding: 0;
+    }
+
+    .pressitem-media > img {
+        height: 35px;
+    }
+
+    .timer {
+        width: 100%;
+    }
+
+    .ico-progress {
+        width: 98%;
+        margin-bottom: 80px;
+    }
+
+
+
+
+    .timer-str {
+        font-size: 42px;
+    }
+
+    .team-img > a > i {
+        font-size: 30px;
+    }
+
+    .ico {
+        background-size: 180%;
+    }
+
+}
+
