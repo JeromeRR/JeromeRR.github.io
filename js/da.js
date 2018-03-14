@@ -259,7 +259,13 @@ $(function(){
     $("#viewmore").on("click", function(){
         $(".expand").addClass("inactive");
         $(".readmore").addClass("inactive");
-        $("#product-advisor").removeClass("product");
+        $("#ico-advisor").removeClass("ico-limit");
+    });
+
+    $("#viewmore2").on("click", function(){
+        $(".expand2").addClass("inactive");
+        $(".readmore2").addClass("inactive");
+        $("#product-advisor").removeClass("product-limit");
     });
 
 
