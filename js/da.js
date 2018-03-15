@@ -200,22 +200,33 @@ $(function(){
 
 
 
-    $(".nav > a").on("click",function(){
+    $(".header__menu a, .scroll-down").on("click",function(){
         var idstr = $(this).attr('href');
 
         $('html, body').animate({
             scrollTop : $(idstr).offset().top - $(".main-header").outerHeight() + 5
         },1000)
 
-        $(".nav").removeClass('active');
+        $(".js-menu-btn").removeClass('menu-opened');
+        $("#header").removeClass('menu-opened');
+        $(".header__menu").removeClass('is-opened');
 
         return false;
 
     });
 
-    $(".btn-menu").on("click",function(){
-        $(".nav").toggleClass('active');
+    var menuBtn = document.querySelector('.js-menu-btn');
+    var menu = document.querySelector('.js-menu');
+    var header = document.getElementById('header');
+    menuBtn.addEventListener('click', function () {
+      this.classList.toggle('menu-opened');
+      header.classList.toggle('menu-opened');
+      menu.classList.toggle('is-opened');
     });
+
+    // $(".btn-menu").on("click",function(){
+    //     $(".nav").toggleClass('active');
+    // });
 
     $("#footer-whitepaper-download").change(function(){
 

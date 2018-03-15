@@ -31,8 +31,9 @@
     <link rel="stylesheet" type="text/css" href="css/icomoon/icomoon.css?v=3" />
     <link rel="stylesheet" type="text/css" href="css/icomoon2/style.css?v=6" />
     <link rel="stylesheet" type="text/css" href="css/style.css?v=15" />
-    <link rel="stylesheet" type="text/css" href="css/motion.css?v=12" />
+    <!-- <link rel="stylesheet" type="text/css" href="css/motion.css?v=12" /> -->
     <link rel="stylesheet" type="text/css" href="css/responsive.css?v=12" />
+    <link rel="stylesheet" type="text/css" href="css/fixcss.css" />
 
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
@@ -80,13 +81,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
 <section class="wrapper" id="home">
-    <header class="main-header">
+    <header class="main-header" id="header">
         <div class="con clearfix">
             <h1>
                 <a href="https://moss.land"><img src="img/logo_dark.svg" alt="mossland"></a>
             </h1>
-            <button class="btn-menu">
-                <i class="icon-menu"></i>
+            <button class=" header__menu-btn js-menu-btn">
+                <span></span><span></span><span></span><span></span>
             </button>
             <div class="header-social">
                 <a href="https://t.me/mossland" target="_blank">
@@ -107,16 +108,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <span id="notice-icon"></span>
                 </a>
             </div>
-            <nav class="nav">
-                <a href="#ico">Whitelist</a>
-                <a href="#potential">Potential</a>
-                <!-- <a href="#features">Features</a> -->
-                <a href="#whitepaper">White paper</a>
-                <a href="#roadmap">Roadmap</a>
-                <a href="#tokensale">ICO</a>
-                <a href="#team">Team</a>
-                <a href="#news">News</a>
-            </nav>
+            <button class="header__add-btn btn btn_transp btn_ph_20">
+                <a href="https://www.jotform.com/form/80104658072452/" target="_blank">Add me to the Whitelist</a>
+            </button>
+            <ul class="header__menu js-menu">
+                <li class="header__menu-item"><a href="#potential">About</a></li>
+               <!--  <li class="header__menu-item"><a href="#about">About</a></li> -->
+                <li class="header__menu-item"><a href="#whitepaper">White Paper</a></li>
+                <li class="header__menu-item"><a href="#roadmap">Roadmap</a></li>
+                <li class="header__menu-item"><a href="#tokensale">ICO</a></li>
+                <li class="header__menu-item"><a href="#team">Team</a></li>
+                <li class="header__menu-item"><a href="#news">News</a></li>
+            </ul>
         </div>
     </header>
     <div id="notice">
@@ -129,158 +132,49 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </a>
         </div>
     </div>
-
-    <section id="motionwrap">
-        <div id="loading">
-            <div>
-                <div class="spinner"></div>
+    <section class="section-home">
+        <div class="container">
+          <div class="hero">
+            <h1 class="hero__title">Location-based Augmented Reality(AR) <br>mobile game based on real estate</h1>
+            <div class="hero__timer">
+              <h2 class="hero__timer-title">Main ICO will be launched</h2>
+              <ul class="timer js-timer">
+                <li class="timer__item">
+                  <h4 class="timer__title">DAYS</h4>
+                  <div class="timer__value timer-str js-timer-days">0</div>
+                </li>
+                <li class="timer__item">
+                  <h4 class="timer__title">HOURS</h4>
+                  <div class="timer__value timer-str js-timer-hours">0</div>
+                </li>
+                <li class="timer__item">
+                  <h4 class="timer__title">MINUTES</h4>
+                  <div class="timer__value timer-str js-timer-minutes">0</div>
+                </li>
+                <li class="timer__item">
+                  <h4 class="timer__title">SECONDS</h4>
+                  <div class="timer__value timer-str js-timer-seconds">0</div>
+                </li>
+              </ul>
             </div>
-        </div>
-        <div class="motion">
-
-            <canvas id="mossland-ar"></canvas>
-            <canvas id="mossland-reality"></canvas>
-            <div class="motion-logo">
-                <h1>Location-based Augmented Reality(AR) <br>mobile game based on real estate</h1>
-                <div class="motion-btns">
-                    <a class="btn1 btn1_s js-to-whitepapper" href="#whitepaper">Read Whitepaper</a>
-                    <a class="btn1 btn1_s" href="https://www.jotform.com/form/80104658072452/" target="_blank">Add me to the Whitelist</a>
-                </div>
+            <div class="hero__button"><a class="btn" href="https://www.jotform.com/form/80104658072452/">Add me to the Whitelist</a></div>
+            <div class="hero__scroll-down">
+              <a class="scroll-down" href="#potential">
+                <p class="scroll-down__title">Scroll Down</p>
+              </a>
             </div>
-            <div class="motion-title">
-                Own Your Landmark<br />
+            <div class="hero__phone"><img class="hero__phone-img" src="img/phone.png" alt="" role="presentation" />
+              <div class="hero__video-button"><button class="video-btn js-open-popup" data-open="video"><span class="video-btn__icon"></span><span class="video-btn__title">Play video</span></button></div>
             </div>
-            <div class="scrolldown">
-                <div>Scroll Down</div>
-                <i class="icon-down2"></i>
-            </div>
+          </div>
         </div>
     </section>
-
     <section id="main">
-        <section class="maintop">
-
-            <div class="first-screen-mob">
-                <h1>Location-based Augmented Reality(AR) <br>mobile game based on real estate</h1>
-                    <div class="motion-btns">
-                        <a class="btn1 btn1_s js-to-whitepapper" href="#whitepaper">Read Whitepaper</a>
-                        <a class="btn1 btn1_s" href="https://www.jotform.com/form/80104658072452/" target="_blank">Add me to the Whitelist</a>
-                    </div>
-            </div>     
-
-            <!-- <img src="img/main_mobile.jpg?v=2" width="100%"> -->
-
-        </section>
-        <section class="ico" id="ico">
-            <div class="con">
-
-                <!-- Upcomming -->
-                <div id="upcomming" class="ico-page">
-                    <h1 class="ico-title">
-                        Main ICO will be launched <strong>Mar 21, 2018 13:00 (UTC+0)</strong>
-                    </h1>
-                    <div class="ico-subtitle">
-                        Only whitelisted users after KYC process can participate in the Main ICO of the Mossland.
-                    </div>
-                    <ul class="timer">
-                        <li>
-                            <div class="timer-title">
-                                DAYS
-                            </div>
-                            <div class="timer-str timer-days">0</div>
-                        </li>
-                        <li>
-                            <div class="timer-title">
-                                HOURS
-                            </div>
-                            <div class="timer-str timer-hours">0</div>
-                        </li>
-                        <li>
-                            <div class="timer-title">
-                                MINUTES
-                            </div>
-                            <div class="timer-str timer-minutes">0</div>
-                        </li>
-                        <li>
-                            <div class="timer-title">
-                                SECONDS
-                            </div>
-                            <div class="timer-str timer-seconds">0</div>
-                        </li>
-                    </ul>
-
-                    <div id="whitelist-button">
-                        <a class="btn1" href="https://www.jotform.com/form/80104658072452/" target="_blank" id="btn-whitelist">Add me to the Whitelist</a>
-                       <!-- <div class="upcomming-subtitle">
-                            <a class="btn-justmail" href="https://eepurl.com/dgCDUT" target="_blank">Just update me with more news.</a>
-                        </div>-->
-                    </div>
-
-                    <div id="buytoken-button">
-                        <a class="btn1 btn1-strong" target="_blank" href="buytokens.html" id="btn-buytoken">Buy Tokens - Pre ICO</a>
-                    </div>
-                </div>
-
-                <!-- Preico -->
-                <div id="preico" class="ico-page ">
-
-                    <h1 class="ico-title">
-                        Pre ICO is <strong> successfully finished!</strong><br>
-						Please look out for Main-ICO in Feb
-                    </h1>
-                    <ul class="timer">
-                        <li>
-                            <div class="timer-title">
-                                DAYS
-                            </div>
-                            <div class="timer-str timer-days">0</div>
-                        </li>
-                        <li>
-                            <div class="timer-title">
-                                HOURS
-                            </div>
-                            <div class="timer-str timer-hours">0</div>
-                        </li>
-                        <li>
-                            <div class="timer-title">
-                                MINUTES
-                            </div>
-                            <div class="timer-str timer-minutes">0</div>
-                        </li>
-                        <li>
-                            <div class="timer-title">
-                                SECONDS
-                            </div>
-                            <div class="timer-str timer-seconds">0</div>
-                        </li>
-                    </ul>
-
-                    <div class="ico-progress clearfix">
-                        <div class="progressbar clearfix">
-                            <div id="progressbar" class="progressbar-current"></div>
-                        </div>
-
-                    </div>
-                    <div id="whitelist-button">
-                        <a class="btn1" href="https://www.jotform.com/form/80104658072452/" target="_blank" id="btn-whitelist">Add me to the Whitelist</a>
-                        <!--<div class="upcomming-subtitle">
-                            <a class="btn-justmail" href="https://eepurl.com/dgCDUT" target="_blank">Just update me with more news.</a>
-                        </div>-->
-                    </div>
-
-                </div>
-                <!-- //preico -->
-
-                <div id="end" class="ico-page">
-
-                </div>
-            </div>
-        </section>
         <section class="potential" id="potential">
                 <div class="con">
                   <div class="potential-wrap">
                     <div class="potential-item">
-                      <h1 class="potential__title stitle">Potential</h1>
+                      <h1 class="potential__title stitle">Virtualize the World</h1>
                       <p class="potential__descr">Mossland is a AR (augmented reality) gamified platform for owning and trading virtualized real-estate based on mechanics of Monopoly and Pokemon Go.</p>
                       <p class="potential__descr">Virtual assets owned in Mossland can be transferred to other location-based games or services through Moss Chain, the first blockchain for AR/VR assets</p>
                     </div>
@@ -1069,20 +963,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </li>
                     <li>
                         <div class="team-img">
-                            <img src="img/face/AlexanderLobanov.jpg" alt="Alexander Lobanov face">
-    
-                        </div>
-                        <div class="team-primary-con">
-                            <h2 class="team-tit">Alexander Lobanov</h2>
-                            <div class="team-sub">Financial Advisor</div>
-                            <ul class="team-history">
-                                <li>Managing Partner USP Capital Venture Fund</li>
-                                <li>Former Chairman of the Board at Unison Bank</li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="team-img">
                             <img src="img/face/widjaja.jpg" alt="Widjaja Tannady face">
 
                         </div>
@@ -1455,8 +1335,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     </section>
 </section>
-
-
+<div class="popup popup_video js-popup js-popup-video" data-popup="video">
+    <div class="popup__in js-popup-in">
+        <button class="popup__close js-close-popup" data-close="video">
+            <svg class="icon icon-close"><use xlink:href="img/sprite.svg#icon-close"></use></svg>
+        </button>
+        <div class="video">
+            <div class="video__inner">
+                <iframe id="main_video" width="860" height="500" src="https://www.youtube.com/embed/bEcT2Z0ShkU" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+<script type="text/javascript" src="http://scrollmagic.io/scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
 <script type="text/javascript" src="js/motion.js?v=11"></script>
 <script type="text/javascript" src="js/locator.js"></script>
 

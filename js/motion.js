@@ -122,8 +122,8 @@ var moss = (function(){
     var feature01fire,feature02fire,feature03fire,feature04fire,roadmapFire,icofire,icofireDone;
 
     // Canvas init
-    var arctx    = document.getElementById("mossland-ar").getContext("2d");
-    var realctx    = document.getElementById("mossland-reality").getContext("2d");
+    // var arctx    = document.getElementById("mossland-ar").getContext("2d");
+    // var realctx    = document.getElementById("mossland-reality").getContext("2d");
 
 
     //Requset animation object
@@ -169,13 +169,13 @@ var moss = (function(){
     var arTop = 0;
     var arLeft = 0;
 
-    $("#mossland-ar").css({
-        left:       arLeft,
-        top:        arTop
-    }).attr({
-        width :     arCanvasWidth,
-        height:     arCanvasHeight
-    });
+    // $("#mossland-ar").css({
+    //     left:       arLeft,
+    //     top:        arTop
+    // }).attr({
+    //     width :     arCanvasWidth,
+    //     height:     arCanvasHeight
+    // });
 
     var IMAGES = {};
 
@@ -332,7 +332,7 @@ var moss = (function(){
         pointer.cy  =  realCanvasHeight / 2;
 
         // Wrapper Size rest
-        $(".motion, #loading").css({
+        $("#loading").css({
             width :     wWidth,
             height :    wHeight
         });
@@ -345,13 +345,13 @@ var moss = (function(){
             height:     realCanvasHeight
         });
 
-        $("#motionwrap").css({
-            "width" : wWidth,
-            "height" : SCROLL_MOTION.STEP3.SCROLL + wHeight
-        });
+        // $("#motionwrap").css({
+        //     "width" : wWidth,
+        //     "height" : SCROLL_MOTION.STEP3.SCROLL + wHeight
+        // });
 
         //Animate effect on scroll
-        icoPoint = ( $("#ico").offset().top ) - (wHeight / 2) -100;
+        // icoPoint = ( $("#ico").offset().top ) - (wHeight / 2) -100;
         // feature01Point = ( $("#features-01").offset().top ) - (wHeight / 2) -200;
         // feature02Point = ( $("#features-02").offset().top ) - (wHeight / 2) -200;
         // feature03Point = ( $("#features-03").offset().top ) - (wHeight / 2) -200;
@@ -450,7 +450,7 @@ var moss = (function(){
         // request next frame
         req = requestAnimationFrame(run);
         // clear screen
-        arctx.clearRect(0, 0, wWidth, wHeight);
+        // arctx.clearRect(0, 0, wWidth, wHeight);
         var scrollTop = $(document).scrollTop();
 
         initObjectFrameRate();
@@ -489,7 +489,7 @@ var moss = (function(){
         var xt = xt - (wt/2);
         var yt = yt - (ht/2);
 
-        realctx.drawImage($('#mossland-ar')[0],xt,yt,wt,ht);
+        // realctx.drawImage($('#mossland-ar')[0],xt,yt,wt,ht);
 
     }
 
@@ -534,10 +534,10 @@ var moss = (function(){
     function showCp(){
 
         if(df){
-            $('.motion-logo, .motion-title').addClass('active')
+            // $('.motion-logo, .motion-title').addClass('active')
             $('.scrolldown').addClass('hidden');
         } else {
-            $('.motion-logo, .motion-title').removeClass('active')
+            // $('.motion-logo, .motion-title').removeClass('active')
             $('.scrolldown').removeClass('hidden');
         }
     }
@@ -545,17 +545,17 @@ var moss = (function(){
     function animateGorilla(){
 
         var dx = PROP.GORILLA.FRAME_COUNT*PROP.GORILLA.DW;
-        arctx.drawImage(
-            IMAGES.GORILLA,
-            dx,
-            PROP.GORILLA.DY,
-            PROP.GORILLA.DW,
-            PROP.GORILLA.DH,
-            PROP.GORILLA.X + parallex.x2,
-            PROP.GORILLA.Y + parallex.y2,
-            PROP.GORILLA.WIDTH,
-            PROP.GORILLA.HEIGHT
-        );
+        // arctx.drawImage(
+        //     IMAGES.GORILLA,
+        //     dx,
+        //     PROP.GORILLA.DY,
+        //     PROP.GORILLA.DW,
+        //     PROP.GORILLA.DH,
+        //     PROP.GORILLA.X + parallex.x2,
+        //     PROP.GORILLA.Y + parallex.y2,
+        //     PROP.GORILLA.WIDTH,
+        //     PROP.GORILLA.HEIGHT
+        // );
     }
 
 
@@ -578,17 +578,17 @@ var moss = (function(){
         var x = PROP.DRAGON.player.x+parallex.x3;
         var y = PROP.DRAGON.player.y+parallex.y3;
 
-        arctx.drawImage(
-            IMAGES.DRAGON,
-            PROP.DRAGON.FRAME_COUNT * PROP.DRAGON.WIDTH,
-            PROP.DRAGON.DY,
-            PROP.DRAGON.DW,
-            PROP.DRAGON.DH,
-            x,
-            y,
-            PROP.DRAGON.WIDTH,
-            PROP.DRAGON.HEIGHT
-        );
+        // arctx.drawImage(
+        //     IMAGES.DRAGON,
+        //     PROP.DRAGON.FRAME_COUNT * PROP.DRAGON.WIDTH,
+        //     PROP.DRAGON.DY,
+        //     PROP.DRAGON.DW,
+        //     PROP.DRAGON.DH,
+        //     x,
+        //     y,
+        //     PROP.DRAGON.WIDTH,
+        //     PROP.DRAGON.HEIGHT
+        // );
 
     }
 
@@ -625,7 +625,7 @@ var moss = (function(){
         var y =          PROP[_key].player.y+parallex[py];
 
 
-        arctx.drawImage(_imgname,x,y,PROP[_key].WIDTH,PROP[_key].HEIGHT);
+        // arctx.drawImage(_imgname,x,y,PROP[_key].WIDTH,PROP[_key].HEIGHT);
 
     }
 
@@ -645,23 +645,23 @@ var moss = (function(){
     // AR 그리기
     function drawAR() {
 
-        arctx.clearRect(0,0,arCanvasWidth,arCanvasHeight);
-        arctx.drawImage(IMAGES.BG[4],arImgX + parallex.x1,arImgY,arImgWidth,arImgHeight);
+        // arctx.clearRect(0,0,arCanvasWidth,arCanvasHeight);
+        // arctx.drawImage(IMAGES.BG[4],arImgX + parallex.x1,arImgY,arImgWidth,arImgHeight);
         animateBalloon();
         animateBalloonSmall();
 
-        arctx.drawImage(IMAGES.BG[3],arImgX +parallex.x2,arImgY,arImgWidth,arImgHeight);
+        // arctx.drawImage(IMAGES.BG[3],arImgX +parallex.x2,arImgY,arImgWidth,arImgHeight);
         animateGorilla();
         animateDragonBig();
-        arctx.drawImage(IMAGES.BG[2],arImgX + parallex.x3,arImgY,arImgWidth,arImgHeight);
+        // arctx.drawImage(IMAGES.BG[2],arImgX + parallex.x3,arImgY,arImgWidth,arImgHeight);
 
         animateSmoke();
 
 
-        arctx.drawImage(IMAGES.BG[1],arImgX + parallex.x2, arImgY,arImgWidth,arImgHeight);
+        // arctx.drawImage(IMAGES.BG[1],arImgX + parallex.x2, arImgY,arImgWidth,arImgHeight);
 
         // Device Frame을 가장 나중에 그린다
-        arctx.drawImage(IMAGES.BG[0],0,0,arCanvasWidth,arCanvasHeight);
+        // arctx.drawImage(IMAGES.BG[0],0,0,arCanvasWidth,arCanvasHeight);
 
     }
 
@@ -673,10 +673,10 @@ var moss = (function(){
         var rImgX = (realCanvasWidth - rImgWidth) / 2 ;
         var rImgY = (realCanvasHeight - rImgHeight) / 2;
 
-        realctx.drawImage(IMAGES.BG[8],rImgX + parallex.x1,rImgY + parallex.y1,rImgWidth,rImgHeight);
-        realctx.drawImage(IMAGES.BG[7],rImgX + parallex.x2,rImgY + parallex.y2,rImgWidth,rImgHeight);
-        realctx.drawImage(IMAGES.BG[6],rImgX + parallex.x3,rImgY + parallex.y3,rImgWidth,rImgHeight);
-        realctx.drawImage(IMAGES.BG[5],rImgX + parallex.x4,rImgY + parallex.y4,rImgWidth,rImgHeight);
+        // realctx.drawImage(IMAGES.BG[8],rImgX + parallex.x1,rImgY + parallex.y1,rImgWidth,rImgHeight);
+        // realctx.drawImage(IMAGES.BG[7],rImgX + parallex.x2,rImgY + parallex.y2,rImgWidth,rImgHeight);
+        // realctx.drawImage(IMAGES.BG[6],rImgX + parallex.x3,rImgY + parallex.y3,rImgWidth,rImgHeight);
+        // realctx.drawImage(IMAGES.BG[5],rImgX + parallex.x4,rImgY + parallex.y4,rImgWidth,rImgHeight);
     };
 
     function checkload(){
@@ -702,7 +702,7 @@ var moss = (function(){
 
     function firstMotionFire(){
 
-        $('.motion').css('opacity',1);
+        // $('.motion').css('opacity',1);
 
     };
 
@@ -721,10 +721,10 @@ var moss = (function(){
         })
     }
 
-    $('.motion').on('mousemove',function(e){
-        pointer.x = e.clientX;
-        pointer.y = e.clientY;
-    });
+    // $('.motion').on('mousemove',function(e){
+    //     pointer.x = e.clientX;
+    //     pointer.y = e.clientY;
+    // });
 
 
     $(window).resize(function(){
@@ -756,12 +756,12 @@ var moss = (function(){
 
         var scrollTop = $(window).scrollTop();
         if( scrollTop > SCROLL_MOTION.STEP3.SCROLL ) {
-            $(".motion, #loading").css({
+            $("#loading").css({
                 "position" : "absolute",
                 "bottom" : "0"
             });
         } else {
-            $(".motion, #loading").css({
+            $("#loading").css({
                 "position" : "fixed",
                 "bottom" : "0"
             });
@@ -777,7 +777,7 @@ var moss = (function(){
         }
 
         // 스크롤이 모션영역을 지났을때
-        if( scrollTop > SCROLL_MOTION.STEP3.SCROLL+wHeight-80) {
+        if( scrollTop > wHeight) {
             // 메인모션을 정지한다
             motionOff = true;
             mainMotionfire();
@@ -839,22 +839,22 @@ var moss = (function(){
 
 var moss_lite = function(){
 
-    $("#motionwrap").remove();
-    $(".maintop").show();
+    // $("#motionwrap").remove();
+    // $(".maintop").show();
 
-    if(view_notice){
-        $('#notice').addClass('active');
-    } else {
-        $('#notice').removeClass('active');
-    }
+    // if(view_notice){
+    //     $('#notice').addClass('active');
+    // } else {
+    //     $('#notice').removeClass('active');
+    // }
 
-    $(".main-header,#main").addClass("mobile");
+    // $(".main-header,#main").addClass("mobile");
 
-    $(".main-header nav").addClass("mobile");
+    // $(".main-header nav").addClass("mobile");
     var wHeight = $(window).height();
 
     //Animate effect on scroll
-    var icopoint = ( $("#ico").offset().top ) - (wHeight / 2) -100;
+    // var icopoint = ( $("#ico").offset().top ) - (wHeight / 2) -100;
     //var feature01Point = ( $("#features-01").offset().top ) - (wHeight / 2) -200;
     //var feature02Point = ( $("#features-02").offset().top ) - (wHeight / 2) -200;
     //var feature03Point = ( $("#features-03").offset().top ) - (wHeight / 2) -200;
@@ -901,23 +901,33 @@ var moss_lite = function(){
 
     };
 
-    $(window).scroll(function(){
+    $(window).on("scroll load", function(){
 
         var scrollTop = $(window).scrollTop();
 
         if(scrollTop > 200){
-            if( scrollTop > $('#tail').offset().top-800){
+            if( scrollTop > $('#tail').offset().top - 800){
                 $("#event-mobile").removeClass('active');
+                $(".main-header").removeClass('active');
+                $('#notice').removeClass('active');
             } else {
                 $("#event-mobile").addClass('active');
+                $(".main-header").addClass('active');
+                $('#notice').addClass('active');
+                 setTimeout(function(){
+                    $('#notice .notice-con').addClass('active');
+                },200)
             }
         } else {
             $("#event-mobile").removeClass('active');
+            $('#notice').removeClass('active');
+            $(".main-header").removeClass('active');
         }
+        
 
-        if(scrollTop > icopoint) {
-            icofire = true;
-        }
+        // if(scrollTop > icopoint) {
+        //     icofire = true;
+        // }
 
         // if(scrollTop > feature01Point) {
         //     feature01fire = true;

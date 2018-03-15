@@ -17,7 +17,8 @@ body {
 }
 
 * {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 table {
@@ -173,7 +174,11 @@ ul.features-list > li:last-child{
     width: 45%;
     float: left;
     opacity: 0;
-    transform: translateX(60px);
+    -webkit-transform: translateX(60px);
+        -ms-transform: translateX(60px);
+            transform: translateX(60px);
+    -webkit-transition: all 0.8s;
+    -o-transition: all 0.8s;
     transition: all 0.8s;
 
 }
@@ -182,11 +187,15 @@ ul.features-list > li:last-child{
 
 #features-02 .features-img,
 #features-04 .features-img{
-    transform: translateX(-60px);
+    -webkit-transform: translateX(-60px);
+        -ms-transform: translateX(-60px);
+            transform: translateX(-60px);
 }
 
 .active .features-img {
-    transform: translateX(0px)!important;
+    -webkit-transform: translateX(0px)!important;
+        -ms-transform: translateX(0px)!important;
+            transform: translateX(0px)!important;
     opacity: 1;
 }
 
@@ -202,12 +211,18 @@ ul.features-list > li:last-child{
     padding-left: 8%;
     padding-right: 0;
     opacity: 0;
-    transform: translateY(40px);
+    -webkit-transform: translateY(40px);
+        -ms-transform: translateY(40px);
+            transform: translateY(40px);
+    -webkit-transition: all 0.8s ease-in;
+    -o-transition: all 0.8s ease-in;
     transition: all 0.8s ease-in;
 
 }
 .active .features-con {
-    transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+        -ms-transform: translateX(0px);
+            transform: translateX(0px);
     opacity: 1;
 }
 
@@ -260,6 +275,8 @@ ul.features-list > li:last-child{
     background: #3c8ee3;
     color: #fff;
     /*float: right;*/
+    -webkit-transition: width 0.2s;
+    -o-transition: width 0.2s;
     transition: width 0.2s;
     height: 80px;
     overflow: hidden;
@@ -299,6 +316,8 @@ ul.features-list > li:last-child{
     left: 0;
     width: 100%;
     top: 0;
+    -webkit-transition: left 0.2s;
+    -o-transition: left 0.2s;
     transition: left 0.2s;
 }
 
@@ -317,6 +336,8 @@ ul.features-list > li:last-child{
     width: 100%;
     text-align: center;
     font-size: 1.25em;
+    -webkit-transition: right 0.2s;
+    -o-transition: right 0.2s;
     transition: right 0.2s;
 }
 
@@ -366,6 +387,8 @@ ul.features-list > li:last-child{
     background: url('../img/worldmap.png') center center no-repeat;
     background-size: 80%;
     overflow: hidden;
+    -webkit-transition : all 0.6s ease-in;
+    -o-transition : all 0.6s ease-in;
     transition : all 0.6s ease-in;
 }
 
@@ -382,6 +405,8 @@ ul.features-list > li:last-child{
     width: 0%;
     top: 22px;
     left: 80px;
+    -webkit-transition: width 0.8s ease-in;
+    -o-transition: width 0.8s ease-in;
     transition: width 0.8s ease-in;
 }
 
@@ -408,36 +433,56 @@ ul.features-list > li:last-child{
 .roadmapitem-img {
     margin-bottom: 13px;
     opacity: 0;
-    transform: scale(0.1);
+    -webkit-transform: scale(0.1);
+        -ms-transform: scale(0.1);
+            transform: scale(0.1);
+    -webkit-transition: all 0.6s ease-in-out;
+    -o-transition: all 0.6s ease-in-out;
     transition: all 0.6s ease-in-out;
 }
 
 .active .roadmapitem-img {
     opacity: 1;
-    transform: scale(1);
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
 }
 
 .active .roadmap-item-01 .roadmapitem-img {
-    transition-delay: 0s;
+    -webkit-transition-delay: 0s;
+         -o-transition-delay: 0s;
+            transition-delay: 0s;
 }
 
 .active .roadmap-item-02 .roadmapitem-img {
-    transition-delay: 0.05s;
+    -webkit-transition-delay: 0.05s;
+         -o-transition-delay: 0.05s;
+            transition-delay: 0.05s;
 }
 .active .roadmap-item-03 .roadmapitem-img {
-    transition-delay: 0.1s;
+    -webkit-transition-delay: 0.1s;
+         -o-transition-delay: 0.1s;
+            transition-delay: 0.1s;
 }
 .active .roadmap-item-04 .roadmapitem-img {
-    transition-delay: 0.15s;
+    -webkit-transition-delay: 0.15s;
+         -o-transition-delay: 0.15s;
+            transition-delay: 0.15s;
 }
 .active .roadmap-item-05 .roadmapitem-img {
-    transition-delay: 0.2s;
+    -webkit-transition-delay: 0.2s;
+         -o-transition-delay: 0.2s;
+            transition-delay: 0.2s;
 }
 .active .roadmap-item-06 .roadmapitem-img {
-    transition-delay: 0.25s;
+    -webkit-transition-delay: 0.25s;
+         -o-transition-delay: 0.25s;
+            transition-delay: 0.25s;
 }
 .active .roadmap-item-07 .roadmapitem-img {
-    transition-delay: 0.3s;
+    -webkit-transition-delay: 0.3s;
+         -o-transition-delay: 0.3s;
+            transition-delay: 0.3s;
 }
 
 .active .roadmap-ob-1 {
@@ -468,14 +513,20 @@ ul.features-list > li:last-child{
 .roadmapitem-title,
 .roadmapitem-con {
     opacity: 0;
+    -webkit-transition: all 0.8s ease-out;
+    -o-transition: all 0.8s ease-out;
     transition: all 0.8s ease-out;
-    transform: translateY(20px);
+    -webkit-transform: translateY(20px);
+        -ms-transform: translateY(20px);
+            transform: translateY(20px);
 }
 
 .active .roadmapitem-title,
 .active .roadmapitem-con {
     opacity: 1;
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+            transform: translateY(0);
 }
 
 
@@ -699,6 +750,8 @@ ul.team-primary .team-img {
     position: absolute;
     bottom: 6px;
     right: 6px;
+    -webkit-transition: bottom 0.2s;
+    -o-transition: bottom 0.2s;
     transition: bottom 0.2s;
 }
 
@@ -829,17 +882,20 @@ footer.main-footer a:hover{
     z-index: 2000;
     padding: 20px 0;
     background-color: transparent;
+    -webkit-transition: padding 0.2s;
+    -o-transition: padding 0.2s;
     transition: padding 0.2s;
 }
 
 .main-header.active {
-    padding: 20px 0;
+    padding: 7px 0;
     background-color: rgba(0,177,206,1);
+    background-image: none;
 }
 
 #notice {
     position: fixed;
-    top: 80px;
+    top: 61px;
     left: 0;
     height: 40px;
     width: 100%;
@@ -860,6 +916,8 @@ footer.main-footer a:hover{
     font-size: 14px;
     overflow: hidden;
     position: relative;
+    -webkit-transition: top 0.4s;
+    -o-transition: top 0.4s;
     transition: top 0.4s;
     top: -100px;
 }
@@ -880,12 +938,12 @@ footer.main-footer a:hover{
 .main-header h1{
     float: left;
     position: relative;
-    top: -5px;
+    margin-top: -4px;
 }
 
-.main-header h1 img {
+/*.main-header h1 img {
     height: 32px;
-}
+}*/
 
 .main-header nav{
     float: left;
@@ -914,9 +972,17 @@ footer.main-footer a:hover{
     left: 0;
     width: 100%;
     opacity: 0;
-    transform: scale(0.6);
+    -webkit-transform: scale(0.6);
+        -ms-transform: scale(0.6);
+            transform: scale(0.6);
+    -webkit-transition: opacity 0.3s, height 0.5s, -webkit-transform 0.6s;
+    transition: opacity 0.3s, height 0.5s, -webkit-transform 0.6s;
+    -o-transition: transform 0.6s, opacity 0.3s, height 0.5s;
     transition: transform 0.6s, opacity 0.3s, height 0.5s;
-    transition-timing-function: ease-out;
+    transition: transform 0.6s, opacity 0.3s, height 0.5s, -webkit-transform 0.6s;
+    -webkit-transition-timing-function: ease-out;
+         -o-transition-timing-function: ease-out;
+            transition-timing-function: ease-out;
 }
 
 .motion-logo img {
@@ -925,7 +991,9 @@ footer.main-footer a:hover{
 
 .motion-logo.active {
     opacity: 1;
-    transform: scale(1);
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
 }
 
 .motion-title {
@@ -941,16 +1009,28 @@ footer.main-footer a:hover{
     left: 0;
     width: 100%;
     opacity: 0;
-    transform: translate(0,7px);
+    -webkit-transform: translate(0,7px);
+        -ms-transform: translate(0,7px);
+            transform: translate(0,7px);
+    -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+    transition: opacity 0.3s, -webkit-transform 0.3s;
+    -o-transition: transform 0.3s, opacity 0.3s;
     transition: transform 0.3s, opacity 0.3s;
-    transition-timing-function: ease-in-out;
-    transition-delay: 0.4s;
+    transition: transform 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+    -webkit-transition-timing-function: ease-in-out;
+         -o-transition-timing-function: ease-in-out;
+            transition-timing-function: ease-in-out;
+    -webkit-transition-delay: 0.4s;
+         -o-transition-delay: 0.4s;
+            transition-delay: 0.4s;
 
 }
 
 .motion-title.active {
     opacity: 1;
-    transform: translate(0px);
+    -webkit-transform: translate(0px);
+        -ms-transform: translate(0px);
+            transform: translate(0px);
 }
 
 
@@ -972,6 +1052,8 @@ address {
     margin: 0 11px;
     position: relative;
     top: 0;
+    -webkit-transition: top 0.2s;
+    -o-transition: top 0.2s;
     transition: top 0.2s;
     color: #888;
 }
@@ -1040,15 +1122,28 @@ address {
     font-weight: 100;
     font-size: 1.3em;
     text-shadow: 0px 0px 5px rgba(0,0,0,0.8);
-    animation-duration: 1.2s;
-    animation-name: scrolldown_motion;
-    animation-iteration-count: infinite;
+    -webkit-animation-duration: 1.2s;
+            animation-duration: 1.2s;
+    -webkit-animation-name: scrolldown_motion;
+            animation-name: scrolldown_motion;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-transition: opacity 0.3s;
+    -o-transition: opacity 0.3s;
     transition: opacity 0.3s;
     opacity: 1;
 }
 
 .scrolldown.hidden {
     opacity: 0;
+}
+
+
+@-webkit-keyframes scrolldown_motion {
+    0% {bottom: 5px;}
+    20% {bottom: 10px;}
+    40% {bottom: 5px;}
+    100% {bottom: 5px;}
 }
 
 
@@ -1194,14 +1289,20 @@ ul.press-primary > li a:hover .pressitem-desc{
 
 .press-secondary > a:hover img {
     opacity: 1;
-    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+            filter: grayscale(0%);
 }
 
 .press-secondary > a > img{
     width: 100%;
-    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
     opacity: 0.5;
+    -webkit-transition: opacity 0.5s,-webkit-filter 0.5s;
+    transition: opacity 0.5s,-webkit-filter 0.5s;
+    -o-transition: opacity 0.5s,filter 0.5s;
     transition: opacity 0.5s,filter 0.5s;
+    transition: opacity 0.5s,filter 0.5s,-webkit-filter 0.5s;
 }
 
 .press-subtitle {
@@ -1258,12 +1359,14 @@ ul.press-primary > li a:hover .pressitem-desc{
     height: 40px;
     background-color: #19b9d3;
     background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.05) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.05) 50%, rgba(255, 255, 255, 0.05) 75%, transparent 75%, transparent);
+    background-image: -o-linear-gradient(135deg, rgba(255, 255, 255, 0.05) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.05) 50%, rgba(255, 255, 255, 0.05) 75%, transparent 75%, transparent);
     background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.05) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.05) 50%, rgba(255, 255, 255, 0.05) 75%, transparent 75%, transparent);
     background-size: 40px 40px;
     -webkit-animation: cssProgressActive 2s linear infinite;
-    -ms-animation: cssProgressActive 2s linear infinite;
     animation: cssProgressActive 2s linear infinite;
     /*background: #1d8cf4 url("../img/bg_progressbar.gif") left top repeat-x;*/
+    -webkit-transition: width 2s;
+    -o-transition: width 2s;
     transition: width 2s;
     text-align: right;
     font-weight: 200;
@@ -1274,14 +1377,6 @@ ul.press-primary > li a:hover .pressitem-desc{
 
 }
 @-webkit-keyframes cssProgressActive {
-    0% {
-        background-position: 0 0;
-    }
-    100% {
-        background-position: 40px 40px;
-    }
-}
-@-ms-keyframes cssProgressActive {
     0% {
         background-position: 0 0;
     }
@@ -1346,6 +1441,8 @@ ul.press-primary > li a:hover .pressitem-desc{
     position: fixed;
     bottom: 20px;
     right: -300px;
+    -webkit-transition: right 0.3s ease-out;
+    -o-transition: right 0.3s ease-out;
     transition: right 0.3s ease-out;
     z-index: 10000;
 }
@@ -1358,6 +1455,8 @@ ul.press-primary > li a:hover .pressitem-desc{
     position: fixed;
     bottom: -200px;
     left: 0;
+    -webkit-transition: bottom 0.5s ease-out;
+    -o-transition: bottom 0.5s ease-out;
     transition: bottom 0.5s ease-out;
     z-index: 10000;
     width: 100%;
@@ -1431,8 +1530,12 @@ ul.press-primary > li a:hover .pressitem-desc{
     margin-left: 20px;
 }
 
+.header-social a:hover {
+    opacity: .5;
+}
+
 .header-social > a {
-    font-size: 28px;
+    font-size: 30px;
     line-height: 40px;
     color: #fff;
     margin-left: 15px;
@@ -1673,6 +1776,8 @@ footer.main-footer .footer-policy a{
     color: #57c961;
     font-size: 13px;
     opacity: 0;
+    -webkit-transition: opacity 0.4s;
+    -o-transition: opacity 0.4s;
     transition: opacity 0.4s;
 
 }
@@ -1738,14 +1843,18 @@ footer.main-footer .footer-policy a{
 
 .advisors-select > div span {
     border-bottom : 1px solid white;
-    transition-duration : 0.3s;
+    -webkit-transition-duration : 0.3s;
+         -o-transition-duration : 0.3s;
+            transition-duration : 0.3s;
 }
 
 .advisors-select > div span:hover {
     cursor: pointer;
     color : #000;
     border-bottom : 1px solid black;
-    transition-duration : 0.3s;
+    -webkit-transition-duration : 0.3s;
+         -o-transition-duration : 0.3s;
+            transition-duration : 0.3s;
 }
 
 .advisors-select > .selected span {
@@ -1770,6 +1879,8 @@ footer.main-footer .footer-policy a{
 .advisor-view {
     overflow: hidden;
     max-height: 4100px;
+    -webkit-transition: max-height 1s;
+    -o-transition: max-height 1s;
     transition: max-height 1s;
 }
 
@@ -1865,22 +1976,26 @@ footer.main-footer .footer-policy a{
 }
 
 .right {
-    transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+        transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
 }
 
 .left {
-    transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+        transform: rotate(135deg);
     -webkit-transform: rotate(135deg);
 }
 
 .up {
-    transform: rotate(-135deg);
+    -ms-transform: rotate(-135deg);
+        transform: rotate(-135deg);
     -webkit-transform: rotate(-135deg);
 }
 
 .down {
-    transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
 }
 
@@ -1926,8 +2041,9 @@ body {
 }
 
 .potential-wrap{
-  display: -webkit-flex;
   display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -1969,7 +2085,6 @@ body {
   padding: 3px;
   height: 100%;
   -webkit-box-shadow: 0px 0px 34px 0px rgba(191,189,191,1);
-  -moz-box-shadow: 0px 0px 34px 0px rgba(191,189,191,1);
   box-shadow: 0px 0px 34px 0px rgba(191,189,191,1);
 }
 
@@ -1980,7 +2095,8 @@ body {
 .card__pic img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .card__descr {
@@ -2020,9 +2136,15 @@ body {
     }
 
     .potential-wrap{
-        flex-wrap: wrap;
-        flex-direction: column;
-        align-items: center;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
       }
     
       .potential-item {

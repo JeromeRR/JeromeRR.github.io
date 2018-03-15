@@ -1,9 +1,6 @@
 
 @media only screen and (max-width: 1440px) {
 
-    .con {
-        width: 1000px;
-    }
 
     .motion-logo {
         top: 35%;
@@ -42,10 +39,6 @@
 
     body {
         font-size: 14px;
-    }
-
-    #notice {
-        top: 99px;
     }
 
     .team-history > li {
@@ -147,7 +140,38 @@
         font-size: 13px;
     }
 
+    .btn-menu {
+        display: block;
+        background: none;
+        font-size: 26px;
+        color: #fff;
+        float: right;
+        margin-top: 2px;
+        padding: 5px;
+    }
+    .main-header {
+        padding: 7px 0px;
+        height: 55px;
+    }
 
+    .main-header h1 {
+        float: left;
+        text-align: left;
+        padding-top: 6px;
+    }
+
+    .main-header h1 img {
+        height: 28px;
+    }
+
+    .con {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .header-social {
+        display: none;
+    }
 
 }
 
@@ -155,9 +179,9 @@
 
 @media only screen and (max-width: 768px) {
 
-    #notice,#notice.active {
+    /*#notice,#notice.active {
         display: none;
-    }
+    }*/
 
     .mobile + #notice.active {
         display: block;
@@ -251,66 +275,7 @@
         line-height: 40px;
         font-size: 1em;
     }
-    .btn-menu {
-        display: block;
-        background: none;
-        font-size: 26px;
-        color: #fff;
-        float: right;
-        margin-top: 2px;
-        padding: 5px;
-    }
-    .main-header {
-        padding: 7px 0px;
-        height: 55px;
-    }
-
-    .main-header h1 {
-        float: left;
-        text-align: left;
-        padding-top: 6px;
-    }
-
-    .main-header h1 img {
-        height: 28px;
-    }
-
-    .main-header nav {
-        width: 100%;
-        position: absolute;
-        top: 55px;
-        background: rgba(255,255,255,0.95);
-        left: 0;
-        border-bottom: 2px solid #333;
-        display: none;
-        opacity: 0;
-        transition: opacity 0.2s;
-        box-shadow: 0 3px 3px rgba(0,0,0,0.5);
-    }
-
-    .main-header nav.active {
-        display: block;
-        opacity: 1;
-    }
-
-    .main-header nav > a{
-        display: inline-block;
-        width: 100%;
-        border-bottom: 1px solid #ddd;
-        text-align: center;
-        padding: 12px 10px;
-        font-size: 1em;
-        color: #333;
-
-    }
-    .main-header.active {
-        padding-top: 10px;
-    }
-
-    .con {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
+    
     .features-item-odd .features-con {
         padding-right: 3%;
     }
@@ -528,9 +493,13 @@
 /* mobile */
 
 @media only screen and (max-width: 576px) {
-
-
-
+     #notice {
+        height: auto;
+        padding: 2px 0;
+     }
+     #notice .notice-con {
+        line-height: 1.4;
+     }
 
     body {
         font-size: 14px;
@@ -628,6 +597,8 @@
         width: 30px;
         height: 1%;
         left: 11px;
+        -webkit-transition: height 0.8s ease-in;
+        -o-transition: height 0.8s ease-in;
         transition: height 0.8s ease-in;
     }
     .active .roadmap-ob-1{
@@ -766,4 +737,3 @@
     }
 
 }
-
