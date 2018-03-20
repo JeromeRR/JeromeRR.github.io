@@ -16,7 +16,7 @@ var buyTokenButtonDate = new Date("March 21, 2018 12:00");
 
 // PRE ICO 끝 날짜
 // 이벤트 없음
-var preicoEndDate = new Date("April 17, 2018");
+var preicoEndDate = new Date("April 17, 2018 12:00");
 
 var newNotice = false;
 
@@ -86,7 +86,6 @@ function loadeth(){
 
 
 function mosstimer(_date,_target,_fn){
-
     var timer = new Timer();
     var thedate = _date;
     var diffdate = thedate-today;
@@ -111,7 +110,10 @@ function mosstimer(_date,_target,_fn){
 
     });
 
-}
+    }
+
+    mosstimer(preicoEndDate,"#preico");
+    mosstimer(preicoEndDate,"#table-timer");
 
 
 function icoprogress(){
@@ -279,11 +281,6 @@ $(function(){
         $("#product-advisor").removeClass("product-limit");
     });
 
-
-    //Timer
-    mosstimer(preicoStartDate,"#upcomming","preicostart");
-    mosstimer(preicoEndDate,"#preico");
-
     //Pre ICO start 화면 변경
     var diffdate = today-preicoStartDate;
     var remaining = diffdate/1000;
@@ -294,7 +291,7 @@ $(function(){
     if(remaining < 0){
         $("#upcomming").addClass("active");
         $("#preico").removeClass("active");
-        console.log(buttonremaining);
+        
         if(buttonremaining < 0) {
             $("#buytoken-button").removeClass("active");
             $("#whitelist-button").addClass("active");
@@ -314,12 +311,16 @@ $(function(){
 $(document).ready(function() {
     $('.js-to-whitepapper').click(function (event) {
         event.preventDefault();
-        console.log('123');
     
         $('html, body').animate({
             scrollTop: $('#whitepaper').offset().top - 100
         }, 500);
 
         $(".whitepaper-part-1").click();
+    });
+
+    $('.js-close-tip').click(function (event) {
+        event.preventDefault();
+        $('.tip').removeClass('is-active');
     });
 });

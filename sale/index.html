@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Mossland ICO</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=320, initial-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" media="all" href="css/app.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="shortcut icon" href="./img/favicon.ico"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+      <script src="js/tokensale.js"></script>
+  </head>
+
+  <body>
+    <!--content-->
+    <header class="header-admin">
+      <div class="header-admin__main"><button class="header-admin__menu-btn js-menu-btn"><span></span><span></span><span></span><span></span></button>
+        <div class="header-admin__col header-admin__col_left"><a class="header-admin__logo" href="https://moss.land/"><img src="img/logo_dark.svg"></a></div>
+        <ul class="header-admin__menu js-menu">
+          <li class="header-admin__menu-item"><a href="http://test.uamaster.com/moss/moss21/#potential">About</a></li>
+          <li class="header-admin__menu-item"><a href="http://test.uamaster.com/moss/moss21/#whitepapper">White Paper</a></li>
+          <li class="header-admin__menu-item"><a href="http://test.uamaster.com/moss/moss21/#roadmap">Roadmap</a></li>
+          <li class="header-admin__menu-item"><a href="http://test.uamaster.com/moss/moss21/#tokensale">ICO</a></li>
+          <!-- <li class="header-admin__menu-item"><a href="http://test.uamaster.com/moss/moss21/#tokensale">Token Sale</a></li> -->
+          <li class="header-admin__menu-item"><a href="http://test.uamaster.com/moss/moss21/#team">Team</a></li>
+          <li class="header-admin__menu-item"><a href="http://test.uamaster.com/moss/moss21/#news">News</a></li>
+        </ul>
+        <div class="header-admin__col header-admin__col_right">
+          <ul class="socials">
+            <li class="socials__item"><a href="https://t.me/mossland" style="background-image: url(img/tg-kor.png);"></a></li>
+            <li class="socials__item"><a href="https://t.me/mossland_eng" style="background-image: url(img/tg-eng.png);"></a></li>
+            <li class="socials__item"><a href="https://t.me/mossland_rus" style="background-image: url(img/tg-ru.png);"></a></li>
+            <li class="socials__item"><a href="https://open.kakao.com/o/gtzODLH" style="background-image: url(img/kakao.png);"></a></li>
+            <li class="socials__item"><a href="https://steemit.com/@mossland" style="background-image: url(img/steemit.png);"></a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- <div class="header-admin__optional-content">
+        <div class="login-btns"><button class="login-btn">Sign in</button><button class="login-btn">Sign up</button></div>
+      </div> -->
+      <a class="notice" href="https://steemit.com/@mossland">
+        <p class="notice__inner"><span>Important Notice! </span>Main-ICO plan has been changed. For more details, <span class="underlined">click here<svg class="icon icon-arrow-right"><use xlink:href="img/sprite.svg#icon-arrow-right"></use></svg></span></p>
+      </a>
+    </header>
+    <main>
+        <div class="page-wrap buy__container">
+            <h1 id="tokensale_title">Buy Moss Coin</h1>
+            <div class="eth__price" style="border-top: 5px solid #58c8da; margin-bottom: 40px;">
+                <div class="eth__week__price">
+                    <div class="usd-eth__value" style="border: none; border-radius: 0; text-align: left;">
+                        <div class="eth__value" style="margin-bottom: 0.1em; color:#545454;">1 ETH = 613 USD</div>
+                    </div>
+                    <div class="sample__date" style="text-align: left; margin-top: 0; color:#58c8da; font-size:18px;">2018.03.19</div>
+                    <h2 style="text-align: left; color:#58c8da; font-weight: 600;">Ethereum standard price for today</h2>
+                </div>
+                <div class="moc-eth__price">
+                    <div class="moc-eth__value" style="border: none; border-radius: 0; text-align: left; margin-top: 18px; margin-bottom: 0.1em; padding: 0;">
+                        <div class="eth__value" style="margin-bottom: 0.1em; color: #545454;">1 ETH = 5108 MOC</div>
+                    </div>
+                    <div class="bonus" style="text-align: left; margin-top: 0; color:#58c8da; ">bonus 15% = 766 MOC</div>
+                    <h2 style="text-align: left; color:#58c8da; font-weight: 600;">MOC per ETH</h2>
+                </div>
+            </div>
+            <section id="form_section_id" class="form_section">
+                <div id="calculator_id" class="calculator">
+                    <span class="desc_send">If you send</span>
+                    <input type="text" id="send__value" class="strong" autocomplete="off" onkeyup="calculator()">
+                    <span class="desc_send strong" style="color:#58c8da;">ETH</span><span class="desc_send">, You can get</span>
+                    <div id="output__value" class="strong" style="border: none; border-bottom: 1px solid #58c8da; border-radius: 0; font-weight: 800; color:#58c8da; text-align: center; padding-bottom:1.25em; height: 10px; margin-bottom: 0.3em"></div>
+                    <span class="desc_send strong" style="color:#58c8da;">MOC.</span><span id="including_bonus" class="desc_send"> (Including bonus)</span>
+                </div>
+
+                <div class="agreements" style="text-align: center; margin-top: 4em; padding-top: 5em; border-top: 5px solid #58c8da;">
+                    <span class="desc_term">
+                    Before buy Moss Coin, You have to read <a href="https://d2vy65gufabiok.cloudfront.net/whitepaper/Mossland+Whitepaper+-+ENG.pdf" target="_blank" style="color:#58c8da;">Whitepaper</a> And <a href="https://moss.land/terms"  target="_blank" style="color:#58c8da;">Terms of service</a>
+                    </span>
+                </div>
+
+                <div class="agree" style="margin-top: 5em;">
+                    <input type="checkbox" id="agreeCheckbox_" class="option-input checkbox" name="agree" autocomplete="off" value="0" onchange="onChangeCheckbox(this)">
+                    <label id="agree_label" for="agreeCheckbox_">I AGREE</label>
+                </div>
+                
+                <form class="form_next" style="margin-top: 3em;">
+                    <button type="button" id="bnt_next" onclick="onNextBtnClick()" disabled="disabled">Next</button>
+                </form>
+            </section>
+
+        </div>
+    </main>
+    <!--LOAD scripts-->
+
+    <script type="text/javascript">
+        function calculator() {
+            var x = Number(document.getElementById("send__value").value),
+            mocRate = 5108,
+            today = new Date(),
+            firstWeek = new Date(2018, 2, 14),
+            secondWeek = new Date(2018, 2, 28),
+            thirdWeek = new Date(2018, 3, 4),
+            fourthWeek = new Date(2018, 3, 11),
+            endBenefit = new Date(2018, 3, 17),
+            result = 1;
+
+            if ((today > firstWeek) && (today < secondWeek) )  {
+                result = x * mocRate * 1.15;
+            } else if ((today > secondWeek) && (today < thirdWeek)) {
+                result = x * mocRate * 1.1;
+            } else if ((today > thirdWeek) && (today < fourthWeek)) {
+                result = x * mocRate * 1.05;
+            } else if ((today > fourthWeek) && (today < endBenefit)) {
+                result = x * mocRate * 1.025;
+            } else {
+                result = x * mocRate ;
+            }
+            
+            if (isNaN(result)){
+                document.getElementById("output__value").innerHTML = "invalid";
+            } else{
+                document.getElementById("output__value").innerHTML = result.toFixed();
+            }
+        };
+
+    </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+    <script type="text/javascript" src="https://scrollmagic.io/scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+
+</html>

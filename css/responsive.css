@@ -107,11 +107,6 @@
         padding-left: 0;
     }
 
-    .whitepaper-subtitle {
-        color: #666;
-        font-weight: 500;
-    }
-
     .whitepaper-download {
         float: none;
         width: 100%;
@@ -259,7 +254,7 @@
 
     .btn1 {
         line-height: 60px;
-        padding: 0 60px;
+        padding: 0 50px;
         height: 60px;
         font-size: 18px;
     }
