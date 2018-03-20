@@ -246,7 +246,7 @@ ul.features-list > li:last-child{
 }
 
 .whitepaper-title {
-
+    color: #fff;
 }
 
 .whitepaper-title-wrap {
@@ -262,8 +262,8 @@ ul.features-list > li:last-child{
 .whitepaper-subtitle {
     font-size: 1.25em;
     padding-top: 5px;
-    color: #333;
-    font-weight: 400;
+    color: #b3bbc8;
+    font-weight: 300;
 }
 
 
@@ -1321,11 +1321,44 @@ ul.press-primary > li a:hover .pressitem-desc{
     background: #fff;
     position: relative;
     margin-bottom: 40px;
+    margin-top: 50px;
+    position: relative;
 
 }
 
-.ico-progress > div {
+.ico-progress__label {
     position: absolute;
+    padding: 5px 0px;
+    top: 100% !important;
+}
+
+.ico-progress__label .ico-progress__label_left {
+    width: 81px;
+    font-size: 14px;
+    left: 0;
+    text-align: center;
+}
+
+.ico-progress__label_right {
+    width: 81px;
+    right: 0;
+    text-align: right;
+}
+
+.ico-progress__label-title {
+    width: 81px;
+    text-align: right;
+    font-weight: 700;
+}
+
+.ico-progress__label-val {
+    width: 81px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.ico-progress > div {
+    /* position: absolute; */
     top: 0;
 }
 
@@ -1353,6 +1386,10 @@ ul.press-primary > li a:hover .pressitem-desc{
     font-size: 1em;
 }
 
+.hero__button {
+    margin-top: 70px;
+}
+
 .progressbar-current {
     float: left;
     width: 0;
@@ -1374,8 +1411,33 @@ ul.press-primary > li a:hover .pressitem-desc{
     font-size: 14px;
     padding-right: 10px;
     line-height: 40px;
-
+    width:35%;
 }
+
+.progressbar-under {
+    position: absolute;
+    width: 35%; 
+    border-right: 2px solid #000;
+    height: 50px;
+}
+
+.preICO {
+    width: 81px;
+    text-align: center;
+    z-index: 1500;
+    position: absolute;
+    top: 52px;
+    right: -20%;
+}
+
+.hero__button {
+    margin-top: 100px;
+}
+
+.hero__button.buttons-container {
+    margin-top: 60px;
+}
+
 @-webkit-keyframes cssProgressActive {
     0% {
         background-position: 0 0;
@@ -2122,6 +2184,131 @@ body {
   font-weight: 400;
 }
 
+.section {
+    padding: 60px 0;
+}
+
+.section_tip {
+    position: relative;
+}
+
+.section_bgc_dark-grey {
+    background-color: #445366;
+  }
+  
+.section__heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.papper-langs {
+    max-width: 712px;
+    margin: 0 auto;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  
+  .papper-langs__item {
+    width: 100%;
+    padding: 3px;
+  }
+  
+  .papper-langs__link {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 16px;
+    color: #00b1ce;
+    padding: 20px;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.051);
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.15);
+    text-decoration: none;
+    transition: background-color .3s, color .3s;
+  }
+  
+  .papper-langs__link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+  }
+  
+  .papper-langs__link img {
+    max-width: 45px;
+  }
+  
+  .papper-langs__title {
+    padding-left: 20px;
+  }
+
+.tip {
+    padding: 30px;
+    background-color: #4e5c6e;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 240px;
+    margin-top: -50px;
+    border-radius: 4px;
+    overflow: hidden; 
+    box-shadow: 0 5px 15px 0 rgba(0,0,0,.3);
+    color: #b3bbc8;
+    visibility: hidden;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.tip:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 6px;
+    background-color: #fae320;
+}
+
+.tip__text {
+    font-size: 14px;
+}
+
+.tip__time {
+    font-size: 12px;
+    margin-top: 15px;
+}
+
+.tip__close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 15px;
+    height: 15px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.tip__close:hover svg {
+    fill: #fff;
+}
+
+.tip__close svg {
+    width: 15px;
+    height: 15px;
+    fill: #a2a9b3;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.ico-progress__label .ico-progress__label_left{
+    text-align: right;
+}
+
 @media only screen and (max-width: 767px) {
     .btn1.btn1_s {
         width: 250px;
@@ -2166,6 +2353,170 @@ body {
       }
 }
 
+.table {
+    display: block;
+  }
+
+  
+  .table__cell {
+    min-height: 60px;
+    padding: 0 15px;
+    margin: 1px;
+    background-color: #4e5c6e;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  
+  .table__cell-title {
+    font-size: 14px;
+    font-weight: 300;
+    color: #b3bbc8;
+    margin-bottom: 5px;
+  }
+  
+  .table__cell-text {
+    font-size: 18px;
+    color: #00b1ce;
+    margin: 0;
+  }
+  
+  .table__cell-text_white {
+    color: #fff;
+  }
+
+  .table__timer {
+      display: flex;
+  }
+
+  .progressbar-v2 {
+    position: relative;
+    max-width: 700px;
+    margin: 50px auto 100px;
+    padding-top: 40px;
+}
+
+.progressbar-v2__heading {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #b3bbc8;
+    z-index: 9
+}
+
+.progressbar-v2__heading span{
+    display: block;
+    padding: 10px;
+    margin: 0 -10px;
+    background-color: #445265;
+}
+
+.progressbar-v2__body {
+    padding: 10px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #4e5c6e;
+}
+
+.progressbar-v2__line {
+    position: relative;
+}
+
+.progressbar-v2__line-track {
+    height: 30px;
+    border-radius: 15px;
+    background-color: #606d7d;
+    position: relative;
+    overflow-x: hidden;
+    z-index: 1;
+}
+
+.progressbar-v2__line-active {
+    height: 30px;
+    border-radius: 15px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    background: linear-gradient(to bottom, #64ffff, #6deeff);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.progressbar-v2__spr {
+    position: absolute;
+    height: 60px;
+    width: 1px;
+    top: 0;
+    background-color: rgba(255,255,255,.3);
+    z-index: 1;   
+}
+
+.progressbar-v2__spr-label {
+    position: absolute;
+    color: #b3bbc8;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.progressbar-v2__spr-label_top {
+    top: -40px;
+}
+
+.progressbar-v2__spr-label_bottom {
+    bottom: -30px;
+}
+
+.preICO {
+    width: 81px;
+    text-align: center;
+    right: -45%;
+}
+
+.ico-progress__label-title {
+    text-align: inherit;
+    font-weight: 700;
+}
+
+.ico-progress__label .ico-progress__label_left .ico-progress__label-title {
+    text-align: left !important;
+}
+
+#label_left {
+    text-align: left;
+}
+
+#label_left {
+    
+}
+
+#label-value{
+    text-align: left;
+}
+
+@media only screen and (min-width: 375px) {
+
+    .papper-langs__item {
+      width: 50%;
+    }
+
+    .preICO {
+        width: 81px;
+        text-align: center;
+        right: -25%;
+    }
+
+    .ico-progress__label .ico-progress__label_left {
+        text-align: right;
+    }
+
+}
+
 @media only screen and (min-width: 768px) {
     .btn1.btn1_s {
         width: 250px;
@@ -2182,6 +2533,67 @@ body {
 
     .first-screen-mob {
         padding: 170px 10px;
+    }
+
+    .papper-langs__item {
+        width: 33.333%;
+    }
+
+    .ico-progress__label {
+        position: absolute;
+        padding: 2px 5px;
+        top: 0 !important;
+    }
+    
+    .ico-progress__label_left {
+        width: 70px;
+        left: auto;
+        right: 100%;
+        text-align: right;
+    }
+    
+    .ico-progress__label_right {
+        right: auto;
+        left: 100%;
+        text-align: left;
+    }
+
+
+    .table {
+        display: block;
+        max-width: 700px;
+        margin: 0 auto;
+      }
+    
+      .table__row {
+        display: -ms-flexbox;
+        display: flex;
+      }
+    
+      .table__cell {
+        width: 33.3333%;
+      }
+
+      .tip.is-active {
+        visibility: visible;
+        transform: translateX(0);
+        opacity: 1;
+        transition: transform .5s, opacity .5s;
+    }
+
+    .preICO {
+        width: 81px;
+        text-align: center;
+        right: -20%;
+    }
+
+    .ico-progress__label-title {
+        text-align: center;
+        font-weight: 700;
+    }
+
+    #label-value{
+        text-align: center;
     }
 }
 
