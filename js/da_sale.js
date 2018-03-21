@@ -123,7 +123,6 @@ function icoprogress(){
     var comma_separator_number_step = $.animateNumber.numberStepFactories.separator(',');
     var percent_number_step = $.animateNumber.numberStepFactories.append(' %');
 
-    console.log(percent);
 
     // Hardcap animation 없앰
     //$("#hardcap-value").animateNumber(
@@ -229,7 +228,6 @@ $(function(){
         var ref = this;
 
         timer = setTimeout(function() {
-            console.log($this);
             selected.removeClass('selected');
             selectedcontents.addClass('inactive');
 
