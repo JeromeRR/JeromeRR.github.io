@@ -111,33 +111,40 @@
             var ethPriceEle = document.getElementById("eth_price_dollar");
             var ethPriceValue = parseFloat(ethPriceEle.textContent);
             document.getElementById("moc_rate").textContent = ethPriceValue/0.12 | 0;
+            document.getElementById("bonus_rate").textContent = getBonusRate();
+            document.getElementById("bonus_moc").textContent = (ethPriceValue/0.12 * getBonusRate() * 0.01) | 0;
+        }
+
+        function getBonusRate() {
+            var now = new Date();
+            var today = new Date(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate(), now.getUTCHours(), now.getUTCMinutes(), now.getUTCSeconds()).getTime();
+            var firstWeek = new Date("March 21, 2018 13:00").getTime();
+            var secondWeek = new Date("March 28, 2018 13:00").getTime();
+            var thirdWeek = new Date("April 4, 2018 13:00").getTime();
+            var fourthWeek = new Date("April 11, 2018 13:00").getTime();
+            var endBenefit = new Date("April 18, 2018").getTime();
+            
+            if (today < secondWeek) {
+                return 15;
+            } else if ((today >= secondWeek) && (today < thirdWeek)) {
+                return 10;
+            } else if ((today >= thirdWeek) && (today < fourthWeek)) {
+                return 5;
+            } else if ((today >= fourthWeek) && (today < endBenefit)) {
+                return 2.5;
+            } else {
+                return 0;
+            }
         }
         
         function calculator() {
             var x = Number(document.getElementById("send__value").value)
             var ethPriceEle = document.getElementById("eth_price_dollar");
             var ethPriceValue = parseFloat(ethPriceEle.textContent);
-            mocRate = ethPriceValue/0.12 | 0;
-            today = new Date(),
-            firstWeek = new Date(2018, 2, 14),
-            secondWeek = new Date(2018, 2, 28),
-            thirdWeek = new Date(2018, 3, 4),
-            fourthWeek = new Date(2018, 3, 11),
-            endBenefit = new Date(2018, 3, 17),
-            result = 1;
             
-            if ((today > firstWeek) && (today < secondWeek) )  {
-                result = x * mocRate * 1.15;
-            } else if ((today > secondWeek) && (today < thirdWeek)) {
-                result = x * mocRate * 1.1;
-            } else if ((today > thirdWeek) && (today < fourthWeek)) {
-                result = x * mocRate * 1.05;
-            } else if ((today > fourthWeek) && (today < endBenefit)) {
-                result = x * mocRate * 1.025;
-            } else {
-                result = x * mocRate ;
-            }
-            4
+            mocRate = ethPriceValue/0.12 | 0;
+            result = x * mocRate * (100+getBonusRate()) * 0.01;
+            
             if (isNaN(result)){
                 document.getElementById("output__value").innerHTML = "invalid";
             } else{
