@@ -64,16 +64,16 @@
             <div class="eth__price" style="border-top: 5px solid #58c8da; margin-bottom: 40px;">
                 <div class="eth__week__price">
                     <div class="usd-eth__value" style="border: none; border-radius: 0; text-align: left;">
-                        <div class="eth__value" style="margin-bottom: 0.1em; color:#545454;">1 ETH = 613 USD</div>
+                        <div class="eth__value" style="margin-bottom: 0.1em; color:#545454;">1 ETH = <span id="eth_price_dollar">557.18</span> USD</div>
                     </div>
                     <div class="sample__date" style="text-align: left; margin-top: 0; color:#58c8da; font-size:18px;">2018.03.19</div>
                     <h2 style="text-align: left; color:#58c8da; font-weight: 600;">Ethereum standard price for today</h2>
                 </div>
                 <div class="moc-eth__price">
                     <div class="moc-eth__value" style="border: none; border-radius: 0; text-align: left; margin-top: 18px; margin-bottom: 0.1em; padding: 0;">
-                        <div class="eth__value" style="margin-bottom: 0.1em; color: #545454;">1 ETH = 5108 MOC</div>
+                        <div class="eth__value" style="margin-bottom: 0.1em; color: #545454;">1 ETH = <span id="moc_rate"></span> MOC</div>
                     </div>
-                    <div class="bonus" style="text-align: left; margin-top: 0; color:#58c8da; ">bonus 15% = 766 MOC</div>
+                    <div class="bonus" style="text-align: left; margin-top: 0; color:#58c8da; ">bonus <span id="bonus_rate">15</span>% = <span id="bonus_moc">766</span> MOC</div>
                     <h2 style="text-align: left; color:#58c8da; font-weight: 600;">MOC per ETH</h2>
                 </div>
             </div>
@@ -107,9 +107,17 @@
     <!--LOAD scripts-->
 
     <script type="text/javascript">
+        window.onload = function(){
+            var ethPriceEle = document.getElementById("eth_price_dollar");
+            var ethPriceValue = parseFloat(ethPriceEle.textContent);
+            document.getElementById("moc_rate").textContent = ethPriceValue/0.12 | 0;
+        }
+        
         function calculator() {
-            var x = Number(document.getElementById("send__value").value),
-            mocRate = 5108,
+            var x = Number(document.getElementById("send__value").value)
+            var ethPriceEle = document.getElementById("eth_price_dollar");
+            var ethPriceValue = parseFloat(ethPriceEle.textContent);
+            mocRate = ethPriceValue/0.12 | 0;
             today = new Date(),
             firstWeek = new Date(2018, 2, 14),
             secondWeek = new Date(2018, 2, 28),
@@ -117,7 +125,7 @@
             fourthWeek = new Date(2018, 3, 11),
             endBenefit = new Date(2018, 3, 17),
             result = 1;
-
+            
             if ((today > firstWeek) && (today < secondWeek) )  {
                 result = x * mocRate * 1.15;
             } else if ((today > secondWeek) && (today < thirdWeek)) {
@@ -129,7 +137,7 @@
             } else {
                 result = x * mocRate ;
             }
-            
+            4
             if (isNaN(result)){
                 document.getElementById("output__value").innerHTML = "invalid";
             } else{

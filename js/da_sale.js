@@ -16,7 +16,7 @@ var buyTokenButtonDate = new Date("March 21, 2018 12:00");
 
 // PRE ICO 끝 날짜
 // 이벤트 없음
-var preicoEndDate = new Date("April 17, 2018");
+var preicoEndDate = new Date("April 18, 2018 13:00");
 
 var newNotice = false;
 
@@ -26,15 +26,16 @@ var addr = '0x3B3D913C2DE8Aa5be94A40BF73d044233861c38b';
 // QR코드 이미지 1:1 비율
 var qr = 'img/qrcode.png';
 
-// Hardcap
-var ico_hardcap = 25000000.00;
-
 // 공지사항을 나타낼것인지
 var view_notice = true;
 
 // 지갑데이터 수신 받기 전 초기 값.
 var ico_current = 0;
 
+var presaled = 66948856;
+
+// Hardcap
+var ico_hardcap = presaled + 123750302.00;
 
 /*
  Load ETH
@@ -74,11 +75,11 @@ function loadeth(){
         }
     };
 
-    var token_addr = '0x86789b2DE83B9A93F89F8C2Cb14d622CD73515e9';
+    var token_addr = '0x1716Ee24Abc334A6e1487A78987B54bB439f028A';
     saled(token_addr, function(err, result)
     {
         result.e -= 18;
-        ico_current = Math.max(0, result.toNumber() - 41949386.94);
+        ico_current = Math.max(0, result.toNumber());
         icoprogress();
     });
 
@@ -86,7 +87,6 @@ function loadeth(){
 
 
 function mosstimer(_date,_target,_fn){
-
     var timer = new Timer();
     var thedate = _date;
     var diffdate = thedate-today;
@@ -111,7 +111,10 @@ function mosstimer(_date,_target,_fn){
 
     });
 
-}
+    }
+
+    mosstimer(preicoEndDate,"#preico");
+    mosstimer(preicoEndDate,"#table-timer");
 
 
 function icoprogress(){
@@ -154,8 +157,6 @@ function icoprogress(){
     //    },2000
     //);
 
-    $("#hardcap-value").text(addComma(ico_hardcap)+".00");
-
     $("#progressbar").css({
         width : percent+'%'
     });
@@ -187,8 +188,11 @@ $(function(){
     $(".whitepaper-part-2 > .back").on("click",function(){
         $('.whitepaper-part-1, .whitepaper-part-2, .whitepaper-download-area').removeClass('active');
         return false;
-
     })
+
+    $('.progressbar-under').css({
+        width : (presaled / ico_hardcap) * 100 + '%'
+    });
 
     
     if(newNotice) {
@@ -279,42 +283,12 @@ $(function(){
         $("#product-advisor").removeClass("product-limit");
     });
 
-
-    //Timer
-    mosstimer(preicoStartDate,"#upcomming","preicostart");
-    mosstimer(preicoEndDate,"#preico");
-
-    //Pre ICO start 화면 변경
-    var diffdate = today-preicoStartDate;
-    var remaining = diffdate/1000;
-
-    var buttondate = today - buyTokenButtonDate;
-    var buttonremaining = buttondate/1000;
-
-    if(remaining < 0){
-        $("#upcomming").addClass("active");
-        $("#preico").removeClass("active");
-        console.log(buttonremaining);
-        if(buttonremaining < 0) {
-            $("#buytoken-button").removeClass("active");
-            $("#whitelist-button").addClass("active");
-        }
-        else{
-            $("#buytoken-button").addClass("active");
-            $("#whitelist-button").removeClass("active");
-        }
-    } else {
-        $("#upcomming").removeClass("active");
-        $("#preico").addClass("active");
-        loadeth();
-    }
-
+    loadeth();
 });
 
 $(document).ready(function() {
     $('.js-to-whitepapper').click(function (event) {
         event.preventDefault();
-        console.log('123');
     
         $('html, body').animate({
             scrollTop: $('#whitepaper').offset().top - 100
@@ -322,4 +296,10 @@ $(document).ready(function() {
 
         $(".whitepaper-part-1").click();
     });
+
+    $('.js-close-tip').click(function (event) {
+        event.preventDefault();
+        $('.tip').removeClass('is-active');
+    });
 });
+
