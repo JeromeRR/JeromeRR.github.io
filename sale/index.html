@@ -25,6 +25,12 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
       <script src="js/tokensale.js"></script>
+      <style>
+        .hidden {
+            display: none;
+        }
+
+</style>
   </head>
 
   <body>
@@ -84,7 +90,7 @@
                     <div id="output__value" class="strong" style="border: none; border-bottom: 1px solid #58c8da; border-radius: 0; font-weight: 800; color:#58c8da; text-align: center; padding-bottom:1.25em; height: 10px; margin-bottom: 0.3em"></div>
                     <span class="desc_send strong" style="color:#58c8da;">MOC.</span><span id="including_bonus" class="desc_send"> (Including bonus)</span>
                 </div>
-
+                <div id="warning" class="hidden" style="margin-top: 1em; text-align: center;"><h2 id="warning_comment" style="color:red; font-size: 2em">Minimum Contribution: 0.1 ETH<br>Maxiumum Contribution: 20 ETH</h2></div>
                 <div class="agreements" style="text-align: center; margin-top: 4em; padding-top: 5em; border-top: 5px solid #58c8da;">
                     <span class="desc_term">
                     Before buy Moss Coin, You have to read <a href="https://d2vy65gufabiok.cloudfront.net/whitepaper/Mossland+Whitepaper+-+ENG.pdf" target="_blank" style="color:#58c8da;">Whitepaper</a> And <a href="https://moss.land/terms"  target="_blank" style="color:#58c8da;">Terms of service</a>
@@ -140,6 +146,27 @@
             var x = Number(document.getElementById("send__value").value)
             var ethPriceEle = document.getElementById("eth_price_dollar");
             var ethPriceValue = parseFloat(ethPriceEle.textContent);
+
+            if(isNaN(x)){
+                document.getElementById("warning").classList.add('hidden'); 
+                return;
+            }
+                
+
+            if(x < 0.1 )
+            {
+                document.getElementById("warning").classList.remove('hidden');
+                document.getElementById("output__value").innerHTML = "invalid";
+                return;
+            }
+            else if( x > 20)
+            {
+                document.getElementById("warning").classList.remove('hidden');
+            }
+            else
+            {
+               document.getElementById("warning").classList.add('hidden'); 
+            }
             
             mocRate = ethPriceValue/0.12 | 0;
             result = x * mocRate * (100+getBonusRate()) * 0.01;
