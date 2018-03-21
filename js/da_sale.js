@@ -29,10 +29,9 @@ var qr = 'img/qrcode.png';
 // 공지사항을 나타낼것인지
 var view_notice = true;
 
-// 지갑데이터 수신 받기 전 초기 값.
-var ico_current = 0;
-
 var presaled = 66948856;
+// 지갑데이터 수신 받기 전 초기 값.
+var ico_current = presaled;
 
 // Hardcap
 var ico_hardcap = presaled + 123750302.00;
@@ -75,7 +74,7 @@ function loadeth(){
         }
     };
 
-    var token_addr = '0x1716Ee24Abc334A6e1487A78987B54bB439f028A';
+    var token_addr = '0x86789b2DE83B9A93F89F8C2Cb14d622CD73515e9';
     saled(token_addr, function(err, result)
     {
         result.e -= 18;
@@ -124,25 +123,7 @@ function icoprogress(){
     var comma_separator_number_step = $.animateNumber.numberStepFactories.separator(',');
     var percent_number_step = $.animateNumber.numberStepFactories.append(' %');
 
-    $("#current-value").animateNumber(
-        {
-            number: ico_current,
-            //numberStep: comma_separator_number_step,
-
-            numberStep: function(now, tween) {
-
-                // see http://stackoverflow.com/a/14428340
-                var formatted = now.toFixed(2).replace(/(\d)(?=(\d{3})+\.)/g, '$1,');
-                $(tween.elem).text(formatted);
-            },
-            easing: 'easeInQuad'
-
-        },2000,function(){
-            // 현재 값부터 카운트 시작하도록
-            // 이 코드를 삭제 시 0부터 시작
-            $("#current-value").prop('number',ico_current)
-        }
-    );
+    console.log(percent);
 
     // Hardcap animation 없앰
     //$("#hardcap-value").animateNumber(
@@ -161,7 +142,8 @@ function icoprogress(){
         width : percent+'%'
     });
 
-    $(".progressbar-current").animateNumber(
+    
+    $(".progressbar-current").prop('number',36).animateNumber(
         {
             number: percent,
             numberStep: percent_number_step,
@@ -188,13 +170,8 @@ $(function(){
     $(".whitepaper-part-2 > .back").on("click",function(){
         $('.whitepaper-part-1, .whitepaper-part-2, .whitepaper-download-area').removeClass('active');
         return false;
-    })
-
-    $('.progressbar-under').css({
-        width : (presaled / ico_hardcap) * 100 + '%'
     });
 
-    
     if(newNotice) {
         $("#notice-icon").addClass('icon-steemit-log-new');
     }

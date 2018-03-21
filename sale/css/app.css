@@ -1281,7 +1281,7 @@ img {
     color:#545454;
 }
 #wallet-address {
-    font-size: 1.4em;
+    font-size: 1em;
     color:#282828;
     width:100%;
     text-align: center;
@@ -1298,7 +1298,7 @@ img {
 }
 @media only screen and (min-width: 300px) {
     #wallet-address {
-    font-size: 0.6em;
+    font-size: 0.4em;
     color:#282828;
     width:100%;
     text-align: center;
@@ -1360,7 +1360,7 @@ img {
 
 @media only screen and (min-width: 550px) {
      #wallet-address {
-    font-size: 0.6em;
+    font-size: 0.4em;
     color:#282828;
     width:100%;
     text-align: center;
@@ -1427,7 +1427,7 @@ img {
 
 @media only screen and (min-width: 600px) {
      #wallet-address {
-    font-size: 0.6em;
+    font-size: 0.4em;
     color:#282828;
     width:100%;
     text-align: center;
@@ -1465,7 +1465,7 @@ img {
 }
 @media only screen and (max-width: 299px) {
    #wallet-address {
-    font-size: 0.4em;
+    font-size: 0.1em;
     color:#282828;
     width:100%;
     text-align: center;
@@ -1475,7 +1475,7 @@ img {
 
 @media only screen and (min-width: 768px) {
      #wallet-address {
-    font-size: 0.8em;
+    font-size: 0.6em;
     color:#282828;
     width:100%;
     text-align: center;
@@ -1526,7 +1526,7 @@ img {
 
 @media only screen and (min-width: 1000px) {
      #wallet-address {
-    font-size: 1.0em;
+    font-size: 0.6em;
     color:#282828;
     width:100%;
     text-align: center;
@@ -1604,7 +1604,7 @@ img {
 
 @media only screen and (min-width: 1024px) {
      #wallet-address {
-    font-size: 1.0em;
+    font-size: 0.6em;
     color:#282828;
     width:100%;
     text-align: center;
@@ -1662,7 +1662,7 @@ img {
 
 @media only screen and (min-width: 1060px) {
     #wallet-address {
-    font-size: 1.0em;
+    font-size: 0.6em;
     color:#282828;
     width:100%;
     text-align: center;
@@ -1742,7 +1742,7 @@ img {
 
 @media only screen and (min-width: 1120px) {
     #wallet-address {
-    font-size: 1.0em;
+    font-size: 0.6em;
     color:#282828;
     width:100%;
     text-align: center;
@@ -1773,7 +1773,7 @@ img {
 
 @media only screen and (min-width: 1366px) {
     #wallet-address {
-    font-size: 1.2em;
+    font-size: 0.6em;
     color:#282828;
     width:100%;
     text-align: center;
@@ -1825,7 +1825,7 @@ img {
 
 @media only screen and (min-width: 1680px) {
     #wallet-address {
-    font-size: 1.4em;
+    font-size: 0.8em;
     color:#282828;
     width:100%;
     text-align: center;
