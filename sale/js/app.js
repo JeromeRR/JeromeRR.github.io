@@ -2848,20 +2848,20 @@ new ScrollMagic.Scene({ triggerElement: "#potential", triggerHook: 'onLeave' }).
 .addTo(controller);
 
 // when unchecked or checked function
-var checker = document.getElementById("agreeCheckbox");
-var sendbtn = document.getElementById("bnt_next");
-(checker.onchange = function(){
-	if(this.checked){
-		sendbtn.disabled = false;
-		// document.getElementById("bnt_next").style.backgroundColor="#00b1ce";
-		document.getElementById("bnt_next_hidden").style.display="";
-		document.getElementById("bnt_next").style.display="none";
-	} else {
-		sendbtn.disabled = true;
-		document.getElementById("bnt_next_hidden").style.display="none";
-		document.getElementById("bnt_next").style.display="";
-	}
-})();
+// var checker = document.getElementById("agreeCheckbox");
+// var sendbtn = document.getElementById("bnt_next");
+// (checker.onchange = function(){
+// 	if(this.checked){
+// 		sendbtn.disabled = false;
+// 		// document.getElementById("bnt_next").style.backgroundColor="#00b1ce";
+// 		document.getElementById("bnt_next_hidden").style.display="";
+// 		document.getElementById("bnt_next").style.display="none";
+// 	} else {
+// 		sendbtn.disabled = true;
+// 		document.getElementById("bnt_next_hidden").style.display="none";
+// 		document.getElementById("bnt_next").style.display="";
+// 	}
+// })();
 
 // //calculator of MOCcoins
 // var x = Number(document.getElementById("send__value").value),
