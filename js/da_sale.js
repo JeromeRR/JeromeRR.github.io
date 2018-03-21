@@ -141,9 +141,8 @@ function icoprogress(){
     $("#progressbar").css({
         width : percent+'%'
     });
-
     
-    $(".progressbar-current").prop('number',36).animateNumber(
+    $(".progressbar-current").animateNumber(
         {
             number: percent,
             numberStep: percent_number_step,
@@ -162,7 +161,7 @@ $(function(){
 
     var selected = $(".advisors-select > .selected");
     var selectedcontents = $("#ico-advisor");
-
+    $(".progressbar-current").prop('number',36);
     $(".whitepaper-part-1").on("click",function(){
         $('.whitepaper-part-1, .whitepaper-part-2, .whitepaper-download-area').addClass('active');
     });
