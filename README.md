@@ -6,6 +6,7 @@
 	style_sale.css
 	복붙
  - /js/
+ 	da_sale.js
 	common.js
 	tip.js 
 	복붙
