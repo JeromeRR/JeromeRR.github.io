@@ -1,3 +1,10 @@
+window.onload = function(){
+    var userAgent = window.navigator.userAgent;
+    if (userAgent.match(/iPad/i) || userAgent.match(/iPhone/i)) {
+       document.getElementById("copy-wallet").classList.add("hidden");
+    }
+}
+
 function onChangeCheckbox(this_){
             if(!this_.checked){
                 document.getElementById('bnt_next_hidden').disabled = !this_.checked;
@@ -15,6 +22,10 @@ function onNextBtnClick() {
     }            
 }
 function copyToClipBoard() {
+    var userAgent = window.navigator.userAgent;
+    if (userAgent.match(/iPad/i) || userAgent.match(/iPhone/i)) {
+      return;
+    }
     /* Get the text field */
     var copyText = document.getElementById("wallet-address");
     copyText.contenteditable = true;
