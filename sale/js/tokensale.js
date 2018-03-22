@@ -17,13 +17,17 @@ function onNextBtnClick() {
 function copyToClipBoard() {
     /* Get the text field */
     var copyText = document.getElementById("wallet-address");
-
+    copyText.contenteditable = true;
+    copyText.readonly = false;
+    
   /* Select the text field */
   copyText.select();
 
   /* Copy the text inside the text field */
   document.execCommand("Copy");
+    copyText.contenteditable = false;
+    copyText.readonly = true;
 
   /* Alert the copied text */
-  alert("Copied: " + copyText.value);
+  alert("Copied: " + "0x8047560624ef10ccfec60ff91b5165e1114db2fd");
 }
