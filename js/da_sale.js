@@ -78,7 +78,7 @@ function loadeth(){
     saled(token_addr, function(err, result)
     {
         result.e -= 18;
-        ico_current = Math.max(0, result.toNumber());
+        ico_current = Math.max(0, result.toNumber() + 3421860);
         icoprogress();
     });
 
