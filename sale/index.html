@@ -66,8 +66,8 @@
     </header>
     <main>
         <div class="page-wrap buy__container">
-            <h1 id="tokensale_title">Join the ICO</h1>
-            <div class="btn-group dropright">
+            <h3 id="tokensale_title">Join the ICO</h1>
+            <div class="btn-group dropright" style="margin-top:2em;">
                     <button id="currency_dropdown" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-top:1.5em;border:none; border-radius:0px;">
                       Currency : <i class="fab fa-ethereum"></i>&nbsp;ETH
                     </button>
@@ -102,7 +102,7 @@
                 </div>
             </section>
             <section>
-                <div id="warning" class="hidden" style="margin-top: 1em; text-align: center;"><h2 id="warning_comment" style="color:red; font-size: 2em">Minimum Contribution: 0.1 <span class="currency_short">ETH</span><br>Maxiumum Contribution: 20 <span class="currency_short">ETH</span></h2></div>
+                <div id="warning" class="hidden" style="margin-top: 1em; text-align: center;"><h2 id="warning_comment" style="color:red; font-size: 2em">Minimum Contribution: <span id="max_val"></span>0.1 <span class="currency_short">ETH</span><br>Maxiumum Contribution: <span id="max_val">20</span> <span class="currency_short">ETH</span></h2></div>
                 <div class="agreements" style="text-align: center; margin-top: 4em; padding-top: 5em; border-top: 5px solid #58c8da;">
                     <span class="desc_term">
                     Before buy Moss Coin, You have to read <a href="https://d2vy65gufabiok.cloudfront.net/whitepaper/Mossland+Whitepaper+-+ENG.pdf" target="_blank" style="color:#58c8da;">Whitepaper</a> And <a href="https://moss.land/terms"  target="_blank" style="color:#58c8da;">Terms of service</a>
@@ -153,6 +153,8 @@
                 return 0;
             }
         }
+        const ether_usd = 489.95;
+        const qtum_usd = 16.24;
         var calculator = ethCalc;
     </script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>

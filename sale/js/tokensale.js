@@ -1,9 +1,15 @@
+const eth_min = 0.1;
+const eth_max = 20;
+const qtum_min = 3;
+const qtum_max = 600;
+
 window.onload = function(){
     var userAgent = window.navigator.userAgent;
     if (userAgent.match(/iPad/i) || userAgent.match(/iPhone/i)) {
        document.getElementById("copy-wallet").classList.add("hidden");
     }
     calculator = ethCalc;
+    document.getElementById("eth_price_dollar").textContent = ether_usd;
 }
 
 function onChangeCheckbox(this_){
@@ -49,26 +55,31 @@ function onSelectCurrency(currency){
     let dropdownText =document.getElementById("currency_dropdown");
     if(currency.includes("Ethereum")){
         dropdownText.innerHTML = 'Currency : <i class="fab fa-ethereum"></i>&nbsp;Ehereum'
+        document.getElementById("eth_price_dollar").textContent = ether_usd;
+        document.getElementById("max_val").textContent = eth_max;
+        document.getElementById("min_val").textContent = eth_min;
         calculator = ethCalc;
     }
     else if(currency.includes("QTUM")){
         dropdownText.innerHTML = 'Currency : <i class="cc QTUM" title="QTUM"></i>&nbsp;QTUM'
+        document.getElementById("eth_price_dollar").textContent = qtum_usd;
+        document.getElementById("max_val").textContent = qtum_max;
+        document.getElementById("min_val").textContent = qtum_min;
         calculator = qtumCalc;
     }
     else{
-        console.log("else'")
+        
     }
     ChangeCurrencyStr(currency);
+    calculator();
 }
 
 function ChangeCurrencyStr(currency){
     let type = currency.includes("Eth") ? 0/* ethereum */ : 1 /*qtum*/
-    console.log(type)
     let curCurrency_short = type == 0 ? "ETH" : "QTUM";
     let curCurrency_long = type == 0 ? "Ehtereum" : "QTUM";
     let short_ele = document.getElementsByClassName("currency_short");
     let long_ele = document.getElementsByClassName("currency_long");
-    console.log(curCurrency_short)
     for(var i = 0; i < short_ele.length; ++i)    
         short_ele[i].textContent  = curCurrency_short;
     for(var j = 0; j < long_ele.length; ++j)
