@@ -2024,3 +2024,17 @@ img {
 .dropdown-item .currency_item {
   color: #58c8da;
 }
+
+#ether_btn{
+    padding: 0px;
+    border: none;
+    background:none;
+    border-radius: 0px;
+}
+
+#qtum_btn{
+  padding: 0px;
+  border: none;
+  background:none;
+  border-radius: 0px;
+}

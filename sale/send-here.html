@@ -14,7 +14,8 @@
     <meta property="og:image:width" content="1000" />
     <meta property="og:image:height" content="597" />
     <meta property="og:image:alt" content="MOSSLAND - Location Based AR Property Game." />
-
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" media="all" href="css/cryptocoins.css">
     <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
@@ -60,11 +61,43 @@
         <div class="page-wrap purse__container">
           <h1>Join the ICO</h1>
           <div class="eth__purse">
+            <div id="accordion">
+              <div class="card">
+                <div class="card-header" id="ether_addr_collapse">
+                  <h5 class="mb-0">
+                    <button id="ether_btn" class="btn btn-link" data-toggle="collapse" data-target="#ether_addr" aria-expanded="false" aria-controls="ether_addr">
+                        <h2 class="strong" style="font-size: 2em; color: #58c8da;"><i class="fab fa-ethereum"></i>&nbsp;Send ETH here</h2>
+                    </button>
+                  </h5>
+                </div>
+                <div id="ether_addr" class="collapse" aria-labelledby="ether_addr_collapse" data-parent="#accordion">
+                  <div class="card-body">
+                      0x8047560624ef10ccfec60ff91b5165e1114db2fd
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="qtum_addr_collapse">
+                  <h5 class="mb-0">
+                    <button id="qtum_btn" class="btn btn-link collapsed" data-toggle="collapse" data-target="#qtum_addr" aria-expanded="false" aria-controls="qtum_addr">
+                        <h2 class="strong" style="font-size: 2em; color: #58c8da;"><i class="cc QTUM" title="QTUM"></i>&nbsp;Send QTUM here</h2>
+                    </button>
+                  </h5>
+                </div>
+                <div id="qtum_addr" class="collapse" aria-labelledby="qtum_addr_collapse" data-parent="#accordion">
+                  <div class="card-body">
+                    TumQxxTumQxxTumQxxTumQxxTumQxxTumQxxTumQxxTumQ
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="addr_section" class="hidden">
               <h2 class="strong" style="font-size: 1em; color: #58c8da;">Send ETH here:</h2>
               <div class="etn__purse__number" style="border: none; border-radius: 0px; border-bottom: 2px solid #58c8da; background-color:#58c8da; margin-top: 0; "><input id="wallet-address" value="0x8047560624ef10ccfec60ff91b5165e1114db2fd" style="padding: 1em;" readonly></div>
                 <div style="text-align: center;">
                     <button id="copy-wallet" onclick="copyToClipBoard()" class="btn-copy">Copy to Clipboard</button>
               </div>
+            </div>
           </div>
             <ol type="1" class="purse__rules" style="margin-top: 20px;">
                 <li><span><b>DO NOT send Ethereum from your cryptocurrency exchange wallet.</b></span> There is no way for us to refund transactions made from your cryptocurrency exchange wallet.</li>
@@ -83,11 +116,13 @@
         </div>
     </main>
     <!--LOAD scripts-->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
     <script type="text/javascript" src="https://scrollmagic.io/scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
     <script src="js/app.js"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
   </body>
 
 </html>
