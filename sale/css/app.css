@@ -2005,3 +2005,22 @@ img {
 .hidden {
     display:none;
 }
+#currency_dropdown{
+  background: #58c8da;
+}
+#currency_dropdown:hover{
+  color: #58c8da;
+  background: white;
+}
+
+#currency_dropdown:focus{
+  box-shadow: none;
+}
+
+.currency_item {
+  cursor: pointer;
+}
+
+.dropdown-item .currency_item {
+  color: #58c8da;
+}

@@ -3,6 +3,7 @@ window.onload = function(){
     if (userAgent.match(/iPad/i) || userAgent.match(/iPhone/i)) {
        document.getElementById("copy-wallet").classList.add("hidden");
     }
+    calculator = ethCalc;
 }
 
 function onChangeCheckbox(this_){
@@ -42,3 +43,108 @@ function copyToClipBoard() {
   /* Alert the copied text */
   alert("Copied: " + "0x8047560624ef10ccfec60ff91b5165e1114db2fd");
 }
+
+function onSelectCurrency(currency){
+    
+    let dropdownText =document.getElementById("currency_dropdown");
+    if(currency.includes("Ethereum")){
+        dropdownText.innerHTML = 'Currency : <i class="fab fa-ethereum"></i>&nbsp;Ehereum'
+        calculator = ethCalc;
+    }
+    else if(currency.includes("QTUM")){
+        dropdownText.innerHTML = 'Currency : <i class="cc QTUM" title="QTUM"></i>&nbsp;QTUM'
+        calculator = qtumCalc;
+    }
+    else{
+        console.log("else'")
+    }
+    ChangeCurrencyStr(currency);
+}
+
+function ChangeCurrencyStr(currency){
+    let type = currency.includes("Eth") ? 0/* ethereum */ : 1 /*qtum*/
+    console.log(type)
+    let curCurrency_short = type == 0 ? "ETH" : "QTUM";
+    let curCurrency_long = type == 0 ? "Ehtereum" : "QTUM";
+    let short_ele = document.getElementsByClassName("currency_short");
+    let long_ele = document.getElementsByClassName("currency_long");
+    console.log(curCurrency_short)
+    for(var i = 0; i < short_ele.length; ++i)    
+        short_ele[i].textContent  = curCurrency_short;
+    for(var j = 0; j < long_ele.length; ++j)
+        long_ele[j].textContent  = curCurrency_long;
+}
+
+function ethCalc() {
+    var x = Number(document.getElementById("send__value").value)
+    var ethPriceEle = document.getElementById("eth_price_dollar");
+    var ethPriceValue = parseFloat(ethPriceEle.textContent);
+
+    if(isNaN(x)){
+        document.getElementById("warning").classList.add('hidden'); 
+        return;
+    }
+        
+
+    if(x < 0.1 )
+    {
+        document.getElementById("warning").classList.remove('hidden');
+        document.getElementById("output__value").innerHTML = "invalid";
+        return;
+    }
+    else if( x > 20)
+    {
+        document.getElementById("warning").classList.remove('hidden');
+    }
+    else
+    {
+       document.getElementById("warning").classList.add('hidden'); 
+    }
+    
+    mocRate = ethPriceValue/0.12 | 0;
+    result = x * mocRate * (100+getBonusRate()) * 0.01;
+    
+    if (isNaN(result)){
+        document.getElementById("output__value").innerHTML = "invalid";
+    } else{
+        document.getElementById("output__value").innerHTML = result.toFixed();
+    }
+};
+
+
+
+function qtumCalc() {
+    var x = Number(document.getElementById("send__value").value)
+    var ethPriceEle = document.getElementById("eth_price_dollar");
+    var ethPriceValue = parseFloat(ethPriceEle.textContent);
+
+    if(isNaN(x)){
+        document.getElementById("warning").classList.add('hidden'); 
+        return;
+    }
+        
+
+    if(x < 3 )
+    {
+        document.getElementById("warning").classList.remove('hidden');
+        document.getElementById("output__value").innerHTML = "invalid";
+        return;
+    }
+    else if( x > 600)
+    {
+        document.getElementById("warning").classList.remove('hidden');
+    }
+    else
+    {
+       document.getElementById("warning").classList.add('hidden'); 
+    }
+    
+    mocRate = ethPriceValue/0.12 | 0;
+    result = x * mocRate * (100+getBonusRate()) * 0.01;
+    
+    if (isNaN(result)){
+        document.getElementById("output__value").innerHTML = "invalid";
+    } else{
+        document.getElementById("output__value").innerHTML = result.toFixed();
+    }
+};
