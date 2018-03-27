@@ -71,9 +71,14 @@ function onSelectCurrency(currency){
         
     }
     ChangeCurrencyStr(currency);
-    let = sendVal = document.getElementById("send__value").textContent;
-    if(sendVal)
+    GetMOCCountPerOneCrypto();
+    let sendVal = document.getElementById("send__value").value;
+    if(sendVal.length != 0 && sendVal)
+    {
         calculator();
+        console.log("asgdgsdagsd")
+    }
+        
 }
 
 function ChangeCurrencyStr(currency){
@@ -130,7 +135,7 @@ function qtumCalc() {
     var x = Number(document.getElementById("send__value").value)
     var ethPriceEle = document.getElementById("eth_price_dollar");
     var ethPriceValue = parseFloat(ethPriceEle.textContent);
-
+    console.log(ethPriceValue)
     if(isNaN(x)){
         document.getElementById("warning").classList.add('hidden'); 
         return;
@@ -161,3 +166,12 @@ function qtumCalc() {
         document.getElementById("output__value").innerHTML = result.toFixed();
     }
 };
+
+
+function GetMOCCountPerOneCrypto(){
+    var ethPriceEle = document.getElementById("eth_price_dollar");
+    var ethPriceValue = parseFloat(ethPriceEle.textContent);
+    document.getElementById("moc_rate").textContent = ethPriceValue/0.12 | 0;
+    document.getElementById("bonus_rate").textContent = getBonusRate();
+    document.getElementById("bonus_moc").textContent = (ethPriceValue/0.12 * getBonusRate() * 0.01) | 0;
+}

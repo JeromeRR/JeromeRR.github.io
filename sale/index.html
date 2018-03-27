@@ -125,11 +125,7 @@
 
     <script type="text/javascript">
         window.onload = function(){
-            var ethPriceEle = document.getElementById("eth_price_dollar");
-            var ethPriceValue = parseFloat(ethPriceEle.textContent);
-            document.getElementById("moc_rate").textContent = ethPriceValue/0.12 | 0;
-            document.getElementById("bonus_rate").textContent = getBonusRate();
-            document.getElementById("bonus_moc").textContent = (ethPriceValue/0.12 * getBonusRate() * 0.01) | 0;
+            GetMOCCountPerOneCrypto();
         }
 
         function getBonusRate() {
