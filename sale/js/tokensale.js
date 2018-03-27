@@ -71,7 +71,9 @@ function onSelectCurrency(currency){
         
     }
     ChangeCurrencyStr(currency);
-    calculator();
+    let = sendVal = document.getElementById("send__value").textContent;
+    if(sendVal)
+        calculator();
 }
 
 function ChangeCurrencyStr(currency){
