@@ -2606,3 +2606,7 @@ body {
         height: 230px;
       }
 }
+
+#btn_container_moss {
+    margin-top: 0;
+}
