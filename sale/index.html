@@ -65,16 +65,21 @@
       </a>
     </header>
     <main>
+        
         <div class="page-wrap buy__container">
             <h3 id="tokensale_title">Join the ICO</h1>
             <div class="btn-group dropright" style="margin-top:2em;">
-                    <button id="currency_dropdown" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-top:1.5em;border:none; border-radius:0px;">
+                    <ul class="nav nav-tabs col-md-12">
+                        <li id="init-currency" class="active currency_item col-md-2" style="height: 2em; padding-top: 0.2em;font-size: 1.7em;" onclick="select('QTUM', this)">
+                            <a onclick="onSelectCurrency(this.text)" style="width: 100%;"><i class="cc QTUM" title="QTUM"></i>&nbsp;QTUM</a>
+                        </li>
+                        <li class="currency_item col-md-2" style="height: 2em; padding-top: 0.2em;font-size: 1.7em;" onclick="select('Ethereum', this)">
+                            <a onclick="onSelectCurrency(this.text)" style="width: 100%;"><i class="fab fa-ethereum"></i>&nbsp;Ethereum</a>
+                        </li>
+                    </ul>
+                    <button id="currency_dropdown" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="display:none;margin-top:1.5em;border:none; border-radius:0px;">
                       Currency : <i class="fab fa-ethereum"></i>&nbsp;ETH
                     </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                      <a class="dropdown-item currency_item" onclick="onSelectCurrency(this.text)"><i class="fab fa-ethereum"></i>&nbsp;Ethereum</a>
-                      <a class="dropdown-item currency_item" onclick="onSelectCurrency(this.text)"><i class="cc QTUM" title="QTUM"></i>&nbsp;QTUM</a>
-                    </div>
                   </div>
             <div class="eth__price" style="border-top: 5px solid #58c8da; margin-bottom: 40px; margin-top:0px;">
                 <div class="eth__week__price">
@@ -124,10 +129,17 @@
     <!--LOAD scripts-->
 
     <script type="text/javascript">
+        var curSelectEle = document.getElementById("init-currency");
+        function select (currency, liEle) {
+            curSelectEle.classList.remove("active")
+            liEle.className += " active"
+            curSelectEle = liEle
+            onSelectCurrency(currency)
+        }
         window.onload = function(){
             document.getElementById('eth_price_dollar').textContent = ether_usd
             GetMOCCountPerOneCrypto();
-            
+            onSelectCurrency("QTUM");
         }
 
         function getBonusRate() {

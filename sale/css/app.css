@@ -2038,3 +2038,10 @@ img {
   background:none;
   border-radius: 0px;
 }
+.currency_item {
+  color: #999999;
+}
+.active.currency_item {
+  color: white;
+  background-color: #58c8da;
+}
