@@ -33,8 +33,12 @@ var presaled = 66948856;
 // 지갑데이터 수신 받기 전 초기 값.
 var ico_current = presaled;
 
+const ico_ext_l = 4485000
+const ico_ext_k = 747500
+const ico_ext_q = 58389881
+const ico_ext = 101250247
 // Hardcap
-var ico_hardcap = presaled + 123750302.00;
+var ico_hardcap = presaled + 123750302.00 + ico_ext;
 
 /*
  Load ETH
@@ -78,7 +82,7 @@ function loadeth(){
     saled(token_addr, function(err, result)
     {
         result.e -= 18;
-        ico_current = Math.max(0, result.toNumber() + 3421860);
+        ico_current = Math.max(0, result.toNumber() + ico_ext_l + ico_ext_k + ico_ext_q);
         icoprogress();
     });
 
@@ -117,8 +121,8 @@ function mosstimer(_date,_target,_fn){
 
 
 function icoprogress(){
-
-    var percent = Math.ceil( ( ico_current/ico_hardcap ) * 100 );
+    let remain_moc = Math.max(0, ico_hardcap - ico_current)
+    var percent = Math.ceil(( ico_current/ico_hardcap ) * 100);
     if(percent > 100) percent = 100;
     var comma_separator_number_step = $.animateNumber.numberStepFactories.separator(',');
     var percent_number_step = $.animateNumber.numberStepFactories.append(' %');
@@ -148,6 +152,12 @@ function icoprogress(){
             easing: 'easeInQuad'
         },2000
     );
+    $("#cur_progress").css({
+        width : percent+'%'
+    });
+    var sRemain = remain_moc >= 10000 ? Number((remain_moc/1000000).toFixed(2)) + 'M MOC'  : remain_moc + ' MOC'
+    $("#remain_moc").text(sRemain)
+    
 
     icofireDone = true;
 };
