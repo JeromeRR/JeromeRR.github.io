@@ -1,7 +1,7 @@
 const eth_min = 0.1;
 const eth_max = 20;
-const qtum_min = 3;
-const qtum_max = 600;
+const qtum_min = 2;
+const qtum_max = 1000;
 
 window.onload = function(){
     var userAgent = window.navigator.userAgent;
@@ -104,13 +104,13 @@ function ethCalc() {
     }
         
 
-    if(x < 0.1 )
+    if(x < eth_min )
     {
         document.getElementById("warning").classList.remove('hidden');
         document.getElementById("output__value").innerHTML = "invalid";
         return;
     }
-    else if( x > 20)
+    else if( x > eth_max)
     {
         document.getElementById("warning").classList.remove('hidden');
     }
@@ -142,13 +142,13 @@ function qtumCalc() {
     }
         
 
-    if(x < 3 )
+    if(x < qtum_min )
     {
         document.getElementById("warning").classList.remove('hidden');
         document.getElementById("output__value").innerHTML = "invalid";
         return;
     }
-    else if( x > 600)
+    else if( x > qtum_max)
     {
         document.getElementById("warning").classList.remove('hidden');
     }
