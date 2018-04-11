@@ -2045,3 +2045,19 @@ img {
   color: white;
   background-color: #58c8da;
 }
+
+.purse__rules .currency_short {
+  color: inherit;
+}
+.purse__rules .currency_long {
+  color: inherit;
+}
+.purse__rules .currency_long_kor {
+  color: inherit;
+}
+.purse__rules .currency_min {
+  color: inherit;
+}
+.purse__rules .currency_max {
+  color: inherit;
+}

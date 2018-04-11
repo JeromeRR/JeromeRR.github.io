@@ -25,6 +25,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700" rel="stylesheet">  
       <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
       <script src="js/tokensale.js"></script>
+      <script src="js/sendhere.js"></script>
   </head>
 
   <body>
@@ -65,21 +66,7 @@
               <div class="card">
                 <div class="card-header" id="ether_addr_collapse">
                   <h5 class="mb-0">
-                    <button id="ether_btn" class="btn btn-link" data-toggle="collapse" data-target="#ether_addr" aria-expanded="false" aria-controls="ether_addr">
-                        <h2 class="strong" style="font-size: 2em; color: #58c8da;"><i class="fab fa-ethereum"></i>&nbsp;Send ETH here</h2>
-                    </button>
-                  </h5>
-                </div>
-                <div id="ether_addr" class="collapse" aria-labelledby="ether_addr_collapse" data-parent="#accordion">
-                  <div class="card-body" style="font-size: 2em;">
-                      <span>0x8047560624ef10ccfec60ff91b5165e1114db2fd</span>
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-header" id="qtum_addr_collapse">
-                  <h5 class="mb-0">
-                    <button id="qtum_btn" class="btn btn-link collapsed" data-toggle="collapse" data-target="#qtum_addr" aria-expanded="false" aria-controls="qtum_addr">
+                    <button id="qtum_btn" class="btn btn-link collapsed" data-toggle="collapse" data-target="#qtum_addr" aria-expanded="false" aria-controls="qtum_addr"  onclick="selectCurrency_sendhere('Qtum')">
                         <h2 class="strong" style="font-size: 2em; color: #58c8da;"><i class="cc QTUM" title="QTUM"></i>&nbsp;Send QTUM here</h2>
                     </button>
                   </h5>
@@ -87,6 +74,20 @@
                 <div id="qtum_addr" class="collapse" aria-labelledby="qtum_addr_collapse" data-parent="#accordion">
                   <div class="card-body" style="font-size: 2em;">
                     <span>QiMFK3qJYw5tgRySCGPFJRWB4oYXbTTtsz</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="qtum_addr_collapse">
+                    <h5 class="mb-0">
+                      <button id="ether_btn" class="btn btn-link" data-toggle="collapse" data-target="#ether_addr" aria-expanded="false" aria-controls="ether_addr" onclick="selectCurrency_sendhere('Ethereum')">
+                          <h2 class="strong" style="font-size: 2em; color: #58c8da;"><i class="fab fa-ethereum"></i>&nbsp;Send ETH here</h2>
+                      </button>
+                    </h5>
+                </div>
+                <div id="ether_addr" class="collapse" aria-labelledby="ether_addr_collapse" data-parent="#accordion">
+                  <div class="card-body" style="font-size: 2em;">
+                      <span>0x8047560624ef10ccfec60ff91b5165e1114db2fd</span>
                   </div>
                 </div>
               </div>
@@ -100,18 +101,16 @@
             </div>
           </div>
             <ol type="1" class="purse__rules" style="margin-top: 20px;">
-                <li><span><b>DO NOT send Ethereum from your cryptocurrency exchange wallet.</b></span> There is no way for us to refund transactions made from your cryptocurrency exchange wallet.</li>
-                <li><span><b>CHECK that you have correctly copied the Mossland’s Ethereum wallet address.</b></span> Make sure that malware has not altered the wallet address in the process of copying.</li>
-                <li><span><b>Minimum amount of participation is 0.1 ETH while maximum amount is 20 ETH.</b></span> Your total participation amount should not exceed 20 ETH, Pre-ICO and Main ICO combined. Ethereum amounting to more than 20 ETH will be automatically refunded.</li>
-                <li><span><b>You MUST complete KYC registration before participating.</b></span> Ethereum sent from unregistered wallet addresses will be refunded.</li>
-                <li><span><b>DO NOT send cryptocurrencies other than Ethereum.</b></span></li>
+                <li><span><b>DO NOT send <span class="currency_long">Ethereum</span> from your cryptocurrency exchange wallet.</b></span> There is no way for us to refund transactions made from your cryptocurrency exchange wallet.</li>
+                <li><span><b>CHECK that you have correctly copied the Mossland’s <span class="currency_long">Ethereum</span> wallet address.</b></span> Make sure that malware has not altered the wallet address in the process of copying.</li>
+                <li><span><b>Minimum amount of participation is <span class="currency_min">0.1</span> <span class="currency_short">ETH</span> while maximum amount is <span class="currency_max">20</span> <span class="currency_short">ETH</span>.</b></span> Your total participation amount should not exceed <span class="currency_max">20</span>&nbsp;<span class="currency_short">ETH</span>, Pre-ICO and Main ICO combined. <span class="currency_long">Ethereum</span> amounting to more than <span class="currency_max">20</span>&nbsp;<span class="currency_short">ETH</span> will be automatically refunded.</li>
+                <li><span><b>You MUST complete KYC registration before participating.</b></span> <span class="currency_long">Ethereum</span> sent from unregistered wallet addresses will be refunded.</li>
             </ol>     
             <ol type="2" class="purse__rules" style="margin-top: 40px; font-family: 'Source Sans Pro', sans-serif; font-weight: 500;">        
-                <li><span><b>이더리움을 거래소 지갑에서 보내면 절대 안됩니다.</b></span> 다시 한번 강조드리지만, 이 경우 저희가 이더리움을 환불해드릴 방법이 없습니다.</li>
-                <li><span><b>전송하기에 앞서 이더리움 지갑 주소가 제대로 복사되었는지 한번 더 확인해주세요.</b></span> 맬웨어 공격에 의해 주소를 복사할 때 다른 주소로 바뀌었을 수도 있습니다.</li>
-                <li><span><b>메인 ICO는 최소 0.1 ETH에서 20 ETH까지 보내실 수 있습니다.</b></span> 단, Pre-ICO 와 메인 ICO를 합쳐 20 ETH 이상이 되지 않게 보내야 하며, 이를 준수하지 않았을 경우 메인 ICO 물량은 자동으로 환불 처리됩니다.</li>
-                <li><span><b>KYC를 먼저 등록하고 보내셔야 합니다. KYC를 등록하지 않고 이더리움을 보내는 경우 환불 처리됩니다.</b></span></li>
-                <li><span><b>이더리움 이외의 암호화폐를 전송하시면 안 됩니다.</b></span></li>
+                <li><span><b><span class="currency_long_kor">이더리움</span>을 거래소 지갑에서 보내면 절대 안됩니다.</b></span> 다시 한번 강조드리지만, 이 경우 저희가 <span class="currency_long_kor">이더리움</span>을 환불해드릴 방법이 없습니다.</li>
+                <li><span><b>전송하기에 앞서 <span class="currency_long_kor">이더리움</span> 지갑 주소가 제대로 복사되었는지 한번 더 확인해주세요.</b></span> 맬웨어 공격에 의해 주소를 복사할 때 다른 주소로 바뀌었을 수도 있습니다.</li>
+                <li><span><b>메인 ICO는 최소 <span class="currency_min">0.1</span>&nbsp;<span class="currency_short">ETH</span>에서 <span class="currency_max">20</span>&nbsp;<span class="currency_short">ETH</span>까지 보내실 수 있습니다.</b></span> 단, Pre-ICO 와 메인 ICO를 합쳐 <span class="currency_max">20</span>&nbsp;<span class="currency_short">ETH</span> 이상이 되지 않게 보내야 하며, 이를 준수하지 않았을 경우 메인 ICO 물량은 자동으로 환불 처리됩니다.</li>
+                <li><span><b>KYC를 먼저 등록하고 보내셔야 합니다. KYC를 등록하지 않고 <span class="currency_long_kor">이더리움</span>을 보내는 경우 환불 처리됩니다.</b></span></li>
             </ol>
         </div>
     </main>

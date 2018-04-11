@@ -9,7 +9,8 @@ window.onload = function(){
        document.getElementById("copy-wallet").classList.add("hidden");
     }
     calculator = ethCalc;
-    document.getElementById("eth_price_dollar").textContent = ether_usd;
+    if(typeof(ether_usd) != 'undefined')
+        document.getElementById("eth_price_dollar").textContent = ether_usd;
 }
 
 function onChangeCheckbox(this_){
