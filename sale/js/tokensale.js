@@ -76,7 +76,6 @@ function onSelectCurrency(currency){
     if(sendVal.length != 0 && sendVal)
     {
         calculator();
-        console.log("asgdgsdagsd")
     }
         
 }
