@@ -767,7 +767,7 @@ var moss = (function(){
             });
         }
 
-        if( scrollTop > 600) {
+        if( scrollTop > 200) {
             $(".main-header").addClass('active');
 
         } else {
@@ -923,7 +923,7 @@ var moss_lite = function(){
             $('#notice').removeClass('active');
             $(".main-header").removeClass('active');
         }
-        
+
 
         // if(scrollTop > icopoint) {
         //     icofire = true;
