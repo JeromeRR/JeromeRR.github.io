@@ -927,8 +927,14 @@ ul.team-primary .team-img {
 
 .team-history > li{
     margin-bottom: 7px;
-    line-height: 1.1em;
     text-align: center;
+    font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 22px;;
+  letter-spacing: normal;
+  color: #282828;
 }
 
 .team-primary-con {
@@ -937,7 +943,7 @@ ul.team-primary .team-img {
 }
 
 .advisors .team-primary-con {
-    height: 230px;
+    height: 310px;
     overflow: hidden;
 }
 
