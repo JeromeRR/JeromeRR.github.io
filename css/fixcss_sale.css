@@ -197,6 +197,8 @@
 
 .main-header.active .logo_png{
   display: block;
+  visibility: visible;
+  opacity: 1;
 }
 
 .main-header.active .header__menu{
@@ -1013,7 +1015,10 @@
 }
 
 .logo_png{
-  display:none;
+
+  visibility:hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 1s linear;
 }
 
 @media only screen and (min-width: 1060px) {
