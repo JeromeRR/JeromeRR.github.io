@@ -16,7 +16,7 @@ var buyTokenButtonDate = new Date("March 21, 2018 12:00");
 
 // PRE ICO 끝 날짜
 // 이벤트 없음
-var preicoEndDate = new Date("April 17, 2018");
+var preicoEndDate = new Date("April 18, 2018");
 
 var newNotice = false;
 

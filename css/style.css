@@ -3,6 +3,42 @@ html {
     /*content-zooming: none;*/
 }
 
+@font-face {
+    font-family: 'Spoqa Han Sans';
+    font-weight: 700;
+    src: local('Spoqa Han Sans Bold'),
+    url('https://cdn.rawgit.com/spoqa/spoqa-han-sans/01ff0283/Subset/SpoqaHanSans/SpoqaHanSansBold.woff2') format('woff2'),
+    url('https://cdn.rawgit.com/spoqa/spoqa-han-sans/01ff0283/Subset/SpoqaHanSans/SpoqaHanSansBold.woff') format('woff'),
+    url('https://cdn.rawgit.com/spoqa/spoqa-han-sans/01ff0283/Subset/SpoqaHanSans/SpoqaHanSansBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Spoqa Han Sans';
+    font-weight: 400;
+    src: local('Spoqa Han Sans Regular'),
+    url('https://cdn.rawgit.com/spoqa/spoqa-han-sans/01ff0283/Subset/SpoqaHanSans/SpoqaHanSansRegular.woff2') format('woff2'),
+    url('https://cdn.rawgit.com/spoqa/spoqa-han-sans/01ff0283/Subset/SpoqaHanSans/SpoqaHanSansRegular.woff') format('woff'),
+    url('https://cdn.rawgit.com/spoqa/spoqa-han-sans/01ff0283/Subset/SpoqaHanSans/SpoqaHanSansRegular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Spoqa Han Sans';
+    font-weight: 300;
+    src: local('Spoqa Han Sans Light'),
+    url('https://cdn.rawgit.com/spoqa/spoqa-han-sans/01ff0283/Subset/SpoqaHanSans/SpoqaHanSansLight.woff2') format('woff2'),
+    url('https://cdn.rawgit.com/spoqa/spoqa-han-sans/01ff0283/Subset/SpoqaHanSans/SpoqaHanSansLight.woff') format('woff'),
+    url('https://cdn.rawgit.com/spoqa/spoqa-han-sans/01ff0283/Subset/SpoqaHanSans/SpoqaHanSansLight.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Spoqa Han Sans';
+    font-weight: 100;
+    src: local('Spoqa Han Sans Thin'),
+    url('https://cdn.rawgit.com/spoqa/spoqa-han-sans/01ff0283/Subset/SpoqaHanSans/SpoqaHanSansThin.woff2') format('woff2'),
+    url('https://cdn.rawgit.com/spoqa/spoqa-han-sans/01ff0283/Subset/SpoqaHanSans/SpoqaHanSansThin.woff') format('woff'),
+    url('https://cdn.rawgit.com/spoqa/spoqa-han-sans/01ff0283/Subset/SpoqaHanSans/SpoqaHanSansThin.ttf') format('truetype');
+}
+
 body {
     /* Roboto weight
     * thin 100
@@ -12,7 +48,7 @@ body {
     * bold 700
     * black 900
     */
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Spoqa Han Sans','Noto Sans', sans-serif;
     font-size: 16px;
 }
 
@@ -1528,6 +1564,7 @@ ul.press-primary > li a:hover .pressitem-desc{
 .header-social {
     float: right;
     margin-left: 20px;
+
 }
 
 .header-social a:hover {
@@ -2146,21 +2183,21 @@ body {
             -ms-flex-align: center;
                 align-items: center;
       }
-    
+
       .potential-item {
         width: 50%;
         min-width: 280px;
       }
-    
+
       .potential-item + .potential-item {
         padding-left: 0;
         padding-top: 15px;
       }
-    
+
       .potential__title {
         margin-bottom: 30px;
       }
-    
+
       .potential {
         padding: 3.75em 0;
       }
@@ -2174,7 +2211,7 @@ body {
         height: 50px;
         line-height: 50px;
     }
-    
+
     .btn1_s + .btn1_s {
         margin-left: 20px;
         margin-top: 0;

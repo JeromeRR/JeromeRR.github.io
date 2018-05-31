@@ -107,11 +107,6 @@
         padding-left: 0;
     }
 
-    .whitepaper-subtitle {
-        color: #666;
-        font-weight: 500;
-    }
-
     .whitepaper-download {
         float: none;
         width: 100%;
@@ -259,7 +254,7 @@
 
     .btn1 {
         line-height: 60px;
-        padding: 0 60px;
+        padding: 0 50px;
         height: 60px;
         font-size: 18px;
     }
@@ -275,7 +270,7 @@
         line-height: 40px;
         font-size: 1em;
     }
-    
+
     .features-item-odd .features-con {
         padding-right: 3%;
     }
@@ -307,8 +302,8 @@
     }
 
     .roadmap-ob-1 {
-        height: 24px;
-        top: 16px;
+        height: 3px;
+        top: 23px;
         left: 30px;
     }
 
@@ -594,15 +589,15 @@
     }
 
     .roadmap-ob-1 {
-        width: 30px;
+        width: 3px;
         height: 1%;
-        left: 11px;
+        left: 23px;
         -webkit-transition: height 0.8s ease-in;
         -o-transition: height 0.8s ease-in;
         transition: height 0.8s ease-in;
     }
     .active .roadmap-ob-1{
-        width: 30px;
+        width: 3px;
         height: 85%;
     }
     .roadmapitem-title {

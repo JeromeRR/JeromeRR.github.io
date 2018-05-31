@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Mossland ICO</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=320, initial-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+
+    <meta property="og:image" content="https://moss.land/img/ogimage.jpg" />
+    <meta property="og:image:secure_url" content="https://moss.land/img/ogimage.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1000" />
+    <meta property="og:image:height" content="597" />
+    <meta property="og:image:alt" content="MOSSLAND - Location Based AR Property Game." />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" media="all" href="css/cryptocoins.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+    <link rel="mask-icon" href="./img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" type="image/x-icon" href="./img/favicon/favicon.ico"/>
+    <link rel="stylesheet" media="all" href="css/app.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700" rel="stylesheet">  
+      <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+      <script src="js/tokensale.js"></script>
+      <script src="js/sendhere.js"></script>
+  </head>
+
+  <body>
+    <!--content-->
+    <header class="header-admin">
+      <div class="header-admin__main"><button class="header-admin__menu-btn js-menu-btn"><span></span><span></span><span></span><span></span></button>
+        <div class="header-admin__col header-admin__col_left"><a class="header-admin__logo" href="https://moss.land/"><img src="img/logo_dark.svg"></a></div>
+       <ul class="header-admin__menu js-menu">
+          <li class="header-admin__menu-item"><a href="https://moss.land/index.html#potential">About</a></li>
+          <li class="header-admin__menu-item"><a href="https://moss.land/index.html#whitepaper">White Paper</a></li>
+          <li class="header-admin__menu-item"><a href="https://moss.land/index.html#roadmap">Roadmap</a></li>
+          <li class="header-admin__menu-item"><a href="https://moss.land/index.html#tokensale">ICO</a></li>
+          <li class="header-admin__menu-item"><a href="https://moss.land/index.html#team">Team</a></li>
+          <li class="header-admin__menu-item"><a href="https://moss.land/index.html#news">News</a></li>
+        </ul>
+        <div class="header-admin__col header-admin__col_right">
+          <ul class="socials">
+            <li class="socials__item"><a href="https://t.me/mossland" style="background-image: url(img/tg-kor.png);"></a></li>
+            <li class="socials__item"><a href="https://t.me/mossland_eng" style="background-image: url(img/tg-eng.png);"></a></li>
+            <li class="socials__item"><a href="https://t.me/mossland_rus" style="background-image: url(img/tg-ru.png);"></a></li>
+            <li class="socials__item"><a href="https://open.kakao.com/o/gtzODLH" style="background-image: url(img/kakao.png);"></a></li>
+            <li class="socials__item"><a href="https://steemit.com/@mossland" style="background-image: url(img/steemit.png);"></a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- <div class="header-admin__optional-content">
+        <div class="login-btns"><button class="login-btn">Sign in</button><button class="login-btn">Sign up</button></div>
+      </div> -->
+      <a class="notice" href="https://steemit.com/@mossland">
+        <p class="notice__inner"><span>Important Notice! </span>Main-ICO plan has been changed. For more details, <span class="underlined">click here<svg class="icon icon-arrow-right"><use xlink:href="img/sprite.svg#icon-arrow-right"></use></svg></span></p>
+      </a>
+    </header>
+    <main style="min-width: 300px;">
+        <div class="page-wrap purse__container">
+          <h1>Join the ICO</h1>
+          <div class="eth__purse">
+            <div id="accordion">
+              <div class="card">
+                <div class="card-header" id="ether_addr_collapse">
+                  <h5 class="mb-0">
+                    <button id="qtum_btn" class="btn btn-link collapsed" data-toggle="collapse" data-target="#qtum_addr" aria-expanded="false" aria-controls="qtum_addr"  onclick="selectCurrency_sendhere('Qtum')">
+                        <h2 class="strong" style="font-size: 2em; color: #58c8da;"><i class="cc QTUM" title="QTUM"></i>&nbsp;Send QTUM here</h2>
+                    </button>
+                  </h5>
+                </div>
+                <div id="qtum_addr" class="collapse" aria-labelledby="qtum_addr_collapse" data-parent="#accordion">
+                  <div class="card-body" style="font-size: 2em;">
+                    <span>QiMFK3qJYw5tgRySCGPFJRWB4oYXbTTtsz</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="qtum_addr_collapse">
+                    <h5 class="mb-0">
+                      <button id="ether_btn" class="btn btn-link" data-toggle="collapse" data-target="#ether_addr" aria-expanded="false" aria-controls="ether_addr" onclick="selectCurrency_sendhere('Ethereum')">
+                          <h2 class="strong" style="font-size: 2em; color: #58c8da;"><i class="fab fa-ethereum"></i>&nbsp;Send ETH here</h2>
+                      </button>
+                    </h5>
+                </div>
+                <div id="ether_addr" class="collapse" aria-labelledby="ether_addr_collapse" data-parent="#accordion">
+                  <div class="card-body" style="font-size: 2em;">
+                      <span>0x8047560624ef10ccfec60ff91b5165e1114db2fd</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="addr_section" class="hidden">
+              <h2 class="strong" style="font-size: 1em; color: #58c8da;">Send ETH here:</h2>
+              <div class="etn__purse__number" style="border: none; border-radius: 0px; border-bottom: 2px solid #58c8da; background-color:#58c8da; margin-top: 0; "><input id="wallet-address" value="0x8047560624ef10ccfec60ff91b5165e1114db2fd" style="padding: 1em;" readonly></div>
+                <div style="text-align: center;">
+                    <button id="copy-wallet" onclick="copyToClipBoard()" class="btn-copy">Copy to Clipboard</button>
+              </div>
+            </div>
+          </div>
+            <ol type="1" class="purse__rules" style="margin-top: 20px;">
+                <li><span><b>DO NOT send <span class="currency_long">Ethereum</span> from your cryptocurrency exchange wallet.</b></span> There is no way for us to refund transactions made from your cryptocurrency exchange wallet.</li>
+                <li><span><b>CHECK that you have correctly copied the Mossland’s <span class="currency_long">Ethereum</span> wallet address.</b></span> Make sure that malware has not altered the wallet address in the process of copying.</li>
+                <li><span><b>Minimum amount of participation is <span class="currency_min">0.1</span> <span class="currency_short">ETH</span> while maximum amount is <span class="currency_max">20</span> <span class="currency_short">ETH</span>.</b></span> Your total participation amount should not exceed <span class="currency_max">20</span>&nbsp;<span class="currency_short">ETH</span>, Pre-ICO and Main ICO combined. <span class="currency_long">Ethereum</span> amounting to more than <span class="currency_max">20</span>&nbsp;<span class="currency_short">ETH</span> will be automatically refunded.</li>
+                <li><span><b>You MUST complete KYC registration before participating.</b></span> <span class="currency_long">Ethereum</span> sent from unregistered wallet addresses will be refunded.</li>
+            </ol>     
+            <ol type="2" class="purse__rules" style="margin-top: 40px; font-family: 'Source Sans Pro', sans-serif; font-weight: 500;">        
+                <li><span><b><span class="currency_long_kor">이더리움</span>을 거래소 지갑에서 보내면 절대 안됩니다.</b></span> 다시 한번 강조드리지만, 이 경우 저희가 <span class="currency_long_kor">이더리움</span>을 환불해드릴 방법이 없습니다.</li>
+                <li><span><b>전송하기에 앞서 <span class="currency_long_kor">이더리움</span> 지갑 주소가 제대로 복사되었는지 한번 더 확인해주세요.</b></span> 맬웨어 공격에 의해 주소를 복사할 때 다른 주소로 바뀌었을 수도 있습니다.</li>
+                <li><span><b>메인 ICO는 최소 <span class="currency_min">0.1</span>&nbsp;<span class="currency_short">ETH</span>에서 <span class="currency_max">20</span>&nbsp;<span class="currency_short">ETH</span>까지 보내실 수 있습니다.</b></span> 단, Pre-ICO 와 메인 ICO를 합쳐 <span class="currency_max">20</span>&nbsp;<span class="currency_short">ETH</span> 이상이 되지 않게 보내야 하며, 이를 준수하지 않았을 경우 메인 ICO 물량은 자동으로 환불 처리됩니다.</li>
+                <li><span><b>KYC를 먼저 등록하고 보내셔야 합니다. KYC를 등록하지 않고 <span class="currency_long_kor">이더리움</span>을 보내는 경우 환불 처리됩니다.</b></span></li>
+            </ol>
+        </div>
+    </main>
+    <!--LOAD scripts-->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+    <script type="text/javascript" src="https://scrollmagic.io/scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
+    <script src="js/app.js"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+  </body>
+
+</html>
