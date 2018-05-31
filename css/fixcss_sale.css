@@ -65,36 +65,6 @@
   margin-top: 12px;
 }
 
-@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
-@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-jp.css);
-
-@font-face {
-  font-family: "Roboto";
-  src: url("./fonts/Roboto-Thin.woff2") format("woff2"), url("./fonts/Roboto-Thin.woff") format("woff"), url("./fonts/Roboto-Thin.ttf") format("trutype");
-  font-weight: 100;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Roboto";
-  src: url("./fonts/Roboto-Light.woff2") format("woff2"), url("./fonts/Roboto-Light.woff") format("woff"), url("./fonts/Roboto-Light.ttf") format("trutype");
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Roboto";
-  src: url("./fonts/Roboto-Regular.woff2") format("woff2"), url("./fonts/Roboto-Regular.woff") format("woff"), url("./fonts/Roboto-Regular.ttf") format("trutype");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Roboto";
-  src: url("./fonts/Roboto-Black.woff2") format("woff2"), url("./fonts/Roboto-Black.woff") format("woff"), url("./fonts/Roboto-Black.ttf") format("trutype");
-  font-weight: 900;
-  font-style: normal;
-}
 
 /* .section-home>* {
   margin: 0;
