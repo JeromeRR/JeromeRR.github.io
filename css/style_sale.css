@@ -114,6 +114,7 @@ a.button {
   padding: 20px 30px;
     color: #2bd8ca;
     box-shadow: #2bd8ca 0 0px 0px 2px inset;
+    font-weight: 400;
 }
 
 a.button:hover {
@@ -2331,8 +2332,7 @@ body {
 }
 
 .boxes {
-
-
+  margin-top: 93px;
   padding: 0;
   margin:auto;
 }

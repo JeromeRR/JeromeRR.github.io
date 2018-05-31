@@ -9,6 +9,10 @@
   width: 100%;
 }
 
+.features-boxes{
+  padding-top:70px;
+}
+
 .split {
 
 }
@@ -41,10 +45,11 @@
   font-weight: 300;
   font-style: normal;
   font-stretch: normal;
-  line-height: normal;
+  line-height: 70px;;
   letter-spacing: normal;
   text-align: left;
   color: #282828;
+
 
 }
 
@@ -256,7 +261,8 @@
   /*  text-transform: uppercase;*/
   color: #fff;
   font-weight: 300;
-  padding-top: 8%;
+  padding-top: 10px;
+  line-height: normal;
 }
 
 .section-home .hero__title br {
