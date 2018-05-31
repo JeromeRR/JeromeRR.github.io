@@ -136,7 +136,7 @@ a.button:hover {
 
 .ico {
     padding: 80px 0;
-    background: #ebebeb url('../img/bg_ico.png') center bottom repeat-x;
+    background: #ffffff url('../img/bg_ico.png') center bottom repeat-x;
     background-size: 100% auto;
 }
 
@@ -367,10 +367,15 @@ ul.features-list > li:last-child{
 }
 
 .whitepaper-subtitle {
-    font-size: 1.25em;
-    padding-top: 40px;
-    color: #383838;
-    font-weight: 300;
+  font-size: 16px;
+font-weight: 300;
+font-style: normal;
+font-stretch: normal;
+line-height: normal;
+letter-spacing: normal;
+text-align: left;
+color: #000000;
+margin-top: 15px;
 }
 
 
@@ -484,12 +489,22 @@ ul.features-list > li:last-child{
 }
 
 .stitle {
-    font-size: 2.55em;
-    font-weight: 300;
+  font-size: 48px;
+font-weight: 300;
+font-style: normal;
+font-stretch: normal;
+line-height: normal;
+letter-spacing: normal;
+text-align: left;
+color: #000000;
+
+}
+
+.press-title{
+    margin-top:113px;
 }
 
 .roadmap-body{
-    height: 590px;
     width: 100%;
     background: url('../img/worldmapv2.png') center center no-repeat;
     background-size: 80%;
@@ -521,7 +536,7 @@ ul.features-list > li:last-child{
 .roadmap-list-wrap {
     overflow: hidden;
     width: 95%;
-    margin: 170px auto 0;
+    margin: 0px auto 0;
     position: relative;
 }
 
@@ -788,12 +803,12 @@ ul.features-list > li:last-child{
 .team-title,
 .investors-title,
 .roadmap-title {
-    text-align: center;
+    text-align: left;
     margin-bottom: 50px;
 }
 
 .advisors-title {
-    text-align: center;
+    text-align: left;
 
     padding-bottom: 50px;
 }
@@ -822,7 +837,7 @@ ul.features-list > li:last-child{
 }
 
 .news-square{
-  padding-top: 50px;
+  padding-top: 75px;
   padding-bottom: 50px;
 }
 
@@ -1332,8 +1347,7 @@ address {
 
 .press {
     background: #ffffff;
-    padding-top: 50px;
-    padding-bottom: 0px;
+    padding: 0px;
 }
 
 
@@ -1408,9 +1422,11 @@ ul.press-primary > li a:hover .pressitem-desc{
 .press-secondary {
     background: #fff;
     overflow: hidden;
-    padding: 25px;
-    max-width: 1200px;
     margin: auto;
+    padding-bottom: 60px;
+    padding-top: 78px;
+    max-width: 903px;
+
 }
 
 .press-secondary > a {
@@ -1438,10 +1454,15 @@ ul.press-primary > li a:hover .pressitem-desc{
 }
 
 .press-subtitle {
-    line-height: 1.5em;
-    color: #999;
-    font-weight: 300;
-    margin-top: 25px;
+  font-size: 16px;
+font-weight: 300;
+font-style: normal;
+font-stretch: normal;
+line-height: normal;
+letter-spacing: normal;
+text-align: left;
+color: #000000;
+margin-top: 15px;
 }
 
 .media-title{
@@ -1735,7 +1756,7 @@ ul.press-primary > li a:hover .pressitem-desc{
    display: block;
    position: fixed; /* Fixed/sticky position */
    top: 45px; /* Place the button at the bottom of the page */
-   right: 400px; /* Place the button 30px from the right */
+   right: 150px; /* Place the button 30px from the right */
    z-index: 99; /* Make sure it does not overlap */
 
 }
@@ -1745,6 +1766,7 @@ ul.press-primary > li a:hover .pressitem-desc{
 }
 
 .header-social > a {
+
     font-size: 30px;
     line-height: 40px;
     color: #fff;
@@ -2247,7 +2269,8 @@ body {
 }
 
 .potential {
-    padding: 8.75em 0;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .potential-wrap{
@@ -2297,7 +2320,7 @@ body {
   border: solid 1px #d7d7d7;
   margin-left: 14px;
   margin-right:14px;
-  height: 500px;
+  height: 449px;
   margin-top:25px;
 }
 
@@ -2475,7 +2498,11 @@ body {
     text-align: right;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 900px) {
+    .space{
+      height:500px;
+    }
+
     .btn1.btn1_s {
         width: 250px;
         font-size: 16px;

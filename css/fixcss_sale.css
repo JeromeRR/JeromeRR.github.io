@@ -27,6 +27,34 @@
     text-align:left;
 }
 
+.roadmap{
+  padding: 122px 0 0 0;
+}
+
+#virtualize{
+  font-size: 48px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #282828;
+
+}
+
+#virtualizep{
+  font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #282828;
+  margin-top: 12px;
+}
+
 @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
 @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-jp.css);
 
@@ -160,7 +188,13 @@
 }
 
 .main-header.active .header__menu{
-  padding-left: 20px;
+  padding-left: 30px;
+
+}
+
+.main-header.active .header__menu-item{
+  padding-left: 30px;
+
 }
 
 .main-header.active .header__add-btn {
@@ -235,8 +269,9 @@
   margin-top: 20px
 }
 
-.section-home .hero__logo {
+.section-home .hero__logo img{
   max-width: 500px;
+  width:218px;
   margin: 20px auto;
 }
 
@@ -1195,7 +1230,11 @@
 }
 @media only screen and (max-width: 1200px) and (min-width: 1060px) {
   .header__menu {
-    padding-left: 1px;
+
+  }
+
+  .header-social{
+    right:50px;
   }
 }
 
