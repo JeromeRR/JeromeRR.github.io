@@ -31,6 +31,11 @@
   padding: 122px 0 0 0;
 }
 
+.team{
+  margin-top: 122px;
+  padding: 0;
+}
+
 #virtualize{
   font-size: 48px;
   font-weight: 300;
