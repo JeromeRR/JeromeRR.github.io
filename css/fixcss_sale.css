@@ -1310,6 +1310,10 @@
     font-size: 1em;
     color: #333;
   }
+
+  .section-home .hero__video-button{
+    bottom: 5px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -1323,8 +1327,8 @@
     width: 74px;
     height: 74px;
   }*/
-.hero__video-button{
-  display: none;
+.section-home .hero__video-button{
+  bottom: 5px;
 }
 
   .section-home .hero__button {
