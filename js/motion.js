@@ -767,7 +767,7 @@ var moss = (function(){
             });
         }
 
-        if( scrollTop > 200) {
+        if( scrollTop > 250) {
             $(".main-header").addClass('active');
 
         } else {
@@ -781,7 +781,7 @@ var moss = (function(){
             // 메인모션을 정지한다
             motionOff = true;
             mainMotionfire();
-            if( scrollTop > $('#tail').offset().top-500){
+            if( scrollTop > $('#tail').offset().top-250){
                 $("#event").removeClass('active');
             } else {
                 $("#event").addClass('active');

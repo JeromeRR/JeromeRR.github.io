@@ -505,6 +505,11 @@ color: #000000;
     margin-top:113px;
 }
 
+.pr{
+    margin-top:50px;
+    text-align: left;
+}
+
 .roadmap-body{
     width: 100%;
     background: url('../img/worldmapv2.png') center center no-repeat;
@@ -816,7 +821,7 @@ color: #000000;
 
 .partners {
     /*border-top: 1px solid #ccc;*/
-    padding: 7.5em 0;
+    padding: 1em 0;
 }
 
 .partners-con img{
@@ -1426,6 +1431,32 @@ ul.press-primary > li a:hover .pressitem-desc{
     text-align: center;
     padding-top: 30px;
 }
+
+.press-secondary-2 {
+    background: #fff;
+    overflow: hidden;
+    margin: auto;
+    padding-bottom: 60px;
+    padding-top: 78px;
+    max-width: 903px;
+
+}
+.press-secondary-2  img{
+  width:200px;
+}
+
+.press-secondary-2 > a {
+    float: left;
+    width: 16.66%;
+    padding: 10px;
+}
+
+.part{
+  padding-left:0px;
+  padding-right:0px;
+  text-align:center;
+}
+
 .press-secondary {
     background: #fff;
     overflow: hidden;
@@ -1435,6 +1466,7 @@ ul.press-primary > li a:hover .pressitem-desc{
     max-width: 903px;
 
 }
+
 
 .press-secondary > a {
     float: left;

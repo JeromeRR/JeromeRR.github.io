@@ -4,6 +4,67 @@
   fill: initial;
 }
 
+
+/* MENU MOBILE */
+
+#burger{
+  position: fixed;
+  right: 0;
+  top: 0;
+  color: white;
+  background: linear-gradient(45deg, #00bcd7 5%, #2bd8ca );
+  font-size: 32px;
+  padding: 16px 16px 32px 32px;
+  border-radius: 0% 0% 0% 100%;
+  transition: 1s;
+  cursor: pointer;
+}
+
+#quit{
+  position: fixed;
+  right: 0;
+  top: 0;
+  color: white;
+  font-size: 32px;
+  padding: 16px;
+  display: none;
+  cursor: pointer;
+}
+
+#links{
+  display: none;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  padding: 25vh 0;
+  justify-content: space-around;
+  z-index: 9998;
+
+
+}
+
+#links a{
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-size: 1.5em;
+  font-family: 'Spoqa Han Sans';
+  z-index: 10;
+  margin-top: 25px;
+
+}
+
+#social-icon-mobile {
+  text-align: center;
+  z-index: 9999;
+  font-size: 2em;
+  margin-top: 25px;
+}
+
+#social-icon-mobile a{
+  padding: 0 25px 0 25px;
+}
+
 /* Split the screen in half */
 .splita{
   width: 100%;
@@ -11,6 +72,10 @@
 
 .features-boxes{
   padding-top:70px;
+}
+
+#menu-mobile{
+  display: none;
 }
 
 .split {
@@ -1283,6 +1348,28 @@
   #notice {
     top: 54px;
   }
+
+  .header__menu{
+    display:none;
+  }
+
+  #menu-mobile{
+    display: inline;
+  }
+
+  .main-header.active{
+    background-color: rgba(255, 255, 255, 0);
+  }
+
+  .main-header.active .logo-header{
+    display:none;
+  }
+
+  .logo-header{
+    top: 10px;
+    left: 30px;
+  }
+
   .main-header.active .header__add-btn {
     display: none!important;
   }

@@ -39,6 +39,8 @@
     <!-- <link rel="stylesheet" type="text/css" href="css/motion.css?v=12" /> -->
     <link rel="stylesheet" type="text/css" href="css/responsive.css?v=12" />
     <link rel="stylesheet" type="text/css" href="css/fixcss_sale.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 
 
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
@@ -63,6 +65,7 @@
 
     <script type="text/javascript" src="js/vendor/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/vendor/jquery.easing.compatibility.js"></script>
+    <script type="text/javascript" src="js/vendor/web3.min.js?v=9"></script>
 
 
 
@@ -82,17 +85,29 @@
     <section class="wrapper" id="home">
         <header class="main-header" id="header">
             <div class="con clearfix">
-                 <!-- <div >
-                    <a href="https://moss.land">
-                        <img  width="150px;" src="img/logo_header_color.png" alt="mossland">
-                    </a>
-                </div> -->
-                <button class=" header__menu-btn js-menu-btn">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
+                 <div id="menu-mobile">
+                  <i id="burger" class="material-icons" onclick="burger()">menu</i>
+                  <i id="quit" class="material-icons" onclick="quit()">clear</i>
+                  <div id="links">
+                    <a href="#"><img src="img/SVG/logomain.svg" width="150px" alt="" role="presentation" /></a>
+                    <a href="#potential" onclick="quit()">About</a>
+                    <a href="#whitepaper" onclick="quit()">White Paper</a>
+                    <a href="#roadmap" onclick="quit()">Roadmap</a>
+                    <a href="#team" onclick="quit()">Team</a>
+                    <a href="#news" onclick="quit()">News</a>
+                    <a href="https://dashboard.moss.land/" target="_blank">Dashboard</a>
+                    <div id="social-icon-mobile">
+                      <a href="https://t.me/mossland_eng" target="_blank">
+                          <span class="icon-telegram-eng"></span>
+                      </a>
+                      <a  href="https://open.kakao.com/o/g7MXoeN" target="_blank">
+                          <span class="icon-kakaotalk"></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+
                 <div class="header-social">
                     <a href="https://t.me/mossland_eng" target="_blank">
                         <span class="icon-telegram-eng"></span>
@@ -102,14 +117,11 @@
                     </a>
                 </div>
                 <div class="logo-header">
-                  <a href="https://moss.land">
+
                       <img class="logo_png w3-animate-opacity" width="198px;" src="img/logotop.svg" alt="mossland">
-                  </a>
+
                 </div>
                 <ul class="header__menu js-menu">
-
-
-
                     <li class="header__menu-item">
                         <a href="#potential">ABOUT</a>
                     </li>
@@ -131,6 +143,7 @@
                     </li>
                 </ul>
             </div>
+
         </header>
 
         <section class="section-home">
@@ -422,105 +435,6 @@
 </div>
             </section>
 
-            <!-- <section class="tokensale" id="tokensale">
-                <div class="con">
-
-                    <h1 class="tokensale-title stitle">Mossland ICO</h1>
-
-                    <div class="tokensale-part">
-                        <h2>Details</h2>
-                        <ul class="tokensale-details-list clearfix">
-                            <li>
-                                <h3 class="tokensale-details-title">Name</h3>
-                                <div class="tokensale-details-item">
-                                    Moss Coin
-                                </div>
-                            </li>
-                            <li>
-                                <h3 class="tokensale-details-title">Symbol</h3>
-                                <div class="tokensale-details-item">
-                                    MOC
-                                </div>
-                            </li>
-                            <li>
-                                <h3 class="tokensale-details-title">Platform</h3>
-                                <div class="tokensale-details-item">
-                                    Ethereum
-                                </div>
-                            </li>
-                            <li>
-                                <h3 class="tokensale-details-title">Total issue</h3>
-                                <div class="tokensale-details-item">
-                                    500,000,000 MOC
-                                </div>
-                            </li>
-                            <li>
-                                <h3 class="tokensale-details-title">Price</h3>
-                                <div class="tokensale-details-item">
-                                    1 MOC = 0.12 USD
-                                </div>
-                            </li>
-                        </ul>
-                        <p id="tokensale-notice">*The amount of MOC per 1 ETH will be changed by the market price of ETH. You can find more details on the white paper.</p>
-                    </div>
-
-                    <div class="tokensale-part">
-                        <h2>Main ICO benefit</h2>
-                        <table class="tokensale-plan">
-                            <colgroup>
-                                <col width="20%" />
-                                <col width="20%" />
-                                <col width="20%" />
-                                <col width="20%" />
-                                <col width="20%" />
-                            </colgroup>
-
-                            <thead>
-                                <tr>
-                                    <th class="thborder">
-                                        <div class="tokensale-plan-title">Schedule</div>
-                                    </th>
-                                    <th>
-                                        <div class="tokensale-plan-title">Week 1</div>
-                                        <span class="tokensale-subtext">3.21-3.27</span>
-                                    </th>
-                                    <th>
-                                        <div class="tokensale-plan-title">Week 2</div>
-                                        <span class="tokensale-subtext">3.28-4.3</span>
-                                    </th>
-                                    <th>
-                                        <div class="tokensale-plan-title">Week 3</div>
-                                        <span class="tokensale-subtext">4.4-4.10</span>
-                                    </th>
-                                    <th>
-                                        <div class="tokensale-plan-title">Week 4</div>
-                                        <span class="tokensale-subtext">4.11-4.17</span>
-                                    </th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th class="thborder">Benefit</th>
-                                    <td>15%</td>
-                                    <td>10%</td>
-                                    <td>5%</td>
-                                    <td>2.5%</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-
-                    <div class="tokensale-part">
-                        <h2>Distribution</h2>
-                        <div class="tokensale-distribution-chart">
-                            <img src="img/distribution_chart.png">
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </section> -->
 
             <section class="team" id="team">
 
@@ -697,97 +611,8 @@
                                 </ul>
                             </div>
                         </li>
-                        <!-- <li>
-                            <div class="team-img">
-                                <img src="img/face/hash.jpg" alt="Hash Hao">
-                                <a href="https://www.linkedin.com/in/hash-hao-853a2414b" title="Go to Linkedin" target="_blank">
-                                    <i class="icon-linkedin3"></i>
-                                </a>
-                            </div>
-                            <div class="team-primary-con">
-                                <h2 class="team-tit">Hash Hao</h2>
-                                <div class="team-sub">ICO Advisor</div>
-                                <ul class="team-history">
-                                    <li>Serial entrepreneur & Fintech expert</li>
-                                    <li>Co-founder and CMO of INK Labs Foundation</li>
-                                    <li>7 years experience in Fintech, AI-lending and blockchain</li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="team-img">
-                                <img src="img/face/dennis.jpg" alt="Dennis S. Lee face">
-                                <a href="https://www.linkedin.com/in/dennis1007/--" title="Go to Linkedin" target="_blank">
-                                    <i class="icon-linkedin3"></i>
-                                </a>
-                            </div>
-                            <div class="team-primary-con">
-                                <h2 class="team-tit">Dennis S. Lee</h2>
-                                <div class="team-sub">ICO Advisor</div>
-                                <ul class="team-history">
-                                    <li>Serial entrepreneur</li>
-                                    <li>Crypto evangelist</li>
-                                    <li>Ink Labs Foundation Business Developer</li>
-                                    <li>Managing Partner at FutureMoneyFund</li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="team-img">
-                                <img src="img/face/danishevsky.jpg" alt="Danishevsky face">
-                                <a href="https://www.linkedin.com/in/faeton/ " title="Go to Linkedin" target="_blank">
-                                    <i class="icon-linkedin3"></i>
-                                </a>
-                            </div>
-                            <div class="team-primary-con">
-                                <h2 class="team-tit">Ivan Danishevsky</h2>
-                                <div class="team-sub">E-Sports and Gaming Blockchain Advisor</div>
-                                <ul class="team-history">
-                                    <li>Head of Shoutcasting, Garena.com</li>
-                                    <li>CCO, Game Show TV</li>
-                                    <li>Founder, ESM.one - Blockchained Esports</li>
-                                    <li>Founder, ESC.watch - Esports Charts</li>
-                                </ul>
-                            </div>
-                        </li> -->
 
-                        <!--                </ul>
 
-                <h1 class="advisors-title stitle">Product Advisors</h1>
-                <ul class="team-list team-primary clearfix product product-view" id="product-advisor">-->
-                       <!-- <li>
-                            <div class="team-img">
-                                <img src="img/face/ilya.jpg" alt="Ilya Mikov face">
-                                <a href="https://www.linkedin.com/in/ilyamikov/" title="Go to Linkedin" target="_blank">
-                                    <i class="icon-linkedin3 dark"></i>
-                                </a>
-
-                            </div>
-                            <div class="team-primary-con">
-                                <h2 class="team-tit">Ilya Mikov</h2>
-                                <div class="team-sub">Cryptocurrency Gaming Advisor</div>
-                                <ul class="team-history">
-                                    <li>Co-Founder, Active Games</li>
-                                    <li>Founder, Mobile Active</li>
-                                    <li>Successfully raised an ICO round for its mobile MMORPG Lordmancer II.</li>
-                                </ul>
-                            </div>
-                        </li>
-                        <p class="readmore2"></p>
-                    </ul>
-                    <div class="expand2">
-                    <button type="button" id="viewmore2">
-                        View More
-                        <p><i class="arrow down"></i></p>
-                    </button>
-                </div>
-                </div>
-            </section>
-            <section class="advisors">
-                <div class="con">
-                    <h1 class="advisors-title stitle">Product Advisors</h1>
-                    <ul class="team-list team-primary clearfix product-limit advisor-view" id="product-advisor">
-                    -->
                         <li>
                             <div class="team-img">
                                 <img src="img/face/duheelee.jpg" alt="Duhee Lee face">
@@ -806,17 +631,20 @@
                         </li>
                         <li>
                             <div class="team-img">
-                                <img src="img/face/tkach.jpg" alt="Vitaly Tkach face">
-                                <a href="https://www.linkedin.com/in/vitaly-tkach-73054980/" title="Go to Linkedin" target="_blank">
+                                <img src="img/face/charles.jpg" alt="chrales face">
+                                <a href="https://www.linkedin.com/in/charles-rim-1258304" title="Go to Linkedin" target="_blank">
                                     <i class="icon-linkedin3"></i>
                                 </a>
                             </div>
                             <div class="team-primary-con">
-                                <h2 class="team-tit">Vitaly Tkach</h2>
-                                <div class="team-sub">Creative Advisor</div>
+                                <h2 class="team-tit">Charles Rim</h2>
+                                <div class="team-sub">M&A Advisor</div>
                                 <ul class="team-history">
-                                    <li>Creative Director, Wargaming</li>
-                                    <li>Former Creative Director, Leo Burnett Ukraine</li>
+                                    <li>General Partner, Access Ventures</li>
+                                    <li>MD, Tapjoy Korea & SE Asia</li>
+                                    <li>Venture Partner, DFJ Athena VC</li>
+                                    <li>Head of M&A, Google APAC </li>
+                                    <li>CSO, Yahoo Korea & SE Asia </li>
                                 </ul>
                             </div>
                         </li>
@@ -874,335 +702,52 @@
                                 </ul>
                             </div>
                         </li>
-                        <!-- <li>
-                            <div class="team-img">
-                                <img src="img/face/ollefri.jpg" alt="Yaroslav Kologryvov">
-                                <a href="https://www.linkedin.com/in/yaroslav-kologryvov-37221927/" title="Go to Linkedin" target="_blank">
-                                    <i class="icon-linkedin3"></i>
-                                </a>
-                            </div>
-                            <div class="team-primary-con">
-                                <h2 class="team-tit">Yaroslav Kologryvov</h2>
-                                <div class="team-sub">Eastern Europe/CIS Market Advisor</div>
-                                <ul class="team-history">
-                                    <li>Founder, Ukraine's Main University Startup Ecosystem Sikhorsky Challenge</li>
-                                    <li>Managing Partner, VANHEALTHING Cryptofund</li>
-                                    <li>Former CEO, Ukraine's Main Science Park</li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="team-img">
-                                <img src="img/face/baolong.jpg" alt="Baolong Zhang face">
-                                <a href="https://www.linkedin.com/in/baolong-zhang-51998b19/" title="Go to Linkedin" target="_blank">
-                                    <i class="icon-linkedin3"></i>
-                                </a>
 
-                            </div>
-                            <div class="team-primary-con">
-                                <h2 class="team-tit">Baolong Zhang</h2>
-                                <div class="team-sub">CG Advisor</div>
-                                <ul class="team-history">
-                                    <li>Director, Digitallotus</li>
-                                    <li>Lead Character Artist, Supermassive Games</li>
-                                    <li>Lead Environment Artist, Climax Action</li>
-                                    <li>Level Artist, Ubisoft</li>
-                                </ul>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="team-img">
-                                <img src="img/face/charles.jpg" alt="chrales face">
-                                <a href="https://www.linkedin.com/in/charles-rim-1258304" title="Go to Linkedin" target="_blank">
-                                    <i class="icon-linkedin3"></i>
-                                </a>
-                            </div>
-                            <div class="team-primary-con">
-                                <h2 class="team-tit">Charles Rim</h2>
-                                <div class="team-sub">M&A Advisor</div>
-                                <ul class="team-history">
-                                    <li>General Partner, Access Ventures</li>
-                                    <li>MD, Tapjoy Korea & SE Asia</li>
-                                    <li>Venture Partner, DFJ Athena VC</li>
-                                    <li>Head of M&A, Google APAC </li>
-                                    <li>CSO, Yahoo Korea & SE Asia </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="team-img">
-                                <img src="img/face/john.jpg" alt="John Chang face">
-                                <a href="https://www.linkedin.com/in/john-chang-93480664" title="Go to Linkedin" target="_blank">
-                                    <i class="icon-linkedin3"></i>
-                                </a>
-                            </div>
-                            <div class="team-primary-con">
-                                <h2 class="team-tit">John Chang</h2>
-                                <div class="team-sub">Investment Advisor</div>
-                                <ul class="team-history">
-                                    <li>General Partner, Access Ventures</li>
-                                    <li>APAC Head-Equities, Barclays Asia</li>
-                                    <li>CEO, Deutsche Bank Korea</li>
-                                    <li>Co-Founder, Access Communications</li>
-                                </ul>
-                            </div>
-                        </li>
-
-
-
-
-                        <li>
-                            <div class="team-img">
-                                <img src="img/face/youngwoon.jpg" alt="Youngwoon Cha face">
-                                <a href="https://www.linkedin.com/in/young-woon-cha-cv" title="Go to Linkedin" target="_blank">
-                                    <i class="icon-linkedin3"></i>
-                                </a>
-                            </div>
-                            <div class="team-primary-con">
-                                <h2 class="team-tit">Youngwoon Cha</h2>
-                                <div class="team-sub">Graphics & VR/AR Advisor</div>
-                                <ul class="team-history">
-                                    <li>CS PhD Candidate, UNC Graphics & Virtual Reality</li>
-                                    <li>Researcher, KIST</li>
-                                    <li>Research Engineer, LG Electronics</li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="team-img">
-                                <img src="img/face/johnskim.jpg" alt="John S. Kim face">
-                                <a href="https://www.linkedin.com/in/doshkim/" title="Go to Linkedin" target="_blank">
-                                    <i class="icon-linkedin3"></i>
-                                </a>
-                            </div>
-                            <div class="team-primary-con">
-                                <h2 class="team-tit">John S. Kim</h2>
-                                <div class="team-sub">Growth Advisor</div>
-                                <ul class="team-history">
-                                    <li>CEO & Founder, SendBird (Y Combinator)</li>
-                                    <li>Director, GREE</li>
-                                    <li>CEO & Founder, Paprika Lab</li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="team-img">
-                                <img src="img/face/timchae.jpg" alt="Tim Chae face">
-                                <a href=" https://www.linkedin.com/in/timchae" title="Go to Linkedin" target="_blank">
-                                    <i class="icon-linkedin3"></i>
-                                </a>
-                            </div>
-                            <div class="team-primary-con">
-                                <h2 class="team-tit">Tim Chae</h2>
-                                <div class="team-sub">Venture Capital Advisor</div>
-                                <ul class="team-history">
-                                    <li>General Partner, 500 Startups Korea</li>
-                                    <li>Partner, 500 Startups</li>
-                                    <li>Investor in 30+ seed stage tech companies in SF/SV and Korea</li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="team-img">
-                                <img src="img/face/changsu.jpg" alt="Changsu Lee face">
-                                <a href="https://www.linkedin.com/in/changsulee/" title="Go to Linkedin" target="_blank">
-                                    <i class="icon-linkedin3"></i>
-                                </a>
-
-                            </div>
-                            <div class="team-primary-con">
-                                <h2 class="team-tit">Changsu Lee</h2>
-                                <div class="team-sub">Artificial Intelligence Advisor</div>
-                                <ul class="team-history">
-                                    <li>Co-Founder & CEO, Allganize</li>
-                                    <li>SVP, Tapjoy</li>
-                                    <li>Co-Founder & CEO, 5Rocks</li>
-                                </ul>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="team-img">
-                                <img src="img/face/wonchai.jpg" alt="Wonchai Lee face">
-
-                            </div>
-                            <div class="team-primary-con">
-                                <h2 class="team-tit">Wonchai Lee</h2>
-                                <div class="team-sub">Monetization Advisor</div>
-                                <ul class="team-history">
-                                    <li>Sr. Football Trader, The Hong Kong Jockey Club</li>
-                                    <li>Sr. Odds Compiler, Singapore Pools</li>
-                                    <li>Oddsmaker, SportsToto</li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="team-img">
-                                <img src="img/face/widjaja.jpg" alt="Widjaja Tannady face">
-
-                            </div>
-                            <div class="team-primary-con">
-                                <h2 class="team-tit">Widjaja Tannady</h2>
-                                <div class="team-sub">Real Estate Advisor</div>
-                                <ul class="team-history">
-                                    <li>Founder, Mahanusa Capital</li>
-                                    <li>Director, PT Pacific Place Jakarta</li>
-                                </ul>
-                            </div>
-                        </li>
-                        <p class="readmore2"></p>
-                    </ul>
-                    <div class="expand2">
-                        <button type="button" id="viewmore2">
-                            View More
-                            <p>
-                                <i class="arrow down"></i>
-                            </p>
-                        </button> -->
                     </div>
                 </div>
             </section>
-            <!-- <section class="advisors">
-                <div class="con">
-                    <h1 class="advisors-title stitle">Team Members</h1>
 
-                    <ul class="team-list team-secondary clearfix">
-                        <li>
-                            <div class="team-img">
-                                <img src="img/face/byukryun.jpg" alt="Byukryun Choi face">
-                            </div>
-                            <div class="team-secondary-con">
-                                <h2 class="team-tit">Byucryun Choi</h2>
-                                <div class="team-sub">Lead Character Artist</div>
-                                <ul class="team-history">
-                                    <li>Lead Character Artist, NS Studio</li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="team-img">
-                                <img src="img/face/sangmin.jpg" alt="Sangmin Lee face">
-
-                            </div>
-                            <div class="team-secondary-con">
-                                <h2 class="team-tit">Sangmin Lee</h2>
-                                <div class="team-sub">Lead Environment Artist</div>
-                                <ul class="team-history">
-                                    <li>Environment Artist, M Game</li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="team-img">
-                                <img src="img/face/yongdae.jpg" alt="Youngdae Cho face">
-
-                            </div>
-                            <div class="team-secondary-con">
-                                <h2 class="team-tit">Youngdae Cho</h2>
-                                <div class="team-sub">Client Engineer</div>
-                                <ul class="team-history">
-                                    <li>S/W Engineer, NHN Next</li>
-                                    <li>PR/Marketer, 5Rocks</li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="team-img">
-                                <img src="img/face/yunu.jpg" alt="Yunu Kim face">
-
-                            </div>
-                            <div class="team-secondary-con">
-                                <h2 class="team-tit">Yunu Kim</h2>
-                                <div class="team-sub">Server Engineer</div>
-                                <ul class="team-history">
-                                    <li>S/W Engineer, Line Games</li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="team-img">
-                                <img src="img/face/junchel.jpg" alt="Junchel Park face">
-
-                            </div>
-                            <div class="team-secondary-con">
-                                <h2 class="team-tit">Junchel Park</h2>
-                                <div class="team-sub">Blockchain Engineer</div>
-                                <ul class="team-history">
-                                    <li>S/W Engineer, Kakao</li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="team-img">
-                                <img src="img/face/hyunwook.jpg" alt="Hyunwook Nam face">
-
-                            </div>
-                            <div class="team-secondary-con">
-                                <h2 class="team-tit">Hyunuk Nam</h2>
-                                <div class="team-sub">Blockchain Engineer</div>
-                                <ul class="team-history">
-                                    <li>S/W Engineer, NHN Next</li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="team-img">
-                                <img src="img/face/seunghyun.jpg" alt="Seunghyun Kim face">
-
-                            </div>
-                            <div class="team-secondary-con">
-                                <h2 class="team-tit">Seunghyun Kim</h2>
-                                <div class="team-sub">Software Engineer</div>
-                                <ul class="team-history">
-                                    <li>S/W Engineer, NHN Next</li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="team-img">
-                                <img src="img/face/hyunbin.jpg" alt="Hyunbin Nam face">
-
-                            </div>
-                            <div class="team-secondary-con">
-                                <h2 class="team-tit">Hyunbin Nam</h2>
-                                <div class="team-sub">Game Designer</div>
-                                <ul class="team-history">
-                                    <li>Game Designer, Affinity Game</li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="team-img">
-                                <img src="img/face/jerome.jpg" alt="Jerome Hernandez face">
-
-                            </div>
-                            <div class="team-secondary-con">
-                                <h2 class="team-tit">Jerome Hernandez</h2>
-                                <div class="team-sub">Creative Engineer</div>
-                                <ul class="team-history">
-                                    <li>Creative Engineer, CERN</li>
-
-                                </ul>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="team-img">
-                                <img src="img/face/emily.jpg" alt="Emily Park face">
-
-                            </div>
-                            <div class="team-secondary-con">
-                                <h2 class="team-tit">Emily Park</h2>
-                                <div class="team-sub">PR Manager</div>
-                                <ul class="team-history">
-                                    <li>PR Manager, Lineable</li>
-                                    <li>A.E., Cheil Worldwide</li>
-                                </ul>
-                            </div>
-                        </li>
-                    </ul>
+            <section class="partners" id="partner">
+                <div class="con clearfix info">
+                  <h1 class="press-title stitle pr">Partners</h1>
+            <div class="row press press-secondary-2 " style="max-width: 1200px;padding-left:0px;padding-right:0px;margin:auto;">
+                <div class="col-md-2 part">
+                    <a target="_blank" href="https://qtum.org/en/" style="padding:0px;">
+                        <img  src="img/partners/qtum.png">
+                    </a>
                 </div>
-            </section> -->
+                <div class="col-md-2 part">
+                    <a target="_blank">
+                        <img  src="img/partners/jonecapital.png" style="padding:0px;">
+                    </a>
+                  </div>
+                  <div class="col-md-2 part">
+                    <a target="_blank" href="https://eos.bepal.io/" style="padding:0px;">
+                        <img  src="img/partners/bepal.png" >
+                    </a>
+                  </div>
+                  <div class="col-md-2 part" >
+                    <a target="_blank">
+                        <img  src="img/partners/theblockchainer.png" style="padding:0px;">
+                    </a>
+                  </div>
+                  <div class="col-md-2 part">
+                    <a target="_blank" href="https://likelion.net/" style="padding:0px;">
+                        <img  src="img/partners/likelion.png" >
+                    </a>
+                  </div>
+                  <div class="col-md-2 part">
+                    <a target="_blank" href="https://www.seworks.co/" style="padding:0px;">
+                        <img  src="img/partners/seworks.png">
+                    </a>
+                  </div>
+                </div>
+                <div class="col-sm-12 press-subtitle" style="color: #666;line-height: 1.4em;font-weight: 300;text-align: center;margin-bottom:100px;">
+                    More to be announced
+                </div>
+              </div>
+              <div>
+              </section>
 
 
             <section class="press" id="news">
@@ -1311,20 +856,7 @@
                   </div>
                 </div>
             </section>
-            <!-- We will enable the below once we organize our partners. so please do not delete it.
-        <section class="partners" id="partners">
-            <div class="con">
-                <h1 class="partners-title stitle">Partners & Institutions</h1>
-                <div class="partners-subtitle">Mossland is supported by influential blockchain partners including global accelerators, cryptocurrency-focused venture capitalists and law firms.</div>
-                <div class="partners-con">
-                    <img class="m-hide" src="img/partners.png" alt="Partners of REALITY REFLECTION">
-                    <img class="d-hide" src="img/partners_mobile.png" alt="Partners of REALITY REFLECTION">
-                </div>
 
-            </div>
-        </section>
-
-        -->
             <section class="tail" id="tail">
                 <div class="con clearfix">
 
@@ -1410,20 +942,7 @@
 
         </section>
 
-    <div class="popup popup_video js-popup js-popup-video" data-popup="video">
-        <div class="popup__in js-popup-in">
-            <button class="popup__close js-close-popup" data-close="video">
-                <svg class="icon icon-close">
-                    <use xlink:href="img/sprite.svg#icon-close"></use>
-                </svg>
-            </button>
-            <div class="video">
-                <div class="video__inner">
-                    <iframe id="main_video" width="860" height="500" src="https://www.youtube.com/embed/bEcT2Z0ShkU" allow="encrypted-media" frameborder="0" allowfullscreen></iframe>
-                </div>
-            </div>
-        </div>
-    </div>
+
     <script type="text/javascript" src="js/scrollMagic.min.js"></script>
     <script type="text/javascript" src="js/TweenMax.min.js"></script>
     <script type="text/javascript" src="js/animation.gsap.js"></script>
@@ -1434,7 +953,29 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+<script >function burger(){
+  var burger = document.getElementById('burger');
+  var links = document.getElementById('links');
+  var quit = document.getElementById('quit');
+  burger.style.color = '#fff0';
+  burger.style.padding = '16px 16px 200vw 200vw';
+  links.style.display = 'flex';
+  quit.style.display = 'inline';
 
+
+}
+
+function quit(){
+  var burger = document.getElementById('burger');
+  var links = document.getElementById('links');
+  var quit = document.getElementById('quit');
+
+  burger.style.padding = '16px 16px 32px 32px';
+  links.style.display = 'none';
+  quit.style.display = 'none';
+  burger.style.color = 'white';
+}
+</script>
 </body>
 
 </html>
