@@ -15,8 +15,20 @@
 
   font-size: 32px;
   padding: 16px 16px 32px 32px;
+  transition: 0.7s;
+  cursor: pointer;
+}
+
+#bg-mobile-menu{
+  position: fixed;
+  right: 0;
+  top: 0;
+  color: white;
+
+  font-size: 32px;
+  padding: 16px 16px 32px 32px;
   border-radius: 0% 0% 0% 100%;
-  transition: 1s;
+  transition: 0.7s;
   cursor: pointer;
 }
 
@@ -29,6 +41,8 @@
   padding: 16px;
   display: none;
   cursor: pointer;
+  transition: 1s;
+
 }
 
 #links{

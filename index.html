@@ -86,7 +86,10 @@
         <header class="main-header" id="header">
             <div class="con clearfix">
                  <div id="menu-mobile">
-                  <i id="burger" class="material-icons" onclick="burger()">menu</i>
+                   <div id="bg-mobile-menu">
+
+                   </div>
+                   <i id="burger" class="material-icons" onclick="burger()">menu</i>
                   <i id="quit" class="material-icons" onclick="quit()">clear</i>
                   <div id="links">
                     <a href="#"><img src="img/SVG/logomain.svg" width="150px" alt="" role="presentation" /></a>
@@ -957,11 +960,15 @@
   var burger = document.getElementById('burger');
   var links = document.getElementById('links');
   var quit = document.getElementById('quit');
+  var bg = document.getElementById('bg-mobile-menu');
+
   burger.style.color = '#fff0';
-  burger.style.padding = '16px 16px 200vw 200vw';
-  burger.style.background = 'linear-gradient(45deg, #00bcd7 5%, #2bd8ca )';
+  bg.style.padding = '16px 16px 200vw 200vw';
+  bg.style.background = 'linear-gradient(45deg, #00bcd7 5%, #2bd8ca )';
   links.style.display = 'flex';
   quit.style.display = 'inline';
+  bg.style.opacity = '1';
+  
 
 
 
@@ -971,11 +978,16 @@ function quit(){
   var burger = document.getElementById('burger');
   var links = document.getElementById('links');
   var quit = document.getElementById('quit');
+  var bg = document.getElementById('bg-mobile-menu');
 
-  burger.style.padding = '16px 16px 32px 32px';
+  bg.style.padding = '16px 16px 32px 32px';
   links.style.display = 'none';
   quit.style.display = 'none';
-  burger.style.background.display = 'none';
+  burger.style.color = '#fff';
+  bg.style.opacity = '0' ;
+
+
+
 
 
 
