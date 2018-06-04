@@ -34,7 +34,6 @@
 #links{
   display: none;
   flex-direction: column;
-  width: 100vw;
   height: 100vh;
   padding: 25vh 0;
   justify-content: space-around;
@@ -1443,6 +1442,8 @@
   a.button {
     width: 250px;
   }
+
+
 
   .con, .features-boxes, .boxes {
     padding-left: 20px;
