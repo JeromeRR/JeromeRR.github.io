@@ -769,11 +769,17 @@ var moss = (function(){
 
         if( scrollTop > 250) {
             $(".main-header").addClass('active');
+            $("#burger").css({
+              "color": "#2bd8ca",
+            });
 
         } else {
 
             // 메인모션을 활성화한다
             $(".main-header").removeClass('active');
+            $("#burger").css({
+              "color": "white",
+            });
         }
 
         // 스크롤이 모션영역을 지났을때
