@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Bare - Start Bootstrap Template</title>
+
+    <!-- Bootstrap core CSS -->
+    <!-- Custom styles for this template -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/style1.css" />
+    <link href="css/style.css" rel="stylesheet">
+
+    <script type="text/javascript" src="js/TweenMax.min.js"></script>
+  	<script type="text/javascript" src="js/ScrollMagic.js"></script>
+  	<script type="text/javascript" src="js/animation.gsap.js"></script>
+  	<script type="text/javascript" src="js/debug.addIndicators.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.0/plugins/CSSPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.0/easing/EasePack.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.0/TweenLite.min.js"></script>
+  	<script src="js/modernizr.custom.js"></script>
+
+    <!-- Animated Icon -->
+    <script src="js/titanic.min.js"></script>
+    <script src="js/bodymovin.min.js"></script>
+
+
+
+  </head>
+
+  <body>
+    <script>
+      // init controller
+      var controller = new ScrollMagic.Controller();
+
+    </script>
+    <div id="bg">
+
+    <!-- NavBar -->
+      <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="logo-menu" >
+        <a class="navbar-brand" href="#home"><img id="rrlogo" src="img/RRlogo.png" alt="reality reflection logo"><img id="rrlogo-full" src="img/RR-logo-full.png" alt="reality reflection logo"> </a>
+      </div>
+      <a class="form-inline"> <div id="trigger-overlay" class='burger-icon titanic titanic-menu-close'></div> </a>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+      <section class="home" id="home">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <!-- The video -->
+          <div id="video">
+              <video  preload="none" width=100%; height=100%  loop autoplay>
+                <source id="mp4" src="video/mountain.mp4" type="video/mp4">
+                <p>Your user agent does not support the HTML5 Video element.</p>
+              </video>
+          </div>
+          <div class="tagline">
+            <p>Where virtuality <br> and reality become one.</p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <section id="intro">
+      <script>
+
+        // build scene
+        var scene = new ScrollMagic.Scene({triggerElement: "#intro", duration: 0, triggerHook: 'onLeave'})
+                // animate color and top border in relation to scroll position
+                .setTween("#video", {opacity: 0})
+                .setTween("#bg", {backgroundColor: "black"}) // the tween durtion can be omitted and defaults to 1
+                .addIndicators({name: "2 (duration: 300)"}) // add indicators (requires plugin)
+                .addTo(controller);
+
+
+
+
+      </script>
+
+      <div id="pin" class="row">
+        <div class="tagline-container">
+          <p id="tag">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>
+        <div id="small-img" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 center">
+          <ul>
+            <li>
+                <img id="doorleft" src="img/koreandoor.png">
+            </li>
+            <li>
+                <img id="doorright" src="img/koreandoor.png">
+            </li>
+          </ul>
+        </div>
+      </div>
+      <script>
+
+      var scene5 = new ScrollMagic.Scene({triggerElement: "#intro", duration: 0, triggerHook:'onLeave'})
+              .setTween("#small-img", {opacity: 1})
+              .setClassToggle("#rrlogo, #rrlogo-full, .burger-icon ", "white-icon")
+              .addTo(controller);
+
+
+      var scene4 = new ScrollMagic.Scene({triggerElement: "#pin", duration: 600,triggerHook:0.2 })
+
+              .setPin("#pin")
+              .addIndicators({name: "1 (duration: 600)"}) // add indicators (requires plugin)
+              .addTo(controller);
+
+      var scene3 = new ScrollMagic.Scene({triggerElement: "#pin", duration: 300,triggerHook:0.1 })
+              .setTween("#tag",{opacity: 1})
+              .addIndicators({name: "text opacity (duration: 300)"}) // add indicators (requires plugin)
+              .addTo(controller);
+
+      var scene = new ScrollMagic.Scene({triggerElement: "#pin", duration: 400,triggerHook:0.1 })
+                  .setTween("#tag",{opacity: 1})
+                  .setClassToggle("#doorleft", "door-left-active")
+                  .addIndicators({name: "1 (duration: 600)"}) // add indicators (requires plugin)
+                  .addTo(controller);
+
+      var scene2 = new ScrollMagic.Scene({triggerElement: "#pin", duration: 400,triggerHook:0.1 })
+
+                  .setClassToggle("#doorright", "door-right-active")
+                  .addIndicators({name: "1 (duration: 600)"}) // add indicators (requires plugin)
+                  .addTo(controller);
+      </script>
+
+    </section>
+
+
+    </div>
+
+
+
+
+
+
+    <!-- open/close -->
+		<div id="overlay" class="overlay overlay-hugeinc">
+      <img id="big-logo" src="img/big-logo.svg">
+			<div id="close" class='overlay-close titanic titanic-delete'>close</div>
+			<nav>
+				<ul>
+					<li><a class="menu-white menu-title" href="#">Home</a></li>
+					<li><a class="menu-red menu-title" href="#">About</a></li>
+					<li><a class="menu-white menu-title" href="#">Work</a></li>
+					<li><a class="menu-red menu-title" href="#">Clients</a></li>
+					<li><a class="menu-white menu-title" href="#">Contact</a></li>
+
+				</ul>
+			</nav>
+
+		</div>
+    <!-- menu Overlay -->
+  </div>
+</div>
+    <script>
+
+      $(".menu-white").mouseenter(function(){
+
+        $("#overlay").css({"background-color": "white", "transition":"background-color 0.5s ease"});
+        $("#big-logo").css({"webkit-filter": "brightness(1) invert(0)","filter":"brightness(1) invert(0)", "-webkit-transition" : "-webkit-filter 500ms ease"});
+        $(".menu-title").css({"color": "#ff4936", "transition":"color 0.5s ease"});
+        $("path").css({"fill": "#ff4936","stroke": "#ff4936"});
+      });
+
+      $(".menu-red").mouseenter(function(){
+        $("#overlay").css({"background-color": "#ff4936", "transition":"background-color 0.5s ease"});
+        $("#big-logo").css({"webkit-filter": "brightness(0) invert(1)","filter":"brightness(0) invert(1)", "transition":"opacity brightness 0.5s ease"});
+        $(".menu-title").css({"color": "white", "transition":"color 0.5s ease"});
+        $("path").css({"fill": "white","stroke": "white",  });
+      });
+
+    </script>
+		<script src="js/classie.js"></script>
+		<script src="js/demo1.js"></script>
+    <script type="text/javascript" src="/js/tracking.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script>var titanic = new Titanic('https://rawgit.com/icons8/titanic/master/src/icons/');</script>
+
+  </body>
+
+</html>

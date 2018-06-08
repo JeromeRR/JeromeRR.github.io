@@ -1,0 +1,205 @@
+/*!
+ * Start Bootstrap - Full (https://startbootstrap.com/template-overviews/full)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-full/blob/master/LICENSE)
+ */
+
+ @font-face {
+     font-family: 'Spoqa Han Sans';
+     font-weight: 700;
+     src: local('Spoqa Han Sans Bold'),
+     url('https://cdn.rawgit.com/spoqa/spoqa-han-sans/01ff0283/Subset/SpoqaHanSans/SpoqaHanSansBold.woff2') format('woff2'),
+     url('https://cdn.rawgit.com/spoqa/spoqa-han-sans/01ff0283/Subset/SpoqaHanSans/SpoqaHanSansBold.woff') format('woff'),
+     url('https://cdn.rawgit.com/spoqa/spoqa-han-sans/01ff0283/Subset/SpoqaHanSans/SpoqaHanSansBold.ttf') format('truetype');
+ }
+
+ @font-face {
+     font-family: 'Spoqa Han Sans';
+     font-weight: 400;
+     src: local('Spoqa Han Sans Regular'),
+     url('https://cdn.rawgit.com/spoqa/spoqa-han-sans/01ff0283/Subset/SpoqaHanSans/SpoqaHanSansRegular.woff2') format('woff2'),
+     url('https://cdn.rawgit.com/spoqa/spoqa-han-sans/01ff0283/Subset/SpoqaHanSans/SpoqaHanSansRegular.woff') format('woff'),
+     url('https://cdn.rawgit.com/spoqa/spoqa-han-sans/01ff0283/Subset/SpoqaHanSans/SpoqaHanSansRegular.ttf') format('truetype');
+ }
+
+ @font-face {
+     font-family: 'Spoqa Han Sans';
+     font-weight: 300;
+     src: local('Spoqa Han Sans Light'),
+     url('https://cdn.rawgit.com/spoqa/spoqa-han-sans/01ff0283/Subset/SpoqaHanSans/SpoqaHanSansLight.woff2') format('woff2'),
+     url('https://cdn.rawgit.com/spoqa/spoqa-han-sans/01ff0283/Subset/SpoqaHanSans/SpoqaHanSansLight.woff') format('woff'),
+     url('https://cdn.rawgit.com/spoqa/spoqa-han-sans/01ff0283/Subset/SpoqaHanSans/SpoqaHanSansLight.ttf') format('truetype');
+ }
+
+ @font-face {
+     font-family: 'Spoqa Han Sans';
+     font-weight: 100;
+     src: local('Spoqa Han Sans Thin'),
+     url('https://cdn.rawgit.com/spoqa/spoqa-han-sans/01ff0283/Subset/SpoqaHanSans/SpoqaHanSansThin.woff2') format('woff2'),
+     url('https://cdn.rawgit.com/spoqa/spoqa-han-sans/01ff0283/Subset/SpoqaHanSans/SpoqaHanSansThin.woff') format('woff'),
+     url('https://cdn.rawgit.com/spoqa/spoqa-han-sans/01ff0283/Subset/SpoqaHanSans/SpoqaHanSansThin.ttf') format('truetype');
+ }
+
+
+body {
+    font-family: 'Spoqa Han Sans', sans-serif;
+    font-weight: 100;
+  
+}
+
+section{
+  height: auto;
+}
+
+
+.titanic {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+}
+
+/*Defines icon colors*/
+.titanic path {
+    fill: #ff4936;
+    stroke: #ff4936;
+}
+
+
+.overlay .titanic path {
+    fill: white;
+    stroke: white;
+
+   }
+}
+
+.bg-light{
+  background-color: #f8f9fa00 !important;
+}
+
+.navbar-brand #rrlogo{
+  height:60px;
+  margin-left:200px;
+  z-index:50;
+  cursor: pointer;
+}
+
+.navbar{
+  position:fixed;
+  width: 100%;
+}
+
+.navbar-brand #rrlogo-full{
+  opacity:0;
+  height:43px;
+  margin-top:18px;
+  margin-left: 40px;
+  transition: opacity 1s, margin-left 1s;
+  z-index: 1;
+}
+
+#rrlogo:hover + #rrlogo-full{
+ opacity: 1;
+ margin-left: 8px;
+}
+
+.form-inline .burger-icon{
+  width:50px;
+  margin-right:160px;
+  cursor: pointer;
+}
+
+.home .tagline{
+    font-size: 30px;
+    margin-top: 35%;
+    color: #ff4936;
+    z-index: 2;
+}
+
+
+
+#video{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1080;
+  z-index: -1;
+  transition: opacity 1s;
+}
+
+.row li {
+  width: 50%;
+  float: left;
+  list-style-type: none;
+}
+
+img {
+  border: 0 none;
+  display: inline-block;
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+section #intro{
+  height: 100%;
+}
+
+#intro{
+  padding-top: 450px;
+}
+
+#doorleft, #doorright{
+  transition: margin 1s;
+}
+
+.door-left-active{
+      margin-left: -800px;
+}
+
+.door-right-active{
+      margin-left: 370px;
+}
+
+.tagline-container{
+  position: fixed;
+	top: 30%;
+	left: 0;
+	right: 0;
+	height: 0;
+	/* center all inline content */
+	text-align: center;
+}
+
+.tagline-container > p {
+  /* make the block inline */
+	display: inline-block;
+	/* reset container's center alignment */
+
+}
+
+#small-img{
+  opacity : 0;
+    transition: opacity 0.1s;
+}
+
+.opacity-1{
+  opacity: 1;
+  transition: opacity 0.1s;
+}
+
+#tag{
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.tag-active{
+  opacity: 1;
+}
+
+
+
+.white-icon{
+  webkit-filter: brightness(0) invert(1); /* Safari 6.0 - 9.0 */
+    filter:brightness(0) invert(1);
+}
