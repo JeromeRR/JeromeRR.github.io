@@ -122,6 +122,46 @@ a.button:hover {
     box-shadow: #2bd8ca 0 0px 0px 40px inset;
 }
 
+#note {
+    position: fixed;
+    z-index: 101;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color:white;
+    background: rgb(43, 216, 202);
+    text-align: center;
+    line-height: 40px;
+    font-weight: 400;
+    overflow: hidden; 
+    cursor: pointer;
+    font-size: 14px;
+    transition: bottom 0.4s;
+}
+
+#note strong{
+    font-weight: 700;
+    margin-right: 10px;
+    color: #fff072;
+    letter-spacing: 1px;
+}
+
+.cssanimations.csstransforms #note {
+    -webkit-transform: translateY(-50px);
+    -webkit-animation: slideUp 2.5s 1.0s 1 ease forwards;
+    -moz-transform:    translateY(-50px);
+    -moz-animation:    slideUp 2.5s 1.0s 1 ease forwards;
+}
+
+@-webkit-keyframes slideUp {
+    0%, 100% { -webkit-transform: translateY(-50px); }
+    10%, 90% { -webkit-transform: translateY(0px); }
+}
+@-moz-keyframes slideUp {
+    0%, 100% { -moz-transform: translateY(-50px); }
+    10%, 90% { -moz-transform: translateY(0px); }
+}
+
 .con {
     width: 1200px;
     margin: auto;
@@ -133,6 +173,16 @@ a.button:hover {
 .d-hide {
     display: none;
 }
+
+#particles-js{
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
 
 
 .ico {
@@ -803,7 +853,7 @@ color: #000000;
 
 .investors,
 .advisors {
-    padding-bottom: 7em;
+    
 }
 
 .team-title,
@@ -811,6 +861,7 @@ color: #000000;
 .roadmap-title {
     text-align: left;
     margin-bottom: 50px;
+    padding-top: 2em;
 }
 
 .advisors-title {
