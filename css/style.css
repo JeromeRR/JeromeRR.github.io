@@ -1056,6 +1056,18 @@ footer .marge-bot{
     margin: auto;
   }
 
+  .rect_title_black_big{
+  width: 250px;
+  height: 3px;
+  background-color: #000000;
+}
+.rect_title_white_big{
+  width: 250px;
+  height: 3px;
+  background-color: #FFFFFF;
+  margin-top: 24px;
+}
+
 }
 
 
