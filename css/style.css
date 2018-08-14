@@ -400,6 +400,11 @@ p {
 /* ----------------------------
 -----------Full Page Img Bg ------------
 ----------------------------- */
+
+#fullpage{
+  display: none;
+}
+
 .full-page{
 
 
@@ -1096,6 +1101,14 @@ footer .marge-bot{
   height: 3px;
   background-color: #FFFFFF;
   margin-top: 24px;
+}
+
+#fullpage{
+  display: block;
+}
+
+.full-page{
+  display: none;
 }
 
 }
