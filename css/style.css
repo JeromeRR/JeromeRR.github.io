@@ -980,7 +980,7 @@ footer .marge-bot{
     position: absolute;
     width: 100%;
     margin: auto;
-    left:0;
+    
     top: 30%;
     text-align: center;
    
@@ -1026,30 +1026,37 @@ footer .marge-bot{
   line-height:45px;
 }
 
-.container{
-    width: 80vw;
+  .container{
+      width: 80vw;
+  }
+
+  .navbar{
+      margin: 0px;
+      padding: 0 0 0  0;
+      font-family: 'FuturaBT-Book';
+      font-size: 18px;
+
+  }
+
+  .navbar-nav{
+      top:100px;
+      left:20px;
+  }
+
+  .navbar-brand{
+      padding: 25px 0 0 20px;
+  }
+
+  #works h1, .contact h1, .about h1, .lab h1 {
+    font-size: 30px;
+  }
+
+  .intro {
+    width: 80%;
+    margin: auto;
+  }
+
 }
 
-.navbar{
-    margin: 0px;
-    padding: 0 0 0  0;
-    font-family: 'FuturaBT-Book';
-    font-size: 18px;
 
-}
-
-.navbar-nav{
-    top:100px;
-    left:20px;
-}
-
-.navbar-brand{
-    padding: 25px 0 0 20px;
-}
-
-#works h1, .contact h1, .about h1, .lab h1 {
-  font-size: 30px;
-}
-
-}
 
