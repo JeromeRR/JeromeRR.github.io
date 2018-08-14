@@ -426,6 +426,23 @@ p {
   margin: auto; 
   min-width: 50%;
   min-height: 50%;
+  max-width: 1920px;
+}
+
+#bg1{
+
+}
+
+#bg2{
+  display: none;
+}
+
+#bg3{
+  display: none;
+}
+
+#bg4{
+  display: none;
 }
 /* ----------------------------
 -----------Decoration ------------

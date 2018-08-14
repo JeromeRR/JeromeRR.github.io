@@ -84,7 +84,7 @@
               <div class="rect_title_grey_big"><div class="rect_title_red_xbig"></div> </div>
               </a>
             </div>
-            <div class="scrolling-block">
+            <div class="scrolling-block 4">
               <a href="">
               <h3>01 /  VR game</h3>
               <h1>Music<br> Inside</h1>
@@ -134,17 +134,40 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script type='text/javascript' src='/js/jquery.mousewheel.min.js'></script>
     <script src="js/pgwslider.js"></script>
     <script type="text/javascript">
-      $(".1").hover(function(){
-        $('.1').fadeTo('slow', 0.3, function()
-{
-        $(".full-page").css("background-image", "url('img/17@3x.png')").fadeTo('slow', 1);
-        });
+      $( document ).ready(function() {
+          $(".1").hover(function(){
+               $("#bg1").fadeIn(800);
+               $("#bg2").fadeOut(800);
+               $("#bg3").fadeOut(800);
+               $("#bg4").fadeOut(800);
+          });
+
+          $(".2").hover(function(){
+               $("#bg2").fadeIn(800);
+               $("#bg1").fadeOut(800);
+               $("#bg3").fadeOut(800);
+               $("#bg4").fadeOut(800);
+          });
+
+          $(".3").hover(function(){
+               $("#bg3").fadeIn(800);
+               $("#bg2").fadeOut(800);
+               $("#bg1").fadeOut(800);
+               $("#bg4").fadeOut(800);
+          });
+
+          $(".4").hover(function(){
+               $("#bg4").fadeIn(800);
+               $("#bg2").fadeOut(800);
+               $("#bg3").fadeOut(800);
+               $("#bg1").fadeOut(800);
+          });
       });
     </script>
   </body>
