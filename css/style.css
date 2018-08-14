@@ -585,7 +585,6 @@ p {
   line-height: 1.79;
   letter-spacing: normal;
   color: #282828;
-  width: 662px;
 }
 
 #gallery .gallery {
@@ -1046,6 +1045,10 @@ footer .marge-bot{
 
 .navbar-brand{
     padding: 25px 0 0 20px;
+}
+
+#works h1, .contact h1, .about h1, .lab h1 {
+  font-size: 30px;
 }
 
 }
