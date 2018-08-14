@@ -401,19 +401,32 @@ p {
 -----------Full Page Img Bg ------------
 ----------------------------- */
 .full-page{
-/* The image used */
-    background-image: url("../img/35@3x.png");
+
 
     /* Full height */
     height: 1080px;
 
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    transition: background 2s linear;
 }
 
+
+
+#bg {
+  position: fixed; 
+  top: -50%; 
+  left: -50%; 
+  width: 200%; 
+  height: 200%;
+}
+#bg img {
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  bottom: 0; 
+  margin: auto; 
+  min-width: 50%;
+  min-height: 50%;
+}
 /* ----------------------------
 -----------Decoration ------------
 ----------------------------- */
