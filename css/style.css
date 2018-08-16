@@ -1080,7 +1080,7 @@ footer .marge-bot{
 ----------- Media Query ------------
 ----------------------------- */
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 768px) {
 
   #works h1, .about h1, .contact h1, .contact h3, .contact h4 {
     margin-top: 50px;
