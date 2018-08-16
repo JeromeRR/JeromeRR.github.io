@@ -1483,6 +1483,10 @@ display: none;
   display: block;
 }
 
+.first-slide{
+  top: 9%;
+}
+
 }
 
 
