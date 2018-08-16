@@ -397,6 +397,15 @@ p {
 .navbar-nav{
     display: block;
 }
+
+.mobile-menu ul{
+display: none;
+
+  }
+
+ .mobile-menu input{
+  display: none;
+ } 
 /* ----------------------------
 -----------Full Page Img Bg ------------
 ----------------------------- */
@@ -1184,6 +1193,7 @@ footer .marge-bot{
 .mobile .intro{
   width: 80%;
   color: black;
+  left: 10%;
 }
 
 .mobile p{
@@ -1397,6 +1407,8 @@ display: none;
 #fullpage{
   display: block;
 }
+
+
 
 }
 

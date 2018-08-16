@@ -21,7 +21,7 @@
 
     <title>Hello, world!</title>
   </head>
-  <body style="overflow:hidden;" onload="loading()">
+  <body style="overflow:hidden;" onload="loaded(); loading();">
     <div id="loading-bg">
       </div>
     <div class="loader" id="loading">
@@ -262,7 +262,8 @@
 
     //loading code
     function loading() {
-    document.getElementById("loading").style.display = "none"; 
+     document.getElementById("loading").style.display = "none"; 
+    
     document.getElementById("loading-bg").style.display = "none"; 
     document.getElementById("loaded").style.display = "block"; 
 
