@@ -1106,6 +1106,7 @@ footer .marge-bot{
     
     top: 30%;
     text-align: center;
+    left: 0px;
    
     }
 
@@ -1175,7 +1176,7 @@ footer .marge-bot{
   }
 
   .intro {
-    width: 80%;
+    
     margin: auto;
   }
 
@@ -1501,6 +1502,14 @@ display: none;
 
 .first-slide img{
   width: 25vw;
+}
+
+.gallery-title, .gallery-sub-title{
+  display: none;
+}
+
+.contact h3{
+  font-size: 22px;
 }
 
 }
