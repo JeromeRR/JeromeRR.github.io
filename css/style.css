@@ -401,7 +401,7 @@ p {
 -----------Full Page Img Bg ------------
 ----------------------------- */
 
-.fullpage{
+#fullpage{
   display: none;
 }
 
@@ -1348,9 +1348,10 @@ footer .marge-bot{
 .mobile-menu input:checked + .menu + ul {
   opacity: 1;
   display: block;
-  -webkit-transition: all .1s ease-in-out;
+  transition: opacity 2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
   }
-}
+
 .mobile-menu ul {
   z-index: 200;
   position: absolute;
@@ -1361,6 +1362,7 @@ footer .marge-bot{
   opacity: 0;
   transition: .25s 0s ease-in-out;
   -webkit-transition: opacity .5s ease-in-out;
+  transition: opacity 2s ease-in-out;
   }
 }
 .mobile-menu a {
@@ -1386,10 +1388,14 @@ list-style-type: none;
 display: none;
 -webkit-transition: all .5s ease-in-out;
   }
-}
+
 
 .mobile-menu img{
   width: 30vw;
+}
+
+#fullpage{
+  display: block;
 }
 
 }
