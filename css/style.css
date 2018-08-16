@@ -414,6 +414,13 @@ display: none;
   display: none;
 }
 
+.rd{
+  background-image: url("../img/35@3x.png");
+   background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .full-page{
 
 
@@ -1291,7 +1298,7 @@ footer .marge-bot{
 }
 
   .mobile-menu .menu {
-  position: absolute;
+  position: fixed;
   right: -100px;
   top: -100px;
   z-index: 100;
@@ -1364,7 +1371,7 @@ footer .marge-bot{
 
 .mobile-menu ul {
   z-index: 200;
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -1408,7 +1415,9 @@ display: none;
   display: block;
 }
 
-
+.rd{
+  display: block;
+}
 
 }
 

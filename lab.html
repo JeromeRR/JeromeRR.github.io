@@ -17,7 +17,7 @@
   </head>
   <body>
     
-    <header id="home">
+    <header id="lab">
       <!-- Navigation Bar -->
       <div class="mobile-menu">
 
@@ -65,13 +65,13 @@
           </li>
         </ul>
       </nav>
-
       
     </header>
 
 
-  <div class="full-page">
-    <div class=" intro">
+  <div class="full-page rd">
+
+    <div class="intro">
     
        <h1 class="">3D Character /<br>R&D / 3D Scanning<br>
         Service</h1>
@@ -198,6 +198,13 @@
     
     <!-- navbar color -->
     <script type="text/javascript">
+
+        function loading() {
+        document.getElementById("loading").style.display = "none"; 
+        document.getElementById("loading-bg").style.display = "none"; 
+        document.getElementById("loaded").style.display = "block"; 
+        }
+
         var targetOffset = $(".container").offset().top-300;
 
         var $w = $(window).scroll(function(){
