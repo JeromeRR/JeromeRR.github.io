@@ -34,10 +34,54 @@
 
     <title>Hello, world!</title>
   </head>
-  <body style="overflow:hidden;" onload="loaded()">
+  <body style="overflow:hidden;" onload="loading()">
+    <div id="loading-bg">
+      </div>
+    <div class="loader" id="loading">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div> 
     
+
+    <div id="loaded">
     <header id="home">
       <!-- Navigation Bar -->
+      <div class="mobile-menu">
+
+        <label>
+          <input type='checkbox'>
+          <span class='menu'>
+            <span class='hamburger'></span>
+          </span>
+
+          <ul>
+            <li>
+            <a class="navbar-brand" href="index.html"><img src="img/rr_logo_index.png" alt="reality reflection logo"> </a>
+          </li>
+            <li>
+              <a href="works.html" class="nav-link">works</a>
+            </li>
+            <li>
+              <a href="about.html" class="nav-link">about</a>
+            </li>
+            <li>
+              <a href="lab.html" class="nav-link">r&d labs</a>
+            </li>
+            <li>
+              <a href="contact.html" class="nav-link">contact</a>
+            </li>
+          </ul>
+        </label>
+        </div>
+
+
       <nav class="navbar fixed-top navbar-expand-lg">
         <a class="navbar-brand" href="index.html"><img id="rrlogo" src="img/RRlogo.png" alt="reality reflection logo"><img id="rrlogo-full" src="img/RR-logo-full.png" alt="reality reflection logo"> </a>
         <ul class="navbar-nav ml-auto ">
@@ -55,6 +99,8 @@
           </li>
         </ul>
       </nav>
+
+      
     </header>
 
   <div class="full-page">
@@ -126,25 +172,40 @@
      
   </div>
 <!-- Mobile Full Page -->
-  <div id="fullpage">
+  <div id="fullpage" class="mobile">
   <div class="section " id="section0">
-    <h1>fullPage.js</h1>
-    <p>Continuous Scrolling Enabled</p>
-    <img src="imgs/fullPage.png" alt="fullPage" />
+    <div class="intro">
+    <img src="img/rr_logo_index.png" alt="Rrlogo" />
+    <h1>In Reality Reflection, working is like playing games </h1>
+    <p>Each day we encounter new challenges to tackle and new quests to conquer. Along with friendly and well-equipped teammates, we crash all the obstacles on our great mission: spreading the enchantment of virtual reality!</p>
+    <div class='icon-scroll'></div>
+  </div>
   </div>
   <div class="section" id="section1">
     <div class="intro">
-      <h1>Around the world scrolling</h1>
-      <p>Go to the first section and scroll up or to the last one and scroll down to see how it works.</p>
+      <div class="scrolling-block">
+              <a href="">
+              <h3>01 /  VR game</h3>
+              <h1>Music<br> Inside</h1>
+              <div class="rect_title_grey_big"><div class="rect_title_red_xbig"></div> </div>
+              </a>
+        </div>
     </div>
   </div>
   <div class="section" id="section2">
     <div class="intro">
-      <h1>Scroll Down</h1>
-      <p>And it will animate down to the first section</p>
+      <div class="scrolling-block">
+              <a href="">
+              <h3>01 /  VR game</h3>
+              <h1>Music<br> Inside</h1>
+              <div class="rect_title_grey_big"><div class="rect_title_red_xbig"></div> </div>
+              </a>
+        </div>
     </div>
   </div>
 </div>
+
+
   <div class="bottom-left">
     <h2>​In Reality Reflection,<br> working is like playing<br> games </h2>
     <p>Each day we encounter new challenges to tackle and new quests to conquer. Along with friendly and well-equipped teammates, we crash all the obstacles on our great mission: spreading the enchantment of virtual reality!</p>
@@ -154,7 +215,7 @@
     <p>© 2017 REALITYREFLECTION </p>
     
   </div>
-
+</div>
 
 
     <!-- Optional JavaScript -->
@@ -200,12 +261,26 @@
     <script type="text/javascript">
     $(document).ready(function() {
       $('#fullpage').fullpage({
-        sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
-        anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
-        menu: '#menu',
+        
         continuousVertical: true
       });
     });
+  </script>
+
+  <script type="text/javascript">
+    
+    $(window).load(function () {
+  // run code
+});
+
+    //loading code
+    function loading() {
+    document.getElementById("loading").style.display = "none"; 
+    document.getElementById("loading-bg").style.display = "none"; 
+    document.getElementById("loaded").style.display = "block"; 
+
+}
+
   </script>
 
 
