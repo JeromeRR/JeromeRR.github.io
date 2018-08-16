@@ -398,6 +398,10 @@ p {
     display: block;
 }
 
+.mobile-menu{
+  display: none;
+}
+
 .mobile-menu ul{
 display: none;
 
@@ -1295,6 +1299,10 @@ footer .marge-bot{
     -webkit-transform: translateY(40px);
             transform: translateY(40px);
   }
+}
+  
+  .mobile-menu{
+  display: block;
 }
 
   .mobile-menu .menu {
