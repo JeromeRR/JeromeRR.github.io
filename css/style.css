@@ -291,7 +291,7 @@ p {
   color: #282828;
 }
 
-.bottom-right.home-link p a:link{
+.home-link p a:link{
   color: white;
 }
 
@@ -315,11 +315,23 @@ height: 100%;
 /* ----------------------------
 -----------Nav Bar ------------
 ----------------------------- */
+
+#nav-bg{
+  width: 100vw;
+  background-color: white;
+  height: 130px;
+  position: fixed;
+  margin-top: -65px;
+  margin-left: -70px;
+
+}
+
 .navbar a{
     color: black;
 }
 
 .navbar{
+    max-width: 1920px;
     margin: 50px 20px 50px 50px ;
 
 }
@@ -386,6 +398,15 @@ height: 100%;
     filter: brightness(0) invert(1);
 }
 
+#lab #nav-bg, #game #nav-bg{
+    opacity: 0;
+    -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -ms-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+}
+
 .navabar-nav * {
   box-sizing: border-box;
 }
@@ -411,6 +432,10 @@ height: 100%;
 
 #lab .nav-active img, #game .nav-active img{
     filter: none;
+}
+
+#lab .nav-active #nav-bg, #game .nav-active #nav-bg{
+    opacity: 1;
 }
 
 .navbar-nav{
@@ -587,7 +612,7 @@ display: none;
 
 .scrolling-block{
     width: 7%;
-    opacity:0.3;
+    opacity:0.55;
     -webkit-transition: all 1s ease;
   transition: all 1s ease;
 
@@ -599,7 +624,7 @@ display: none;
 
 #imgs{
   overflow:hidden;
-  position:absolute;
+  
   left:0; bottom:0;
 
   width:300%;
@@ -607,7 +632,7 @@ display: none;
   display:flex;
   justify-content:space-around;
   align-items:center;
-  margin:0 25%;  
+  margin: 280px 25%;  
 }
 #imgs > div{
   overflow:hidden;
@@ -636,7 +661,7 @@ display: none;
 .horizontal-slider h1{
   margin-top: 30px;
   font-family: 'FuturaBT-Book';
-  font-size: 4vw;
+  font-size: 3.6vw;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -688,6 +713,9 @@ display: none;
 /* ----------------------------
 -----------Works, Contact, About, R&D Pages ------------
 ----------------------------- */
+#works,.about, .contact{
+  margin-top: 400px;
+}
 
 
 #works p, .contact p, .about p, .lab p{
@@ -844,7 +872,7 @@ display: none;
 
 .lab img{
     text-align: center;
-    height: 170px;
+    height: 130px;
     margin-top: 100px;
 }
 
@@ -1025,6 +1053,7 @@ footer .te {
   letter-spacing: normal;
   color: #000000;
   margin-bottom: 10px;
+  word-spacing: 10px;
 
 }
 
