@@ -243,7 +243,7 @@ blockquote {
 }
 p a:link,
 p a:visited {
-    border-bottom: 2px solid #6af;
+
     color: #444;
     padding-bottom: 1px;
     text-decoration: none;
@@ -255,7 +255,7 @@ p a:visited {
 }
 p a:hover,
 p a:focus {
-    color: #6af;
+    color: tomato;
 }
 p a:active {
     position: relative;
@@ -291,7 +291,21 @@ p {
   color: #282828;
 }
 
+.video-container {
+position: relative;
+padding-bottom: 56.25%;
+padding-top: 30px; height: 0; overflow: hidden;
+}
 
+.video-container iframe,
+.video-container object,
+.video-container embed {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
 
 /* ----------------------------
 -----------Nav Bar ------------
@@ -418,12 +432,43 @@ display: none;
   display: none;
 }
 
-.rd{
-  background-image: url("../img/35@3x.png");
+.rd, .musicinside, .speedball, .gangsta, .vmoji, .zena{
+  
    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.rd{
+  background-image: url("../img/35@3x.png");
+}
+
+.musicinside{
+  background-image: url("../img/MusicInside_splash_art.png");
+}
+
+.speedball{
+  background-image: url("../img/SpeedballArena.jpg");
+}
+
+.gangsta{
+  background-image: url("../img/Gangsta Underground_Poker.jpg");
+}
+
+.vmoji{
+  background-image: url("../img/vmoji.png");
+}
+
+.zena{
+  background-image: url("../img/zena.png");
+}
+
+
+.miniaturetd{
+  background-image: url("../img/MiniatureTD.png");
+}
+
+
 
 .full-page{
 
@@ -469,6 +514,16 @@ display: none;
 #bg4{
   display: none;
 }
+
+#bg5{
+  display: none;
+}
+
+#bg6{
+  display: none;
+}
+
+
 /* ----------------------------
 -----------Decoration ------------
 ----------------------------- */
@@ -968,6 +1023,10 @@ footer .te {
 
 }
 
+footer .te a{
+  text-decoration: none;
+}
+
 
 footer #corporation{
   font-family: 'FuturaBT-Book';
@@ -1316,14 +1375,25 @@ footer .marge-bot{
 }
 
 #section1{
-    background-image: url(../img/bg1.jpg);
+    background-image: url(../img/bg1.png);
   }
   #section2{
-    background-image: url(../img/bg3.jpg);
+    background-image: url(../img/bg2.png);
     padding: 6% 0 0 0;
   }
   #section3{
-    background-image: url(../img/bg4.jpg);
+    background-image: url(../img/bg3.png);
+    padding: 6% 0 0 0;
+  }
+  #section4{
+    background-image: url(../img/bg4.png);
+  }
+  #section5{
+    background-image: url(../img/bg5.png);
+    padding: 6% 0 0 0;
+  }
+  #section6{
+    background-image: url(../img/bg6.png);
     padding: 6% 0 0 0;
   }
 
