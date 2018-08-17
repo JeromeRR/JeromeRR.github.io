@@ -291,7 +291,7 @@ p {
   color: #282828;
 }
 
-.te .home a:visited{
+.te .home p a:link{
   color: white;
 }
 
