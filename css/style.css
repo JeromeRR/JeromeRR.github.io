@@ -291,6 +291,11 @@ p {
   color: #282828;
 }
 
+.te .home a:visited{
+  color: white;
+}
+
+
 .video-container {
 position: relative;
 padding-bottom: 56.25%;
@@ -1582,7 +1587,4 @@ display: none;
 
 }
 
-.te .home a{
-  color: white;
-}
 
