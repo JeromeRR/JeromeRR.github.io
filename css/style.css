@@ -291,7 +291,7 @@ p {
   color: #282828;
 }
 
-.bottom-right p a:link{
+.bottom-right.home-link p a:link{
   color: white;
 }
 
