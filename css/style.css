@@ -244,7 +244,7 @@ blockquote {
 p a:link,
 p a:visited {
 
-    color: white;
+    color: #444;
     padding-bottom: 1px;
     text-decoration: none;
     -webkit-transition: .25s;
