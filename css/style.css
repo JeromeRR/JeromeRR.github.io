@@ -39,10 +39,15 @@ summary {
 }
 
 .container{
-    max-width: 1600px;
+    max-width: 1464px;
+    padding: 0px;
 }
 
-section, footer{
+.test .col-lg-3{
+  padding: 0;
+}
+
+ footer{
     
     margin: 150px 20px auto 20px;
 }
@@ -779,7 +784,7 @@ width: 300px;
   max-width: 1464px;
 }
 
- .trust{
+ .trust,.game{
   margin: 150px auto auto auto;
   max-width: 1464px;
  }
