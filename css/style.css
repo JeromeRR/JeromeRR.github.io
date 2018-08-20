@@ -333,7 +333,7 @@ height: 100%;
 .navbar{
     max-width: 1920px;
     margin: auto ;
-    padding-bottom: 50px 20px 50px 50px;
+    padding: 50px 50px 50px 70px;
 
 }
 
@@ -461,13 +461,15 @@ display: none;
 
 #fullpage{
   display: none;
+
 }
 
-.rd, .musicinside, .speedball, .gangsta, .vmoji, .zena{
+.rd, .musicinside, .speedball, .gangsta, .vmoji, .zena, .miniaturetd{
   
    background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+   
+
 }
 
 .rd{
@@ -528,32 +530,91 @@ display: none;
   min-width: 50%;
   min-height: 50%;
   max-width: 1920px;
+  
+    
 }
 
-#bg1{
-
+.bg1{
+  opacity: 0;
+  -webkit-filter: grayscale(100%) brightness(0.5);
+   -moz-filter: grayscale(100%) brightness(0.5);
+   filter: grayscale(100%) brightness(0.5);
+    -ms-transform: scale(1, 1); /* IE 9 */
+    -webkit-transform: scale(1, 1); /* Safari */
+    transform: scale(1, 1);
+   transition: all 2s ease;
 }
 
-#bg2{
-  display: none;
+.bg2{
+  opacity: 0;
+  -webkit-filter: grayscale(100%) brightness(0.5);
+   -moz-filter: grayscale(100%) brightness(0.5);
+   filter: grayscale(100%) brightness(0.5);
+    -ms-transform: scale(1, 1); /* IE 9 */
+    -webkit-transform: scale(1, 1); /* Safari */
+    transform: scale(1, 1);
+   transition: all 2s ease;
 }
 
-#bg3{
-  display: none;
+.bg3{
+  opacity: 0;
+  -webkit-filter: grayscale(100%) brightness(0.5);
+   -moz-filter: grayscale(100%) brightness(0.5);
+   filter: grayscale(100%) brightness(0.5);
+    -ms-transform: scale(1, 1); /* IE 9 */
+    -webkit-transform: scale(1, 1); /* Safari */
+    transform: scale(1, 1);
+   transition: all 2s ease;
 }
 
-#bg4{
-  display: none;
+.bg4{
+  opacity: 0;
+  -webkit-filter: grayscale(100%) brightness(0.5);
+   -moz-filter: grayscale(100%) brightness(0.5);
+   filter: grayscale(100%) brightness(0.5);
+    -ms-transform: scale(1, 1); /* IE 9 */
+    -webkit-transform: scale(1, 1); /* Safari */
+    transform: scale(1, 1);
+   transition: all 2s ease;
 }
 
-#bg5{
-  display: none;
+.bg5{
+  opacity: 0;
+  -webkit-filter: grayscale(100%) brightness(0.5);
+   -moz-filter: grayscale(100%) brightness(0.5);
+   filter: grayscale(100%) brightness(0.5);
+    -ms-transform: scale(1, 1); /* IE 9 */
+    -webkit-transform: scale(1, 1); /* Safari */
+    transform: scale(1, 1);
+   transition: all 2s ease;
 }
 
-#bg6{
-  display: none;
+.bg6{
+  opacity: 0;
+  -webkit-filter: grayscale(100%) brightness(0.5);
+   -moz-filter: grayscale(100%) brightness(0.5);
+   filter: grayscale(100%) brightness(0.5);
+    -ms-transform: scale(1, 1); /* IE 9 */
+    -webkit-transform: scale(1, 1); /* Safari */
+    transform: scale(1, 1);
+   transition: all 2s ease;
 }
 
+.bg-active{
+  
+    opacity: 1;
+    -ms-transform: scale(1.1, 1.1); /* IE 9 */
+    -webkit-transform: scale(1.1, 1.1); /* Safari */
+    transform: scale(1.1, 1.1);
+}
+
+.bg-active-grey{
+  -webkit-filter: grayscale(0%) brightness(1);
+   -moz-filter: grayscale(0%) brightness(1);
+   filter: grayscale(0%) brightness(1);
+
+
+}
 
 /* ----------------------------
 -----------Decoration ------------
@@ -672,10 +733,9 @@ display: none;
 }
 
 .bottom-left{
-    position: fixed;
-    left:80px;
-    bottom: 50px;
-    width: 267px;
+    position: absolute;
+bottom: 50px;
+width: 300px;
 }
 
 .bottom-left h2{
@@ -715,8 +775,18 @@ display: none;
 -----------Works, Contact, About, R&D Pages ------------
 ----------------------------- */
 #works,.about, .contact{
-  margin-top: 400px;
+  margin: 400px auto auto auto;
+  max-width: 1464px;
 }
+
+ .trust{
+  margin: 150px auto auto auto;
+  max-width: 1464px;
+ }
+
+ .trust img{
+  max-width: 80%;
+ }
 
 
 #works p, .contact p, .about p, .lab p{
@@ -732,15 +802,35 @@ display: none;
 }
 
 #gallery .gallery {
-    padding: 2px; 
+    padding: 3px; 
+    max-width: 735px;
 }
 
+#gallery .full{
+  padding: 3px;
+}
+
+#gallery .third{
+  padding: 3px;
+  max-width: 490px;
+}
+
+#gallery .full a{
+  margin: auto;
+  max-width: 1464px;
+}
 
 .top-left {
     position: absolute;
     top: 40px;
     left: 50px;
+    text-align: left;
 }
+
+.full .top-left{
+  margin-left: 40px;
+}
+
 
 .gallery-title{
   font-family: 'FuturaBT-Light';
@@ -846,11 +936,12 @@ display: none;
 }
 
 .intro{
-    position: absolute;
-    width: 33%;
-    left: 70px;
-    bottom: 80px;
+    padding-top: 600px;
+    max-width: 1600px;
+    margin: auto;
 }
+
+
 
 .intro h1{
     color: white;
@@ -1030,6 +1121,8 @@ display: none;
 
 footer{
     padding-bottom: 85px;
+    max-width: 1464px;
+    margin: 100px auto auto auto;
 }
 
 footer .ti{
@@ -1171,6 +1264,11 @@ footer .marge-bot{
 /* ----------------------------
 ----------- Media Query ------------
 ----------------------------- */
+@media screen and (min-width: 1920px){
+  .horizontal-slider h1{
+    font-size: 100px;
+  }
+}
 
 @media screen and (max-width: 768px) {
 

@@ -119,12 +119,12 @@
 
   <div class="full-page">
       <div id="bg">
-        <img id="bg1" src="img/bg1.png" alt="">
-        <img id="bg2" src="img/bg2.png" alt="">
-        <img id="bg3" src="img/bg3.png" alt="">
-        <img id="bg4" src="img/bg4.png" alt="">
-        <img id="bg5" src="img/bg5.png" alt="">
-        <img id="bg6" src="img/bg6.png" alt="">
+        <img class="bg1 bg-active" src="img/bg1.png" alt="">
+        <img class="bg2" src="img/bg2.jpg" alt="">
+        <img class="bg3" src="img/bg3.jpg" alt="">
+        <img class="bg4" src="img/bg4.jpg" alt="">
+        <img class="bg5" src="img/bg5.jpg" alt="">
+        <img class="bg6" src="img/bg6.jpg" alt="">
       </div>
 
       <div class="horizontal-slider">
@@ -154,7 +154,7 @@
             <div class="scrolling-block 4">
               <a href="vmoji.html">
               <h3>04 / AR Chatting App</h3>
-              <h1>VMOJI</h1>
+              <h1><br>VMOJI</h1>
               <div class="rect_title_grey_big"><div class="rect_title_red_xbig"></div> </div>
               </a>
             </div>
@@ -263,7 +263,7 @@
   </div>
 </div>
 
-
+<div class="container">
   <div class="bottom-left">
     <h2>​In Reality Reflection,<br> working is like playing<br> games </h2>
     <p>Each day we encounter new challenges to tackle and new quests to conquer. Along with friendly and well-equipped teammates, we crash all the obstacles on our great mission: spreading the enchantment of virtual reality!</p>
@@ -281,6 +281,7 @@
     
   </div>
 </div>
+</div>
 
 
     <!-- Optional JavaScript -->
@@ -294,57 +295,75 @@
     <script type="text/javascript">
       $( document ).ready(function() {
           $(".1").hover(function(){
-               $("#bg1").fadeIn(800);
-               $("#bg2").fadeOut(800);
-               $("#bg3").fadeOut(800);
-               $("#bg4").fadeOut(800);
-               $("#bg5").fadeOut(800);
-               $("#bg6").fadeOut(800);
-          });
+                  $(".bg1").addClass("bg-active");
+                  $(".bg1").addClass("bg-active-grey");
+                   $(".bg2").removeClass("bg-active");
+                   $(".bg3").removeClass("bg-active");
+                   $(".bg4").removeClass("bg-active");
+                   $(".bg5").removeClass("bg-active");
+                   $(".bg6").removeClass("bg-active");
+             }, function(){
+                $(".bg1").removeClass("bg-active-grey");
+             });
 
           $(".2").hover(function(){
-               $("#bg2").fadeIn(800);
-               $("#bg1").fadeOut(800);
-               $("#bg3").fadeOut(800);
-               $("#bg4").fadeOut(800);
-               $("#bg5").fadeOut(800);
-               $("#bg6").fadeOut(800);
+            $(".bg2").addClass("bg-active");
+               $(".bg2").addClass("bg-active-grey");
+               $(".bg1").removeClass("bg-active");
+               $(".bg3").removeClass("bg-active");
+               $(".bg4").removeClass("bg-active");
+               $(".bg5").removeClass("bg-active");
+               $(".bg6").removeClass("bg-active");
+               }, function(){
+                $(".bg2").removeClass("bg-active-grey");
           });
 
           $(".3").hover(function(){
-               $("#bg3").fadeIn(800);
-               $("#bg2").fadeOut(800);
-               $("#bg1").fadeOut(800);
-               $("#bg4").fadeOut(800);
-               $("#bg5").fadeOut(800);
-               $("#bg6").fadeOut(800);
+               $(".bg3").addClass("bg-active");
+               $(".bg3").addClass("bg-active-grey");
+               $(".bg2").removeClass("bg-active");
+               $(".bg1").removeClass("bg-active");
+               $(".bg4").removeClass("bg-active");
+               $(".bg5").removeClass("bg-active");
+               $(".bg6").removeClass("bg-active");
+               }, function(){
+                $(".bg3").removeClass("bg-active-grey");
           });
 
           $(".4").hover(function(){
-               $("#bg4").fadeIn(800);
-               $("#bg2").fadeOut(800);
-               $("#bg3").fadeOut(800);
-               $("#bg1").fadeOut(800);
-               $("#bg5").fadeOut(800);
-               $("#bg6").fadeOut(800);
+            $(".bg4").addClass("bg-active");
+               $(".bg4").addClass("bg-active-grey");
+               $(".bg2").removeClass("bg-active");
+               $(".bg3").removeClass("bg-active");
+               $(".bg1").removeClass("bg-active");
+               $(".bg5").removeClass("bg-active");
+               $(".bg6").removeClass("bg-active");
+               }, function(){
+                $(".bg4").removeClass("bg-active-grey");
           });
 
           $(".5").hover(function(){
-               $("#bg5").fadeIn(800);
-               $("#bg2").fadeOut(800);
-               $("#bg3").fadeOut(800);
-               $("#bg1").fadeOut(800);
-               $("#bg4").fadeOut(800);
-               $("#bg6").fadeOut(800);
+            $(".bg5").addClass("bg-active");
+               $(".bg5").addClass("bg-active-grey");
+               $(".bg2").removeClass("bg-active");
+               $(".bg3").removeClass("bg-active");
+               $(".bg1").removeClass("bg-active");
+               $(".bg4").removeClass("bg-active");
+               $(".bg6").removeClass("bg-active");
+               }, function(){
+                $(".bg5").removeClass("bg-active-grey");
           });
 
           $(".6").hover(function(){
-               $("#bg6").fadeIn(800);
-               $("#bg2").fadeOut(800);
-               $("#bg3").fadeOut(800);
-               $("#bg1").fadeOut(800);
-               $("#bg5").fadeOut(800);
-               $("#bg4").fadeOut(800);
+            $(".bg6").addClass("bg-active");
+               $(".bg6").addClass("bg-active-grey");
+               $(".bg2").removeClass("bg-active");
+               $(".bg3").removeClass("bg-active");
+               $(".bg1").removeClass("bg-active");
+               $(".bg5").removeClass("bg-active");
+               $(".bg4").removeClass("bg-active");
+               }, function(){
+                $(".bg6").removeClass("bg-active-grey");
           });
       });
     </script>
