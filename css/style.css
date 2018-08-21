@@ -23,6 +23,24 @@
   font-style: normal;
 }
 
+.animate-in {
+    -webkit-animation: fadeIn 1.2s ease-in;
+    animation: fadeIn 1.2s ease-in;
+}
+.animate-out {
+    -webkit-transition: opacity 1.2s;
+    transition: opacity 1.2s;
+    opacity: 0;
+}
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
 
 /* Corrects `block` display not defined in IE 8/9. */
 article,
@@ -636,6 +654,8 @@ display: none;
   width: 300px;
   height: 3px;
   background-color: #000000;
+  -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+      transition: width 2s;
 }
 
 .rect_title_red_xbig{
@@ -650,7 +670,15 @@ display: none;
   height: 3px;
   background-color: #FFFFFF;
   margin-top: 24px;
+  -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+      transition: width 2s;
 }
+
+.preload .rect_title_white_big, .preload .rect_title_black_big{
+      width: 0%;
+      -webkit-transition: width 2s ease-out; /* For Safari 3.1 to 6.0 */
+      transition: width 2s ease-out;
+   }
 
 .rect_title_grey_big{
   width: 100%;
@@ -1324,7 +1352,12 @@ footer .marge-bot{
         width:80%;
         margin: auto;
         margin-top: 50px;
+
    }
+
+
+
+   
 
    .intro button{
         width:80%;
