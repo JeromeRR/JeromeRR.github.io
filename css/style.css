@@ -300,6 +300,10 @@ p {
   color: white;
 }
 
+.home{
+  max-width: 1920px;
+  width: 1920px;
+}
 
 .video-container {
 position: relative;
@@ -444,6 +448,10 @@ height: 100%;
     opacity: 1;
 }
 
+.lab{
+  margin-top: 130px;
+}
+
 .navbar-nav{
     display: block;
 }
@@ -511,9 +519,9 @@ display: none;
 .full-page{
 
 
-    /* Full height */
     height: 1080px;
-
+    background-size: 100% auto;
+    margin-top: -5px;
 }
 
 
@@ -649,6 +657,7 @@ display: none;
   width: 100%;
   height: 4px;
   background-color: #d8d8d8;
+  max-width: 400px;
   
 }
 
@@ -671,6 +680,7 @@ display: none;
 
 .scrolling-block:hover .rect_title_red_xbig{
     width:100%;
+    max-width: 400px;
 }
 
 .scrolling-block:hover{
@@ -700,6 +710,7 @@ display: none;
   justify-content:space-around;
   align-items:center;
   margin: 280px 25%;  
+  max-width: 8000px;
 }
 #imgs > div{
   overflow:hidden;
@@ -741,6 +752,8 @@ display: none;
     position: absolute;
 bottom: 50px;
 width: 300px;
+margin-left: 70px;
+
 }
 
 .bottom-left h2{
@@ -756,10 +769,11 @@ width: 300px;
 
 
 .bottom-right{
-    position: fixed;
-    right:80px;
+    position: absolute;
     bottom: 50px;
     text-align: right;
+    padding-right: 70px;
+    width: 1920px;
 }
 
 .bottom-left p, .bottom-right p{
@@ -784,6 +798,14 @@ width: 300px;
   max-width: 1464px;
 }
 
+.contact{
+  margin: 375px auto auto auto;
+}
+
+.intercontact{
+  margin: 235px auto auto auto;
+}
+
  .trust,.game{
   margin: 150px auto auto auto;
   max-width: 1464px;
@@ -793,6 +815,24 @@ width: 300px;
   max-width: 80%;
  }
 
+.members{
+  max-width: 1464px;
+  margin-top: 265px;
+}
+
+.top-members{
+  max-width: 323px;
+  padding: 0px;
+
+}
+
+.members-second{
+  margin-top: 0px;
+}
+
+.second{
+  padding: 0px !important;
+}
 
 #works p, .contact p, .about p, .lab p{
   margin-top: 49px;
@@ -807,7 +847,7 @@ width: 300px;
 }
 
 #gallery{
-  margin-top: 150px;
+  margin-top: 200px;
 }
 
 #gallery .gallery {
@@ -1055,7 +1095,7 @@ width: 300px;
   border-radius: 0;
   box-shadow: inset 0 0 0 var(--border-size) currentcolor;
   transition: background .8s ease;
-  margin-top: 100px;
+  margin-top: 50px;
 
 }
 .button:hover {
@@ -1162,6 +1202,10 @@ footer .te {
 
 footer .te a{
   text-decoration: none;
+}
+
+footer .ter{
+  word-spacing: 0.25em;
 }
 
 
@@ -1273,9 +1317,9 @@ footer .marge-bot{
 /* ----------------------------
 ----------- Media Query ------------
 ----------------------------- */
-@media screen and (min-width: 1920px){
+@media screen and (min-width: 1950px){
   .horizontal-slider h1{
-    font-size: 100px;
+    font-size: 80px;
   }
 }
 
