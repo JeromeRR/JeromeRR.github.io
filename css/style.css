@@ -687,7 +687,7 @@ display: none;
 }
 
 .scrolling-block{
-    width: 7%;
+    width: 8%;
     opacity:0.55;
     -webkit-transition: all 1s ease;
   transition: all 1s ease;
@@ -700,7 +700,7 @@ display: none;
 
 #imgs{
   overflow:hidden;
-  
+  position: absolute;
   left:0; bottom:0;
 
   width:300%;
@@ -708,7 +708,7 @@ display: none;
   display:flex;
   justify-content:space-around;
   align-items:center;
-  margin: 280px 25%;  
+  margin: 3%; 30%;  
   max-width: 8000px;
 }
 #imgs > div{
@@ -738,7 +738,7 @@ display: none;
 .horizontal-slider h1{
   margin-top: 30px;
   font-family: 'FuturaBT-Book';
-  font-size: 3vw;
+  font-size: 54px;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
