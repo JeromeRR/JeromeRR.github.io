@@ -39,6 +39,7 @@
     <script type="text/javascript">
        var myScroll;
     function loaded () {
+      $(".scrolling-block").removeClass("preload");
       myScroll = new IScroll('#wrapper', { scrollX: true, scrollY: false, mouseWheel: true, mouseWheelSpeed : 70 });
     }
     document.addEventListener('touchmove', function (e) { e.preventDefault(); }, isPassive() ? {
@@ -129,45 +130,48 @@
 
       <div class="horizontal-slider">
        <div id="wrapper">
+       
          <div id="imgs">
-            <div class="scrolling-block 1">
+            <div class="scrolling-block 1 preload">
               <a href="musicinside.html">
-              <h3>01 / VR Rhythm Game</h3>
-              <h1>Music<br> Inside</h1>
+              <h3 class="scroll-preload">01 / VR Rhythm Game</h3>
+                  <span class="first-span"><h1>Music</h1></span>
+                  <span class="second-span"><h1>Inside</h1></span>
               <div class="rect_title_grey_big"><div class="rect_title_red_xbig"></div> </div>
               </a>
             </div>
             <div class="scrolling-block 2">
               <a href="speedball.html">
-              <h3>02 / VR Sports Game</h3>
+              <h3 class="scroll-preload">02 / VR Sports Game</h3>
               <h1>Speedball <br> Arena</h1>
               <div class="rect_title_grey_big"><div class="rect_title_red_xbig"></div> </div>
               </a>
             </div>
             <div class="scrolling-block 3">
               <a href="gangsta.html">
-              <h3>03 /  VR Poker Game</h3>
-              <h1>Gangsta <br>Underground<br> </h1>
+              <h3 class="scroll-preload">03 /  VR Poker Game</h3>
+              <span class="first-span"><h1>Gangsta</h1></span> 
+              <span class="second-span"><h1><br>Underground<br></h1></span>
               <div class="rect_title_grey_big"><div class="rect_title_red_xbig"></div> </div>
               </a>
             </div>
             <div class="scrolling-block 4">
               <a href="vmoji.html">
-              <h3>04 / AR Chatting App</h3>
+              <h3 class="scroll-preload">04 / AR Chatting App</h3>
               <h1><br>VMOJI</h1>
               <div class="rect_title_grey_big"><div class="rect_title_red_xbig"></div> </div>
               </a>
             </div>
             <div class="scrolling-block 5">
               <a href="zena.html">
-              <h3>05 /  3D Character R&D Scanning</h3>
+              <h3 class="scroll-preload">05 /  3D Character R&D Scanning</h3>
               <h1>Dancing<br> Zena</h1>
               <div class="rect_title_grey_big"><div class="rect_title_red_xbig"></div> </div>
               </a>
             </div>
             <div class="scrolling-block 6">
               <a href="miniaturetd.html">
-              <h3>06 /  VR Tower Defence Game</h3>
+              <h3 class="scroll-preload">06 /  VR Tower Defence Game</h3>
               <h1>Miniature <br>TD</h1>
               <div class="rect_title_grey_big"><div class="rect_title_red_xbig"></div> </div>
               </a>
@@ -176,6 +180,7 @@
                 <!-- Fake for scrolling -->
             </div>
           </div>
+         
         </div>
       </div>
      
@@ -293,6 +298,8 @@
     <script src="js/pgwslider.js"></script>
      <script type="text/javascript" src="js/jquery.fullPage.js"></script>
      <script type="text/javascript">
+        
+      
       window.addEventListener("beforeunload", function () {
       document.body.classList.add("animate-out");
     });

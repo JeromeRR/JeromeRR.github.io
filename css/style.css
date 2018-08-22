@@ -654,8 +654,8 @@ display: none;
   width: 300px;
   height: 3px;
   background-color: #000000;
-  -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
-      transition: width 2s;
+  -webkit-transition: width 2s ease-out; /* For Safari 3.1 to 6.0 */
+      transition: width 2s ease-out;
 }
 
 .rect_title_red_xbig{
@@ -670,21 +670,18 @@ display: none;
   height: 3px;
   background-color: #FFFFFF;
   margin-top: 24px;
-  -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
-      transition: width 2s;
+  -webkit-transition: width 2s ease-out; /* For Safari 3.1 to 6.0 */
+      transition: width 2s ease-out;
 }
 
-.preload .rect_title_white_big, .preload .rect_title_black_big{
-      width: 0%;
-      -webkit-transition: width 2s ease-out; /* For Safari 3.1 to 6.0 */
-      transition: width 2s ease-out;
-   }
 
 .rect_title_grey_big{
   width: 100%;
   height: 4px;
   background-color: #d8d8d8;
   max-width: 400px;
+  -webkit-transition: width 3s ease-out; /* For Safari 3.1 to 6.0 */
+      transition: width 3s ease-out;
   
 }
 
@@ -1301,6 +1298,82 @@ footer .marge-bot{
     transform: scale(0);
   }
 }
+
+
+/* ----------------------------
+----------- Animation OnLoad ------------
+----------------------------- */
+.preload .rect_title_white_big, .preload .rect_title_black_big, .preload .rect_title_grey_big{
+      width: 0%;
+   }
+
+.intro h1, .intro p, .intro button, #preload h2, #preload h1, #preload p, #preload h3, #preload h4{
+  opacity:1;
+  -webkit-transition: all 1.2s ease-out;
+  transition: all 1.2s ease-out;
+}
+
+.intro button{
+  transition-delay: 0.6s;
+}
+
+.preload h1{
+    transform: translateY(-100px);
+    opacity: 0;
+}
+
+.preload p{
+  transform: translateY(100px);
+    opacity: 0;
+}
+
+.preload button{
+  transform: translateY(100px);
+    opacity: 0;
+}
+
+.preaload h2{
+  opacity: 0;
+}
+
+.preload .scroll-preload{
+  transform: translateY(-100px);
+  opacity: 0;
+}
+
+.preload .contact h1, .preload .intercontact h3, .preload .intercontact h4 {
+    transform: translateX(100px);
+    opacity: 0;
+}
+
+.scrolling-block .first-span h1 {
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+  transition-delay: 1.3s;
+}
+
+.scrolling-block .second-span h1 {
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+  transition-delay: 1s;
+}
+
+.scrolling-block .scroll-preload {
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+  transition-delay: 0.3s;
+}
+
+.first-span h1{
+  margin-top: 30px;
+  margin-bottom: 0px;
+}
+
+.second-span h1{
+  margin-top: 0px;
+  margin-bottom: 8px;
+}
+
 
 /* ----------------------------
 ----------- Media Query ------------
