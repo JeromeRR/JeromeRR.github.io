@@ -40,6 +40,7 @@
        var myScroll;
     function loaded () {
       $(".scrolling-block").removeClass("preload");
+      $(".home").removeClass("preload");  
       myScroll = new IScroll('#wrapper', { scrollX: true, scrollY: false, mouseWheel: true, mouseWheelSpeed : 70 });
     }
     document.addEventListener('touchmove', function (e) { e.preventDefault(); }, isPassive() ? {
@@ -270,7 +271,7 @@
   </div>
 </div>
 
-<div class="container home d-flex justify-content-between">
+<div class="container home d-flex justify-content-between preload">
   <div class="bottom-left">
     <h2>​In Reality Reflection,<br> working is like playing<br> games </h2>
     <p>Each day we encounter new challenges to tackle and new quests to conquer. Along with friendly and well-equipped teammates, we crash all the obstacles on our great mission: spreading the enchantment of virtual reality!</p>
