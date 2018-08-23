@@ -29,7 +29,7 @@
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet"> 
 
     <link rel="stylesheet" type="text/css" href="css/style.css">
-
+    <script src="https://unpkg.com/scrollreveal"></script>
 
     <title>Works || Reality Reflection</title>
   </head>
@@ -233,6 +233,7 @@
       }
       window.addEventListener("beforeunload", function () {
       document.body.classList.add("animate-out");
+      ScrollReveal().reveal('.gallery');
     });
     </script>
   </body>
