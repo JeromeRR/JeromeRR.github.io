@@ -27,6 +27,7 @@ ScrollReveal().reveal('.game', {
           distance: '100px',
           origin: 'left',
           easing: 'ease-out',
+          interval: 600,
           opacity: 0,
           delay: 500,
           duration: 1200});
@@ -88,4 +89,13 @@ ScrollReveal().reveal('.game', {
           opacity: 0,
           interval: 600,
           delay: 1200,
+          duration: 1200});
+
+
+         ScrollReveal().reveal('.img-chart-bottom', { 
+          distance: '100px',
+          origin: 'bottom',
+          easing: 'ease-out',
+          delay: 800,
+          opacity: 0,
           duration: 1200});
