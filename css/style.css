@@ -718,7 +718,7 @@ display: none;
   max-width: 1920px;
   -webkit-transition: width 3s ease-out; /* For Safari 3.1 to 6.0 */
       transition: width 3s ease-out;
-  
+
   
 }
 
@@ -1686,6 +1686,10 @@ footer .marge-bot{
       padding: 25px 0 0 20px;
   }
 
+  #works, .contact, .about, .lab{
+      margin-top: 80px;
+  }  
+
   #works h1, .contact h1, .about h1, .lab h1 {
     font-size: 30px;
   }
@@ -1725,10 +1729,16 @@ footer .marge-bot{
   color: white;
 }
 
-.mobile .intro{
+h3{
+  font-size:24px;
+}
+
+.intro{
   width: 80%;
   color: black;
   left: 10%;
+  padding-top: 0px;
+  padding-left: 0px;
 }
 
 .mobile p{
@@ -1833,26 +1843,29 @@ footer .marge-bot{
 }
 
 #section1{
-    background-image: url(../img/bg1.png);
+    background-image: url(../img/bg-mobile-1.png);
+    background-size: cover;
   }
   #section2{
-    background-image: url(../img/bg2.png);
-    padding: 6% 0 0 0;
+    background-image: url(../img/bg-mobile-2.jpg);
+    background-size: cover;
+
   }
   #section3{
-    background-image: url(../img/bg3.png);
-    padding: 6% 0 0 0;
+    background-image: url(../img/bg-mobile-3.jpg);
+    background-size: cover;
   }
   #section4{
-    background-image: url(../img/bg4.png);
+    background-image: url(../img/bg-mobile-4.jpg);
+    background-size: cover;
   }
   #section5{
-    background-image: url(../img/bg5.png);
-    padding: 6% 0 0 0;
+    background-image: url(../img/bg-mobile-5.jpg);
+    background-size: cover;
   }
   #section6{
-    background-image: url(../img/bg6.png);
-    padding: 6% 0 0 0;
+    background-image: url(../img/bg-mobile-6.jpg);
+    background-size: cover;
   }
 
 
