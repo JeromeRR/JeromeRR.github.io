@@ -964,7 +964,7 @@ margin-left: 70px;
   color: #ffffff;
 }
 
-#gallery img {
+#gallery img,  #gallery video{
     /* filter: url(filters.svg#grayscale); Firefox 3.5+ */
        /* IE5+ */
       filter: brightness(0.5) grayscale(1);
@@ -972,7 +972,7 @@ margin-left: 70px;
       -webkit-transition: all .5s ease-in-out;  
 }
 
-#gallery img:hover{
+#gallery img:hover, #gallery video:hover{
     filter: none;
       -webkit-filter: brightness(1) grayscale(0);
       color: black;
